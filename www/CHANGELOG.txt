@@ -248,6 +248,14 @@ Copyright 2015 TopBox Software. All Rights Reserved
 -Changed header image on index page
 -Connected FAQ button in index page to FAQ page
 
+2/20/2015
+-Altered FAQ page
+-Varun bullied me
+-Purchased Topbox logo
+-Updated page titles to reflect content
+-Made a good meme
+-Began changing headers to include a 'donate' button instead of a 'contact us' button
+
 Known Bugs:
 -Margins on disease page overlap when page is shrunk (FIXED)
 -Buttons on Blood Cancer page are not centered when using Google Chrome (FIXED)
@@ -274,3 +282,4 @@ Things to Complete Before Launch:
 -Add mailing list to footer (REMOVED)
 -Complete border-radius on top + final elements in disease page to finalize the effect
 -Recognize that Dual-300 is only good for 20,000 page hits
+-Add links to Zach and Ishan's personal websites on FAQ page

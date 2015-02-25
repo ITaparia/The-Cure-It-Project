@@ -29,25 +29,6 @@ function openFactStats()
 
 			];
 			
-
-
-var pieDataPancreas = [
-				{
-					value: 95,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Exocrine"
-				},
-				{
-					value: 5,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Endocrine"
-				}
-                
-
-			];
-
 			
 			
 				 var pieDataOral = [
@@ -121,26 +102,6 @@ var lineChartDataLung = {
 					pointHighlightFill : "#fff",
 					pointHighlightStroke : "rgba(220,220,220,1)",
 					data : [60,62,59,57,54,56,53,51,48]
-				},
-				
-			]
-
-		}
-
-
-
-var lineChartDataPancreas = {
-			labels : ["1992","1994","1996","1998","2000","2002","2004","2006","2008","2010"],
-			datasets : [
-				{
-					label: "Pancreatic Cancer Mortality Rate",
-					fillColor : "rgba(220,220,220,0.2)",
-					strokeColor : "rgba(220,220,220,1)",
-					pointColor : "rgba(220,220,220,1)",
-					pointStrokeColor : "#fff",
-					pointHighlightFill : "#fff",
-					pointHighlightStroke : "rgba(220,220,220,1)",
-					data : [5.6,5.4,5.1,4.8,4.5,4.3,4.2,3.8,3.5,3.4]
 				},
 				
 			]
