@@ -413,6 +413,55 @@ var lineChartDataEye = {
 			]
 
 		}
+
+var pieDataThyroid = [
+				{
+					value: 80,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Papillary Carcinomas"
+				},
+				{
+					value: 17,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Follicular Carcinomas"
+				},
+				{
+					value: 3,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Hurthle Cell Carcinomas"
+				}
+                
+
+			];
+
+var lineChartDataThyroid = {
+			labels: ["1973", "1976", "1979", "1982", "1985", "1988", "1991", "1994", "1997", "2000", "2003", "2006", "2009"],
+    datasets: [
+        {
+            label: "Thyroid Cancer Incidence Rate",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [3.7, 4.5, 4.2, 3.5, 4.2, 4.7, 5.2, 5.6, 5.9, 6.2, 5.8, 6.4, 6.5]
+        },
+        {
+            label: "Thyroid Cancer Mortality Rate",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [0.8, 0.9, 0.7, 0.8, 1, 0.9, 0.7, 0.8, 0.6, 0.7, 0.6, 0.5, 0.4]
+        }
+    ]
+		}
 //--------------------------------End Chart Data--------------------------------\\
 		    
 		    
