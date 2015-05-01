@@ -462,6 +462,58 @@ var lineChartDataThyroid = {
         }
     ]
 		}
+
+
+var pieDataBone = [
+				{
+					value: 56,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Osteosarcomas"
+				},
+				{
+					value: 34,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Ewing Tumors"
+				},
+				{
+					value: 10,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Chondrosarcomas"
+				}
+                
+
+			];
+
+var lineChartDataBone = {
+			labels: ["1975", "1980", "1985", "1990", "1995", "2000", "2005", "2010"],
+    datasets: [
+        {
+            label: "Bone Cancer Incidence Rate",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [0.8, 0.8, 0.9, 0.8, 1, 0.9, 1, 1.1]
+        },
+        {
+            label: "Bone Cancer Mortality Rate",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [0.9, 0.6, 0.5, 0.4, 0.5, 0.4, 0.5, 0.4]
+        }
+    ]
+		}
+
+
 //--------------------------------End Chart Data--------------------------------\\
 		    
 		    
