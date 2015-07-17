@@ -513,6 +513,126 @@ var lineChartDataBone = {
     ]
 		}
 
+var pieDataEndo = [
+				{
+					value: 92,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Endometrial Carcinomas"
+				},
+				{
+					value: 8,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Uterine Sarcomas"
+				}
+			];
+
+var lineChartDataEndo = {
+			labels: ["1975", "1980", "1985", "1990", "1995", "2000", "2005", "2010"],
+    datasets: [
+        {
+            label: "Endometrial Cancer Death Rate",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [5.3, 5.2, 5.1, 4.8, 4.7, 4.8, 4.6, 4.5]
+        }
+    ]
+		}
+
+
+var pieDataLymphoma = [
+				{
+					value: 26,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Prostate"
+				},
+				{
+					value: 14,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Lung and Bronchus"
+				},
+                {
+					value: 8,
+					color:"#FDB45C",
+					highlight: "#FF5A5E",
+					label: "Colon and Rectum"
+				},
+                {
+					value: 7,
+					color:"#1FDA9A",
+					highlight: "#FF5A5E",
+					label: "Urinary Bladder"
+				},
+                {
+					value: 5,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Melanoma of the Skin"
+				},
+                {
+					value: 5,
+					color:"#46BFBD",
+					highlight: "#FF5A5E",
+					label: "Non-Hodgkin's Lymphoma"
+				},
+                {
+					value: 5,
+					color:"#FDB45C",
+					highlight: "#FF5A5E",
+					label: "Kidney and Renal Pelvis"
+				},
+                {
+					value: 4,
+					color:"#1FDA9A",
+					highlight: "#FF5A5E",
+					label: "Oral Cavity and Pharynx"
+				},
+                {
+					value: 4,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Leukemia"
+				},
+                {
+					value: 3,
+					color:"#46BFBD",
+					highlight: "#FF5A5E",
+					label: "Liver and Intrahepatic Bile Duct"
+				}
+			];
+
+var lineChartDataLymphoma = {
+			labels: ["1990", "1995", "2000", "2005", "2010"],
+    datasets: [
+        {
+            label: "NHL Death Rate",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [7.9, 8.7, 8.2, 6.9, 6.1]
+        },
+        {
+            label: "HD Mortality Rate",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [0.7, 0.5, 0.5, 0.4, 0.3]
+        }
+    ]
+		}
 
 //--------------------------------End Chart Data--------------------------------\\
 		    
