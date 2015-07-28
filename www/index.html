@@ -38,7 +38,7 @@
         <link rel = "stylesheet" type="text/css" href="animate.css" />
         <link href="css/hover.css" rel="stylesheet" media="all">
         
-        <title>Home</title>
+        <title>The Cure It Project</title>
 		
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -95,9 +95,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible" onClick = "window.location = 'donate.html'">Donate</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -119,7 +119,7 @@
 			    
 			    <section>
 				  <div class="parallax-container">
-						<img src="logo.png" style = "width:100vw;height:500px;"><h2 style = "positon:relative;top:140px;font-size:43px;">Cancer is one of the leading causes of death in the world</h2>
+						<img src="logo.png" style = "width:100vw;height:500px;"><h2 style = "positon:relative;top:140px;font-size:43px;padding-left:20px;padding-right:20px;">Cancer is one of the leading causes of death in the world</h2>
 					</div>
 			    </section>
 			    
@@ -150,7 +150,7 @@
 					    <br />
 					    
 					    And so we find ourselves confronted with a seemingly insuppressible obstacle. Cancer is not simply the enemy of those afflicted by it, it is the enemy of
-					    all of us. Cancer, in many respects, stands alone as the sole Demon that has reached into all of our lives in some way, drawing us together even as it attempts to force us apart.
+					    all of us. Cancer, in many respects, stands alone as the sole demon that has reached into all of our lives in some way, drawing us together even as it attempts to force us apart.
 					    While the sitatuion certainly may seem bleak at times, recent years have brought with them <a target="_blank" href = "http://www.cancer.org/cancer/news/cancer-specialists-gather-to-discuss-innovations-in-research-and-treatment" class = "link">innovative new research</a> that has already saved tens of thousands of lives. This website, beyond
 					    educating people about the issue, exists to promote the impactful steps that those leading the charge are taking to develop a healthier, happier world for us to exist in.
 					    
@@ -279,9 +279,8 @@
 				    <div class="block" id = "anchor_four">
 					<p><div id = "center_element"><span class="first-character one">NOW.</span></div>
 				    <div id = "move_down">
-                        This is a change that can and should start with you, right now. The <span class = "link" onClick = "window.location = 'stories.html'">stories button</span> will will direct you to individualized people that need your help. The <span class = "link" onClick = "window.location = 'diseases.html'">diseases button</span> will allow you to grasp the context that cancer patients must deal with everyday, as well as provide you with the opportunity to donate to charities that have the potential to change the face of cancer research. The <span class = "link" onClick = "window.location = 'FAQ.html'">FAQ button</span> will take you to a page that outlines the answers to common questions that people may have, both about cancer and this website in general. 
-                        
-                     
+                        This is a change that can and should start with you, right now. The <span class = "link" onClick = "window.location = 'stories.html'">stories button</span> will will direct you to individualized people who have experienced cancer and their descriptions of how dealing with disease influenced their lives. The <span class = "link" onClick = "window.location = 'diseases.html'">diseases button</span> will allow you to grasp the context that cancer patients must deal with everyday, as well as provide you with the opportunity to donate to charities that have the potential to change the face of cancer research. The <span class = "link" onClick = "window.location = 'resources.html'">resources button</span> will take you to a page that outlines useful tools and bodies of information that can help patients and loved ones cope with cancer on both emotional and fiscal fronts.
+						
                         <br />
               
 					
@@ -290,9 +289,9 @@
 					<div id = "center_elements">
 					    
                         
-                        <div id = "button_special">Stories</div>
+                        <div id = "button_special" onClick = "openStories()">Stories</div>
                         <div id = "button_special" onClick = "openDisease()">Diseases</div>
-                        <div id = "button_special" onclick = "openFAQ()">FAQ</div>
+                        <div id = "button_special" onclick = "openResources()">Resources</div>
                         
                         <!--
 					    <div id = "button_special">Stories</div>
@@ -323,55 +322,35 @@
 			<br />
 			
 			
-				
-			<div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
-					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>	
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
-			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
 			
+		<footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
+					
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
+			</div>
+		</div>
+		</footer>
 			
 			
 			

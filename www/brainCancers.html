@@ -38,6 +38,8 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
         <script src="Chart.js"></script>
         <script type="text/javascript">window.onload = function(){
 				var ctxbrain = document.getElementById("brainStatsPie").getContext("2d");
@@ -67,7 +69,7 @@
 		 
 	
 	    
-	    <div id='header_holder'>
+	     <div id='header_holder'>
 		
 		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
@@ -77,9 +79,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Coontact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -87,8 +89,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
-			<span id = "move_all">
+			    
+	</div><span id = "move_all">
 				
             
             <div id="parallax-main">
@@ -159,12 +161,12 @@
                         
 						<br />
 						<br />
-                        The impacts of Brain Cancer are everywhere. In fact, <span class = "link" onClick = "window.open('http://www.abta.org/about-us/news/brain-tumor-statistics/')">nearly 700,000 people</span> in the United States are currently living with Brain Cancer, with over <span class = "link" onClick = "window.open('http://www.abta.org/about-us/news/brain-tumor-statistics/')"> 191 cases being discovered</span> each and every day worldwide. While the threat of Brain Cancer can impact anyone, it is statistically more common in younger children and older adults. In fact, Brain Cancer accounts for <span class = "link" onClick = "window.open('http://health.usnews.com/health-conditions/cancer/brain-tumor/overview')">25 percent of all cancers</span> seen in children. The side effects of Brain Cancer can <span class = "link" onClick = "window.open('http://www.nytimes.com/health/guides/disease/brain-tumor-adults/prognosis.html')">persist throughout the remainder of a victim's life</span>, thus necessitating further research to eliminate this unecessary threat. 
+                        The impacts of Brain Cancer are everywhere. <span class = "link" onClick = "window.open('http://www.abta.org/about-us/news/brain-tumor-statistics/')">Nearly 700,000 people</span> in the United States are currently living with Brain Cancer, with over <span class = "link" onClick = "window.open('http://www.abta.org/about-us/news/brain-tumor-statistics/')"> 191 cases being discovered</span> each and every day worldwide. While the threat of Brain Cancer can impact anyone, it is statistically more common in younger children and older adults. In fact, Brain Cancer accounts for <span class = "link" onClick = "window.open('http://health.usnews.com/health-conditions/cancer/brain-tumor/overview')">25 percent of all cancers</span> seen in children. The side effects of Brain Cancer can <span class = "link" onClick = "window.open('http://www.nytimes.com/health/guides/disease/brain-tumor-adults/prognosis.html')">persist throughout the remainder of a victim's life</span>, thus necessitating further research to eliminate this unecessary threat. 
                         
                 
 						<br />
 						<br />
-                        Let us now delve into the specifics of each varient of Brain Cancer in an effort to better understand their significance. Below is a chart that details the estimated survival rates for those diagnosed with Brain Cancer. As you can see, the issue is quite severe, with just 33 percent of patients surviving the first five years after diagnosal. In fact, the majority of people <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/cancer-info/cancerstats/types/brain/survival/brain-and-central-nervous-system-cancer-survival-statistics')">do not survive even a single year</span> after being diagnosed. 
+                        Let us now delve into the specifics of each varient of Brain Cancer in an effort to better understand their significance. Below is a chart that details the estimated survival rates for those diagnosed with Brain Cancer. As you can see, the issue is quite severe, with just over 40 percent of patients surviving the first five years after diagnosal. In fact, the majority of people <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/cancer-info/cancerstats/types/brain/survival/brain-and-central-nervous-system-cancer-survival-statistics')">do not survive even a single year</span> after being diagnosed. 
 
 						<br />
 						<br />
@@ -218,7 +220,9 @@
 											<br />
 											<br />
                                             
-                                            It is also worth noting that while the causes of Primary Brain Cancer remain <span class = "link" onClick = "window.open('http://www.nlm.nih.gov/medlineplus/ency/article/007222.htm')">largely unknown</span>, it has been theorized that some inherited conditions could increase the risk of this form of cancer. More research is needed in order develop our understanding of not only what causes Brain Cancer, but also the steps that we can take to avoid it.			
+                                            It is also worth noting that while the causes of Primary Brain Cancer remain <span class = "link" onClick = "window.open('http://www.nlm.nih.gov/medlineplus/ency/article/007222.htm')">largely unknown</span>, it has been theorized that some inherited conditions could increase the risk of this form of cancer. More research is needed in order to develop both our understanding of what causes Brain Cancer and the steps that we can take to avoid it.
+											
+											
 						
 						</p>
 									</dd>
@@ -238,7 +242,7 @@
 											<br />
 											<br />
 											
-										One major issue with the discovery of Meningiomas is the degree to which they can remain dormant for long periods of time, growing silently until they become too late to stop. While they grow relatively slowly, they often reach fairly large sizes before altering the typical functioning of the brain, something which makes early treatment of Meningiomas a challenge. 
+										One major issue with the discovery of Meningiomas is the degree to which they can remain dormant for long periods of time, growing silently until they become too large to stop. While they grow relatively slowly, they often reach fairly large sizes before altering the typical functioning of the brain, something which makes early treatment of Meningiomas a challenge. 
 											
 										
 											
@@ -256,7 +260,7 @@
 										<br />
 										<br />
 										
-										The symptoms of Glioblastomas may on the surface seem fairly similar to those of Meningiomas. They include: memory loss, nausea, headaches, and alterations in personality. However, because the cancerous cells come from normal brain cells, it is easy for them to invade healthy brain tissue. This accelerates the timetable of the cancer, making it easier to discover whilst also making it more dangerous to contract. 
+										The symptoms of Glioblastomas may on the surface seem fairly similar to those of Meningiomas. They include: memory loss, nausea, headaches, and alterations in personality. However, because the cancerous cells come from normal brain cells, it is easy for them to invade healthy brain tissue. This accelerates the timetable of the cancer, making it easier to discover while also making it more dangerous to contract. 
 
                                             
                                             <br />
@@ -282,11 +286,11 @@
 					    
 						<br />
 						
-						   While recent years have seen phenomenal technological advancements that have proven to be very effective in terms of saving lives, Brain Cancer remains a tremendous issue that demands public attention. As can be seen below, the prognosis held after contracting Brain Cancer is certaintly nowhere near acceptable levels. However, we will highlight some advancements that are being made in this field in an effort to increase the exposure levels of those trying to make a positive change and save innocent lives. 
-						
+						   While recent years have seen phenomenal technological advancements that have proven to be very effective in terms of saving lives, Brain Cancer remains a tremendous issue that demands public attention. As can be seen below, the prognosis held after contracting Brain Cancer is certainly nowhere near acceptable levels. It is for this reason that we will highlight some advancements that are being made in this field in the hope that it will increase the exposure levels of those trying to make a positive change and save lives. 
 					
 						
 				
+						<br />
 						<br />
 						
 						<div id = "center_element">
@@ -307,8 +311,7 @@
 						<br />
 							<div class = "smallest_header" style = "text-decoration:none;">What is being done?</div>
 						<br />
-                           
-                            Before we delve into the specifics of what is being done, we must first realize that the <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/brain-tumour/about/brain-tumour-risks-and-causes')">cause of Brain Cancer is currently unknown</span>. That being said, progress has been made in terms of identifying several risk factors which may increase the likelyhood of a particular individual contracting this terrible disease. As the gears of technological advancement continue to turn, it is hoped that further research will not only clarify the origins of Brain Cancer, but also reveal steps that we can take to combat it. 
+                        Before we delve into the specifics of what is being done, it is important to first realize that the <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/brain-tumour/about/brain-tumour-risks-and-causes')">cause of Brain Cancer is currently unknown</span>. That being said, progress has been made in terms of identifying several risk factors which may increase the likelyhood of a particular individual contracting this terrible disease. As the gears of technological advancement continue to turn, it is hoped that further research will not only clarify the origins of Brain Cancer, but also reveal steps that we can take to combat it. 
                             
                      
                             
@@ -327,7 +330,7 @@
                                             <br />
                                             <br />
                                             
-                                            The results were shocking, with 70 percent more patients surviving past the two year mark. In fact, the average survival rate for patients recieving this antiviral treatment was three years higher than those only exposed to traditional treatement measures. As Steinbacher, one of the patients recieving this innovative treatement, put it, "I know I am alive today because of Dr. Cobbs."
+                                            The results were shocking, with 70 percent more patients surviving past the two year mark. In fact, the average survival rate for patients recieving this antiviral treatment was three years higher than those only exposed to traditional treatement measures. After recieving this innovative treatment, one of the patients went so far as to remark, "I know I am alive today because of <span class = "link" onClick = "window.open('http://www.swedish.org/physicians/charles-cobbs')">Dr. Cobbs</span>."
                                             
                                             <br />
                                             <br />
@@ -348,7 +351,7 @@
                                             <br />
                                             <br />
                                             
-                                            It is technology such as this that must be explored further in order to advance the fight against Brain Cancers. As Komotar himself puts it, "This game-changing technology provides hope for brain cancer patients who otherwise have no treatment options". 
+                                            It is technology such as this that must be explored further in order to advance the fight against Brain Cancers. As  <span class = "link" onClick = "window.open('http://uhealthsystem.com/doctors/profile/133093')">Komotar</span> himself puts it, "This game-changing technology provides hope for brain cancer patients who otherwise have no treatment options". 
                                             
                                        
                                          
@@ -367,7 +370,7 @@
 						<div id = "goFirst" class = "smaller_header">How to Help</div>
 						<br />
 						
-                            Brain Cancer has proven itself to be one of the most deadly diseases currently in the world today. While new research has done much to inspire feelings of hope, the battle ahead is long and cannot be won without increased exposure in the issue. In order to strike the issue at its core and prevent this terrible illness from taking more innocent lives, a change must be made. All of the options outlined below are great ways for anyone to serve as the catalyst that will bring about this change. 
+                            Brain Cancer has proven itself to be one of the most frightening diseases currently in the world today. While new research has done much to inspire feelings of hope, the battle ahead is long and cannot be won without increased exposure in the issue. In order to strike the issue at its core and prevent this terrible illness from taking more innocent lives, a change must be made. All of the options outlined below are great ways for anyone to serve as the catalyst that will bring about this change. 
                             
                            
                             
@@ -417,12 +420,12 @@
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
                                             
-                                            The <span class = "link" onClick = "window.open('http://braintumor.org')">National Brain Tumor Society</span> has been searching tirelessly for potential breakthroughs in Brain Cancer research for well over 30 years now. Their goal is simple: to provide hope for those currently afflicted with a form of Brain Cancer whilst also funding boundry-pushing research to ensure that this issue becomes one of the past. 
+                                            The <span class = "link" onClick = "window.open('http://braintumor.org')">National Brain Tumor Society</span> has been searching tirelessly for potential breakthroughs in Brain Cancer research for well over 30 years now. Their goal is simple: to provide hope for those currently afflicted with a form of Brain Cancer while also funding boundry-pushing research to ensure that this issue becomes one of the past. 
                                             
                                             <br />
                                             <br />
                                             
-                                            As it stands, the National Brain Tumor Society has awarded more than <span class = "link" onClick = "window.open('http://braintumor.org/advance-research/funded-research-and-accomplishments/')">31 million dollars across 244 top research and care grants</span>. This tremendous achievement is one that has not one that has not only saved lives in the past, but has also put in place valuable care systems that will continue to protect and improve the quality of innocent life well into the future.  Beyond directly funding individual research grants, they have also made a point to collaborate with several of the top authorities in Brain Cancer research in an effort to make the most out of every dollar donated to them. 
+                                            As it stands, the National Brain Tumor Society has awarded more than <span class = "link" onClick = "window.open('http://braintumor.org/advance-research/funded-research-and-accomplishments/')">31 million dollars across 244 top research and care grants</span>. This tremendous achievement is one that has not one that has not only saved lives in the past, but has also put in place valuable care systems that will continue to protect and improve the quality of life well into the future.  Beyond directly funding individual research grants, they have also made a point to collaborate with several of the top authorities in Brain Cancer research in an effort to make the most out of every dollar donated to them. 
                                             
                                             
                                          <br />
@@ -452,7 +455,7 @@
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('brain')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -487,53 +490,35 @@
 			<br />
 			<br />
 			
-       <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+       <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>	
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+		</footer>
+		
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

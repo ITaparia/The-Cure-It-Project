@@ -39,6 +39,10 @@
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
         <script src="Chart.js"></script>
+		
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+		
         <script type="text/javascript">
 		
 		window.onload = function(){
@@ -62,8 +66,9 @@
 		 
 	
 	    
-	    <div id='header_holder'>
-			<div id='header'>
+	     <div id='header_holder'>
+		
+		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
@@ -71,9 +76,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -81,7 +86,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
 			<span id = "move_all">
             
             <div id="parallax-main">
@@ -99,7 +105,7 @@
 			    
 			    <section>
 				    <div class="block">
-				    <p><div id = "center_element"><span class="first-character one" style = "font-size: 50px; font-size: 3.9vw;">FAQ</span></div>
+				    <p><div id = "center_element"><span class="first-character one" style = "font-size: 50px; font-size: 2.8vw;">Frequently Asked Questions</span></div>
 					
 					<div id = "move_down">
 					<div id = "move_down">
@@ -113,10 +119,10 @@
 							
 							<a href = "#anchor_up_first" class = "smoothScroll"> <span id = "menu_box_options">Questions About Cancer</span> </a>
 							<br/><br /><br />
-							<a href = "#anchor_up_second" class = "smoothScroll"> <span id = "menu_box_options">Questions About Us</span> </a>
+							<a href = "#anchor_up_second" class = "smoothScroll"> <span id = "menu_box_options">Questions About The Site</span> </a>
 							
 							<br/><br /><br />
-							<a href = "#anchor_up_second" class = "smoothScroll"> <span id = "menu_box_options">How can I help?</span> </a>
+							<a href = "#anchor_up_third" class = "smoothScroll"> <span id = "menu_box_options">How can I help?</span> </a>
 							
 						</div>
 						
@@ -268,7 +274,7 @@
 						<br />
 						
 						<div id = "anchor_up_second" class = "move_focus_up"> </div>
-						<div id = "goFirst" class = "smaller_header">Questions About Us</div>
+						<div id = "goFirst" class = "smaller_header">Questions About The Site</div>
 					    
 						<br />
 						Our goal is simple: to provide clear, accurate information that is easily accessible by everyone. We hope that we have met that goal, and that you have learned or continue to learn something from this website. This section serves to clear up any questions that you may have about us or this website. 
@@ -281,7 +287,7 @@
 									<dt><a class="accordionTitle3" href="#" style = "background-color:#28ABE3;">Who are you?</a></dt>
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-											<span id = "hidden_link" style = "font-size:18px;">We are four high school students from Palatine, Illinois.</span>
+											<span id = "hidden_link" style = "font-size:18px;">We are three high school students from Palatine, Illinois.</span>
 											
 												
 											<br />
@@ -293,16 +299,14 @@
 											<br />
 											<br />
 											
-											<span class = "slight_header">Ishan Taparia</span> - I am part of the 2016 graduating class at William Fremd High School. I am also a Co-Founder of a small company named Topbox Software, which regularly releases apps ranging from games to user productivity on the Google Play Store and the iOS App Store. I worked on the Cure It Project to hopefully change the lives of those affected by cancer.
+											<span class = "slight_header">Ishan Taparia</span> - I am part of the 2016 graduating class at William Fremd High School. I am also a Co-Founder of Topbox Software, which regularly releases apps ranging from games to user productivity on the Google Play Store and the iOS App Store. I worked on the Cure It Project to hopefully change the lives of those affected by cancer.
 											<br />
 											<br /> 
 											
 											<span class = "slight_header">Varun Pinto</span> -  I'm a developer for TopBox Software and a junior at William Fremd High. I enjoy programming, physics, lifting weights, ping pong and spending time with my friends and family. My work on the Cure It project primarily deals with back end coding with a specific focus on jQuery, JavaScript, and PHP.
 											
-											<br />
-											<br /> 
 											
-											<span class = "slight_header">Bissem Gill</span> - This stage of cancer occurs when the cancer has spread to other locations in the body. It may enter the blood stream and form colonies at various points around the body. Cancer at this stage is sometimes described as being <span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/diagnosing-cancer/stages-cancer')">advanced or metastatic</span>. 
+											
 											
 						</p>
 									</dd>
@@ -311,10 +315,6 @@
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
 											
-											<span id = "hidden_link" style = "font-size:18px;">We were all tired of inaction.</span>
-											
-												
-											<br />
 										
 											<span class = "slight_header">Zachary Jordan</span> - Cancer is an issue that has been present in my life for years. I have always played the role of the bystander, watching as friends and family members contracted and suffered from this terrible disease. I hope that my work on this website can serve as a catalyst for change in some small way. If a single person benefits from what we have done here, I will have accomplished this goal. 
 											
@@ -331,35 +331,26 @@
 											<br />
 											<br /> 
 											
-											<span class = "slight_header">Bissem Gill</span> - This stage of cancer occurs when the cancer has spread to other locations in the body. It may enter the blood stream and form colonies at various points around the body. Cancer at this stage is sometimes described as being <span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/diagnosing-cancer/stages-cancer')">advanced or metastatic</span>. 
+										
 
 	 
 					</p>
 					</dd>
 									
-										<dt><a class="accordionTitle3" href="#" style = "background-color: #DB3340">Autism</a></dt>
+										<dt><a class="accordionTitle3" href="#" style = "background-color: #DB3340">How are the mortality statistics found?</a></dt>
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-											It's not uncommon for medical terms to be thrown around when discussing cancer. While this site was written with the intention of being accessible to everybody, there are still some terms that are worth knowing in order to fully grasp the medical context of what cancer patients deal with everyday.
-										<br />
-										<br />
-										<span class = "slight_header">Chemotherapy</span> - The use of drugs to combat cancer and its side effects. Chemotherapy can be <span class = "link" onClick = "window.open('http://www.chemocare.com/chemotherapy/what-is-chemotherapy/what-is-chemotherapy-used-for.aspx#.VOeLrcaJmFI')">used for a variety of things</span>, including but not limited to: killing cancerous cells, preventing tumor growth, relieving symptoms, and shrinking tumors before surgury. 
-										<br />
-										<br />
-										<span class = "slight_header">Radiotherapy</span> - The use of high energy rays to treat cancer by <span class = "link" onClick = "window.open('http://www.macmillan.org.uk/Cancerinformation/Cancertreatment/Treatmenttypes/Radiotherapy/Generalinformation/Whatisit.aspx')">destroying mutated cells</span>. Although normal cells can sometimes be damaged through this practice, they can typically repair themselves. 
-										<br />
-										<br />
-										<span class = "slight_header">Metastasis</span> - The spread of cancer from the point of origin of the disease <span class = "link" onClick = "window.open('http://www.cancer.org/treatment/understandingyourdiagnosis/advancedcancer/advanced-cancer-what-is-metastatic')">to another location in the body</span>. The cancer is often much harder to contain once metastasis has occured. 
+											We used the United States as a basis for many statistics. Most notably, all of the annual diagnosal and mortality rates found in the <span class = "link" onClick = "window.open('diseases.html')">disease pages</span> are extrapolated from data gathered primarily in the United States. This means that these numbers are not inclusive of countries outside of the United States. 
 										
 										<br />
 										<br />
-										<span class = "slight_header">Remission</span> - A cancer patient is in remission when cancer symptoms disapear or are reduced. This is referred to as partial remission and complete remission respectively. 
-										
-										
+											This was done in the interest of ensuring that we deliver accurate information to all who view this website. Data involving all-inclusive mortality and diagnosal rates are not typically avaliable for recent years, and we wanted to ensure that our website is established with the most up to date information currently avaliable. 
+											
 										<br />
 										<br />
-										<span id = "hidden_link" class = "link" onClick = "window.open('http://kidshealth.org/kid/cancer_center/words_to_know/cancer_glossary.html?tracking=K_RelatedArticle')">To learn more about important terms, click here!</span>
-									
+										
+										The majority of other data, such as the specifics regarding advancements in treatment and information regarding the credibility of certain charities, is universal and is not specific to the United States.
+							
 										
 											
 											
@@ -370,30 +361,29 @@
 								</div>
 							<div class="accordion4">
 								<dl>
-									<dt><a class="accordionTitle4" href="#memes" style = "background-color: #E8B71A;">kek</a></dt>
+									<dt><a class="accordionTitle4" href="#memes" style = "background-color: #E8B71A;">Why should I trust the content of this site?</a></dt>
 									<dd class="accordionItem4 accordionItemCollapsed4">
 										<p>
-											Cancer is one of the most prominent diseases in our world today. <span class = "link" onClick = "window.open('http://www.who.int/mediacentre/factsheets/fs297/en/')">Fourteen million new cases</span> of cancer are diagnosed each year, with well over <span class = "link" onClick = "window.open('http://www.who.int/mediacentre/factsheets/fs297/en/')">eight million of those cases</span> resulting in death. In fact, someone died from cancer in the time it took for you to read this sentence. 
+											Full disclosure: all of the content is written by us unless noted otherwise. This is because the fundemental purpose of this website is to simplify complex topics so that everyone can understand them, even those who lack a background in the medical field.
+										
+										<br />
+										<br />
+											That said, we also wanted to ensure that the information that we report on is up to date and accurate. In adherance to this, we back up every major claim that we make with a reputable source. Any reputable source will be marked with light gray text, <span class = "link" onClick = "swal('You clicked a link!', 'This will usually redirect to a new page', 'success')">like this</span>. We encourage all visitors of the site to follow these links and learn more about the important topics associated with them. 
+											
+										<br />
+										<br />
+										
+										If you do happen to spot an error, be sure to let us know about it in our <span class = "link" onClick = "window.open('form.html')">feedback page</span>. We take misinformation very seriously, and will correct all such errors as soon as they come to our attention. 
+											
 											
 											
 										
-                                            <br />
-                                            <br />
-											While cancer may seem entirely random in who it strikes, there are some patterns which may someday guide us towards reducing the occurance rate of the disease. For instance, <span class = "link" onClick = "window.open('http://www.cancer.org/acs/groups/content/@epidemiologysurveilance/documents/document/acspc-027766.pdf')">around 78 percent of all cancer cases</span> in economically developed countries are in people over the age of 55. 
-											
-											<br />
-											<br />
-											<span id = "hidden_link">You can help right this wrong by clicking on the button below.</span>
-											
-											<br />
-											
-											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('donate.html')">Donate</span>
 										</p>
 									</dd>
 									<dt><a href="#memes" class="accordionTitle4" style = "background-color:#8258FA;">How can we get in touch?</a></dt>
 									<dd class="accordionItem4 accordionItemCollapsed4">
 										<p>
-											It's easy to get in touch with us. We welcome everything, from questions regarding the website to hate mail. The middle button will allow you to send a message to everybody who participated in the creation of this website. The other two buttons will open up Zachary and Ishan's personal websites respectively. Don't hesitate to reach out!
+											It's easy to get in touch with us. We welcome everything, from questions regarding the website to requests on additional content that you would like us to cover. The middle button will allow you to send a message to everybody who participated in the creation of this website. The other two buttons will open up Zachary and Ishan's personal websites respectively. Don't hesitate to reach out!
 											<br />
 											<br />
 											<div id = "center_elements">
@@ -403,11 +393,6 @@
                         <div id = "button_special" onClick = "window.open('form.html')">Feedback</div>
                         <div id = "button_special" onclick = "openFAQ()">Ishan's Website</div>
                         
-                        <!--
-					    <div id = "button_special">Stories</div>
-					    <div id = "button_special" onClick = "openDisease()">Diseases</div>
-					    <div id = "button_special">FAQ</div>
-					     -->
 					</div>
 					
 											
@@ -433,59 +418,63 @@
 						<div id = "goFirst" class = "smaller_header">How to Help</div>
 						<br />
 						
-						Colorectal Cancer is one of the most prominent forms of cancer currently active in the world today. It claims tens of thousands of lives each and every year, and tears lives apart through the crippling effect that it can sometimes have on those who experience it. Thankfully, there do exist a number of organizations with the courage and foresight to stand against this terrible disease. All of the options below are valuable resources with which to take an active stance against Colorectal Cancers. 
+						The problem that cancer presents to us is tremendous, and the resources we have at our disposal to fight it equally so. There exist countless ways to fight cancer, many of which can be accessed without spending a single cent. This portion of the website will be split into three sections in order to best engage everyone in the fight against cancer. With options that take donations in the forms of both time and money, there's a role for each of us in the fight against cancer. 
+						
+						
+						
 						<br /><br />	
 						
 						
                             
                             <div class="accordion5">
 								<dl>
-									<dt><a class="accordionTitle5" href="#b0ss" style = "background-color: #FDB45C;">Fight Colorectal Cancer</a></dt>
+									<dt><a class="accordionTitle5" href="#b0ss" style = "background-color: #FDB45C;">Money related options</a></dt>
 									<dd class="accordionItem5 accordionItemCollapsed5">
 										<p>
-											<span class = "link" onClick = "window.open('http://fightcolorectalcancer.org')">Fight Colorectal Cancer</span> has been on the front lines of the fight against Colorectal Cancers for years now. They have dedicated themselves to promoting the development of new treatments as well as making sure the public is well educated on the causes of Colorectal Cancers, something that has done much to inspire hope in those who suffer from it. 
+											To start, all of the options outlined in <span class = "link" onClick = "window.open('donate.html')">our donation page</span> are excellent ways of donating to specific forms of cancer. These charities allow people to support the forms of cancer that have been the most impactful in their lives. 
+											
 											
 											<br />
 											<br />
+											However, it is an equally worthy cause to donate to cancer research in general. This can be achieved by donating to organizations such as <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/support-us/donate/donate-money')">Cancer Research UK</span>, who promote and fund life saving research that has changed the face of cancer treatment in years past.
+										
+										<br />
+										<br />
+											Another general option can be seen through the <span class = "link" onClick = "window.open('https://donate.cancer.org/index')">American Cancer Society</span>, whose incredible vision and forsight in the field of cancer research has proved to be instrumental in furthering the practice as a whole. 
 											
-											They fight against Colorectal Cancers in five main ways: advocacy, awareness generation, providing patients with resources, funding research, and philanthropy. All of these efforts have combined to make them a fortible contender in the fight against this disease. They have managed to do all of this while ensuring financial and ethical transparency, achieving an <span class = "link" onClick = "window.open('http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=13819#.VOZbGcaJmFI')">A+ rating on Charity Navigator</span> in this regard. 
+										
+											<br />
+											<br />
+											Every penny donated towards these bold organizations serves to fund research and public awareness programs that have historically been responsible for saving countless lives. 
 											
-											<br />
-											<br />
-											In addition to this, they have optained a <span class = "link" onClick = "window.open('http://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=13819#.VOZcjcaJmFJ')">4 star rating</span> on Charity Navigator, meaning that all funds donated to them will be allocated responsibly and in a manner that is consistent with those who aim to fight Colorectal Cancers. You can join them in their battle by clicking on the button below to donate. 
-											<br />
-											<br />
-											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('https://give.fightcrc.org/checkout/donation?eid=26925')">Donate</span>
 										</p>
 									</dd>
 									
 									<!-- span is put in place to avoid strange alteration on '&' symbol -->
 									
-									<dt><a class="accordionTitle5" href="#b0ss" style = "background-color: #F7464A">The NCCRA</a></dt>
+									<dt><a class="accordionTitle5" href="#b0ss" style = "background-color: #F7464A">Time and skill related options</a></dt>
 										
 								
 									<dd class="accordionItem5 accordionItemCollapsed5">
 										<p>
-											The <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance')">NCCRA (National Colorectal Cancer Alliance)</span> has made it their mission to eradicate the threat of Colorectal Cancers once and for all. They attempt to do this by promoting and raising funding for medical screenings, scientific tests, and treatments. They hope that their efforts will one day prove successful enough to yield a cure, and they have been selflessly pursuing this goal since their founding in 2000.	
+											The fight against cancer is also accessible by those who are unwilling or unable to spend the money necessary to further it. Time and talent are two valuable resources that are in high demand as it is direct action of this nature that fuels life-saving projects in the first place. 
+																						
+											<br />
+											<br />
+											
+											One of the most direct ways to donate skills to the battle against cancer can be seen through <span class = "link" onClick = "window.open('https://fcancer.org')">the F Cancer project</span>. The F Cancer project enables skilled individuals to donate their talents by the hour to various charities, allowing them to gain experience while also furthering the work of charities. The flexible nature of the project means that donating your time is easy. The project is adaptive to your schedule, so there's no excuse for not giving it a shot. You can learn more about the F Cancer project by <span class = "link" onClick = "window.open('https://fcancer.org/about/howitworks')">clicking here to discover how it works</span>. 
 											
 											<br />
 											<br />
-											They have raised well over 33 million dollars to date, and have provided thousands of patients with advanced technologies that make their lives more comfortable and fulfilling. One such advancement that they have funded has been the development of a <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance/content/funding-cutting-edge-colorectal-c')">DNA-based stool test</span> that can detect the gene mutation that led to the occurance of the disease. This provides researches everywhere with more data with which to construct future treatment plans. 
+											Another great way to donate your time and expertise can be found through <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org')">Cancer Research UK's</span> volunteer and charity opportunities. As one of the most prominent cancer opposition charities in the world, Cancer Research UK offers people everywhere a mechanism with which to further the fight against this terrible disease. From participating in local events to gathering experience as an intern, there's something avaliable for everybody. You can find out more by <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/support-us/volunteer')">clicking here to learn about such opportunities</span>. 
 											
-											
-											<br />
-											<br />
-											All of this has been accomplished while ensuring a great deal of financial transparency. They keep detailed records as to where donations are directed towards, and <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance/content/where-does-money-go')">maintain a running list</span> of where the most prominent investments lie. It is through their contributions that researchers around the world can harness the tools that they need to make the issue of Colorectal Cancers one of the past. You can help them achieve this goal by clicking on the button below to donate. 
-											<br />
-											<br />
-											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('http://www.eifoundation.org/content/donate-nccra')">Donate</span>
 										</p>
 										</dd>
 									
-										<dt><a class="accordionTitle5" href="#b0ss" style = "background-color: #46BFBD">Fight At No Cost</a></dt>
+										<dt><a class="accordionTitle5" href="#b0ss" style = "background-color: #46BFBD">Outreach options</a></dt>
 									<dd class="accordionItem5 accordionItemCollapsed5">
 										<p>
-											The internet has made it possible to join the fight against Colorectal Cancers without spending a single penny. This is the power of word of mouth, the power of sharing our thoughts and ideas to make a change. You can click on the buttons below to get started. Spread the word! 
+											The advancement of the internet has made it possible to join the fight against cancer without spending a single penny. It only takes a few seconds to spread the word about the fight, and to get people engaged on a larger scale. This is the power of word of mouth, the power of sharing our thoughts and ideas to make a change. You can click on the buttons below to get started. Spread the word! 
 											
 											<div id = "button_wrapper">
 												
@@ -513,17 +502,12 @@
 					
 								</div>
 								
-                            <br />
-						<p class="line-break margin-top-10"></p>
+								
 						
-					 <br />
+					 <br /> <br /> <br />
 					 <div id = "center_element">
 						 
-					 	<div id = "button_special" onClick = "openDisease()">Back to Diseases</div>
-				   	 </div>
-					  <br />
-					  <br /> 
-					  <br />
+						 
 					  
 				    </div>
 			    </section>
@@ -533,53 +517,35 @@
 			<br />
 			<br />
 			
-       <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+      <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+		</footer>
+		
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

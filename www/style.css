@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600);
 
 *
 {
@@ -33,6 +34,11 @@ body
 	top:64px;
     font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif; 
     font-weight:lighter;
+}
+
+#title_text:hover
+{
+	cursor:default;
 }
 
 .title_hover_element
@@ -408,6 +414,22 @@ float: left;
 	background-position: center center;
 }
 
+#parallax-main .parallax-thyroid
+{
+	padding-top: 170px; 
+	padding-bottom: 170px; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-image: url(thyroid.jpg);
+	 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
 #parallax-main .parallax-oral
 {
 	padding-top: 170px; 
@@ -448,6 +470,70 @@ float: left;
 	position: relative; 
 	width: 100%; 
 	background-image: url(colorectal.jpg);
+	 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
+#parallax-main .parallax-lung
+{
+	padding-top: 170px; 
+	padding-bottom: 170px; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-image: url(lung.png);
+	 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
+#parallax-main .parallax-lymph
+{
+	padding-top: 170px; 
+	padding-bottom: 170px; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-image: url(lymphoma_snap.jpg);
+	 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
+
+#parallax-main .parallax-endo
+{
+	padding-top: 170px; 
+	padding-bottom: 170px; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-image: url(endo.png);
+	 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+#parallax-main .parallax-ovar
+{
+	padding-top: 170px; 
+	padding-bottom: 170px; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-image: url(ovarian.jpg);
 	 
 	background-size: cover; 
 	-moz-background-size: cover; 
@@ -520,6 +606,38 @@ float: left;
 	background-position: center center;
 }
 
+#parallax-main .parallax-bones
+{
+	padding-top: 170px; 
+	padding-bottom: 170px; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-image: url(bone_cancer.jpg);
+	 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
+#parallax-main .parallax-panc
+{
+	padding-top: 170px; 
+	padding-bottom: 170px; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-image: url(panc.jpg);
+	 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
 
 #parallax-main .parallax-eye
 {
@@ -545,6 +663,22 @@ float: left;
 	position: relative; 
 	width: 100%; 
 	background-image: url(skincancer.jpg);
+	 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
+#parallax-main .parallax-lymphoma
+{
+	padding-top: 170px; 
+	padding-bottom: 170px; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	background-image: url(lymphoma.jpg);
 	 
 	background-size: cover; 
 	-moz-background-size: cover; 
@@ -614,9 +748,29 @@ a
     text-decoration: none;
 }
 
+#center_this
+{
+	position: relative;
+	line-height:1.7;
+	-webkit-box-align:center;
+-webkit-box-pack:center;
+display:-webkit-box;
+}
+
 .link
 {
-    color:#585858;
+   color:#585858; 
+}
+
+.link2
+{
+   color:#212121; 
+}
+
+.link2:hover
+{
+	text-decoration: underline;
+	cursor:pointer;
 }
 
 a:link
@@ -830,6 +984,7 @@ a:visited
     display: none;
     bottom: 60px;
     right: 90px;
+	z-index:999;
 }
 
 .scrollup:hover
@@ -853,6 +1008,14 @@ a:visited
 {
 	background-color:#F8E0E6;
 	height:350px;
+	width:100%;
+	text-align: center;
+}
+
+#menu_box_two
+{
+	background-color:#F8E0E6;
+	height:410px;
 	width:100%;
 	text-align: center;
 }
@@ -928,7 +1091,7 @@ a:visited
 #picture_text_lung
 {
 	position:relative;
-	top:60px;
+	top:85px;
 	font-size: 30px;
     font-size: 3.5vw;
 }
@@ -2080,7 +2243,7 @@ a:visited
 #twitter_button
 {
 	cursor:pointer;
-	
+	color:white;
 	line-height:60px;
 	background-color:#55acee;
 	height:60px;
@@ -2108,6 +2271,7 @@ a:visited
 #facebook_button
 {
 	cursor:pointer;
+	color:white;
 	line-height:60px;
 	background-color:#3b5998;
 	height:60px;
@@ -2321,13 +2485,13 @@ a:visited
 	cursor:pointer;
 }
 
-#footer_section
+/*#footer_section
 {
 	background-color:black;
 	position:absolute;
 	width:100%;
 	height:164px;
-}
+}*/
 
 #link_header
 {
@@ -2503,7 +2667,7 @@ display: inline-block;
     height:65%;
     width:582px;;
     left:300px;
-    top:300px;
+    top:450px;
     right: 0;
     left: 0;
     margin: auto;
@@ -2698,14 +2862,14 @@ li
 	list-style-type: none;
 }
 
-ul {
+/*ul {
   float:left;
   width:100%;
   margin:2em 0;
   padding:0;
   position:relative;
   list-style-type: none;
-}
+}*/
 
 .empty-item {
   background:#0C0A37;
@@ -2774,3 +2938,522 @@ ul {
       position: relative; }
  }
 /*This marks the end of code from materialize.css*/
+
+
+#footer_section {
+	width:100%;
+	position:absolute;
+	left: 0;  
+	background-color:black;
+	z-index:100;
+	height:200px;
+}
+
+#copywrite_bar {
+	position: absolute;
+	width: 100%;
+	/* text-align: center; */
+	background: rgba(255, 255, 255, 0.13);
+	height: 35px;
+	font-size: 10px;
+	padding-top: 6px;
+	bottom: 0px;
+	font-family: 'Avenir Next W01', 'Avenir Next', 'Proxima Nova', 'Myriad Pro', Helvetica, Calibri, sans-serif;
+	font-weight: lighter;
+}
+
+#copywrite {
+	color:white;
+	margin-left: 3%;
+	letter-spacing:3px;
+	font-size: 1.1em;
+}
+#footer_content .footer_text, .footer_header{
+	display: inline-block;
+	font-family: 'Avenir Next W01', 'Avenir Next', 'Proxima Nova', 'Myriad Pro', Helvetica, Calibri, sans-serif;
+	width:50%;
+	margin-top: 1%;
+	margin-left: 3%;
+}
+
+#footer_links .footer_sources{
+	display: inline-block;
+	font-family: 'Avenir Next W01', 'Avenir Next', 'Proxima Nova', 'Myriad Pro', Helvetica, Calibri, sans-serif;
+	width:25%;
+	vertical-align:top;
+}
+
+#ishan_is_a_faggot{
+	display:inline-block;
+	color:white;
+}
+
+.footer_sources{
+	list-style-type: none;
+	color:white;
+}
+
+.footer_header {
+	color:white;
+	font-size: 25px;
+}
+
+.footer_text {
+	color:white;
+	font-size: 16px;
+}
+ 
+
+#list_style:link {
+    text-decoration: none;
+	
+}
+
+#list_style:hover {
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+#list_style_second
+{
+	color:#585858
+}
+
+#list_style_second:hover
+{
+	cursor:pointer;
+	color:#FFFFFF;
+}
+
+#list_style: active {
+	text-decoration: none;
+	
+
+}
+
+#learn_more_button
+{
+	position: absolute;
+	top:70%;
+	background-color:#E57373;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	font-size:22px;
+	width:85%;
+	 -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#learn_more_button:hover
+{
+	cursor:pointer;
+}
+
+
+#Jamals_story {
+	/*position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 65%;
+	background-color: #FFFFFF;*/
+	display: block;
+	position: relative;
+	background-color:white;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	width: 95%;
+	height: 25vw;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.cancer_person{
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 25%;
+	height: 92%;
+	background-color: #03A9F4;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 1%;
+}
+
+.first
+{
+	
+	top:20%;	
+}
+
+.second
+{
+	top:45%;
+}
+
+.third
+{
+	top:70%;
+}
+
+#disease_button
+{
+	
+	position: absolute;
+	height:60px;
+	line-height:60px;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#E57373;
+	text-align:center;
+	font-size:1.4vw;
+	width:80%;
+	 -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#disease_button:hover
+{
+	cursor:pointer;
+}
+
+#disease_button:active
+{
+	background-color:#D96062;	
+}
+
+#learn_more_button:active
+{
+	background-color:#D96062;	
+}
+
+.relative_wrap:active
+{
+	position: relative;
+	top:1px
+}
+
+.person_name{
+	text-align:center;
+	
+	font-size: 2vw;
+	padding-top:5%;
+}
+
+#move_relative_up
+{
+	position: relative;
+	top:-5px;
+}
+
+#jamals_picture{
+	position: relative;
+	margin-left: 30%;
+	margin-right: 23%;
+	margin-top: 10%;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	width: 38%;
+	height: 40%;
+	-moz-border-radius: 100%;
+	background: url(analyhairy.jpg) no-repeat;
+	background-size: cover;
+}
+
+.blurb{
+	margin-left:1px;
+	margin-right:1px;
+	text-align:center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1vw;
+	padding-top: 25%;
+}
+
+.personal_story{
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 50%;
+	height: 92%;
+	background-color: #03A9F4;
+	margin-top: 1%;
+}
+
+.personal_story h1{
+	padding-left: 3%;
+	padding-top: 3%;
+	padding-bottom:5px;
+	font-size: 2vw;
+	font-weight: 600;
+}
+
+.personal_story p{
+	padding-top:0%;
+	padding-left:3%;
+	padding-right:1%;
+	
+	font-size: 1.25vw;
+	line-height: 1.5vw;
+	font-weight: 300;
+}
+
+.contact_info{
+	display: inline-block;
+	position: relative;
+	width: 20.99%;
+	height: 92%;
+	background-color:  #03A9F4;
+	margin-left: 1%;
+	margin-right: 1.0%;
+	margin-top: 1%;
+	float: right;
+}
+
+.contact_info h1{
+	margin-top:7px;
+	text-align:center;
+	font-size:2vw;
+	font-weight:400;
+	padding-top:3%;
+	color: white;
+}
+
+.contact_info ul{
+	list-style-type: none;
+}
+
+.contact_info li{
+	/*padding-top: 10%;
+	padding-left: 5%;*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1vw;
+	font-weight: 400;
+	height: 65px;
+}
+
+.email_list{
+	width:12%;
+}
+
+.emlist{
+	background-image: url(email19.svg);
+	background-size: 10%;
+	/*background-position: 20px 30px;*/
+	background-repeat: no-repeat;
+	margin-top: 12%;
+	margin-left: 11%;
+}
+
+.website_list{
+	width:12%;
+}
+
+.weblist{
+	background-image: url(domain2.svg);
+	background-size: 10%;
+	/*background-position: 20px 30px;*/
+	background-repeat: no-repeat;
+	margin-top: 12%;
+	margin-left: 11%;
+}
+
+.twitter_list{
+	width:12%;
+}
+
+.twitlist{
+	background-image: url(twitter1.svg);
+	background-size: 10%;
+	/*background-position: 23px 32px;*/
+	background-repeat: no-repeat;
+	margin-top: 12%;
+	margin-left: 11%;
+}
+
+#Ishans_story {
+	/*position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 65%;
+	background-color: #FFFFFF;*/
+	display: block;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.6);
+	margin-top: -5%;
+	margin-bottom: 10%;
+	width: 95%;
+	height: 25vw;
+	margin-left:2.5%;
+}
+
+#ishans_picture{
+	position: relative;
+	margin-left: 30%;
+	margin-right: 23%;
+	margin-top: 10%;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	width: 38%;
+	height: 40%;
+	-moz-border-radius: 100%;
+	background: url(analyhairy.jpg) no-repeat;
+	background-size: cover;
+}
+
+#zachs_story {
+	/*position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 65%;
+	background-color: #FFFFFF;*/
+	display: block;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.6);
+	margin-top: -5%;
+	margin-bottom: 10%;
+	width: 95%;
+	height: 25vw;
+	margin-left:2.5%;
+}
+
+#mid_point
+{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:68%;
+	 left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+	background-color:white;
+}
+
+#zachs_picture{
+	position: relative;
+	margin-left: 30%;
+	margin-right: 23%;
+	margin-top: 10%;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	width: 38%;
+	height: 40%;
+	-moz-border-radius: 100%;
+	background: url(analyhairy.jpg) no-repeat;
+	background-size: cover;
+}
+/*.story_container{
+	position:absolute;
+	top:-50em;
+	width:98vw;
+}*/
+
+#disease_box
+{
+	/*background-color:#90CAF9;*/
+	background-color:#F9AD23;
+	position: relative;
+	margin-top:60px;
+	width:95%;
+	height:300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.story_header
+{
+	color:white;
+	position: relative;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+	font-size:30px;
+	top:20px;
+}
+
+.story_disease_box
+{
+	color:white;
+	position: relative;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+	font-size:20px;
+	top:35px; height: 100px;
+  line-height: 100px;
+
+}
+
+.story_disease_button_wrapper
+{
+	color:white;
+	position: relative;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+	font-size:20px;
+	top:35px;
+	top:70px;
+}
+
+
+.story_disease_button
+{
+	background-color:#03A9F4;
+	position: relative;
+	height:55px;
+	width:205px;
+	text-align:center;
+	line-height:55px;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	display:inline-block;
+}
+
+.story_disease_button:active
+{
+	top:1px;
+}
+
+.story_disease_button:hover
+{
+	cursor:pointer;
+}
+
+#question
+{
+	color:black;
+	position: relative;
+	
+	font-size:22px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+.answer_style
+{
+	font-style:italic;
+}

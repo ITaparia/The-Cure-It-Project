@@ -1,6 +1,8 @@
+
 function openFactStats()
 {
-	window.alert("meme")
+	window.alert("great meme");
+	window.alert("Ishan is a dip.");
 	//window.location = "http://www.lls.org/diseaseinformation/getinformationsupport/factsstatistics/";
 }
 
@@ -8,13 +10,13 @@ function openFactStats()
 
 	 var pieDataLung = [
 				{
-					value: 80,
+					value: 85,
 					color:"#F7464A",
 					highlight: "#FF5A5E",
 					label: "NSC Lung Cancer"
 				},
 				{
-					value: 15,
+					value: 10,
 					color: "#46BFBD",
 					highlight: "#5AD3D1",
 					label: "SC Lung Cancer"
@@ -28,6 +30,286 @@ function openFactStats()
                 
 
 			];
+			
+			 var pieDataOvar = [
+				{
+					value: 66,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Those who did not Survive Five Years"
+				},
+				{
+					value: 44,
+					
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Those who Survived Five Years or more"
+				}
+				
+                
+
+				];
+			
+			var lineChartDataPancreas = {
+			labels : ["1992","1994","1996","1998","2000","2002","2004","2006","2008","2010"],
+			datasets : [
+				{
+					label: "Pancreatic Cancer Mortality Rate",
+					fillColor : "rgba(220,220,220,0.2)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					pointHighlightFill : "#fff",
+					pointHighlightStroke : "rgba(220,220,220,1)",
+					data : [5.6,5.4,5.1,4.8,4.5,4.3,4.2,3.8,3.5,3.4]
+				},
+				
+			]
+
+		}
+		
+		var pieDataEndo = [
+				{
+					value: 92,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Endometrial Carcinomas"
+				},
+				{
+					value: 8,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Uterine Sarcomas"
+				}
+			];
+
+		var lineChartDataEndo = {
+					labels: ["1975", "1980", "1985", "1990", "1995", "2000", "2005", "2010"],
+		    datasets: [
+		        {
+		            label: "Endometrial Cancer Death Rate",
+		            fillColor: "rgba(220,220,220,0.2)",
+		            strokeColor: "rgba(220,220,220,1)",
+		            pointColor: "rgba(220,220,220,1)",
+		            pointStrokeColor: "#fff",
+		            pointHighlightFill: "#fff",
+		            pointHighlightStroke: "rgba(220,220,220,1)",
+		            data: [5.3, 5.2, 5.1, 4.8, 4.7, 4.8, 4.6, 4.5]
+		        }
+		    ]
+		}
+		
+		var pieDataBone = [
+				{
+					value: 56,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Osteosarcomas"
+				},
+				{
+					value: 34,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Ewing Tumors"
+				},
+				{
+					value: 6,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Chondrosarcomas"
+				},
+				{
+					value: 4,
+					color: "#0040FF",
+					highlight: "#2E64FE",
+					label: "Other"
+				}
+                
+
+			];
+			
+			var pieDataLymphoma = [
+				{
+					value: 26,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Prostate"
+				},
+				{
+					value: 14,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Lung and Bronchus"
+				},
+                {
+					value: 8,
+					color:"#FDB45C",
+					highlight: "#FF5A5E",
+					label: "Colon and Rectum"
+				},
+                {
+					value: 7,
+					color:"#1FDA9A",
+					highlight: "#FF5A5E",
+					label: "Urinary Bladder"
+				},
+                {
+					value: 5,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Melanoma of the Skin"
+				},
+                {
+					value: 5,
+					color:"#46BFBD",
+					highlight: "#FF5A5E",
+					label: "Non-Hodgkin's Lymphoma"
+				},
+                {
+					value: 5,
+					color:"#FDB45C",
+					highlight: "#FF5A5E",
+					label: "Kidney and Renal Pelvis"
+				},
+                {
+					value: 4,
+					color:"#1FDA9A",
+					highlight: "#FF5A5E",
+					label: "Oral Cavity and Pharynx"
+				},
+                {
+					value: 4,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Leukemia"
+				},
+                {
+					value: 3,
+					color:"#46BFBD",
+					highlight: "#FF5A5E",
+					label: "Liver and Intrahepatic Bile Duct"
+				}
+			];
+
+var lineChartDataLymphoma = {
+			labels: ["1990", "1995", "2000", "2005", "2010"],
+    datasets: [
+        {
+            label: "NHL Death Rate",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [7.9, 8.7, 8.2, 6.9, 6.1]
+        },
+        {
+            label: "HD Mortality Rate",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [0.7, 0.5, 0.5, 0.4, 0.3]
+        }
+    ]
+}
+
+var lineChartDataBone = {
+			labels: ["1975", "1980", "1985", "1990", "1995", "2000", "2005", "2010"],
+    datasets: [
+        {
+            label: "Bone Cancer Incidence Rate",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [0.8, 0.8, 0.9, 0.8, 1, 0.9, 1, 1.1]
+        },
+        {
+            label: "Bone Cancer Mortality Rate",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [0.9, 0.6, 0.5, 0.4, 0.5, 0.4, 0.5, 0.4]
+        }
+    ]
+}
+
+
+var pieDataThyroid = [
+				{
+					value: 80,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Papillary Carcinomas"
+				},
+				{
+					value: 17,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Follicular Carcinomas"
+				},
+				{
+					value: 3,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Hurthle Cell Carcinomas"
+				}
+                
+
+			];
+
+var lineChartDataThyroid = {
+			labels: ["1973", "1976", "1979", "1982", "1985", "1988", "1991", "1994", "1997", "2000", "2003", "2006", "2009"],
+    datasets: [
+        {
+            label: "Thyroid Cancer Incidence Rate",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [3.7, 4.5, 4.2, 3.5, 4.2, 4.7, 5.2, 5.6, 5.9, 6.2, 5.8, 6.4, 6.5]
+        },
+        {
+            label: "Thyroid Cancer Mortality Rate",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [0.8, 0.9, 0.7, 0.8, 1, 0.9, 0.7, 0.8, 0.6, 0.7, 0.6, 0.5, 0.4]
+        }
+    ]
+}
+
+		
+var pieDataPancreas = [
+				{
+					value: 95,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Exocrine"
+				},
+				{
+					value: 5,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Endocrine"
+				}
+                
+
+				];
 			
 			
 			
@@ -54,18 +336,36 @@ function openFactStats()
 
 			];
 			
+			 var pieDataLiv = [
+				{
+					value: 58,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Not Linked to Lifestyle Factors"
+				},
+				{
+					value: 42,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Linked to Lifestyle Factors"
+				}
+				
+                
+
+				];
+			
 			 var pieDataColo = [
 				{
 					value: 95,
 					color:"#F7464A",
 					highlight: "#FF5A5E",
-					label: "% of Adenocarcinomas"
+					label: "Adenocarcinomas"
 				},
 				{
 					value: 5,
 					color: "#46BFBD",
 					highlight: "#5AD3D1",
-					label: "% of Others"
+					label: "Not Adenocarcinomas"
 				}
                 
 
@@ -133,6 +433,19 @@ var lineChartDataLung = {
 			    }    
 			    ]
 			}
+			
+			 var barChartDataOvar = {
+	labels : ["Stage I","Stage II","Stage III","Stage IV"],
+		datasets : [
+			    {
+				fillColor : "#B71C1C",
+				strokeColor : "rgba(220,220,220,0.8)",
+				highlightFill: "#D32F2F",
+				highlightStroke: "rgba(220,220,220,1)",
+				data : [90,70,39,17]
+			    }    
+			    ]
+			}
 	
     
     
@@ -169,18 +482,36 @@ var lineChartDataLung = {
         }
     ]
 }
+
+		    var barChartDataLiv = {
+	labels : ["Average","Localized","Regional","Distant"],
+		datasets : [
+			    {
+				fillColor : "#B71C1C",
+				strokeColor : "rgba(220,220,220,0.8)",
+				highlightFill: "#D32F2F",
+				highlightStroke: "rgba(220,220,220,1)",
+				data : [15,28,7,2]
+			    }    
+			    ],
+        equalBarWidth: [{
+            width: 10
+        }
+    ]
+}
+
 			
 			
 			
     var pieDataBrain = [
 				{
-					value: 33,
+					value: 40.1,
 					color: "#46BFBD",
 					highlight: "#5AD3D1",
-					label: "% of Brain Cancer Patients who live past 5 years"
+					label: "% of Brain Cancer Patients who survive past 5 years"
 				},
 				{
-					value: 67,
+					value: 59.9,
                     color:"#F7464A",
 					highlight: "#FF5A5E",
 					label: "% of Brain Cancer Patients who die"
@@ -259,11 +590,14 @@ var lineChartDataLung = {
 				var ctx = document.getElementById("leuStatsPie").getContext("2d");
 				window.myPie = new Chart(ctx).Pie(pieDataLeu);
                 
+				
                 var ctx2 = document.getElementById("leuStatsLine").getContext("2d");
 		window.myLine = new Chart(ctx2).Line(lineChartDataLeu, {
 			responsive: true
 		});
 			};
+			
+			
 		    
 
         
@@ -397,7 +731,7 @@ var lineChartDataLung = {
 
 
 var lineChartDataEye = {
-			labels : ["1975","1980","1985","1990","1995","2000","2005","2010"],
+			labels : ["1980","1985","1990","1995","2000","2003"],
 			datasets : [
 				{
 					label: "Eye Cancer Survival Rate",
@@ -407,233 +741,11 @@ var lineChartDataEye = {
 					pointStrokeColor : "#fff",
 					pointHighlightFill : "#fff",
 					pointHighlightStroke : "rgba(220,220,220,1)",
-					data : [68,70,75,72,76,79,81,85]
+					data : [76.3,83,83.9,77.2,89.2,89.5]
 				},
 				
 			]
-
 		}
-
-var pieDataThyroid = [
-				{
-					value: 80,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Papillary Carcinomas"
-				},
-				{
-					value: 17,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Follicular Carcinomas"
-				},
-				{
-					value: 3,
-					color: "#FDB45C",
-					highlight: "#FFC870",
-					label: "Hurthle Cell Carcinomas"
-				}
-                
-
-			];
-
-var lineChartDataThyroid = {
-			labels: ["1973", "1976", "1979", "1982", "1985", "1988", "1991", "1994", "1997", "2000", "2003", "2006", "2009"],
-    datasets: [
-        {
-            label: "Thyroid Cancer Incidence Rate",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [3.7, 4.5, 4.2, 3.5, 4.2, 4.7, 5.2, 5.6, 5.9, 6.2, 5.8, 6.4, 6.5]
-        },
-        {
-            label: "Thyroid Cancer Mortality Rate",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
-            pointColor: "rgba(151,187,205,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [0.8, 0.9, 0.7, 0.8, 1, 0.9, 0.7, 0.8, 0.6, 0.7, 0.6, 0.5, 0.4]
-        }
-    ]
-		}
-
-
-var pieDataBone = [
-				{
-					value: 56,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Osteosarcomas"
-				},
-				{
-					value: 34,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Ewing Tumors"
-				},
-				{
-					value: 10,
-					color: "#FDB45C",
-					highlight: "#FFC870",
-					label: "Chondrosarcomas"
-				}
-                
-
-			];
-
-var lineChartDataBone = {
-			labels: ["1975", "1980", "1985", "1990", "1995", "2000", "2005", "2010"],
-    datasets: [
-        {
-            label: "Bone Cancer Incidence Rate",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [0.8, 0.8, 0.9, 0.8, 1, 0.9, 1, 1.1]
-        },
-        {
-            label: "Bone Cancer Mortality Rate",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
-            pointColor: "rgba(151,187,205,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [0.9, 0.6, 0.5, 0.4, 0.5, 0.4, 0.5, 0.4]
-        }
-    ]
-		}
-
-var pieDataEndo = [
-				{
-					value: 92,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Endometrial Carcinomas"
-				},
-				{
-					value: 8,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Uterine Sarcomas"
-				}
-			];
-
-var lineChartDataEndo = {
-			labels: ["1975", "1980", "1985", "1990", "1995", "2000", "2005", "2010"],
-    datasets: [
-        {
-            label: "Endometrial Cancer Death Rate",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [5.3, 5.2, 5.1, 4.8, 4.7, 4.8, 4.6, 4.5]
-        }
-    ]
-		}
-
-
-var pieDataLymphoma = [
-				{
-					value: 26,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Prostate"
-				},
-				{
-					value: 14,
-					color: "#46BFBD",
-					highlight: "#5AD3D1",
-					label: "Lung and Bronchus"
-				},
-                {
-					value: 8,
-					color:"#FDB45C",
-					highlight: "#FF5A5E",
-					label: "Colon and Rectum"
-				},
-                {
-					value: 7,
-					color:"#1FDA9A",
-					highlight: "#FF5A5E",
-					label: "Urinary Bladder"
-				},
-                {
-					value: 5,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Melanoma of the Skin"
-				},
-                {
-					value: 5,
-					color:"#46BFBD",
-					highlight: "#FF5A5E",
-					label: "Non-Hodgkin's Lymphoma"
-				},
-                {
-					value: 5,
-					color:"#FDB45C",
-					highlight: "#FF5A5E",
-					label: "Kidney and Renal Pelvis"
-				},
-                {
-					value: 4,
-					color:"#1FDA9A",
-					highlight: "#FF5A5E",
-					label: "Oral Cavity and Pharynx"
-				},
-                {
-					value: 4,
-					color:"#F7464A",
-					highlight: "#FF5A5E",
-					label: "Leukemia"
-				},
-                {
-					value: 3,
-					color:"#46BFBD",
-					highlight: "#FF5A5E",
-					label: "Liver and Intrahepatic Bile Duct"
-				}
-			];
-
-var lineChartDataLymphoma = {
-			labels: ["1990", "1995", "2000", "2005", "2010"],
-    datasets: [
-        {
-            label: "NHL Death Rate",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: [7.9, 8.7, 8.2, 6.9, 6.1]
-        },
-        {
-            label: "HD Mortality Rate",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
-            pointColor: "rgba(151,187,205,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [0.7, 0.5, 0.5, 0.4, 0.3]
-        }
-    ]
-		}
-
 //--------------------------------End Chart Data--------------------------------\\
 		    
 		    
@@ -645,6 +757,11 @@ function openDisease()
     window.location = "diseases.html";
 }
 
+function openResources()
+{
+	window.location = "resources.html";
+}
+
 function openHome()
 {
     window.location = "index.html";
@@ -653,6 +770,21 @@ function openHome()
 function openFAQ()
 {
 	window.location = "FAQ.html";
+}
+
+function openResources()
+{
+	window.location = "resources.html";	
+}
+
+function openDonate()
+{
+	window.location = "donate.html";	
+}
+
+function openStories()
+{
+	window.location = "stories_page.html";
 }
 
 //--------------------------------End Page References--------------------------------\\
@@ -687,6 +819,273 @@ function addLink() {
 }
 
 document.addEventListener('copy', addLink);
+
+function launch_facebook(value)
+{
+	
+	var num = Math.floor((Math.random() * 3) + 1);
+	swal({   title: "Explore Further?",   text: "Clicking this button will take you to a random Facebook page that is related to the disease!",   type: "warning",   showCancelButton: true,  allowOutsideClick:true,  confirmButtonColor: "#81C784",   confirmButtonText: "Explore",   closeOnConfirm: false }, function(){  open_facebook(value, num); swal("Awesome!", "You have been redirected!", "success")});
+		
+}
+
+function open_facebook(value, rand_roll)
+{
+	if(value == "bladder")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/BladderCancer?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/pages/Bladder-cancer/110460062315595?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/BladderCancerCanada?fref=ts");
+		}
+	}	
+	
+	if(value == "blood")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/pages/Leukemia/108610982497169?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/pages/Lymphoma/109453525747985?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/LLSforacure?fref=ts");
+		}
+	}
+	
+	if(value == "bone")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/pages/Bone-tumor/112628532084463?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/pages/Bone-Cancer-Research-Trust/129310407213327?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/groups/341734433060/");
+		}
+	}
+	
+	if(value == "brain")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/BrainCancerCure?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/curebraincancer?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/VoicesAgainstBrainCancer?fref=ts");
+		}
+	}
+	
+	if(value == "breast")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/BreastCancerAwareness?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/BreastCancerNetworkAustralia?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/preventbreastcancer?fref=ts");
+		}
+	}
+	
+	if(value == "colo")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/pages/Colorectal-cancer/108179699207156?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/Colorectal?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/FightCRC?fref=ts");
+		}
+	}
+	
+	if(value == "endo")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/pages/Endometrial-cancer/137413716278690?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/groups/kickENDOcancerINtheFACE/");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/pages/Women-Cancer-Warriors/674251289312071?fref=ts");
+		}
+	}
+	
+	if(value == "eye")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/pages/Childhood-Eye-Cancer-Trust-CHECT/123729324370622?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/EyeCancerHeroes?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/daisyfund?fref=ts");
+		}
+	}
+	
+	if(value == "liver")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/pages/Liver-cancer/108228889209643?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/LiverCancerConnect?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/pages/Hepatocellular-carcinoma/112436695438510?fref=ts");
+		}
+	}
+	
+	if(value == "lung")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/pages/Lung-cancer/113564751987617?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/pages/Lung-Cancer-Awareness/203133592589?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/lungcanceralliance?fref=ts");
+		}
+	}
+	
+	if(value == "oral")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/oralcancerawarenesspage?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/pages/Oral-cancer/112779625403439?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/oralcancercause?fref=ts");
+		}
+	}
+	
+	if(value == "ovar")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/pages/Ovarian-cancer/112347255447678?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/ovariancanceraction?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/OvarianCancerResearchFund?fref=ts");
+		}
+	}
+	
+	if(value == "panc")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/JointheFight?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/CurePancreaticCancer?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/pages/Pancreatic-cancer/113135755367471?fref=ts");
+		}
+	}
+	
+	if(value == "skin")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/SkinCancerAwareness?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/pages/Skin-cancer/105583619475390?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/pages/Surviving-Skin-Cancer/295414957288120?fref=ts");
+		}
+	}
+	
+	if(value == "thyroid")
+	{
+		if(rand_roll == 1)
+		{
+			window.open("https://www.facebook.com/thyroid.cancer.survivors?fref=ts");
+		}
+		else if(rand_roll == 2)
+		{
+			window.open("https://www.facebook.com/pages/Thyroid-cancer/108493132515628?fref=ts");
+		}
+
+		else if(rand_roll == 3)
+		{
+			window.open("https://www.facebook.com/pages/Thyroid-Cancer-Fighting/824662387596986?fref=ts");
+		}
+	}
+}
+
 
 
 

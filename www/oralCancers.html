@@ -38,6 +38,8 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
         <script src="Chart.js"></script>
         <script type="text/javascript">
 		
@@ -62,8 +64,9 @@
 		 
 	
 	    
-	    <div id='header_holder'>
-			<div id='header'>
+	  <div id='header_holder'>
+		
+		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
@@ -71,9 +74,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -81,7 +84,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
             <span id = "move_all">	
             <div id="parallax-main">
 		    
@@ -141,7 +145,7 @@
 						<div id = "goFirst" class = "smaller_header">What are Oral Cancers?</div>
 						<br />
 						
-						Oral Cancer is a disease that involves a group of oral cells that begin to divide uncontrollably and results in a tumorous mass. The term "Oral Cancer" <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/mouth-cancer/basics/definition/con-20026516')">can refer to</span> cancers of the lips, cheeks, mouth, tounge, throat, as well as related reigons. There are a <span class = "link" onClick = "window.open('http://www.cancercenter.com/oral-cancer/types/')">few different types of Oral Cancers</span>, and advanced knowledge of each of these is essential in terms of gaining an appreciation for the situation that Oral Cancer victims struggle with everyday. The three that we will be analyzing later in this page are Squamous Cell Carcinomas, Verrucous Carcinomas, and Salivary Gland Carcinomas.
+						Oral Cancer is a disease in which a group of oral cells begins to divide uncontrollably, resulting in a tumorous mass. The term "Oral Cancer" <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/mouth-cancer/basics/definition/con-20026516')">can refer to</span> cancers of the lips, cheeks, mouth, tounge, throat, as well as related reigons. There are a <span class = "link" onClick = "window.open('http://www.cancercenter.com/oral-cancer/types/')">few different types of Oral Cancers</span>, and advanced knowledge of each of these is essential in terms of gaining an appreciation for the situation that Oral Cancer victims struggle with everyday. The three that we will be analyzing later in this page are Squamous Cell Carcinomas, Verrucous Carcinomas, and Salivary Gland Carcinomas.
 						
                         
     <br />
@@ -211,7 +215,7 @@
 											
 											<br />
 											<br />
-											The lethality of this form of cancer <span class = "link" onClick = "window.open('http://www.merckmanuals.com/professional/ear_nose_and_throat_disorders/tumors_of_the_head_and_neck/oral_squamous_cell_carcinoma.html')">depends much on the location</span> in which it is first contracted. For instance, Squamous Cell Carcinomas that develop on the tounge or the floor of the mouth can have a 5 year survial rate as low as 50 percent, with an additional possibility of spreading to other parts of the body. Carcinomas that appear on the lower lip, however, typically have a much higher survival rate, with 9 out of every 10 people surviving 5 years of more. 
+											The lethality of this form of cancer <span class = "link" onClick = "window.open('http://www.merckmanuals.com/professional/ear_nose_and_throat_disorders/tumors_of_the_head_and_neck/oral_squamous_cell_carcinoma.html')">depends heavily on the location</span> in which it is first contracted. For instance, Squamous Cell Carcinomas that develop on the tounge or the floor of the mouth can have a 5 year survial rate as low as 50 percent, with an additional possibility of spreading to other parts of the body. Carcinomas that appear on the lower lip, however, typically have a much higher survival rate, with 9 out of every 10 people surviving 5 years of more. 
 						</p>
 									</dd>
 									
@@ -268,9 +272,10 @@
 					    
 						<br />
 						
-						The past two decades have unveiled massive technological advancements that have revolutionized the way we understand and treat Oral Cancers. Despite this, there is still much progress to be made before this issue becomes one of the past. We will highlight some of the successes that have been enjoyed by researchers and patients alike over the past few years in an effort to ensure that this ideal future one day becomes a reality. 
+						The past two decades have unveiled massive technological advancements that have revolutionized the way we understand and treat Oral Cancers. Despite this, there is still much progress to be made before this issue becomes one of the past. We will highlight some of the successes that have been enjoyed by researchers and patients alike over the past few years in an effort to ensure that this idealistic future one day becomes a reality. 
 			
-						<br />
+						<br /><br />
+						
 						
 						<div id = "center_element">
 							
@@ -290,7 +295,7 @@
 						<br />
 							<div class = "smallest_header" style = "text-decoration:none;">Why are occurance rates going up?</div>
 						<br />
-						Well, there are a few reasons. As we've already established, a common risk factor for Oral Cancers is aging. Because our population is <span class = "link" onClick = "window.open('http://www.cnn.com/2014/02/04/health/who-world-cancer-report/')">growing older on balance</span>, it makes sense that we are seeing an increase in the occurance of Oral Cancers. However, this increase could also be due to a willingness to smoke and consume alcohol among our youth. The <span class = "link" onClick = "window.open('http://www.ncbi.nlm.nih.gov/pubmed/21211041')">single largest currently identified factor</span> that increases the chance of contracting Squamous Cell Carcinomas, the most common form of Oral Cancer, is partaking in these activities. 
+						Well, there are a few reasons. As we've already established, a common risk factor for Oral Cancers is aging. Because our population is <span class = "link" onClick = "window.open('http://www.cnn.com/2014/02/04/health/who-world-cancer-report/')">growing older on balance</span>, it makes sense that we are seeing an increase in the occurance of Oral Cancers. However, this increase could also be due to a willingness to smoke and consume alcohol among our youth. The <span class = "link" onClick = "window.open('http://www.ncbi.nlm.nih.gov/pubmed/21211041')">single largest currently identified factor</span> that increases the chance of contracting Squamous Cell Carcinomas - the most common form of Oral Cancer - is participation in these activities. 
 						
 						<br />
 						<br />
@@ -359,7 +364,7 @@
 											
 											<br />
 											<br />
-											The Oral Cancer fondation has also been responsible for the organization of <span class = "link" onClick = "window.open('http://donate.oralcancer.org/index.cfm?fuseaction=cms.page&id=1006')">many nationwide events</span> that have done much to enhance public awareness regarding the disease. Additionally, the foundation serves as a valuable platform for anyone to get involved in the fight against Oral Cancers through the means of allowing all visitors to their website to create a <span class = "link" onClick = "window.open('http://donate.oralcancer.org/index.cfm?fuseaction=cms.page&id=1002')">personal campaign</span>. These campaigns can involve everything from bake sales to neighborhood parades, and are capable of spreading happiness as well as raising money and awareness for the fight against this terrible disease.
+											The Oral Cancer fondation has also been responsible for the organization of <span class = "link" onClick = "window.open('http://donate.oralcancer.org/index.cfm?fuseaction=cms.page&id=1006')">many nationwide events</span> that have done much to enhance public awareness regarding the disease. The foundation serves as a valuable platform for anyone to get involved in the fight against Oral Cancers through the means of allowing all visitors to their website to create a <span class = "link" onClick = "window.open('http://donate.oralcancer.org/index.cfm?fuseaction=cms.page&id=1002')">personal campaign</span>. These campaigns can involve everything from bake sales to neighborhood parades, and are capable of spreading happiness as well as raising money and awareness for the fight against this terrible disease.
 											
 											
 											<br />
@@ -415,7 +420,7 @@
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('oral')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -449,53 +454,36 @@
 			</span>
 			<br />
 			<br />
-       <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+     <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+		</footer>
+			
+		
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

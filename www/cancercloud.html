@@ -59,7 +59,7 @@
         
 	</script>
 	
-		<div id='header_holder'>
+		 <div id='header_holder'>
 		
 		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
@@ -69,9 +69,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -80,8 +80,7 @@
 		
 		</div>
 			    
-		</div>
-		
+	</div>
 			
 		
 	       
@@ -154,53 +153,34 @@
              
 		
              
-            <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+            <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>	
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+	</footer>
          
          <a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 	</body>

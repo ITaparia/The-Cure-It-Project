@@ -67,19 +67,19 @@
 	</script>
 	
 	    
-	    <div id='header_holder'>
+	   <div id='header_holder'>
 		
 		<div id='header'>
-		    <span id = "title_text">The Cure It Project</span>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
 		    <div id = "user_options">
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
             <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -87,7 +87,9 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div><br /><br /><br /><br /><br />
+			    
+		    </div>
+			<br /><br /><br /><br /><br />
          
          <span id = "move_all">
 			 
@@ -450,6 +452,17 @@
 					</div>
 				</a>
 			</li>
+			
+			<li class="in"><div style="display:none">Bone Cancer</div>
+				<a href = "boneCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Bone Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 1,490</span>
+                               
+					</div>
+				</a>
+			</li>
 								
 			<li class="in"><div style="display:none">Brain Cancer</div>
 				<a href = "brainCancers.html" style = "color:black;">
@@ -474,11 +487,21 @@
 							
 			<li class="in"><div style="display:none">Colorectal Cancer</div>							
 				<a href = "colorectalCancers.html" style = "color:black;">
-					<div id = "disease_selection" style = "border-top-left-radius:5px;border-top-right-radius:5px;">
+					<div id = "disease_selection" >
 						<span id = "element_one">Colorectal Cancers</span>
 						<br />
 						<span style = "font-size:22px;">Deaths Per Year: 50,310</span>    
 					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Endometrial Cancer</div>
+				<a href = "endometrialCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Endometrial Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 10,170</span>  
+					 </div>
 				</a>
 			</li>
 							
@@ -487,12 +510,22 @@
 					<div id = "disease_selection">
 						<span id = "element_one">Eye Cancers</span>
 						<br />
-						<span style = "font-size:22px;">Deaths Per Year: 9,710</span>  
+						<span style = "font-size:22px;">Deaths Per Year: 270</span>  
 					 </div>
 				</a>
 			</li>
+			
+			<li class="in"><div style="display:none">Liver Cancers</div>
+				<a href = "liverCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+                                <span id = "element_one">Liver Cancers</span>
+                                <br />
+                                <span style = "font-size:22px;">Deaths Per Year: ~23,000</span>         
+					</div>
+				</a>
+			</li>
 							
-			<li class="in"><div style="display:none">Lung Cancer</div>
+			<li class="in"><div style="display:none">Lung Cancers</div>
 				<a href = "lungCancer.html" style = "color:black;">
 					<div id = "disease_selection">
                                 <span id = "element_one">Lung Cancers</span>
@@ -501,8 +534,18 @@
 					</div>
 				</a>
 			</li>
-							
-			<li class="in"><div style="display:none">Oral Cancer</div>
+				
+		<li class="in"><div style="display:none">Lymphatic Cancers</div>
+				<a href = "lymphoma.html" style = "color:black;">
+					<div id = "disease_selection">
+                                <span id = "element_one">Lymphatic Cancers</span>
+                                <br />
+                                <span style = "font-size:22px;">Deaths Per Year: ~20,940</span>         
+					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Oral Cancers</div>
 				<a href = "oralCancers.html" style = "color:black;">
 					<div id = "disease_selection">
 						<span id = "element_one">Oral Cancers</span>
@@ -511,13 +554,43 @@
 					</div>
 				</a>
 			</li>
+			
+			<li class="in"><div style="display:none">Ovarian Cancers</div>
+				<a href = "ovarianCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Ovarian Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 14,270</span>        
+					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Pancreatic Cancer</div>
+				<a href = "panc.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Pancreatic Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 40,560</span>        
+					</div>
+				</a>
+			</li>
                             
-			<li class="in"><div style="display:none">Skin Cancer</div>
+			<li class="in"><div style="display:none">Skin Cancers</div>
 				<a href = "skinCancers.html" style = "color:black;">
 					<div id = "disease_selection">
 						<span id = "element_one">Skin Cancers</span>
 						<br />
 						<span style = "font-size:22px;">Deaths Per Year: ~16,500</span>
+					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Thyroid Cancers</div>
+				<a href = "thyroidCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Thyroid Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 1,890</span>
 					</div>
 				</a>
 			</li>
@@ -567,49 +640,35 @@
                             </div>
 						</span>
 					
-					<div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+					<footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
+		</div>
+		</footer>
+	</span>
 				
 				
 				

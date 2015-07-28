@@ -37,19 +37,23 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
         <script src="Chart.js"></script>
         <script type="text/javascript">window.onload = function(){
                                 var ctxlung = document.getElementById("lungStatsPie").getContext("2d");
                                 window.myPie = new Chart(ctxlung).Pie(pieDataLung);
-    
+    var max = 100;
+	var steps = 10;
     var ctx2 = document.getElementById("LungStatsLine").getContext("2d");
 		window.myLine = new Chart(ctx2).Line(lineChartDataLung, {
-			responsive: true
+			responsive: true,
+			
 		});
                
    
  
-            };</script>
+		};</script>
         
         <title>Lung Cancers</title>
     </head>
@@ -58,19 +62,19 @@
 		 
 	
 	    
-	    <div id='header_holder'>
+	     <div id='header_holder'>
 		
 		<div id='header'>
-		    <span id = "title_text">The Cure It Project</span>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
-		   <div id = "user_options">
+		    <div id = "user_options">
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -78,7 +82,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
 			<span id = "move_all">	
             
             <div id="parallax-main">
@@ -146,27 +151,26 @@
 					 	
 					    <br />
 						
-						
-						
-                        Lung cancers are tumorous growths found in the lungs, taking over either the actual membrane of the lung, or the air holes inside the lung, which are essential for respiration. Lung cancers are responsible for 27% of deaths from all cancers, making it the leading cancer in terms of mortality. Despite the seriousness of lung cancer, when located early, it is easy to treat and remove. There are three primary types of Lung Cancer:<span onClick = "window.open('http://www.cancer.org/cancer/lungcancer-non-smallcell/index')" class = "link"> Non-Small Cell Lung Cancer</span>(NSC Lung Cancer), <span onClick = "window.open('http://www.cancer.org/cancer/lungcancer-smallcell/index')" class = "link">Small Cell Lung Cancer</span>(SC Lung Cancer), and <span onClick = "window.open('http://www.cancer.org/cancer/lungcarcinoidtumor/index')" class = "link">Lung Carcinoids</span>. Details of each type will be throughly dicussed below.
+						Lung Cancers are, in their most basic form, tumorous growths located in the lungs. Their influence can involve anything from taking over the membrane of the lung to disrupting air holes inside the lung. The impact of Lung Cancer is tremendous, with the disease <span class = "link" onClick = "window.open('http://www.lung.org/lung-disease/lung-cancer/resources/facts-figures/lung-cancer-fact-sheet.html')">claiming 27% of all cancer deaths combined</span>. This makes it the leading cancer in terms of mortality. Despite the seriousness of Lung Cancer, early location of the disease can go a long way in terms of making sure that it does not become life threatening. There are three primary types of Lung Cancer: <span onClick = "window.open('http://www.cancer.org/cancer/lungcancer-non-smallcell/index')" class = "link"> Non-Small Cell Lung Cancer</span> (also called NSC Lung Cancer), <span onClick = "window.open('http://www.cancer.org/cancer/lungcancer-smallcell/index')" class = "link">Small Cell Lung Cancer</span> (also called SC Lung Cancer), and <span onClick = "window.open('http://www.cancer.org/cancer/lungcarcinoidtumor/index')" class = "link">Lung Carcinoids</span>. Details of each type will be throughly dicussed below.
 						
 						
 						
 						<br />
 						<br />
 						
-                        Lung cancer is cancer that starts in the lungs. The lungs are located in the chest. When you breathe, air goes through your nose, down your windpipe (trachea), and into the lungs, where it spreads through tubes called bronchi. <span onClick = "window.open('http://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0004529/')"class = "link">Most lung cancers begins in the cells that line these tubes.</span> One of the most well known causes of this deadly disease is through the use of cigarattes or another carcinogenic inhalent.
+						The lungs are one of the most important organs in the body. They are responsible for <span class = "link" onClick = "window.open('http://www.transplantliving.org/before-the-transplant/organ-facts/lung/')">processing air as well as providing a place for oxygen to enter the bloodstream</span>. When you breathe, air goes through your nose and down your windpipe into your lungs. From here, it spreads through tubes called Bronchi. <span onClick = "window.open('http://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0004529/')"class = "link">The majority of Lung Cancers begin in the cells that line these tubes</span>. To put it simply, Lung Cancer hinders typical lung functioning, something which effectively disrupts the patient's ability to process oxygen and maintain a healthy blood compositon as they normally would. 
 						
+	
+					
+					<br />
+					<br />
+					While a reliable method of identifying the cause of Lung Cancer has yet to be discovered, there are some factors that influence a particular individual's chances of contracting the disease. The most important of these factors is the use of cigarettes or other carcinogenic inhalents. In fact, cigarette smoking <span class = "link" onClick = "window.open('http://www.cdc.gov/cancer/lung/basic_info/risk_factors.htm')">has been linked to nearly 90% of all Lung Cancer cases</span>. This knowledge means that people everywhere have a way to actively combat Lung Cancer through avoiding harmful substances such as these. 
+						
+					
 						<br />
 						<br />
 						
-						Lets begin by going through the specifics of each type of lung cancer as highlighted above. The graph below reveals the 3 different types of lung cancers, and how prevalent they are in all total lung cancer cases. The clear leader is NSC Lung Cancer, with SC Lung Cancer comprising of 15% of all lung cancer cases, and Lung Carcinoids consisting of only 5% of total lung cancer cases.
-						
-						
-						
-						
-						
-						
+						Let's begin by going through the specifics of each type of Lung Cancer as highlighted above. The graph below reveals the 3 primary types of Lung Cancer and their <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/lungcancer/')">relative prevalence</span> in total Lung Cancer cases. The clear leader is NSC Lung Cancer, with SC Lung Cancer and Lung Carcinoids consisting of only 20% of total Lung Cancer cases. 
 						
 						<br />
 						<br />
@@ -202,73 +206,61 @@
 									<dt><a class="accordionTitle" href="#" style = "background-color: #F7464A;">NSC Lung Cancer</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-                                            Non-Small Cell Lung Cancer, or just NSC Lung Cancer for short, is by far, the most common type of lung cancer. To understand what not only NSC Lung Cancer is, but what Lung Cancer as a whole is, we must first understand the <span class = "link" onClick = "window.open('http://www.webmd.com/lung/how-we-breathe')">basic workings of the lungs.</span> When a person breathes in, the fresh oxygen goes directly to the bronchi, two large tubes that feed into the lungs, and eventually branch off into smaller braches calle bronchioles. The clean oxygen is held in tiny sacs called alveoli in these bronchioles, and the blood pumping through your body takes absorbs that oxygen and replaces it with dirty, non-resuable carbon dioxide(CO2). Once the CO2 is held in the alveoli sacs, you exhale it all out, and thus keeping your body fresh with the oxygen it needs to survive.
+											Non-Small Cell Lung Cancer (also called NSC Lung Cancer for short) is by far the most common type of Lung Cancer, <span class = "link" onClick = "window.open('http://www.pfizer.com/files/news/esmo/lung_cancer_fact_sheet.pdf')">accounting for around 85% percent of total Lung Cancer cases</span>. To fully appreciate the impact that NSC Lung Cancer has on the body, it is important to first grasp a basic understanding of lung functioning.
+										<br />
+										<br />
+											When you breathe in, fresh oxygen is directed towards your bronchi. The bronchi consists of two large tubes that feed into the lungs, eventually branching off into smaller brances called bronchioles. The clean oxygen is held in tiny sacks in these bronchioles, and the blood pumping through your body absorbs that oxygen and replaces it with non-reusable carbon dioxide. Once the carbon dioxide is held in the alveoli sacks, you breathe it out, thus keeping your body running properly with the oxygen and blood composition it needs to survive. 
+											
+											
                                             
                                                 <br />
                                                 <br />
-                                               
-                                               When NSC Lung Cancer is formed, it usually starts in the tiny branches of the bronchioles, and initially, there is no noticbale tumor growth. The only abnormal growth that can be seen is under a microscope, with unusually large amounts of DNA being produced. Over time, the abnormal cells may acquire other gene changes, which cause them to progress to true cancer. As a cancer develops, the cancer cells may make chemicals that cause new blood vessels to form nearby. These blood vessels nourish the cancer cells, which can continue to grow and form a tumor large enough to be seen on imaging tests such as x-rays.
-                                               
-                                                <br />
-                                                <br />
-                                               
-                                            <span class = "link" onClick = "window.open('http://www.nlm.nih.gov/medlineplus/ency/article/007194.htm')">NSC Lung Cancer is especially dangerous because of how easy it metastasizes (spreads).</span> Remember how we said that the blood comes to all those tiny sacs called the alveoli? This system proves to be extremely effective in carrying the cancer cells to other part of the body, which is evenutally the killer of most cancer patients. What makes it even more threatening is the fact that it tends to spread in this way even before it can be detected on an imaging test such as a chest x-ray.
-                    
+											When NSC Lung Cancer is formed, it almost always starts in the tiny branches of the bronchioles. The disease typically remains very low profile at these early stages, with scientific instruments being required to detect the abnormal cells. Over time, the abnormal cells may acquire other gene changes, something which can cause them to progress to true cancer. As the cancer develops, the tumerous cells may produce chemicals that causes new blood vessels to form nearby. These blood vessels nourish the cancerous cells, which can continue to grow and form a tumor large enough to be seen on imaging tests such as x-rays. 
+											
                                                
                                                 <br />
                                                 <br />
-                                                 
-                                    If this tumor isnt treated quickly, the cancerous cells will actually continue to grow, and invade most of the tiny alveoli in the body. Because the cancer restricts oxygen transfer to the blood, NSC Lung Cancer can result in harsh, raspy sounds when you breathe, coughing up blood or mucus, and lasting lung problems like pneumonia and bronchitis, which can eventually kill a person
+                                               As noted above, body processes blood through tiny sacs called alveoli. This system is extremely effective in carrying the cancer cells to other parts of the body. The survival rates associated with NSC Lung Cancer reflect this, as early detection and removal of the disease is essential in terms of guaranteeing an effective recovery. For instance, the <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/lungcancer-non-smallcell/detailedguide/non-small-cell-lung-cancer-survival-rates')">five-year survival rate</span> for cases in which the cancer is discovered in stage I is 45% or higher, whereas stage IV patients only meet this same milestone about 1% of the time. 
+											   
+                                                <br />
+                                                <br />
+                                                The symptoms of NSC Lung Cancer worsen in direct proportion to the amount of time that the tumor remains untreated. Because the cancer restricts oxygen transfer to the blood, the <span class = "link" onClick = "window.open('http://www.healthline.com/health/lung-cancer-non-small-cell#Symptoms3')">symptoms of NSC Lung Cancer</span> can include raspy sounding breathing, coughing up blood or other substances, and lasting lung problems like Pneumonia and Bronchitis. 
+												
                                     </p>
 									</dd>
 									
 									<dt><a class="accordionTitle" href="#" style = "background-color: #46BFBD">SC Lung Cancer</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
+											Small Cell Lung Cancer (also called SC Lung Cancer for short) is different from NSC Lung Cancer in a few different ways.  As is apparent from the name, the actual size of the cancerous cells are much smaller in size, and typically require sophisticated scientific instruments to examine properly. While NSC Lung Cancer starts in the bronchioles, SC Lung Cancer <span class = "link" onClick = "window.open('http://www.nlm.nih.gov/medlineplus/ency/article/000122.htm')">almost always originates in the bronchi</span>. Because the bronchi are the key pipes that lead into your lungs, the cancer is able to quickly spread throughout the body when compared with NSC Lung Cancer. 
 											
-                                            Before discussing the specifics of SC Lung Cancer, first let us distinguish <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/lungcancer-smallcell/detailedguide/small-cell-lung-cancer-what-is-small-cell-lung-cancer')">SC Lung Cancer from NSC Lung Cancer.</span> As is apparent from the name, the actual size of the cancerous cells are much smaller in size, and are only visible through a microscope, making this even more dangerous than NSC Lung Cancer. Another difference is that while NSC Lung Cancer starts in the bronchioles, SC Lung Cancer actually starts in the bronchi, one of the two big main pipes that lead into your lungs, allowing for faster spreading throughout the body. This disease only affects 15-20% of the total Lung Cancer cases, but is still a major threat.
+											<br />
+											<br />
+											
+											SC Lung Cancer <span class = "link" onClick = "window.open('http://www.nlm.nih.gov/medlineplus/ency/article/000122.htm')">has been described</span> as the most aggressive form of Lung Cancer due to its tendancy to rapidly spread throughout the body. This description is reflective of <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/lungcancer-smallcell/detailedguide/small-cell-lung-cancer-survival-rates')">the survival rates that patients who contract the disease face</span>. In fact, only 31% of those lucky enough to discover the disease in stage I survive beyond 5 years. Representing the worst case scenario, 2% of stage IV patients achieve the same success. While the issue is grave, some comfort can be taken in the fact that every case is different, and factors such as overall health and the type of treatment recieved can go a long way in terms of maximizing survival chances. 
 											
 											
 											<br />
 											<br />
 											
-                                            Another key difference between NSC and SC Lung Cancer is that SC Lung Cancer <span class = "link" onClick = "window.open('http://www.emedicinehealth.com/small-cell_lung_cancer/article_em.htm')">responds much better to treatment methods like chemotherapy and radiation therapy. </span> Even though SC Lung Cancer is able to spread extremely quickly due to the region in which it grows, it becomes much easier to tackle the SC Lung Cancer with the methods mentioned above.
-											
-											
-											
-											
-											
-											<br />
-											<br />
-                                            The symptoms of SC Lung Cancer do not differ much from those of NSC Lung Cancer, except for one thing. Small-cell lung cancer is frequently associated with distinct <span class = "link" onClick = "window.open('http://en.wikipedia.org/wiki/Paraneoplastic_syndrome')">paraneoplastic syndromes</span> (collection of symptoms that result from substances produced by the tumor, occurring far away from the tumor).							
-											
-											
-											
-											
-	 
+											SC Lung Cancer is relatively rare, accounting for just <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/lungcancer/')">10% of total Lung Cancer cases</span>. While its exact cause is difficult to pinpoint, it is known that the majority of cases have been <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/lungcancer-smallcell/detailedguide/small-cell-lung-cancer-what-causes')">closely associated</span> with the consumption of tobacco. 
 					</p>
 					</dd>
 									
 										<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C">Lung Carcinoids</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-                                            Lung Carcinoids are an extremely rare form of Lung Cancer, accounting for only 5% of all Lung Cancer cases. Lung Carcinoids are extremely different from the other two types of lung cancer, as they don't affect the physical pathways of the lungs, but rather special types of cells called <span class = "link" onClick = "window.open('http://en.wikipedia.org/wiki/Neuroendocrine_cell')">nueroendocrine cells</span> that produce hormones like adrenaline, that regulate and control the energy levels of lung cells.
-									
+											Accounting for <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/lungcancer/')">just 5% of total cases</span>, Lung Carcinoids are by far the least common form of Lung Cancer. Lung Carcinoids are different from the two other types of Lung Cancer in that they typically don't affect the physical pathways of the lungs, but rather special types of cells called <span class = "link" onClick = "window.open('http://en.wikipedia.org/wiki/Neuroendocrine_cell')">nueroendocrine cells</span> that produce hormones such as adrenaline in order to regulate and control the energy levels of lung cells. 
+											
 										<br />
 										<br />
 										
-                                            Lung Carcinoids are also different from NSC and SC Lung Cancers in terms of growth. <span class = "link" onClick = "window.open('http://www.emedicinehealth.com/carcinoid_lung_tumor/article_em.htm')">Lung Carcinoids move very, very slow when compared to the other two types.</span> The reason for this is because the other two types utilize the circulatory system to carry cancer cells, and blood moves very rapidly throughout the body. Carcinoids take longer because they mimic hormones, which are inherently slower than blood transfer. An example would be adrenaline. Adrenaline doesnt immediately cut off, it ebbs away and takes its time for the effects to be reduced, and these same principles apply to Lung Carcinoids.
+										Lung Carcinoids also vary from NSC and SC Lung Cancers in terms of their rate of growth. Lung Carcinoids <span class = "link" onClick = "window.open('http://www.emedicinehealth.com/carcinoid_lung_tumor/article_em.htm')">develop extremely slowly</span> when compared to other types of Lung Cancers. The reason for this is because the other two types utilize the circulatory system to carry cancer cells, and blood moves very rapidly throughout the body. Carcinoids take longer because they mimic the movement of hormones, which are inherently slower than the blood transportation system. 
 										
-															
+										<br />
+										<br />
+										This means that <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/lungcarcinoidtumor/detailedguide/lung-carcinoid-tumor-survival-rates')">the 5-year survival rates</span> that Lung Carcinoid patients experience is very positive when compared to other forms of lung cancer. In fact, 93 percent of patients whose cancer is discovered in stage I survive 5 years or more. Additionally, the slow development rate of Lung Carcinomas means that patients sometimes go relatively long periods of time without the cancer worsening significantly, thus affording them additional leniency in discovering the disease before it becomes life threatening. 
 										
-										
-										
-										
-										
-										
-										
-										
-					
 										</p>
 					</dd>
 					
@@ -288,17 +280,15 @@
 					    
 						<br />
 						
-                            Through the constant effort of ever-committed medical staff, and through the countless leaps in advanced technology, the mortality rates of Lung Cancer, the deadliest cancer in the world, has been steadily going down since 1993 by over 15%, and will continue throught the constant efforts of the world.
-					
+						The relentless march of scientific advancement combined with the efforts of ever-committed medical staff have contributed greatly to <span class = "link" onClick = "window.open('http://seer.cancer.gov/faststats/selections.php?run=runit&output=2&data=2&statistic=1&year=201502&race=1&sex=1&age=1&series=cancer&cancer=47#Output')">the decrease in mortality rates</span> that has been observed over the past few decades. While the situation is certainly better than it once was, Lung Cancer <span class = "link" onClick = "window.open('http://www.nbcnews.com/id/39102353/ns/health-cancer/t/top-deadliest-cancers-why-theres-no-cure/#.VU_uE2CJnzI')">remains the number one source</span> of cancer related deaths due to its prominence and ability to aggressively spread throughout the body. We will now highlight some of the successes that have been seen in recent years in an effort to draw attention to the work of those attempting to make a change and to underscore what remains to be done. 
 						
-						
-					
 						
 						<!--
 						
 						New technological advancements have proven to be very effective in terms of treating Blood Cancer patients. Take Leukemia for example - as can be seen below, the general trends that dictate the deaths resulting from this type of cancer have generally been positive.	In fact, the 5-year cancer survival rate increased by a <a href = "http://seer.cancer.gov/statfacts/html/leuks.html" class = "link" target="_blank">whopping 26 percent between 1975 and 2005</a>.
 					-->
-						<br />
+						<br /><br />
+						
 						
 						<div id = "center_element">
 							
@@ -318,9 +308,9 @@
 						<br />
 						<div class = "smallest_header" style = "text-decoration:none;">Why the Increase?</div>
 						<br />
-						 
-                            The significant increase in survival rates can be attributed to not only the extreme advances in modern science and practice of medicine, allowing for more effective methods of treatment that make Lung Cancers easier to deal with, but also the slow decrease in people who smoke Below are some explanations of the medical staff that will be assisting their patient's treatement, in addition to certain types of treatment that have been proven to help. Make sure to click on links in the text for even more information.
-						
+						The increase in survival rates can be attributed not only to the development and application of innovative new medical procedures but also to the increased public awareness that has been seen in public years regarding <span class = "link" onClick = "window.open('http://www.cancer.net/cancer-types/lung-cancer/risk-factors-and-prevention')">the risk factors</span> of Lung Cancer. It is only through promoting these public outreach and scientific efforts that we can mitigate the threat of this disease and its influence over individual lives. 
+
+				
 						
 						
 						<br />
@@ -334,46 +324,51 @@
                                     <dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">Medical Staff</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-                                            Once a patient is diagnosed with any form of Lung Cancer, the best doctors and other medical staff work with the patient to create the best possible treatment plan. <span class = "link" onClick = "window.open('http://www.healthline.com/health/doctors-for-lung-cancer#Overview1')">There are a total of 3 specialized doctors that work with lung cancers.</span> The oncologist is a general cancer doctor that establishes the optimal treatment plan for the patient. The pulminologist is a doctor who specializes in treating diseases of the lungs, such as lung cancer, COPD, and tuberculosis. With cancer, a pulmonologist aids in diagnosis and treatment. Lastly, the thoracic surgeon specialize in surgery of the chest (thorax). They perform operations on the throat, lungs, and heart.
+											A medical team is established as soon as a patient is diagnosed with any form of Lung Cancer. While the structure of this team can vary based on the stage of the disease and the general health of the patient, there are 3 primary doctors that are typically involved with Lung Cancer treatment.
+											<br />
+											<br />
+											The most fundamental of these doctors is the <span class = "link" onClick = "window.open('http://www.medicinenet.com/script/main/art.asp?articlekey=4637')">Oncologist</span>, the doctor that establishes an optimal treatment plan for the patient in accordance with the specifics of their situation. If the situation calls for it, a <span class = "link" onClick = "window.open('http://www.merriam-webster.com/dictionary/pulmonologist')">Pulmonologist</span> may also be called in. A Pulmonologist is a doctor who specializes in treating diseases of the lungs. In the case of Lung Cancer, the Pulmonologist aids in diagnosis and sometimes is involved in recommending specialized treatments. Finally, the <span class = "link" onClick = "window.open('http://www.sts.org/patient-information/what-thoracic-surgeon')">Thoracic surgeon</span> specializes in surgery of the chest. They perform operations on the throat, lungs, and heart, something that makes them a crucial part of <span class = "link" onClick = "window.open('http://www.sts.org/patient-information/lung/thoracic-surgery')">effective Lung Cancer treatment</span>. 
 											
 											<br />
 											<br />
 											
-                                            Depending on the type and stage of the cancer and other factors, treatment options for lung cancer can include: <span class = "link" onClick = "window.open('http://www.cancer.net/cancer-types/lung-cancer/treatment-options')">Surgery, radiation therapy, laser therapy, chemotherapy, and certain types of targeted therapy.</span> Sometimes, more than one of type of treatment might be used. In choosing which treatment plan is best for the patient, some important factors to consider include the location and stage of the cancer, the patient's overall health, the chances of curing the disease, and the possible impact of the treatment on the lungs. 
-											
+											Depending on the type and stage of the cancer and other factors, treatment options for Lung Cancer can include: <span class = "link" onClick = "window.open('http://www.cancer.net/cancer-types/lung-cancer/treatment-options')">Surgery, radiation therapy, laser therapy, chemotherapy, and certain types of targeted therapy.</span> Because of the multi-faceted way in which Lung Cancer attacks the body, it is not uncommon for more than one type of treatment to be used. Choosing which treatment plan is best for the patient can prove to be a difficult decision, and is often informed by the location and stage of the cancer, the patient's overall health, the chances of curing the disease, and the possible impact of the treatment on the lungs and the rest of the body.  
 											
 										</p>
 									</dd>
 									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #F7464A;">Lobectomy</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-                                            <span class = "link" onClick = "window.open('http://www.hopkinsmedicine.org/healthlibrary/test_procedures/pulmonary/lobectomy_92,p07749/')">Lobectomy</span> is a specific type of surgery, catered to the specific structure of the lungs and surrounding systems. The lungs typically have five lobes, three in the right lung and two in the left lung. Lobectomy is a very effective method of surgery, even when the tumor is small.
+											<span class = "link" onClick = "window.open('http://lungcancer.about.com/od/treatmentoflungcancer/a/lobectomy.htm')">Lobectomies</span> are a form of Lung Cancer surgery that has been greatly improved in recent years. A Lobectomy is a fairy intensive surgery, and typically involves one of the lobes of a lung being removed. To provide a frame of reference for that fact, a normal pair of lungs <span class = "link" onClick = "window.open('http://lungcancer.about.com/od/treatmentoflungcancer/a/lobectomy.htm')">contains a total of 5 lobes</span>. While the specifics of the surgery are subject to change in adherance to the specifics circumstances surrounding the patient's case of Lung Cancer, it is typically favored for being a less aggressive option than <span class = "link" onClick = "window.open('http://lungcancer.about.com/od/treatmentoflungcancer/a/pneumonectomy.htm')">the removal of an entire lung</span>.
+											
 											
 											<br />
 											<br />
+											The constant evolution in medical knowledge that has been experienced over the past decade and a half has allowed the prognosis for patients of 
+											Lobectomies to be improved greatly. Although the effectivenesss of the operation depends on factors such as the stage of the cacner, the general health of the patient, and the specifics of the procedure employed by the surgeon, <span class = "link" onClick = "window.open('http://lungcancer.about.com/od/treatmentoflungcancer/a/lobectomy.htm')">successful efforts can offer</span> a chance for long-term survival free from the recurrence of the cancer. 
 											
-                                            Lobectomy usually takes out an entire lobe, specifically the one with the cancerous cells. Even if one lobe is taken out, the lungs still function and provide oxygen to the body, albeit at a lesser rate and with some difficulties. 
+											
                                             <br /><br />
-                                            This type of surgery has many side effects afterwards, and is usually very risky, but it has always served well in terminating the growth of cancer after the surgery is over.
-											
+											A Lobectomy is not a simple procedure, and as <span class = "link" onClick = "window.open('http://www.hopkinsmedicine.org/healthlibrary/test_procedures/pulmonary/lobectomy_92,p07749/')">such side effects and complications are not uncommon</span>. This can include anything from infections to heart problems, something that can compromise the long-term effectiveness of the surgery. However, things are certaintly better than they once were, and medical professionals are confident that the effectiveness and safety of this surgery will continue to grow alongside the tide of accumulating medical knowledge. 
 											
 											 
 									</dd>
 									<dt><a href="#memes" class="accordionTitle2" style = "background-color: #46BFBD;">Radiofrequency Ablation (RFA)</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-                                            <span class = "link" onClick = "window.open('http://www.cancer.net/cancer-types/lung-cancer/treatment-options')">RFA</span> is a very unique method of cancer treatment, and can only be used on the lungs, because of the inherent nature of their structure. RFA is a minimally invasive treatment for cancer. It is an image-guided technique that heats and destroys cancer cells.
-										
+											 <span class = "link" onClick = "window.open('http://www.cancer.net/cancer-types/lung-cancer/treatment-options')">Radiofrequent Albation</span> is a method of cancer treatment that us unique to the lungs due to the inherant nature of their structure. It is an image-guided technique that heats and destroys cancer cells, thus making it minimally invasive when compared to other, more drastic procedures. 	
+											 
 										<br />
 										<br />
+										While it is <span class = "link" onClick = "window.open('http://www.radiologyinfo.org/en/info.cfm?pg=rfalung')">designed only as a supplement</span> to other forms of treatment, RFA offers an effective treatment option for patients who either wish to circumvent the necessity of traditional surgical procedures or are too ill to undergo them. In this way, RFA gives options to patients who otherwise have very few, thus serving as a profound example of how medical advancements have benefitted individual lives. 
 										
-										Imaging techniques such as ultrasound, computed tomography (CT) or magnetic resonance imaging (MRI) are used to help guide a needle electrode into a cancerous tumor. High-frequency electrical currents are then passed through the electrode, creating heat that destroys the abnormal cells.
+									
                                             <br />
                                             <br />
-                                            This form of treatment is one of the most effective ones that have been discovered so far. The electric currents target only the cancerous region, and do not jump around too much. In addition, the amount of current required to kill the cells is not harmful to the human body as a whole, so minimal pain is experienced after the procedure. 
-										
-
-										
+											Similarly positive is the relative lack of persisting effects of the procedure after it is conducted. Although the <span class = "link" onClick = "window.open('http://www.radiologyinfo.org/en/info.cfm?pg=rfalung')">chance for lung collapse does exist</span>, this problem usually be effectively dealt with in a matter of days by inserting a tube between the collapsed lung and the chest wall. The vast majority of patients are able to resume their normal lives about a week after the surgery, and <span class = "link" onClick = "window.open('http://www.radiologyinfo.org/en/info.cfm?pg=rfalung')">only 1 in 10 patients</span> report experiencing pain after this same timeframe. 
+											
+											
+											
 										</p>
 									</dd>
 									
@@ -387,9 +382,8 @@
 						<div id = "anchor_up_third" class = "move_focus_up"> </div>
 						<div id = "goFirst" class = "smaller_header">How to Help</div>
 						<br />
-                           Even though Lung Cancer is a heavily researched form of cancer, it still remains at large as the single largest contributor to cancer-related deaths. While progress has certaintly been made in recent years, further research is required to make this Eye Cancer an issue of the past. Fotunately, the organizations detailed below all provide a valuable opportunity to right this wrong, and to ensure that Lung Cancer is allocated the research that it deserves and requires. 
-                            
-                            
+						
+						Despite the efforts to promote Lung Cancer as a national issue that have been made in recent years, the disease still remains at large as <span class = "link" onClick = "window.open('http://www.nbcnews.com/id/39102353/ns/health-cancer/t/top-deadliest-cancers-why-theres-no-cure/')">the single largest contributor to cancer-related deaths</span>. The overwhelmingly aggressive nature of Lung Cancer has made it a difficult adversary to face. Fortunately, all of the organizations detailed below have made it their mission to topple this tremendous obstacle through the means of ensuring that Lung Cancer is allocated the research that it deserves and requires. 
 						
 						<br /><br />	
 						
@@ -400,17 +394,17 @@
 									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #FDB45C;">A Breath of Hope Lung Foundation</a></dt>
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
+											<span class = "link" onClick = "window.open('http://abreathofhope.org')">A Breath of Hope Lung Foundation</span> is an organization of like-minded individuals that has been selflessly dedicated to the betterment of Lung Cancer education and medical practices <span class = "link" onClick = "window.open('http://abreathofhope.org/about-us/')">since its inception in 2008</span>. They seek to extend their influence beyond individual patients by providing families with the emotional and financial support systems that they need to overcome the diagnoses of their loved ones in a healthy, productive way. 
 											
-                                            <span class = "link" onClick = "window.open('http://abreathofhope.org/')">A Breath of Hope Lung Foundation</span> is a foundation that is dedicated to supporting and funding the research for treatments on lung cancers, and works tirelessly to provide the best rehabilitation for not only lung cancer patients, but the families of those patients as well.
+											<br />	<br />
 											
-											<br />						<br />
+											Although the maximation of awareness and support of all positive endeavours of Lung Cancer treatment are the broad goals of this foundation, they do detail the specific steps that they plan to take to turn this ambitious vision into reality. It starts with research, <span class = "link" onClick = "window.open('http://abreathofhope.org/research/')">where financial support is provided</span> to medical professionals who push the boundary of Lung Cancer research. The next step is increased outreach, which allows us to collectively reap the benefits sown by such research through the widespread appreciation of its benefits. Finally, they seek to increase support for patients who face Lung Cancer with little or no support, thus giving hope to those who otherwise would have none. 
 											
-											Maximizing awareness and supporting all positive endaverous of lung cancer treatment are important goals of this foundation, but they also have 3 specific goals they outline themselves: 1. Increased Research, 2. Increased outreach, especially in low income communities where lung cancer is most prevalent, and 3. Increased support of patients who often face this cancer with little or no support.
 											
 											<br />
 											<br />
 											
-                                            A Breath of Hope Lung Foundation is a 501(c)(3) tax exempt organization and is proud to meet all standards of the <span class = "link" onClick = "window.open('http://www.smartgivers.org/')">Charities Review Council.</span> All donations are tax deductible to the full extent of the law. Click below to donate and change someones life forever.
+											A Breath of Hope Lung Foundation is a fully registered tax exempt organization that proudly meets all of the standards outlined by the <span class = "link" onClick = "window.open('http://www.smartgivers.org/')">Charities Review Council</span>. All donations are tax deductible to the full extent of the law. This means that those who donate to the foundation can rest assured that their money is being spent in a responsible manner that is consistent with the needs of those who suffer from Lung Cancer. You can click the button below to donate and change someone's life forever.  
 											
 											
 											<br />
@@ -431,17 +425,18 @@
 								
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-								<span class = "link" onClick = "window.open('http://www.lcfamerica.org/#sthash.OjQiqHvU.dpbs')">The Lung Cancer Foundation of America</span> is a foundation based in the US dedicated to pioneering groundbreaking results in the fields of lung cancer treatement, and also strive to improve the lives of the hundreds of thousands of lung cancer patients in this nation.
+											
+											<span class = "link" onClick = "window.open('http://www.lcfamerica.org/#sthash.OjQiqHvU.dpbs')">The Lung Cancer Foundation of America</span> is an organization based in the United States that has set their sights on one tremendous goal: establishing groundbreaking results in the field of Lung Cancer treatment. They hope that their work will one day improve the lives of the hundreds of thousands of Lung Cancer patients on both national and global levels. 
 											
 											<br />
 											<br />	
 											
-                                            To accomplish this, LCFA will work to raise both the funds and the national profile of lung cancer in order to substantially increase support of innovative and groundbreaking research efforts. Check out <span class = "link" onClick = "window.open('https://www.youtube.com/watch?v=SLoqn93S_tc')">this</span> video, to learn even more about this wonderful center for transformative science in the area of lung cancer treatment.
+											In order to accomplish this, the LCFA works to raise both the funds and the national profile of Lung Cacner in order to substantially increase support of innovative research efforts that save lives. They strive to communicate their goals in a way that is both direct and exceedingly clear, and as such <span class = "link" onClick = "window.open('https://www.youtube.com/watch?v=SLoqn93S_tc')">have created a promotional video</span> that details the specifics of this wonderful center for transformative science in the area of Lung Cancer treatment.  
                                             <br />
                                             <br />
-                                            
-                                            This foundation would be absolutely nothing without the person most pivotal to their operations: You. Nothing would be possible without the help and funding of you, and all others around you. Click the button below to be redirected to their donation page, and change the world as we know it, today.
 											
+											As worthy as their cause is, this foundation would be ultimately unable to make an impact without the support of the public. None of the services that they provide are possible without the continued support of people like you. Click the button below to their donation page, and change the world as we know it for the better. 
+						
 											<br />
 											<br />	
 											
@@ -456,16 +451,20 @@
 								
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-                                            The <span class = "link" onClick = "window.open('http://smokefree.gov')">SmokeFree.gov</span> foundation is a bit different than the other ones listed above in that it doesnt actually cater to lung cancer patients or the treatment of it itself, but rather the #1 cause of it: smoking. Smoking is easily the most dangerous and most prevalent cause of lung cancers, increasing someones chances of getting lung cancer by upwards of <span class = "link" onClick = "window.open('http://www.cdc.gov/cancer/lung/basic_info/risk_factors.htm')">15 to 30 times more.</span> While smoking, the body inhales over 7000 different chemicals, 70 of which are known to cause cancer in humans.
+											
+											SmokeFree.gov is a little bit different from the other organizations that we've promoted in that it doesn't actually cater to the treatment of Lung Cancer specifically. Rather, it attempts to undermine the #1 cause of Lung Cancer: smoking. Smoking is easily the most dangerous and most prevalent cause of Lung Cancers, increasing the risk of contracting the disease <span class = "link" onClick = "window.open('http://www.cdc.gov/cancer/lung/basic_info/risk_factors.htm')">by a factor of 15 to 30 in some cases</span>. While smoking, the body inhales 7000 different chemicals, 70 of which have been directly linked to cancer in humans.  
+											
 											
 											<br />
 											<br />	
 											
-                                            This wonderful foundation has the tools and resources to ensure one goal: To make sure the people around you are able to quit smoking, and finally live a healthy life free of worry. They provide the guides and advice necessary to revamp a persons life, and develop a simple quitting plan that best suits the person in question. 
+											This wonderful resource provides many tools and resources, but they all link back to one central purpose: to ensure that you and the people around you are able to stay free of smoking, and as such are able to live a healthy life free from worry. They provide all the guides and advice necessary to accomplish this goal, and strive to make it easy to develop a simple "quitting plan" that is uniquely suited for the individual in question. 
+											
+										
                                             <br />
                                             <br />
                                             
-                                            This website alone cannot help spread the word themselves, so click the link below to be directed to their website, and find guides and tips to help people quit smoking once and for all.
+											A short description of the website is insufficient in demonstrating the excellence of its purpose. You can click the button below to be directed to the website, and find guides and tips to help bring smoking and its harms to an end. 
 											
 											<br />
 											<br />	
@@ -479,7 +478,7 @@
 										<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #46BFBD">Fight At No Cost</a></dt>
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-											In order to succeed in the fight for life and breath we must join together and connect. Through social media, the sharing of stories, and advancement in research we, together, have the opportunity to beat lung cancer. 
+											In order to succeed in the fight for life and breath we must join together and connect. Through social media, the sharing of stories, and advancement in research we, together, have the opportunity to beat Lung Cancer. 
 											
 											<div id = "button_wrapper">
 												
@@ -490,7 +489,7 @@
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('lung')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -524,53 +523,35 @@
 		</span>
 		<br />
 		<br />
-			<div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+			<footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>	
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2014 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+		</footer>
+		
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

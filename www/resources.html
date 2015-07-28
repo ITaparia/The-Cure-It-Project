@@ -1,0 +1,872 @@
+
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 2931281, 2014-11-30T14:50:45-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Dual-300 by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dual/300/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2931281
+ * 
+ * ? 2014 MyFonts Inc
+*/
+
+-->
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>  
+	 <meta charset = "utf-8" />
+        <script src = "script.js"> </script>
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	    <script type="text/javascript" src="engine1/jquery.js"></script>
+        <link rel = "stylesheet" href = "style.css" />
+		<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "fonts.css" />
+		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="smoothscroll.js"></script>
+        <script src="Chart.js"></script>
+		
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+		
+        <script type="text/javascript">
+		
+		window.onload = function(){
+				var ctxColo = document.getElementById("coloStatsPie").getContext("2d");
+				window.myPie = new Chart(ctxColo).Pie(pieDataColo);
+                
+         var ctxMain = document.getElementById("coloStatsBar").getContext("2d");
+	window.myBar = new Chart(ctxMain).Bar(barChartDataColo, {
+	    responsive : true
+	});
+                   
+              
+		        
+    
+            };</script>
+        
+        <title>Resources</title>
+    </head>
+    
+     <body>
+		 
+	
+	    
+	    <div id='header_holder'>
+		
+		<div id='header'>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
+		    
+		    
+		    <div id = "user_options">
+		    
+			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
+			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
+		    
+		    </div>
+		    
+	
+            <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
+		
+		</div>
+			    
+	</div><span id = "move_all">
+            
+            <div id="parallax-main">
+		    
+			    <section>
+				    <div class="title">
+				    <!--<h3>Lets add content</h3>
+				    <h1>To make this look cool</h1>-->
+				    
+				    </div>
+			    </section>
+			    
+				
+			   
+			    
+			    <section>
+				    <div class="block">
+				    <p><div id = "center_element"><span class="first-character one" style = "font-size: 50px; font-size: 3.5vw;">Resources</span></div>
+					
+					<div id = "move_down">
+					<div id = "move_down">
+					    <!-- Body Content One -->
+						
+						<div id = "menu_box_two" style = "position:relative;top:-15px;">
+							<span id = "menu_box_header">Content</span>
+							<br />
+							<br />
+							<br />
+							
+							<a href = "#anchor_up_first" class = "smoothScroll"> <span id = "menu_box_options">General Information</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_second" class = "smoothScroll"> <span id = "menu_box_options">Medical Treatment</span> </a>
+							
+							<br/><br /><br />
+							<a href = "#anchor_up_third" class = "smoothScroll"> <span id = "menu_box_options">Emotional Support</span> </a>
+							
+							
+							<br/><br /><br />
+							<a href = "#anchor_up_fourth" class = "smoothScroll"> <span id = "menu_box_options">Join the Fight</span> </a>
+							
+						</div>
+						
+						
+					    <br />
+						<br />
+						<div id = "anchor_up_first" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">General Information</div>
+						<br />
+						
+						Cancer is an incredibly complex and detail-oriented topic. Fortunately, there exist many fantastic resources with which to traverse the tremendous scope of the topic. All of the links below are great ways to extend the purpose of this site by furthering your knowledge regarding cancer as a whole. 
+						
+	
+					 	<br />
+					    <br />
+						
+						
+						<span id = "center_this">
+							<span class = "link" onClick = "window.open('http://www.cancer.org/research/cancerfactsstatistics/')">American Cancer Society - Cancer facts and statistics</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/cancer/cancercauses/')">American Cancer Society - What causes cancer?</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/research/currentlyfundedcancerresearch/index')">American Cancer Society - Research initiatives</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/cancer/news/expertvoices/default')">American Cancer Society - Expert voices</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bookstore/index')">American Cancer Society - Nonfiction books about cancer</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/cancer/cancerbasics/signs-and-symptoms-of-cancer')">American Cancer Society - Signs and symptoms of cancer</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/healthy/index')">American Cancer Society - Staying healthy</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/newscenter')">Journal of Cancer Research - Modern cancer research</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/what-is-cancer')">National Cancer Institute - What is cancer?</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/types/alphalist')">National Cancer Institute - A to Z list of cancer types</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/treatment/drugs')">National Cancer Institute - A to Z list of cancer drugs</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/dictionary')">National Cancer Institute - Dictionary of cancer terms</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://seer.cancer.gov/cgi-bin/glossary/glossary.pl')">National Cancer Institute - Dictionary of statistical terms</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/types/commoncancers')">National Cancer Institute - Common cancer types</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://seer.cancer.gov/report_to_nation/')">National Cancer Institute - Annual reports on the status of cancer</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.reddit.com/r/cancer/')">Reddit - Subreddit dedicated to cancer</span>
+						
+							
+							
+						
+							
+							
+							
+						</span>
+								
+						<br />
+						<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_second" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">Medical Treatment</div>
+					    
+						<br />
+						
+						One of the most common cancer-related topics that confuses people is the types of medical treaments that are used and the current state of their effectiveness. This section serves to fill this void by providing resources which delve into these topics in great detail. 
+						
+						
+						
+						
+					 	<br />
+					    <br />
+						
+						
+						<span id = "center_this">
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/treatmentsandsideeffects/treatmenttypes/treatment-types-landing')">American Cancer Society - Types of cancer treatment</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/cancer/cancerinchildren/detailedguide/cancer-in-children-treating-how-are-childhood-cancers-treated')">American Cancer Society - Cancer treatment for children</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/cancer-info/cancerstats/incidence/age/')">American Research UK - Cancer incidence by age</span>
+							<br />
+							
+							<span class = "link" onClick = "window.open('http://www.cancer.org/cancer/cancerinchildren/detailedguide/cancer-in-children-treating-survival-rates')">American Cancer Society - Surviving childhood cancer</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/treatmentsandsideeffects/complementaryandalternativemedicine/learningaboutnewcancertreatments/learning-about-new-ways-to-treat-cancer-toc')">American Cancer Society - Learning about new treatments</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/childrenandcancer/whenyourchildhascancer/childrendiagnosedwithcancerunderstandingthehealthcaresystem/children-diagnosed-with-cancer--understanding-the-health-care-system-ca-care-team-members')">American Cancer Society - Members of cancer care team</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/findingandpayingfortreatment/findingtreatmentcenters/index?sitearea=eto')">American Cancer Society - Finding treatment centers</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/treatmentsandsideeffects/treatmenttypes/surgery/surgery-how-is-surgery-used-for-cancer')">Cancer.net - Use of surgery in treatment</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/how-cancer-treated/personalized-and-targeted-therapies/what-personalized-cancer-medicine')">Cancer.net - Personalized cancer medicines</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/how-cancer-treated/chemotherapy/side-effects-chemotherapy')">Cancer.net - Side effects of chemotherapy</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.net/find-cancer-doctor')">Cancer.net - Find a cancer doctor</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.chemocare.com/chemotherapy/what-is-chemotherapy/default.aspx')">Chemocare - What is chemotherapy?</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/cancer/in-depth/cancer/art-20044517')">Mayo Clinic - Understanding survival rates</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/statistics/find')">National Cancer Institute - Survival statistics</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/managing-care/services/doctor-facility-fact-sheet')">National Cancer Institute - Finding doctor fact sheet</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.treatcancer.com/blog/difference-chemotherapy-radiation/')">SERO - Chemotherapy vs. Radiotherapy</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.webmd.com/cancer/features/how-to-find-the-best-cancer-treatment')">WEB MD - Choosing the best care</span>
+							
+							
+						
+							
+							
+							
+						</span>
+						
+						<br />
+						<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						
+						<div id = "anchor_up_third" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">Emotional Support</div>
+						<br />
+						
+						Cancer is a topic that can be draining in ways more than physical. In these cases, it is important to understand and deal with the emotional consequences of cancer in a way that is both healthy and effective. The resources below are all tremendously valuable ways with which to achieve exactly that. 
+					
+						
+						
+						
+					 	<br />
+					    <br />
+						
+						
+						<span id = "center_this">
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/treatmentsandsideeffects/complementaryandalternativemedicine/mindbodyandspirit/support-groups-cam')">American Cancer Society - What is a support group?</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/supportprogramsservices/index')">American Cancer Society - Find local support groups</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/supportprogramsservices/road-to-recovery')">American Cancer Society - Free rides to treatment</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/treatmentsandsideeffects/physicalsideeffects/sexualsideeffectsinwomen/sexualityforthewoman/sexuality-for-women-with-cancer-keeping-sex-life-despite-cancer-treatment')">American Cancer Society - Maintaining friendships through cancer</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/understandingyourdiagnosis/talkingaboutcancer/how-to-be-a-friend-to-someone-with-cancer')">American Cancer Society - Maintaining healthy sexual interactions</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/treatmentsandsideeffects/emotionalsideeffects/copingwithcancerineverydaylife/a-message-of-hope-for-spouses-families-friends')">American Cancer Society - Respecting the topic and privacy</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/treatmentsandsideeffects/emotionalsideeffects/anxietyfearanddepression/anxiety-fear-and-depression-toc')">American Cancer Society - Anxiety, fear, and depression</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.net/coping-and-emotions/communicating-loved-ones/supporting-friend-who-has-cancer')">Cancer.net - Supporting friends with cancer</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.net/coping-and-emotions/communicating-loved-ones/talking-about-cancer/talking-someone-who-has-cancer')">Cancer.net - Talking with someone who has cancer</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.net/coping-and-emotions/communicating-loved-ones/talking-about-cancer/talking-someone-who-has-cancer')">Cancer.net - Counseling opporunties and their benefits</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancerandcareers.org/en')">Cancer and Careers - Finding and maintaing careers for patients</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancercare.org/support_groups')">Cancer Care - Various support groups</span>
+							<br />
+							<span class = "link" onClick = "window.open('https://www.cancersafety.com/the-top-6-online-cancer-support-groups/')">Cancer Safety Council - Top online support groups</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancersupportcommunity.org/MainMenu/Cancer-Support/Online-Support-Groups.html')">Cancer Support Community - Online support group 1 [All Ages]</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancersupportcommunity.org/MainMenu/About-Cancer/Emotional-Wellbeing/Thoughts-of-Suicide.html')">Cancer Support Community - Dealing with suicidal thoughts</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.grouploop.org')">Group Loop - Online support group 2 [Teenagers]</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.helpguide.org/articles/grief-loss/coping-with-grief-and-loss.htm')">Helpguide.org - Coping with loss</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.helpguide.org/articles/grief-loss/coping-with-grief-and-loss.htm')">Journey Forward - Coping with changes in body image</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.livestrong.org/we-can-help/fertility-services/')">LiveStrong - Becoming a parent after cancer</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/coping')">National Cancer Institute - Coping with cancer</span>
+							<br />
+							
+							
+						
+							
+							
+							
+						</span>
+					  <br />
+						<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						<div id = "anchor_up_fourth" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">Join the Fight</div>
+					    
+						<br />
+						
+						Cancer is present in all of our lives in ways both large and small. Because of this, cancer is a cause deserving of the public attention, for the benefits of dealing with the issue extend far beyond just assisting the people who directly suffer from it. All of the items below are excellent resources with which to do your part to accomplish this goal. 
+						
+						
+					 	<br />
+					    <br />
+						
+						
+						<span id = "center_this">
+							<span class = "link" onClick = "window.open('https://donate.cancer.org/index')">American Cancer Society - Online donation opportunity 1 [All Ages]</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/involved/volunteer/')">American Cancer Society - Volunteer opportunity 1</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancer.org/treatment/supportprogramsservices/road-to-recovery')">American Cancer Society - Give patients rides to treatment</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.cancerresearch.org/giving-to-cri')">Cancer Research Institute - Online donation opportunity 2 [All Ages]</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.childrenscancer.org/main/ways_to_donate/')">CCRF - Online donation opportunity 3 [Children and Teens]</span>
+							<br />
+							<span class = "link" onClick = "window.open('donate.html')">Cure It Project - Our donation page</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://www.choosehope.com/calendar-of-cancer-awareness-months')">Choose Hope - Cancer awareness months</span>
+							<br />
+							<span class = "link" onClick = "window.open('https://fcancer.org/volunteer/dashboard')">F Cancer - Donate talent by the hour</span>
+							<br />
+							<span class = "link" onClick = "window.open('http://cancer.northwestern.edu/public/contribute/volunteer/index.cfm')">RHCCC - Volunteer opportunity 2</span>
+							<br />
+							
+						
+							
+							
+							
+						</span>
+						
+						<br />
+						<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+					 <div id = "center_element">
+						 
+					 	<div id = "button_special" onClick = "openDonate()">Go to Donate</div>
+				   	 </div>
+					  <br />
+					  <br /> 
+					  <br />
+				    </div>
+			    </section>
+                </div>
+							
+            </span>
+			<br />
+			<br />
+			
+      <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
+					
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
+			</div>
+		</div>
+		</footer>
+		
+			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+		</body>
+		<script>
+	(function($) {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}		
+			});
+
+			$('.scrollup').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+		})(jQuery);
+		
+	
+		
+		( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass, addClass, removeClass;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass = function( elem, c ) {
+						if ( !hasClass( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass( elem, c ) {
+					var fn = hasClass( elem, c ) ? removeClass : addClass;
+					fn( elem, c );
+				}		
+				var classie = {
+					hasClass: hasClass,
+					addClass: addClass,
+					removeClass: removeClass,
+					toggleClass: toggleClass,
+					has: hasClass,
+					add: addClass,
+					remove: removeClass,
+					toggle: toggleClass
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie );
+				} else {
+					window.classie = classie;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion = $('.accordion');
+			accordion.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie.toggle(title, 'accordionTitleActive');
+								if(classie.has(content, 'accordionItemCollapsed')) {
+									if(classie.has(content, 'animateOut')){
+										classie.remove(content, 'animateOut');
+									}
+								classie.add(content, 'animateIn');
+								}else{
+									classie.remove(content, 'animateIn');
+									classie.add(content, 'animateOut');
+								}
+							classie.toggle(content, 'accordionItemCollapsed');      
+							}
+						}
+					}			  
+				}
+			});
+			
+            
+            
+            
+            
+            ( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass2, addClass2, removeClass2;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass2 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass2 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass2 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass2 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass2 = function( elem, c ) {
+						if ( !hasClass2( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass2 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass2( elem, c ) {
+					var fn = hasClass2( elem, c ) ? removeClass2 : addClass2;
+					fn( elem, c );
+				}		
+				var classie2 = {
+					hasClass2: hasClass2,
+					addClass2: addClass2,
+					removeClass2: removeClass2,
+					toggleClass2: toggleClass2,
+					has2: hasClass2,
+					add2: addClass2,
+					remove2: removeClass2,
+					toggle2: toggleClass2
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie2 );
+				} else {
+					window.classie2 = classie2;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion2 = $('.accordion2');
+			accordion2.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle2") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie2.toggle2(title, 'accordionTitleActive2');
+								if(classie2.has2(content, 'accordionItemCollapsed2')) {
+									if(classie2.has2(content, 'animateOut2')){
+										classie2.remove2(content, 'animateOut2');
+									}
+								classie2.add2(content, 'animateIn2');
+								}else{
+									classie2.remove2(content, 'animateIn2');
+									classie2.add2(content, 'animateOut2');
+								}
+							classie2.toggle2(content, 'accordionItemCollapsed2');      
+							}
+						}
+					}			  
+				}
+			});
+			
+			
+			
+			
+			
+		
+			( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass3, addClass3, removeClass3;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass3 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass3 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass3 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass3 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass3 = function( elem, c ) {
+						if ( !hasClass3( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass3 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass3( elem, c ) {
+					var fn = hasClass3( elem, c ) ? removeClass3 : addClass3;
+					fn( elem, c );
+				}		
+				var classie3 = {
+					hasClass3: hasClass3,
+					addClass3: addClass3,
+					removeClass3: removeClass3,
+					toggleClass3: toggleClass3,
+					has3: hasClass3,
+					add3: addClass3,
+					remove3: removeClass3,
+					toggle3: toggleClass3
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie3 );
+				} else {
+					window.classie3 = classie3;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion3 = $('.accordion3');
+			accordion3.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle3") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie3.toggle3(title, 'accordionTitleActive3');
+								if(classie3.has3(content, 'accordionItemCollapsed3')) {
+									if(classie3.has3(content, 'animateOut3')){
+										classie3.remove3(content, 'animateOut3');
+									}
+								classie3.add3(content, 'animateIn3');
+								}else{
+									classie3.remove3(content, 'animateIn3');
+									classie3.add3(content, 'animateOut3');
+								}
+							classie3.toggle3(content, 'accordionItemCollapsed3');      
+							}
+						}
+					}			  
+				}
+			});
+            
+            
+            
+            
+            
+            ( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass4, addClass4, removeClass4;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass4 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass4 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass4 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass4 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass4 = function( elem, c ) {
+						if ( !hasClass4( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass4 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass4( elem, c ) {
+					var fn = hasClass4( elem, c ) ? removeClass4 : addClass4;
+					fn( elem, c );
+				}		
+				var classie4 = {
+					hasClass4: hasClass4,
+					addClass4: addClass4,
+					removeClass4: removeClass4,
+					toggleClass4: toggleClass4,
+					has4: hasClass4,
+					add4: addClass4,
+					remove4: removeClass4,
+					toggle4: toggleClass4
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie4 );
+				} else {
+					window.classie4 = classie4;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion4 = $('.accordion4');
+			accordion4.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle4") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie4.toggle4(title, 'accordionTitleActive4');
+								if(classie4.has4(content, 'accordionItemCollapsed4')) {
+									if(classie4.has4(content, 'animateOut4')){
+										classie4.remove4(content, 'animateOut4');
+									}
+								classie4.add4(content, 'animateIn4');
+								}else{
+									classie4.remove4(content, 'animateIn4');
+									classie4.add4(content, 'animateOut4');
+								}
+							classie4.toggle4(content, 'accordionItemCollapsed4');      
+							}
+						}
+					}			  
+				}
+			});
+            
+            
+            
+            
+            
+            ( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass5, addClass5, removeClass5;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass5 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass5 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass5 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass5 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass5 = function( elem, c ) {
+						if ( !hasClass5( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass5 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass5( elem, c ) {
+					var fn = hasClass5( elem, c ) ? removeClass5 : addClass5;
+					fn( elem, c );
+				}		
+				var classie5 = {
+					hasClass5: hasClass5,
+					addClass5: addClass5,
+					removeClass5: removeClass5,
+					toggleClass5: toggleClass5,
+					has5: hasClass5,
+					add5: addClass5,
+					remove5: removeClass5,
+					toggle5: toggleClass5
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie5 );
+				} else {
+					window.classie5 = classie5;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion5 = $('.accordion5');
+			accordion5.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle5") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie5.toggle5(title, 'accordionTitleActive5');
+								if(classie5.has5(content, 'accordionItemCollapsed5')) {
+									if(classie5.has5(content, 'animateOut5')){
+										classie5.remove5(content, 'animateOut5');
+									}
+								classie5.add5(content, 'animateIn5');
+								}else{
+									classie5.remove5(content, 'animateIn5');
+									classie5.add5(content, 'animateOut5');
+								}
+							classie5.toggle5(content, 'accordionItemCollapsed5');      
+							}
+						}
+					}			  
+				}
+			});
+			
+		</script>
+		</html>

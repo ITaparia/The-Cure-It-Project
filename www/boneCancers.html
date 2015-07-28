@@ -37,6 +37,8 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
         <script src="Chart.js"></script>
         <script type="text/javascript">window.onload = function(){
                                 var ctxbone = document.getElementById("boneStatsPie").getContext("2d");
@@ -61,16 +63,16 @@
 	    <div id='header_holder'>
 		
 		<div id='header'>
-		    <span id = "title_text">The Cure It Project</span>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
-		   <div id = "user_options">
+		    <div id = "user_options">
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -78,7 +80,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
 			<span id = "move_all">	
             
             <div id="parallax-main">
@@ -91,8 +94,8 @@
 			    </section>
 			    
 				  <section>
-				    <div class="parallax-lungs">
-						<h2 id = "picture_text_lung" class = "altText">Bone Cancers are the most common<br /> form of cancer in children and young adults</h2>
+				    <div class="parallax-bones">
+						<h2 id = "picture_text_lung" class = "altText">There is currently no known<br />cause for bone cancers</h2>
 							
 							
 							
@@ -147,26 +150,19 @@
 						
 						
 						
-                        <span onClick = "window.open('http://en.wikipedia.org/wiki/Bone_tumor')"class = "link">Bone Cancer</span> is described as the uncontrollable growth of cells, originating in areas with bones or bone related cells. There are 3 different types of Bone Cancers: <span onClick = "window.open('http://en.wikipedia.org/wiki/Osteosarcoma')"class = "link">Osteosarcomas</span>, <span onClick = "window.open('http://en.wikipedia.org/wiki/Ewing's_sarcoma')"class = "link">Ewing Tumors(ET)</span>, and <span onClick = "window.open('http://en.wikipedia.org/wiki/Chondrosarcoma')"class = "link">Chondrosarcomas</span>. These 3 forms of cancer will be discussed in great detail below.
+                        <span onClick = "window.open('http://en.wikipedia.org/wiki/Bone_tumor')"class = "link">Bone Cancer</span> is described as the uncontrollable growth of cells that originates in areas with bones or bone related cells. Bone Cancer is one of the more frightening forms of cancer due to the ease with which it can spread. There are 3 primary types of bone cancers: <span onClick = "window.open('http://en.wikipedia.org/wiki/Osteosarcoma')"class = "link">Osteosarcomas</span>, <span onClick = "window.open('https://www.stjude.org/disease/ewing-sarcoma.html')" class = "link">Ewing Tumors (ET)</span>, and <span onClick = "window.open('http://en.wikipedia.org/wiki/Chondrosarcoma')" class = "link">Chondrosarcomas</span>. All of these will be discussed in great detail below. 
 						
 						
 						
 						<br />
 						<br />
 						
-                        Bone Cancers, as the name implies, are abnormal clusters of cells found inside bones, and lead to the death of normal bone tissue. The real danger in this type of cancer is how easily it can spread, or <span onClick = "window.open('http://en.wikipedia.org/wiki/Metastasis')"class = "link">metastasize</span> around the body. Since bones exist in practically every system and area of the body, this disease has the potential to be spread almost anywhere.
+						Bone Cancers, as the name implies, are abnormal clusters of cells that originate within bones. One reason that these cells are dangerous is because they lead to the death of normal bone tissue. However, another danger comes at the form with which this cancer can <span onClick = "window.open('http://en.wikipedia.org/wiki/Metastasis')"class = "link">metastasize</span>, or spread, around the body. Since bones exist in practically every system and area of the body, this disease has the potential to be spread almost anywhere.
 						
 						<br />
 						<br />
 						
-                        Let's start off by discussing each individual type of bone cancer. As shown through the graph below, Osteosarcomas are easily the most common types of bone cancer, accounting for <span onClick = "window.open('http://www.urmc.rochester.edu/encyclopedia/content.aspx?ContentTypeID=34&ContentID=24884-1')"class = "link">56% of all bone cancer cases</span>. This is followed by Ewing Tumors, and finally, Chondrosarcomas. 
-						
-						
-						
-						
-						
-						
-						
+                        Let's start off by discussing each individual type of Bone Cancer. As shown through the graph below, Osteosarcomas are easily the most common types of Bone Cancer, accounting for <span onClick = "window.open('http://www.urmc.rochester.edu/encyclopedia/content.aspx?ContentTypeID=34&ContentID=24884-1')"class = "link">56% of all Bone Cancer cases</span>. This is followed by Ewing Tumors, and finally, Chondrosarcomas. 
 						<br />
 						<br />
 						
@@ -189,6 +185,7 @@
 						<span style = "color: #F7464A; font-size:22px;">Osteosarcomas</span>
 						<span style = "color: #46BFBD; font-size:22px;">Ewing Tumors</span>
 						<span style = "color: #FDB45C; font-size:22px;">Chondrosarcomas</span>
+						<span style = "color: #0040FF; font-size:22px;">Other</span>
 				
 						</div>
 						
@@ -201,21 +198,23 @@
 									<dt><a class="accordionTitle" href="#" style = "background-color: #F7464A;">Osteosarcomas</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-                                            Osteosarcomas are the most frequent form of bone cancer, as illustrated by the chart above. Before discussing this form of cancer in detail, it is essential to understand the implications of this cancer in regard to specifically being located in the <span class = "link" onClick = "window.open('http://www.innerbody.com/image/skelfov.html')">skeletal system</span>. It is pretty apparent to most people what the skeletal system does for the body: protection and support. The only reason why the body is able to move the way it is is due to the joints and bones located all over the body.
+											As illustrated by the chart above, Osteosarcoma is the most frequent form of Bone Cancer. Before discussing how this form of cancer impacts patients, it is first essential to understand the implications of the cancer's location in the <span class = "link" onClick = "window.open('http://www.innerbody.com/image/skelfov.html')">skeletal system</span>. The role of the skeletal system in the body is essential, as it provides for protection and support for a wide variety of bodily functions. The only reason why the body is able to move the way it is is due to the joints and bones located all over the body, something that this form of cancer inhibits. 
+										
                                             
                                                 <br />
                                                 <br />
-                                               
-                                            The fact that bones are located everywhere on the body is what makes this form of cancer so dangerous. Osteosarcomas can technically occur anyplace where a bone exists, but <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bone-cancer/about/types-of-bone-cancer')">most commonly forms near the lower thigh (femur), shin bone (tibia), and the upper arm (humerus).</span> The exact causes of bone cancer are unknown, but it is known that genetics play a key factor in the transmission of this disease.
-                                               
+                                               The fact that bones are located virtually everywhere on the body is precisely what makes it so dangerous. Osteosarcomas can technically occur anywhere that a bone exists, but they most commonly form near the  <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bone-cancer/about/types-of-bone-cancer')">lower thigh, shin bone, and the upper arm (sometimes referred to as the Femur, Tibia, and Humerus respectively)</span>. The exact causes of this form of cancer are unknown, but it is suspected that genetics play a key factor in the transmission of the diseaes. 
+											   
                                                 <br />
                                                 <br />
-                                               
-                                            Symptoms of bone cancer vary, depending on the location and size of the tumor. The most common ones include <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bonecancer/detailedguide/bone-cancer-signs-symptoms')">intense pain at tumor site, rare bone fractures, breathing issues, and unexplained weight loss.</span>
-                    
-                                               
-                                                <br />
-                                                <br />
+												The danger of Osteosarcomas, like most form of cancer, are highly contingent on the stage in which they were discovered. For instance, if the cancer is discovered before it metastasizes, the 5 year survival rate for patients is generally noted to fall anywhere from <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/osteosarcoma/detailedguide/osteosarcoma-survival-rates')">60 to 80 percent</span>. However, if the cancer spreads before it is found, the survival rate within this same timeframe can be as low as <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/osteosarcoma/detailedguide/osteosarcoma-survival-rates')">15 to 30 percent</span>. 
+												
+												<br />
+												<br />
+												
+												Systems of Osteosarcomas vary from patient to patient, but there are a few common ones to be noted. These include <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bonecancer/detailedguide/bone-cancer-signs-symptoms')">intense pain at the tumor site, rare bone fractures, difficulty with breathing, and sudden weight loss without explanation</span>.
+												
+												
                                                  
                                 
                                     </p>
@@ -224,48 +223,39 @@
 									<dt><a class="accordionTitle" href="#" style = "background-color: #46BFBD">Ewing Tumors</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-											
-                                            Ewing Tumors account for over 30% of all bone cancer cases. They usually form in the same spots as osteosarcomas, with two exceptions. They can form in the cavities of the leg and arm bones, and can also <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bone-cancer/about/types-of-bone-cancer')">form in soft tissues of the body near bones.</span> 
-											
+											Ewing Tumors are relatively uncommon, accounting for just 34 percent of all Bone Cancer cases. They usually form in the same spots as Osteosarcomas, but there are a few noteable exceptions to this generalization. That is, they have been known to form in the cavities of the leg and arm bones, and can also <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bone-cancer/about/types-of-bone-cancer')">form in soft tissues of the body near bones.</span> 
 											
 											<br />
 											<br />
 											
-                                            
-											Ewing Tumors are a bit different than Osteosarcomas, because they form from primitive cells, the oldest cells in the body. This doesnt mean they are treated differently: Ewing tumors still contain the same DNA abnormailities, and respond to all methods of treatment the same way other cancerous cells do.
+											Ewing Tumors are a bit different than Osteosarcomas in that they form from <span class = "link" onClick = "window.open('http://reference.iucr.org/dictionary/Primitive_cell')">primitive cells</span>. Primitive cells are the oldest cells in the body. One common misconception is that this results in different treatment - Ewing Tumors still contain the same DNA abnormalities, and respond to most methods of treatement the same way other cancerous cells do.  
 											
-											
+									
+											<br />
+											<br />
+											 The survival rates of Ewing Tumors are especially noteworthy due the relationship that they appear to have with the age of the patient. For example, about <span class = "link" onClick = "window.open('http://www.stjude.org/ewing-sarcoma')">70 percent of children with Ewing Tumors survive five years or more</span>. Unfortunately, people aged between 15 and 19 suffer a <span class = "link" onClick = "window.open('http://www.stjude.org/ewing-sarcoma')">significantly lower survival rate</span> of about 56 percent. 
 											
 											
 											<br />
 											<br />
-                                            As of now, <span class = "link" onClick = "window.open('http://www.webmd.com/cancer/ewings-sarcoma?page=2')">there are no environmental factors that contribute to the development of Ewing Tumors.</span> The only way to protect someone against this disease is to make sure that the person is diagnosed as soon as possible				
+											As of now, <span class = "link" onClick = "window.open('http://www.webmd.com/cancer/ewings-sarcoma?page=2')">there are no identifiable environmental factors that contribute to the development of Ewing Tumors.</span> The only way to protect someone from this disease is to be proactive in making healthy decisions and taking care to ensure that any problems are diagnosed as soon as possible. Waiting too long to be examined by a doctor is a mistake that costs lives.
 											
-											
-											
-											
-	 
 					</p>
 					</dd>
 									
 										<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C">Chondrosarcomas</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-                                            Chondrosarcomas are different than the other forms of bone cancer in one very specific way. Instead of infecting hard bones, <span class = "link" onClick = "window.open('http://sarcomahelp.org/chondrosarcoma.html')">Chondrosarcomas actually go for the cartilage in the body.</span> They can still form in the hips, ribs and arm bones, but the key difference is that they can attack places with cartilage.
-									
-										<br />
-										<br />
-										
-                                            Because of the fact that this type of Bone Cancer can affect cartilage, symptoms are the same as osteosarcomas, but with the addition of olfactory (smell) and auditory (hearing) loss, because those two areas are made up of mostly cartilage.
-										
-															
-										
-										
-										
-										
-										
-										
-										
+											Chondrosarcomas are different from other forms of Bone Cancer in one very specific way. Instead of infecting hard bones, <span class = "link" onClick = "window.open('http://sarcomahelp.org/chondrosarcoma.html')">Chondrosarcomas actually attack the cartilage in the body</span>. They are still capable of forming in the hips, ribs, and arm bones, but the key difference is that they can attack places with cartilage.
+											<br />
+											<br />
+											
+											The symptoms of Chondrosarcomas often make it difficult to detect. In fact, those who contract Chondrosarcoma <span class = "link" onClick = "window.open('http://sarcomahelp.org/chondrosarcoma.html')">typically do not feel sick</span>. Instead, time will reveal <span class = "link" onClick = "window.open('http://sarcomahelp.org/chondrosarcoma.html')">other symptoms</span>, such as boney protrusions, difficulty with advanced movement, or a feeling of dull pain. 
+											
+											<br />
+											<br />
+											Because these symptoms are often not percieved as being cancerous, some patients will fail to deal with the problem appropriately and thus will have a more difficult time dealing with their cancer. As with all Bone Cancers, early treatment is a necessity in terms of ensuring that an effective recovery is enjoyed by the patient. 
+											
 										
 					
 										</p>
@@ -286,13 +276,12 @@
 						<div id = "goFirst" class = "smaller_header">Advancements in Treatment</div>
 					    
 						<br />
+						The incidence rate of Bone Cancer has been <span class = "link" onClick = "window.open('http://seer.cancer.gov/statfacts/html/bones.html')">steadily increasing since 1975</span>. While this may seem like an overwhelmingly negative situation at first glance, a silver lining can be found through the fact that modern medicine and scientific advancements have forced the death rate to plunge in recent decades. This has been brought about through improved means of treatment and diagnosis that have proved effective for people across the planet. 
 						
-                            <span class = "link" onClick = "window.open('http://seer.cancer.gov/statfacts/html/bones.html')">Since 1975, the incidence rates of Bone Cancer have been increasing, not by a massive amount, but still significant enough to be affecting more people</span>. At first glance, this seems like a bad situation. The truth is, in fact, the opposite. Through data, it can be seen that even though the incidence rate has slightly increased, modern medicine and science has forced the death rate to absolutely plunge in these recent decades, through new improved means of treatment and diagnosis that are helping people all across the planet.
+				
 					
 						
-						
-					
-						
+						<br />
 						
 						<br />
 						
@@ -314,9 +303,8 @@
 						<br />
 						<div class = "smallest_header" style = "text-decoration:none;">Why the Increase?</div>
 						<br />
-						 
-                            The significant increase in survival rates can be attributed to not only the extreme advances in modern science and practice of medicine, allowing for more effective methods of treatment that make Bone Cancer easier to deal with, but also the slow. Below are some explanations of the medical staff that will be assisting their patient's treatement, in addition to certain types of new treatment that have been proven to help. Make sure to click on links in the text for even more information.
 						
+						This significant increase in survival rates can be attributed to the extreme advanced in modern science and practice of medicine, as these have allowed for more effective methods of treatment that make Bone Cancer easier to treat and live with. Below are some explanations of the medical staff that have been responsible for maintaining such medical advancements, as well as certain types of new treatments that have revolutionized the field of Bone Cancer treatments. 
 						
 						
 						<br />
@@ -330,12 +318,15 @@
                                     <dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">Medical Staff</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-                                            Once a patient is diagnosed with any form of Thyroid Cancer, the best doctors and other medical staff work with the patient to create the best possible treatment plan. The <span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/cancer-basics/cancer-care-team/types-oncologists')">oncologist</span> is a general cancer doctor that establishes the optimal treatment plan for the patient. The <span class = "link" onClick = "window.open('http://en.wikipedia.org/wiki/Nuclear_medicine_physician')">nuclear medicine doctor</span> is a doctor who specializes in applying radioactive substances to diagnose and treat various thyroid carcinomas. Lastly, the <span class = "link" onClick = "window.open('http://dictionary.reference.com/browse/orthopedist')">Orthopedist</span> is a doctor who specializes in treatment of the joints, muscles, ligaments, and skeletal system.
+											One of the first things that is determined after a patient is diagnosed with Bone Cancer is the type of medical team best suited for that particular patient. This team includes doctors and other medical staff that work with the patient to craft a treatment plan that is optomized for their specific needs. One such staff member is an <span class = "link" onClick = "window.open('http://www.cancer.net/navigating-cancer-care/cancer-basics/cancer-care-team/types-oncologists')">oncologist</span>, a general cancer doctor that establihses the optimal treatment plan for the patient. 
 											
 											<br />
 											<br />
-											
-                                            Depending on the type and stage of the cancer and other factors, treatment options for bone cancer can include: <span class = "link" onClick = "window.open('http://www.cancer.net/cancer-types/bone-cancer/treatment-options')">Surgery, radiation therapy (proton therapy), laser therapy, chemotherapy, and certain types of targeted therapy.</span> Sometimes, more than one of type of treatment might be used. In choosing which treatment plan is best for the patient, some important factors to consider include the location and stage of the cancer, the patient's overall health, the chances of curing the disease, and the possible impact of the treatment on the bones. 
+											Another type of doctor that is sometimes brought in is a <span class = "link" onClick = "window.open('http://en.wikipedia.org/wiki/Nuclear_medicine_physician')">nuclear medicine specialist</span>. This doctor specializes in applying radioactive substances to diagnose and treat various Bone tumors. Lastly, the <span class = "link" onClick = "window.open('http://dictionary.reference.com/browse/orthopedist')">Orthopedist</span> is a doctor who specializes in treatment of the joints, muscles, ligaments, and skeletal system.
+											<br />
+											<br />
+											Depending on the type and stage of the cancer, treatment options for Bone Cancer can include: <span class = "link" onClick = "window.open('http://www.cancer.net/cancer-types/bone-cancer/treatment-options')">Surgery, radiation therapy (proton therapy), laser therapy, chemotherapy, and certain types of targeted therapy.</span> While none of these options are exceedingly pleasant, recent advancements in technology have made them more effective while also keeping side effects to a minimum. 
+												
 											
 											
 										</p>
@@ -343,17 +334,22 @@
 									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #F7464A;">Proton Therapy</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-                                            This new development in the bone cancer treatment industry refferred to as <span class = "link" onClick = "window.open('http://www.proton-therapy.org/howit.htm')">Proton Therapy</span> offers an alternative to complete surgery, where the bone in question simply cannot be removed or shifted. 
+											One of the most exciting developments in the field of Bone Cancer treatment has presented itself in the form of <span class = "link" onClick = "window.open('http://www.proton-therapy.org/howit.htm')">Proton Therapy</span>. Proton Therapy offers an alternative to complete surgery, and is especially useful in cases where the bone in question cannot be moved or shifted without harming the patient. 
+											
+											
+											
 											
 											<br />
 											<br />
-											
-                                            In terms of bone cancer, proton therapy is especially revolutionary because it concentrates a beam of focused protons at the diseased section of the bone. It provides enough radiation to kill the cancerous cells, while sparing the surrounding cells. 
+											Proton Therapy <span class = "link" onClick = "window.open('http://www.floridaproton.org/cancers-treated/bone-cancer')">works by targeting</span> certain forms of Bone Cancer with a beam of protons. This high degree of precision allows doctors to deliver radiation to tumors without harming nearby healthy tissue. This means that Proton Therapy is effective in subverting many of the side effects that often accompany similar radiation-based therapies, thus resulting in a more comfortable and effective treatment program for the patient.
+										
+                                    
                                             
                                             <br />
                                             <br />
-                                            
-                                            This type of treatment is such a huge breakthrough in modern science, especially when considered that it is considered a form of radiation, without all the negatives consequences.
+                                            This form of treatment has proven to be indispensable in the <span class = "link" onClick = "window.open('http://www.floridaproton.org/cancers-treated/bone-cancer')">treatment of children and young adults</span> due to the comparatively unaggressive way in which it targets unhealthy areas of the body. While Proton Therapy doesn't completely remove side effects, it is effective in making them easier to deal with while also effectively dealing with tumerous cells. 
+										
+										
 											
 											
 											 
@@ -361,17 +357,17 @@
 									<dt><a href="#memes" class="accordionTitle2" style = "background-color: #46BFBD;">Myeloablative Therapy</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-                                            <span class = "link" onClick = "window.open('http://medical-dictionary.thefreedictionary.com/myeloablative+therapy')">Myeloablative Therapy</span> Is one of the most interesting treatment types that have been invented in the past couple of years. This type of treatment uses strong forms of chemotherapy to attack cancerous cells, especially when spread throughout the body.
+											<span class = "link" onClick = "window.open('http://medical-dictionary.thefreedictionary.com/myeloablative+therapy')">Myeloablative Therapy</span> is one of the most interesting treatment innovations that has been refined over the past couple of years. It works by using powerful forms of chemotherapy to attack cancerous cells, especially those that have spread throughout the body.
 										
 										<br />
 										<br />
 										
-                                            This form of cancer is unique because it utilizes a new form of treatment that has been becoming more popular over the past couple of years: <span class = "link" onClick = "window.open('http://stemcells.nih.gov/info/basics/pages/basics1.aspx')">stem cells.</span> Traditionally, concentrated chemotherapy would cause the marrow in the bones to be destroyed. Unfortunately during this treatment they are. However, this specific form of therpay actually enables stems cells to come in, replace the bone marrow that was damaged or destroyed, giving a foundation for the patient, while still keeping the other healthy cells alive.
-                                            
-                                            <br />
-                                            <br />
-                                            This is only scratching the surface of what modern science has brought the world in terms of treatment options, and we hope that <i>you</i> are able to further this process as well, until we finally crack the case of 100% cancer treatment.
+										While the overbearing nature of the treatment typicaly <span class = "link" onClick = "window.open('http://www.cancer.gov/dictionary?cdrid=650568')">results in severe side effects</span>, it can prove effective for patients who have exhausted all other options. In fact, this specific form of treatment is <span class = "link" onClick = "window.open('http://www.cancer.gov/dictionary?cdrid=650568')">almost always followed</span> by stem cell therapy that can reconstruct the bone marrow that was damaged or destroyed by the cancer and its treatment. In this way, Myeloablative Therapy constructs the foundation upon which long-term health can be achieved. 
 										
+                                            <br />
+                                            <br />
+											This is only scratching the surface of what modern science has brought to the world in terms of treatment options, and offers hope for what the future holds in store for us. 
+											
 
 										
 										</p>
@@ -387,27 +383,23 @@
 						<div id = "anchor_up_third" class = "move_focus_up"> </div>
 						<div id = "goFirst" class = "smaller_header">How to Help</div>
 						<br />
-                           Even though the mortality rate of bone cancers has significantly dropped, it still takes away upwards of 1,500 people every year, most of them children. The incidence rate has shown no sign of letting up, causing pain for thousands of people worldwide every year. Through some of the organizations below, you can help the world get one step closer to relieveing not only current patients in pain, but prevent this problem from ever reoccurring in the future, something that is priceless to humanity. Check out these reputable organizations and take a step forward for the fight against bone cancer today! 
-                            
-                            
-						
+						While tremendous strides have been taken in recent years to reduce the mortality rate of Bone Cancer, more progress is needed before this issue can be declared one of the past. The incident rate for Bone Cancer has <span class = "link" onClick = "window.open('http://seer.cancer.gov/statfacts/html/bones.html')">been on the rise</span> for decades now, causing pain for thousands of people worldwide each year. The organizations below all serve as fantastic ways to right this wrong by advancing the world one step closer to relieving current patients of their pain and preventing the issue from reoccuring in the future. 
+		
 						<br /><br />	
 						
 						
                             
                             <div class="accordion3">
 								<dl>
-									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #FDB45C;">Bone Cancer Research Trust</a></dt>
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #FDB45C;">The Bone Cancer Research Trust</a></dt>
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-											
-                                            <span class = "link" onClick = "window.open('http://www.bonecancerresearch.org.uk')">The Bone Cancer Research Trust</span> is a foundation dedicated to stop the spread of Bone Cancer, and prevent it from limiting people from achieving their dreams. They began in 2006, and aim to provide support for research of bone cancers, raising awareness, providing information, and giving support to the patients already inflicted with bone cancer.
+											  <span class = "link" onClick = "window.open('http://www.bonecancerresearch.org.uk')">The Bone Cancer Research Trust</span> has been dedicated to stopping the spread of Bone Cancer since its inception in 2006. Their goals are ambitious, with plans to support the research of advanced Bone Cancers, raise awareness about the disease, enhance general knowledge about its influence, and to provide support for patients that already have it.
 											
 											<br />
 											<br />
 											
-                                            The BCRT has funded 35 peer-reviewed research projects since 2006, totalling £1,392,731, which equates to roughly $2,114,792. This massive sum of money has all gone towards the betterment of lives of people with bone cancer, and providing research in orderto prevent bone cancer from spreading even more. You can help take one step forward in this fight by donating money to their cause. Every dollar brings bone cancer closer to it's demise.
-											
+											The Bone Cancer Research Trust has <span class = "link" onClick = "window.open('http://www.bonecancerresearch.org.uk/content/BCRT_Financial_Review.pdf')">funded 35 peer-reviewed research projects since 2006</span>. The amount of money donated totals £1,392,731, which equates to roughly $2,114,792. This tremendous sum of money has all gone towards the betterment of conditions for Bone Cancer patients, and has proved to be tremendously successful in that respect. You can take them one step further in their fight by donating money to their cause. Each and every dollar brings Bone Cancer one step closer to its demise. 
 											
 											<br />
 											<br />
@@ -422,21 +414,23 @@
 									
 									<!-- span is put in place to avoid strange alteration on '&' symbol -->
 									
-									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #F7464A">Sunbeam Foundation</a></dt>
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #F7464A">The Sunbeam Foundation</a></dt>
 										
 								
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-								<span class = "link" onClick = "window.open('http://www.lightoflifefoundation.org/')">The Sunbeam Foundation</span> is a foundation that works tirelessly to help against the fight against bone cancer that afflicts young children and teenagers, since they are the ones affected most by this terrible disease.
+											<span class = "link" onClick = "window.open('http://www.sunbeamfoundation.org')">The Sunbeam Foundation</span> is an organization that works tirelessly to assist in the fight against Bone Cancers that afflict children and young adults. This is because people of this age group are the demographic most commonly affected by this terrible disease. 
 											
 											<br />
 											<br />	
+											The foundation was created by songwriter Brad Wolfe in an effort his help his friend. They strive to fund cutting-edge research related to the different forms of Bone Cancer, and ultimately serve as the backbone upon which volunteer opportunities are constructed. 
 											
-                                            The Sunbeam Foundation, created by songwriter Brad Wolfe to help his dear friend, strives to provide money to fund cutting edge research related to the different forms of bone cancer, in addition to being an all-volunteer corporation.
                                             <br />
                                             <br />
-                                            
-                                            People like you are the ones who keep foundations like these running. Because of you, these foundations are able to keep up their work, and slowly destroy a disease that plauges children around the world. Take a simple step forward, and contribute to the grand battle against Bone Cancer through te Sunbeam Foundation.
+											
+											People like you are the reason that such foundations are able to remain operational. Because of you, these foundations are able to maintain the quality of their work, and slowly distroy diseases such as Bone Cancer that plauge countless people across the world. It only takes a few moments and a small amount of generosity to take a stand against Bone Cancers by contributing to the fight through the Sunbeam Foundation.
+											
+											
 											
 											<br />
 											<br />	
@@ -451,7 +445,7 @@
 										<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #46BFBD">Fight At No Cost</a></dt>
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-											In order to succeed in the fight for life we must join together and connect. Through social media, the sharing of stories, and advancement in research we, together, have the opportunity to beat bone cancer. 
+											In order to succeed in the fight for life we must join together and connect. Through social media, the sharing of stories, and advancement in research we, together, have the opportunity to beat Bone Cancer. 
 											
 											<div id = "button_wrapper">
 												
@@ -462,7 +456,7 @@
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('bone')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -496,53 +490,35 @@
 		</span>
 		<br />
 		<br />
-			<div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+			<footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>	
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+		</footer>
+		
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

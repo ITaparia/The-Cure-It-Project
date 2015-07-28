@@ -38,6 +38,8 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
         <script src="Chart.js"></script>
         
         <title>Blood Cancers</title>
@@ -47,7 +49,7 @@
 		 
 	
 	    
-	    <div id='header_holder'>
+	   <div id='header_holder'>
 		
 		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
@@ -57,9 +59,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -67,7 +69,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
 			<span id = "move_all">
 				
             
@@ -83,7 +86,7 @@
 			    
 				  <section>
 				    <div class="parallax-blood">
-						<h2 id = "picture_text">Every 15 seconds someone new finds out<br /> that they have Blood Cancer</h2>
+						<h2 id = "picture_text">Every 4 minutes someone new finds out<br /> that they have Blood Cancer</h2>
 							
 							
 							
@@ -258,7 +261,12 @@
 						
 					
 						<br />
-						<br />  </p>
+						<br /> 
+						
+						<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('lymphoma.html')">Learn More</span>
+						
+				
+					</p>
 					</dd>
 					
 								</div>
@@ -278,7 +286,8 @@
 						<br />
 						
 						New technological advancements have proven to be very effective in terms of treating Blood Cancer patients. Take Leukemia for example - as can be seen below, the general trends that dictate the deaths resulting from this type of cancer have generally been positive.	In fact, the 5-year cancer survival rate increased by a <a href = "http://seer.cancer.gov/statfacts/html/leuks.html" class = "link" target="_blank">whopping 26 percent between 1975 and 2005</a>.
-						<br />
+						<br /><br />
+						
 						
 						<div style="width: 100%">
 							
@@ -335,7 +344,7 @@
 										<br />
 										<br />
 										
-											One of the most innovative improvements to Chemotherapy has been achieved through the use of a technique in which the drug is packaged inside a liposome. This allows the drug to actively degraded specifically in the tumor tissue, thus minimising the risk of side effects such as nausea and hair loss. 
+											One of the most innovative improvements to Chemotherapy has been achieved through the use of a technique in which <span class = "link" onClick = "window.open('http://intl.pharmrev.org/content/51/4/691.full')">the drug is packaged inside a liposome</span>. This allows the drug to actively degraded specifically in the tumor tissue, thus minimising the risk of side effects such as nausea and hair loss. 
 											
 										</p>
 									</dd>
@@ -443,7 +452,7 @@
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('blood')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -476,53 +485,35 @@
 			</span>
 			<br />
 			<br />
-    <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+    <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+		</footer>
+		
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

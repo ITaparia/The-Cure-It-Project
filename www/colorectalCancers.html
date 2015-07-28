@@ -38,6 +38,8 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
         <script src="Chart.js"></script>
         <script type="text/javascript">
 		
@@ -62,8 +64,9 @@
 		 
 	
 	    
-	    <div id='header_holder'>
-			<div id='header'>
+	     <div id='header_holder'>
+		
+		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
@@ -71,9 +74,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -81,7 +84,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
 			<span id = "move_all">
 				
             
@@ -143,10 +147,10 @@
 						<div id = "goFirst" class = "smaller_header">What are Colorectal Cancers?</div>
 						<br />
 						
-						Colorectal Cancers are cancers that start in either the colon or rectum. They are often grouped together due to the similarities that they share with one another. There are several different types of Colorectal Cancers, each with their own unique quirks that warrant attention. The three that we will be taking a look at are Adenocarcinomas, Sarcomas, and Carcinoid tumors.						
+						Colorectal Cancers are cancers that start in either the colon or rectum. They are often grouped together due to the similarities that they share with one another. There are several different types of Colorectal Cancers, each with their own properties that warrant individualized attention. The three that we will be taking a look at are Adenocarcinomas, Sarcomas, and Carcinoid tumors.						
     <br />
     <br />  
-					Colorectal Cancers are often very preventable due to the relatively predictable way in which they develop. The vast majority of Colorectal Cancers begin as a polyp, which typically begin developing in the inner lining of the colon or rectum. Some (but not all) of these polyps will develop into Colorectal Cancer if left untreated. This means that one of the best ways to prevent Colorectal Cancers is to remove these polyps early. Recent advancements in technology have brought with them <span class = "link" onClick = "http://www.cancer.org/cancer/colonandrectumcancer/detailedguide/colorectal-cancer-detection">an enhanced understanding</span> of how to do this, something which has been tremendously useful in quelling the threat of Colorectal Cancers somewhat. 
+					Colorectal Cancers are often very preventable due to the relatively predictable way in which they develop. The vast majority of Colorectal Cancers begin as a polyp, which typically begin developing in the inner lining of the colon or rectum. Some (but not all) of these polyps will develop into Colorectal Cancer if left untreated. This means that one of the best ways to prevent Colorectal Cancers is to remove these polyps early. Recent advancements in technology have brought with them <span class = "link" onClick = "http://www.cancer.org/cancer/colonandrectumcancer/detailedguide/colorectal-cancer-detection">an enhanced understanding</span> of how to do this, something which has been useful in somewhat quelling the threat of Colorectal Cancers. 
 		
 					 	<br />
 					    <br />
@@ -195,15 +199,19 @@
 									<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C;">Adenocarcinomas</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-											Adenocarcinomas are by far the most common form of Colorectal Cancer, claiming <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bowel-cancer/about/types-of-bowel-cancer')">95 percent</span> of diagnosal cases. This form of cancer often begins in the inner layer of the bowel before spreading into other, deeper layers. This means that early detection and treatment is essential in terms of ensuring that the cancer does not become life threatening. 
+											Adenocarcinomas are by far the most common form of Colorectal Cancer, claiming <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bowel-cancer/about/types-of-bowel-cancer')">95 percent</span> of diagnosal cases. This form of cancer often begins in the inner layer of the bowel before spreading into other, deeper layers. Because of this, early detection and treatment is essential in terms of ensuring that the cancer does not become life threatening. 
+											
 											
 											<br />
 											<br />
-											There are several types of Adenocarcinomas, but the most dangerous are Signet Ring Cell Adenocarcinomas. While these only account for <span class = "link" onClick = "window.open('http://www.cancercenter.com/colorectal-cancer/types/tab/colorectal-adenocarcinoma/')">less than one percent</span> of all Adenocarcinomas, they are <span class = "link" onClick = "window.open('http://www.pmppals.org/signet-ring-cell-adenocarcinoma.html')">typically very agressive</span>. This makes them difficult to treat in the vast majority of cases. 
+											There are several types of Adenocarcinomas, but the most dangerous are Signet Ring Cell Adenocarcinomas. While these only account for <span class = "link" onClick = "window.open('http://www.cancercenter.com/colorectal-cancer/types/tab/colorectal-adenocarcinoma/')">less than one percent</span> of all Adenocarcinomas, they are <span class = "link" onClick = "window.open('http://www.pmppals.org/signet-ring-cell-adenocarcinoma.html')">typically very agressive</span>. 
+											They are very difficult to treat in the vast majority of cases.
+								
 											
 											<br />
 											<br />
-											This is a very common form of cancer, with well over 100,000 cases each year in the United States alone. While the lethality of this form of cancer varies greatly on the time in which it is detected, it is rather dangerous, with an average of <span class = "link" onClick = "window.open('http://www.cap.org/apps/docs/reference/myBiopsy/ColonAdenocarcinoma.pdf')">50 percent</span> of patients surviving 5 years or more. Survival rates in patients that achieve early detection are more comforting, with anywhere from <span class = "link" onClick = "window.open('http://www.cap.org/apps/docs/reference/myBiopsy/ColonAdenocarcinoma.pdf')">70 to 80 percent</span> of these patients reaching this same milestone. That said, more research is required to ensure that these promising odds are afforded to all Adenocarcinoma patients. 
+											This is a very common form of cancer, with well over 100,000 cases occuring each year in the United States alone. While the lethality of this form of cancer varies greatly on the time in which it is detected, an average of <span class = "link" onClick = "window.open('http://www.cap.org/apps/docs/reference/myBiopsy/ColonAdenocarcinoma.pdf')">50 percent</span> of patients survive 5 years of more after contracting the disease. Survival rates in patients that achieve early detection are more comforting, with anywhere from <span class = "link" onClick = "window.open('http://www.cap.org/apps/docs/reference/myBiopsy/ColonAdenocarcinoma.pdf')">70 to 80 percent</span> of these patients reaching this same milestone. That said, more research is required to ensure that these promising odds are afforded to all Adenocarcinoma patients.
+											
 											
 											
 						</p>
@@ -212,28 +220,33 @@
 									<dt><a class="accordionTitle" href="#" style = "background-color: #F7464A">Sarcomas</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-											Sarcomas are cancers that <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bowel-cancer/about/types-of-bowel-cancer')">develop in the bone or muscle</span>. The growth of these cancer causes pressure on the body and organs that can sometimes lead cancerous cells to spread around the body. While they technically have the potential to spread to <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/sarcoma/about/about-sarcomas')">nearly any site in the body</span>, the most common place to spread is to the lungs or bones. 
+											Sarcomas are cancers that <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bowel-cancer/about/types-of-bowel-cancer')">develop in the bone or muscle</span>. The growth of this cancer causes pressure on the body and organs that can sometimes result in the infected cells being spread around the body. While they technically have the potential to spread to <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/sarcoma/about/about-sarcomas')">nearly any site in the body</span>, the most common place to spread is to the lungs or bones. 
+											
+											
+				
 											
 											
 											
 											
 											<br />
 											<br />
-											Like all forms of Colorectal Cancers, early detection is the key to ensuring a quick and efficient treatment. If discovered early, there is a higher chance that the cancer has not yet spread, thus allowing for the <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/sarcoma/treatment/which-treatment-for-soft-tissue-sarcoma')">removal of the cancerous cells through surgeries</span>. However, more complex cases of Sarcoma may mean that radiotherapy and chemotherapy must be used in order to reduce the tumor in size before surgery. 
-	 
+											Like all forms of Colorectal Cancers, early detection is the key to ensuring a quick and efficient treatment. The earlier the cancer is discovered, the less likely it is to have spread, thus allowing for the <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/sarcoma/treatment/which-treatment-for-soft-tissue-sarcoma')">removal of the cancerous cells through surgeries</span>. However, more complex cases of Sarcoma may mean that radiotherapy and chemotherapy must be used in order to reduce the tumor in size before surgery. 
+											
+											
+								
 					</p>
 					</dd>
 									
 										<dt><a class="accordionTitle" href="#" style = "background-color: #46BFBD">Carcinoids</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-											Carcinoids are an especially slow growing form of Colorectal Cancer. While this has the advantage of ensuring that the tumor is not especially fast-acting, it also means that early detection can sometimes prove to be a challenge. Carcinoids often fail to produce symptoms until <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/carcinoid-tumors/basics/definition/con-20030114')">late in the disease</span>, something can mean that the tumor is advanced at the time of discovery. 
-														
+											Carcinoids are an especially slow growing form of Colorectal Cancer. While this has the advantage of ensuring that the tumor is not especially fast-acting, it can also make early detection a challenge. Carcinoids often fail to produce symptoms until <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/carcinoid-tumors/basics/definition/con-20030114')">late in the disease</span>, something which can mean that the tumor is advanced at the time of discovery. 
+											
 											
 											<br />
 											<br />
 											
-											Early detection of Carcinoids can sometimes make treatment a relatively simple manner, <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/carcinoid-tumors/basics/treatment/con-20030114')">with a targeted surgery</span> removing or preventing the further development of the tumor. However, the low-profile nature of the cancer typically means that more advanced treatment plans are necessary, such as through medications, chemotherapy, and radiotherapy. Although recent advancements have yielded improvements in this regard, these treatment plans are often uncomfortable for the patient and bring with them a slew of negative side effects. 
+											Early detection of Carcinoids can sometimes make treatment a relatively simple manner, <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/carcinoid-tumors/basics/treatment/con-20030114')">with a targeted surgery</span> removing or preventing the further development of the tumor. However, the low-profile nature of the cancer typically means that more advanced treatment plans are necessary, such as through medications, chemotherapy, and radiotherapy. Although recent advancements have yielded improvements in this regard, these treatment plans are often uncomfortable for the patient due to the slew of negative side effects that they involve. 
 										</p>
 					</dd>
 					
@@ -252,8 +265,9 @@
 						<div id = "goFirst" class = "smaller_header">Advancements in Treatment</div>
 					    
 						<br />
+						Years gone by have afforded us the opportunity to uncover tremendous advancements in science and technology that have reinvented the way we understand and deal with Colorectal Cancers. That said, we still have a long way to go before this issue can be called insignificant. We will highlight some of the successes that have been enjoyed over the past few decades in an effort to promote these tremendous advancements and to draw attention to what remains to be done.
 						
-						Years gone by have granted us the opportunity to uncover tremendous advancements in science and technology that have reinvented the way we understand and deal with Colorectal Cancers. That said, we still have a long way to go before this issue can be called insignificant. We will highlight some of the successes that have been enjoyed over the past few decades in an effort to promote these tremendous advancements and to draw attention to what still remains to be done. 
+						<br />
 						<br />
 						
 						<div id = "center_element">
@@ -274,7 +288,10 @@
 						<br />
 							<div class = "smallest_header" style = "text-decoration:none;">What do these statistics mean?</div>
 						<br />
-						As we've already covered, one of the most important factors in terms of ensuring that Colorectal Cancer is dealt with without becoming life-threatening is the early detection and removal of the disease. This can be seen simply by comparing the survival rates between the first and final stages of Colorectal Cancer, as there is a <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/colonandrectumcancer/detailedguide/colorectal-cancer-survival-rates')">whopping 81 percent difference</span> in 5-year survival rates between the two. Simply put, if we are to truly neutralize the threat of this terrible illness, advancements in understanding and dealing with the risk factors of Colorectal Cancers is all but a necessity. 
+						As we've already covered, one of the most important factors in terms of ensuring that Colorectal Cancer does not become life-threatening is the stage in which the disease is discovered and removed. This can be seen simply by comparing the survival rates between the first and final stages of Colorectal Cancer, as there is a <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/colonandrectumcancer/detailedguide/colorectal-cancer-survival-rates')">whopping 81 percent difference</span> in 5-year survival rates between the two. Simply put, if we are to truly neutralize the threat of this terrible illness, advancements in understanding of the risk factors that lead to Colorectal Cancer is all but a necessity. 
+					
+						
+						
 						<br />
 						<br />
 					
@@ -284,21 +301,21 @@
 									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">Advancements in Understanding</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-											One of the most powerful tools that doctors and researchers have at their disposal to fight Colorectal Cancers is through early detection and prevention. One of the best ways to do this is to grasp a more advanced knowledger as to what actually causes the disease. There has been tremendous improvements in this regard over the past decade and a half, something that has proven to be very useful in taking those first steps towards overcoming the issue as a whole.
+											One of the most powerful tools that doctors and researchs have at their disposal to fight Colorectal Cancers is through early detection and prevention. The best way to do this is to grasp a more advanced knowledge of what actually causes the disease in the first place. There have been tremendous improvements made in this regard over the past decade and a half, something that has proven to be very useful in taking those first steps towards overcoming the issue as a whole.
                                             <br />
                                             <br />
-											Many of the risk factors that researchers have identified are lifestyle related. These include things such as <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/colonandrectumcancer/detailedguide/colorectal-cancer-risk-factors')">smoking or the excessive consumption of alchohol</span>. Similarly, becoming overweight or failing to get a proper amount of physical activity can result in an increased risk for Colorectal Cancers. Because many of these factors are based on active choices in lifestyle, this knowledge has granted people everywhere to join in the fight against this terrible disease through prevention. 
-											<br />
-											<br />
-											Other factors are, unfortunately enough, are beyond the control of the individual. These include things such as getting older, as <span class = "link" onClick = "window.open('http://www.cancer.org/acs/groups/content/@epidemiologysurveilance/documents/document/acspc-028312.pdf')">90 percent of people diagnosed</span> with a form of Colorectal Cancers are older than 50 years old. That said, it is still important to maintain a healthy lifestyle to ensure that the risk of contracting this disease is kept as low as possible. And as research continues to progress, researchers hope to uncover new trends that will enable them to take prevention to the next, more controllable, level. 
+											Many of the risk factors that researchers have identified are lifestyle related. These include things such as <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/colonandrectumcancer/detailedguide/colorectal-cancer-risk-factors')">smoking or the excessive consumption of alchohol</span>. Similarly, becoming overweight or failing to get a proper amount of physical activity can result in an increased risk for Colorectal Cancers. Because many of these factors are based on active choices in lifestyle, this knowledge has granted people everywhere to be more proactive about their health through the prevention of disease.
 											
+											<br />
+											<br />
+											Other factors are, unfortunately enough, are beyond the control of the individual. Aging is one example of this, as  <span class = "link" onClick = "window.open('http://www.cancer.org/acs/groups/content/@epidemiologysurveilance/documents/document/acspc-028312.pdf')">90 percent of people diagnosed</span> with a form of Colorectal Cancers are above the age of 50. That said, it is still important to maintain a healthy lifestyle to ensure that the risk of contracting this disease is kept as low as possible. And as research continues to progress, scientists hope to uncover new trends that will enable them to take prevention to the next, more controllable, level.
 											
 										</p>
 									</dd>
 									<dt><a href="#memes" class="accordionTitle2" style = "background-color: #F7464A;">Advancements in Drug Usage</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-											Recent discoveries have done much to allow researches to utilize various drug combinations in their efforts to boost the survival rates of Colorectal Cancer patients. These drugs provide patients everywhere with more options, something that serves to enhance the comfort and health of those suffering from this terrible disease. 
+											Recent discoveries have done much to allow researchers to utilize various drug combinations in their efforts to boost the survival rate of Colorectal Cancer patients. These drugs provide patients everywhere with more options, something that serves to enhance the comfort and health of those suffering from the disease.
 											
 											<br />
 											<br />
@@ -308,7 +325,9 @@
                                             <br />
                                             <br />
 											
-											Another drug recently approved for the treatment of Colorectal Cancers is Eloxatin. It is intended to be used with several other drugs, but this combination has yielded very promising results, with 5-year survival rates among patients with advanced Colorectal Cancer cases increasing by a <span class = "link" onClick = "window.open('http://www.webmd.com/colorectal-cancer/features/colorectal-cancer-new-treatments-improved-prognosis')">whopping 11 percent</span>. It is through advancements such as these that we can give hope to those who may otherwise have very little. 
+											Another drug recently approved for the treatment of Colorectal Cancers is <span class = "link" onClick = "window.open('http://products.sanofi.us/eloxatin/eloxatin.html')">Eloxatin</span>. While it is typically used in combination with other drugs, the use of Eloxatin has been associated with a <span class = "link" onClick = "window.open('http://www.webmd.com/colorectal-cancer/features/colorectal-cancer-new-treatments-improved-prognosis')">whopping 11 percent</span> in 5-year survival rates in some cases. It is through advancements such as these that we can give hope to those who may otherwise have very little. 
+											
+											
 										</p>
 									</dd>
 									
@@ -323,7 +342,7 @@
 						<div id = "goFirst" class = "smaller_header">How to Help</div>
 						<br />
 						
-						Colorectal Cancer is one of the most prominent forms of cancer currently active in the world today. It claims tens of thousands of lives each and every year, and tears lives apart through the crippling effect that it can sometimes have on those who experience it. Thankfully, there do exist a number of organizations with the courage and foresight to stand against this terrible disease. All of the options below are valuable resources with which to take an active stance against Colorectal Cancers. 
+						Colorectal Cancer is one of the most prominent forms of cancer currently active in the world today. It claims tens of thousands of lives each and every year, and tears lives apart through the crippling effect that has on those who experience it. Thankfully, there do exist a number of organizations with the courage and foresight to stand against this terrible disease. All of the options below are valuable resources with which to take an active stance against Colorectal Cancers. 
 						<br /><br />	
 						
 						
@@ -356,16 +375,18 @@
 								
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-											The <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance')">NCCRA (National Colorectal Cancer Alliance)</span> has made it their mission to eradicate the threat of Colorectal Cancers once and for all. They attempt to do this by promoting and raising funding for medical screenings, scientific tests, and treatments. They hope that their efforts will one day prove successful enough to yield a cure, and they have been selflessly pursuing this goal since their founding in 2000.	
+											The <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance')">NCCRA (National Colorectal Cancer Alliance)</span> has made it their mission to eradicate the threat of Colorectal Cancers for everyone. They attempt to do this by promoting and raising funds for medical screenings, scientific tests, and treatments. They attempt to do this by promoting and raising funding for medical screenings, scientific tests, and treatments. They hope that their efforts will one day prove successful enough to yield a cure, and have selflessly pursued this goal since their founding in 2000.
+											
+											
 											
 											<br />
 											<br />
-											They have raised well over 33 million dollars to date, and have provided thousands of patients with advanced technologies that make their lives more comfortable and fulfilling. One such advancement that they have funded has been the development of a <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance/content/funding-cutting-edge-colorectal-c')">DNA-based stool test</span> that can detect the gene mutation that led to the occurance of the disease. This provides researches everywhere with more data with which to construct future treatment plans. 
+											They have raised well over 33 million dollars to date, and have provided thousands of patients with advanced technologies that make their lives more comfortable and fulfilling. One such advancement that they have funded has been the development of a <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance/content/funding-cutting-edge-colorectal-c')">DNA-based stool test</span> that can detect the gene mutation that has been associated with the development of Colorectal Cancers. This provides researchers everywhere with more data with which to construct future treatment plans. 
 											
 											
 											<br />
 											<br />
-											All of this has been accomplished while ensuring a great deal of financial transparency. They keep detailed records as to where donations are directed towards, and <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance/content/where-does-money-go')">maintain a running list</span> of where the most prominent investments lie. It is through their contributions that researchers around the world can harness the tools that they need to make the issue of Colorectal Cancers one of the past. You can help them achieve this goal by clicking on the button below to donate. 
+											All of this has been accomplished while ensuring a great deal of financial transparency. They keep detailed records as to where donations are directed towards, and <span class = "link" onClick = "window.open('http://www.eifoundation.org/programs/eifs-national-colorectal-cancer-research-alliance/content/where-does-money-go')">maintain a running list</span> of where the most prominent investments lie. It is through such contributions that researchers around the world can harness the tools that they need to make the issue of Colorectal Cancers one of the past. You can help them achieve this goal by clicking on the button below to donate. 
 											<br />
 											<br />
 											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('http://www.eifoundation.org/content/donate-nccra')">Donate</span>
@@ -386,7 +407,7 @@
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('colo')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -423,53 +444,34 @@
 			<br />
 			<br />
 			
-       <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+       <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+	</footer>
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

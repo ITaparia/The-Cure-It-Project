@@ -38,6 +38,8 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
         <script src="Chart.js"></script>
         <script type="text/javascript">window.onload = function(){
 				var ctxboobs = document.getElementById("boobsStatsPie").getContext("2d");
@@ -59,7 +61,7 @@
 	    
 	    <div id='header_holder'>
 		
-			<div id='header'>
+		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
@@ -67,9 +69,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -77,7 +79,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
 			<span id = "move_all">
 				
             
@@ -206,11 +209,12 @@
 									<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C;">Non-Invasive/Invasive</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-													Determining whether the Breast Cancer is invasive or not is an essential step in terms of establishing a healthy, effective treatement plan on an individual level. The vast majority of Breast Cancers are invasive - <span class = "link" onClick = "window.open('http://www.breastcancer.org/symptoms/diagnosis/invasive')">about 79 percent, in fact</span> - meaning that the cancer develops into normal, healthy tissue. 
+													Determining whether the Breast Cancer is invasive or not is an essential step in terms of establishing a healthy, effective treatement plan on an individual level. The vast majority of Breast Cancers are invasive - <span class = "link" onClick = "window.open('http://www.breastcancer.org/symptoms/diagnosis/invasive')">about 79 percent, in fact</span> - meaning that the cancer develops into areas that used to be composed of normal, healthy tissue.
+													
 											
 											<br />
 											<br />
-											Invasive Breast cancer is classified by the cancer cells spreading beyond the established membranes to invade surrounding tissues. Once the cancer has advanced to this stage, it then becomes much easier for it to spread around other parts of the body, thus compromising their functioning. Think of the membrane as a suit of armor - once this protective shell has been breached, the situation suddenly becomes a lot more dangerous. If the cancer is invasive, it can be classified as <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/breast-cancer/in-depth/breast-cancer/art-20045654')">being between Stages I and Stage IV</span>.
+											Invasive Breast cancer is classified by the cancer cells spreading beyond the established membranes to invade surrounding tissues. Once the cancer has advanced to this stage, it then becomes much easier for it to spread around other parts of the body, thus compromising the health of the patient. Think of the membrane as a suit of armor - once this protective shell has been breached, the situation suddenly becomes a lot more dangerous. If the cancer is invasive, it can be classified as <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/breast-cancer/in-depth/breast-cancer/art-20045654')">being between Stages I and Stage IV</span>.
 												
 											<br />
 											<br />
@@ -310,7 +314,8 @@
 						
 						New technological advancements have proven to be very effective in terms of treating Blood Cancer patients. Take Leukemia for example - as can be seen below, the general trends that dictate the deaths resulting from this type of cancer have generally been positive.	In fact, the 5-year cancer survival rate increased by a <a href = "http://seer.cancer.gov/statfacts/html/leuks.html" class = "link" target="_blank">whopping 26 percent between 1975 and 2005</a>.
 					-->
-						<br />
+						<br /><br />
+						
 						
 						<div id = "center_element">
 							
@@ -330,7 +335,7 @@
 						<br />
 						<div class = "smallest_header" style = "text-decoration:none;">Why the decrease?</div>
 						<br />
-						 The gears of technological advancement are relentless in their turning, something which regularly produces innovative new methods of treatement that are saving lives whilst also making the disease more comfortable to deal with in the first place. We will highlight a few examples of these boundary-pushing discoveries below in the hopes that it will drive up exposure for those sacrificing so much to make a positive change. 
+						 The gears of technological advancement are relentless in their turning, something which regularly produces innovative new methods of treatement that are saving lives while also making the disease more comfortable to deal with in the first place. We will highlight a few examples of these boundary-pushing discoveries below in the hopes that it will drive up exposure for those sacrificing so much to make a positive change. 
 						
 						
 						
@@ -343,7 +348,7 @@
 									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">HER2 Protein Therapies</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-											There exists within <span class = "link" onClick = "window.open('http://ww5.komen.org/BreastCancer/TumorCharacteristics.html')">nearly 20 percent</span> of Breast Cancer patients an abnormal strain of HER2 proteins. This protein essentially drives up the growth of cancerous cells. While in the past this was something that worsened survival rates, recent research has eliminated all but eliminated this additonal risk and has saved countless lives. As <span class = "link" onClick = "window.open('http://doctors.dana-farber.org/directory/profile.asp?pict_id=0000382')">medical oncologist Dr. Wendy Chen</span> puts it, "HER2-directed therapies have revolutionized the treatment of HER2-positive breast cancer."
+											There exists within <span class = "link" onClick = "window.open('http://ww5.komen.org/BreastCancer/TumorCharacteristics.html')">nearly 20 percent</span> of Breast Cancer patients an abnormal strain of HER2 proteins. This protein essentially drives up the growth of cancerous cells. While in the past this was something that worsened survival rates, recent research has all but eliminated this additonal risk and in doing so has saved countless lives. As <span class = "link" onClick = "window.open('http://doctors.dana-farber.org/directory/profile.asp?pict_id=0000382')">medical oncologist Dr. Wendy Chen</span> puts it, "HER2-directed therapies have revolutionized the treatment of HER2-positive breast cancer."
 											
 											<br />
 											<br />
@@ -367,7 +372,7 @@
 										<br />
 										<br />
 										
-										This discovery is significant for two reasons: most women reach menopause around the age of 50, and the majority of Breast Cancer cases are seen in women above this age. Research such as this gives survivors and those looking to say healthy an active way to control their risk of contracting Breast Cancer in a very significant way. The impact of weight is tremendous -- people who are overweight or obese have a <span class = "link" onClick = "window.open('http://www.womenshealthmag.com/health/breast-cancer-faqs')">30 to 60 percent higher risk of contracting postmenopausal Breast Cancer</span> when compared to those who maintain a healthier weight.  
+										This discovery is significant for two reasons: most women reach menopause around the age of 50, and the majority of Breast Cancer cases are seen in women above this age. Research such as this gives survivors and those looking to say healthy an active way to control their risk of contracting Breast Cancer in a very significant way. The impact of body weight, for instance, is tremendous: people who are overweight or obese have a <span class = "link" onClick = "window.open('http://www.womenshealthmag.com/health/breast-cancer-faqs')">30 to 60 percent higher risk of contracting postmenopausal Breast Cancer</span> when compared to those who maintain a healthier weight.  
 										
 										<br />
 										<br />
@@ -388,7 +393,7 @@
 						<div id = "goFirst" class = "smaller_header">How to Help</div>
 						<br />
 						
-						Fortunately, Breast Cancer awareness has gone up tremendously in recent years. Symbols such as the <span class = "link" onClick = "window.open('http://wallpaper-download.net/wallpapers/abstract-wallpapers-pink-ribbon-wallpaper-37290.jpg')">pink ribbon</span> have done much to divert public attention and support to Breast Cancer research. While progress has certainly been made, additional research is required to ensure that this issue plauges people no longer. All of the options outlined below are teriffic resources for those looking to make a positive change for those suffering from Breast Cancer. 
+						Fortunately, Breast Cancer awareness has gone up tremendously in recent years. Symbols such as the <span class = "link" onClick = "window.open('http://wallpaper-download.net/wallpapers/abstract-wallpapers-pink-ribbon-wallpaper-37290.jpg')">pink ribbon</span> have done much to divert public attention and support to Breast Cancer research. While progress has certainly been made, additional research is required to ensure that this issue plauges people no longer. All of the options outlined below are teriffic resources for those looking to make a positive change for Breast Cancer patients.
 						
 						<br /><br />	
 						
@@ -400,7 +405,7 @@
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
 											
-											Founded over 23 years ago by Breast Cancer survivor Janell Hail, <span class = "link" onClick = "window.open('https://www.nationalbreastcancer.org')">The National Breast Cancer Foundation</span> has cemented itself firmly among the top authorities in Blood Cancer Research. Their mission extends beyond the mechanical application of research, as they additionally hope to promote the widespread awareness, education, and early detection of various Breast Cancers. 
+											Founded over 23 years ago by Breast Cancer survivor Janell Hail, <span class = "link" onClick = "window.open('https://www.nationalbreastcancer.org')">The National Breast Cancer Foundation</span> has cemented itself firmly among the top authorities in Breast Cancer Research. Their mission extends beyond the mechanical application of research, as they additionally hope to promote the widespread awareness, education, and early detection of various Breast Cancers. 
 											
 											<br />
 											<br />
@@ -431,7 +436,9 @@
 								
 									<dd class="accordionItem3 accordionItemCollapsed3">
 										<p>
-											The <span class = "link" onClick = "window.open('http://www.bcrfcure.org/?_ga=1.129363849.448629387.1419877632')">Breast Cancer Research Foundation</span> is a nonprofit organization that has raised well over half a billion dollars for Breast Cancer research in their 21 years of operation. They allocated over 91 percent of their total funds to the advancement of medical research as well as Breast Cancer awareness in general. In 2014-2015 alone they will award over 58 million dollars to scientists from top medical institutions around the world. 
+											The <span class = "link" onClick = "window.open('http://www.bcrfcure.org/?_ga=1.129363849.448629387.1419877632')">Breast Cancer Research Foundation</span> is a nonprofit organization that has raised well over half a billion dollars for Breast Cancer research in their 21 years of operation. They allocated over 91 percent of their total funds to the advancement of medical research as well as Breast Cancer awareness in general. In 2014 - 2015 alone they awarded over 58 million dollars to scientists from top medical institutions around the world. 
+											
+											
 											
 											<br />
 											<br />	
@@ -459,7 +466,7 @@
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('breast')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -515,53 +522,34 @@
 			<br />
 			<br />
 			
-       <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+       <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+	</footer>
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

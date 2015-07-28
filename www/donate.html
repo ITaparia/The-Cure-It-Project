@@ -127,7 +127,7 @@
 	    
 	    <div id='header_holder'>
 		
-			<div id='header'>
+		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
@@ -135,9 +135,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -145,7 +145,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div><br /><br /><br /><br /><br />
+			    
+	</div><br /><br /><br /><br /><br />
          
          <span id = "move_all">
 			 
@@ -166,7 +167,7 @@
                         
 					<div id = "move_down">
 						
-							<div id = "center_element" style = "font-size:20px;">Search for Charities: <input onClick = "cleanForm()" maxlength = "60" id="search-text" class = "text_input" type = "text" name = "email_enter" placeholder = "Enter disease here..." style = "border:black 1px solid;"/> <span id = "relative_container"> </span>
+							<div id = "center_element" style = "font-size:20px;">Search for Charities: <input onClick = "cleanForm()" maxlength = "60" id="search-text" class = "text_input" type = "text" name = "email_enter" placeholder = "Enter disease/charity here..." style = "border:black 1px solid;"/> <span id = "relative_container"> </span>
                         
                         <div id = "disease_holder" class="animated zoomIn">
                             
@@ -206,6 +207,20 @@
                                 <span style = "font-size:22px;">Type: Blood Cancers</span>
                                
                                  </div></a></li>
+								 
+								  <li class="in"> <a target="_blank" href = "http://www.bonecancerresearch.org.uk/f_donate.php" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Bone Cancer Research Trust</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Bone Cancers</span>
+                               
+							</div></a></li>
+							
+							 <li class="in"> <a target="_blank" href = "https://secure.squarespace.com/commerce/donate?donatePageId=52b79f65e4b0ee585a53a209" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Sunbeam Foundation</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Bone Cancers</span>
+                               
+							</div></a></li>
 								 
 								   <!-- General list of all avaliable methods of donation --> 
                              <li class="in"><a target="_blank" href = "https://secure2.convio.net/abta/site/Donation2;jsessionid=9DC62F7205DEAD22C1E17DE9966EEBA7.app272b?df_id=1500&1500.donation=form1" style = "color:black;"><div id = "disease_selection">
@@ -260,6 +275,23 @@
                                
 							</div></a></li>
                             
+							<li class="in">  <a target="_blank" href = "https://donatenow.networkforgood.org/FoundationForWomensCancer" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Foundation for Women's Cancer</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Endometrial Cancers/General Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
+							<li class="in">  <a target="_blank" href = "https://secure3.convio.net/tmkf/site/Donation2;jsessionid=2C47305C279E144F55E17AE2AAA303B9.app303b?idb=360068408&DONATION_LEVEL_ID_SELECTED=1&df_id=1320&1320.donation=form1&idb=0" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Mary Kay Foundation</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Endometrial Cancers/General Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
 								 
                             
 								      <li class="in">  <a target="_blank" href = "http://www.etrf.org/donate.html" style = "color:black;"><div id = "disease_selection">
@@ -275,6 +307,21 @@
                                 <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Eye Cancer Foundation</span>
                                 <br />
                                 <span style = "font-size:22px;">Type: Eye Cancers</span>
+								
+								
+								      <li class="in">  <a target="_blank" href = "http://www.liver-research.org.uk/liver-research-donations/donation.html" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Foundation for Liver Research</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Liver Cancers</span>
+                                 
+                                 
+                               
+                                 </div></a></li>
+                            
+                             <li class="in"> <a target="_blank" href = "http://www.upmc.com/Services/liver-cancer/research/Pages/donate.aspx" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Liver Cancer Research Fund</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Liver Cancers</span>
                                  
                                  
                                
@@ -307,6 +354,26 @@
                                
 							</div></a></li>
 							
+							
+							 <li class="in"><a target="_blank" href = "https://community.lymphoma.org" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Lymphoma Research Foundation</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Lymphatic Cancers/Blood Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
+							
+							 <li class="in"><a target="_blank" href = "https://www.givedirect.org/give/givefrm.asp?CID=10146" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Lymphoma Foundation of America</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Lymphatic Cancers/Blood Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
 							 <li class="in"><a target="_blank" href = "https://donate.oralcancer.org/index.cfm?fuseaction=donate.general" style = "color:black;"><div id = "disease_selection">
                                 <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Oral Cancer Foundation</span>
                                 <br />
@@ -320,6 +387,42 @@
                                 <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Mouth Cancer Foundation</span>
                                 <br />
                                 <span style = "font-size:22px;">Type: Oral Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
+							<li class="in"> <a target="_blank" href = "https://www.kintera.org/AutoGen/Simple/Donor.asp?ievent=475938&en=4nLxHFMfG3LGKPOiE2LDKLOsFhLKKSMuFfIKKYOALrE" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Ovarian Cancer Research Fund</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Ovarian Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
+							<li class="in"> <a target="_blank" href = "https://secure.2dialog.com/ovarian/main.php/micro_sites/showpage/id/99" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The National Ovarian Cancer Coalition</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Ovarian Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
+							<li class="in"> <a target="_blank" href = "https://www.lustgarten.org/donate" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Lustgarten Foundation</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Pancreatic Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
+							<li class="in"> <a target="_blank" href = "https://www.pancan.org/donate-now/" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Pancreatic Cancer Action Network</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Pancreatic Cancers</span>
                                  
                                  
                                
@@ -341,6 +444,24 @@
                                 <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The American Skin Association</span>
                                 <br />
                                 <span style = "font-size:22px;">Type: Skin Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
+							 <li class="in">  <a target="_blank" href = "https://tcsa.memberclicks.net/index.php?option=com_mc&view=formlogin&form=84782&return=L2luZGV4LnBocD9vcHRpb249Y29tX21jJnZpZXc9bWMmbWNpZD1mb3JtXzg0NzgyP3NlcnZJZD0zMzU5Jm9wdGlvbj1jb21fbWMmdmlldz1tYyZtY2lkPWZvcm1fODQ3ODI=" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Thyroid Cancer Survivors' Association</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Thyroid Cancers</span>
+                                 
+                                 
+                               
+							</div></a></li>
+							
+							 <li class="in">  <a target="_blank" href = "http://www.lightoflifefoundation.org/Ways-to-Help/Donate" style = "color:black;"><div id = "disease_selection">
+                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Light of Life Foundation</span>
+                                <br />
+                                <span style = "font-size:22px;">Type: Thyroid Cancers</span>
                                  
                                  
                                
@@ -391,53 +512,35 @@
                             </div>
 						</span>
 						
-					<div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+					<footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-				<a href = "form.html"><span id = "header_link">Feedback</span></a>
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
+		</div>
+	</footer>
 				
-				
-				
-			</div>
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
             </body>
 			</html>

@@ -38,6 +38,8 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
         <script src="Chart.js"></script>
         <script type="text/javascript">
 		
@@ -63,7 +65,8 @@
 	
 	    
 	    <div id='header_holder'>
-			<div id='header'>
+		
+		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
@@ -71,9 +74,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -81,7 +84,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
             <span id = "move_all">	
             <div id="parallax-main">
 		    
@@ -148,7 +152,7 @@
     <br />  
                         
                         
-                        Skin Cancer is extraordinarily far-reaching in its impacts in that it is the most common of all currently existing cancers. In fact, Skin Cancer accounts for <span class = "link" onClick = "window.open('https://www.photocure.com/Specialty-areas/Skin-cancer/')">nearly half of all cancer cases in the United States</span>. Because these numbers are so all-inclusive, everyone is potentially at risk for the development of Skin Cancer. That said, there do exist <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/skin-cancer/basics/risk-factors/con-20031606')">several external factors</span> that can result in a higher risk for contracting this terrible disease. These include: A family history of Skin Cancer, pale skin, unprotected exposure, and a weakened immune system.
+                        Skin Cancer is extraordinarily far-reaching in its impacts in that it is the most common of all currently existing cancers. In fact, Skin Cancer accounts for <span class = "link" onClick = "window.open('https://www.photocure.com/Specialty-areas/Skin-cancer/')">nearly half of all cancer cases in the United States</span>. Because these numbers are so inclusive, everyone is potentially at risk for the development of Skin Cancer. That said, there do exist <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/skin-cancer/basics/risk-factors/con-20031606')">several external factors</span> that can result in a higher risk for contracting this terrible disease. These include: A family history of Skin Cancer, pale skin, unprotected exposure, and a weakened immune system.
                         
             
                        
@@ -205,9 +209,7 @@
 									<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C;">Melanoma</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-											Melanoma is a form of cancer that begins in the Melanocytes, the portion of the skin responsible for producing Melanin and controlling skin color. While Melanoma is the most rare form of Skin Cancer, accounting for <span class = "link" onClick = "window.open('http://www.skincancer.org/skin-cancer-information/skin-cancer-facts')">less than 2 percent of all cases diagnosed per year</span>, it is also the most deadly. Although it can almost always be cured if caught in its earlier stages, the aggressive nature of the disease makes the possibility for it to spread very high if not detected early on. 
-											
-											
+											Melanoma is a form of cancer that begins in the Melanocytes, the portion of the skin responsible for producing Melanin and controlling skin color. While Melanoma is the most rare form of Skin Cancer, accounting for <span class = "link" onClick = "window.open('http://www.skincancer.org/skin-cancer-information/skin-cancer-facts')">less than 2 percent of all cases diagnosed per year</span>, it is also the most deadly. Although it can almost always be cured if caught in its earlier stages, the aggressive nature of the disease ensures that this window of corrective opportunity remains very small. 
 											
 											<br />
 											<br />
@@ -271,7 +273,7 @@
 					    
 						<br />
 						
-						Recent technological developments have proven to be incredibly effective in terms of bettering our understanding of Skin Cancers. However, we still have a long way to go before this terrible disease can be accurately considered a non-issue. In adherance to this idea, we will highlight some of the successes that have been made in the field over the past few years in an effort to underscore the tremendous advancements that are saving lives and striking the issue of Skin Cancer at its source. 
+						Recent technological developments have proven to be incredibly effective in terms of bettering our understanding of Skin Cancers. However, we still have a long way to go before this terrible disease can accurately be considered a non-issue. In adherance to this idea, we will highlight some of the successes that have been made in the field over the past few years in an effort to underscore the tremendous advancements that are saving lives and striking the issue of Skin Cancer at its source. The graph below depicts the rate of increase of occurance for Melanoma that has been observed in the past couple of decades.  
 						
 						
 						
@@ -279,7 +281,8 @@
 					
 						
 				
-						<br />
+						<br /><br />
+						
 						
 						<div id = "center_element">
 							
@@ -357,7 +360,7 @@
 						<div id = "goFirst" class = "smaller_header">How to Help</div>
 						<br />
 						
-						Skin Cancer is the most commonly occuring disease in the world today, and its occurance is on the rise. In order to combat this rising problem, additional research and exposure is necessary. Thankfuly, there exist organizations willing to tackle the towering issue at its core, inspiring hope for those who need it the most. All of the options outlined below are fantastic ways to join them in their fight. 
+						Skin Cancer is the most commonly occuring disease in the world today, and its occurance is on the rise. In order to combat this rising problem, additional research and exposure is necessary. Thankfully, there exist organizations willing to tackle the towering issue at its core, inspiring hope for those who need it the most. All of the options outlined below are fantastic ways to join them in their fight. 
 						
 						
 	
@@ -410,13 +413,13 @@
                                             <br />
                                             <br />
                                             
-											Their active approach in combating these deadly diseases has led them to donate <span class = "link" onClick = "window.open('http://www.americanskin.org/about/')">over 7.9 million dollars</span> in advanced dermatological reasearch, something that they argue is "the key to earlier diagnosis, less invasive therapies and, in time, prevention and cure." This money supported the work of <span class = "link" onClick = "window.open('http://www.americanskin.org/research/')">150 investigators</span>, something which ensures that a broad range of research in regards to Skin Cancer is achieved. 
+											Their active approach in combating these deadly diseases has led them to donate <span class = "link" onClick = "window.open('http://www.americanskin.org/about/')">over 7.9 million dollars</span> in advanced dermatological reasearch, something that they argue is "the key to earlier diagnosis, less invasive therapies and, in time, prevention and cure." This money has supported the work of <span class = "link" onClick = "window.open('http://www.americanskin.org/research/')">150 investigators</span>, something which ensures that a broad range of research in regards to Skin Cancer is achieved. 
                                             
                                             
                                          <br />
                                          <br />
                                             
-										 They also boast an impressive degree of financial transparency, with audited financial statements and IRS Form 990 filings dated <span class = "link" onClick = "window.open('http://www.americanskin.org/about/pdf/ASA2006Form990.pdf')">back as far as 2006</span> publically avaliable. Additionally, they provide a detailed expenses breakdown which enables all those who donate to scrutinize where their money is actually going to. You can help them further their mission to defeat Skin Cancers by clicking the button to donate below. 
+										 They also boast an impressive degree of financial transparency, with audited financial statements and IRS Form 990 filings dated <span class = "link" onClick = "window.open('http://www.americanskin.org/about/pdf/ASA2006Form990.pdf')">back as far as 2006</span> publically avaliable. Additionally, they provide a detailed expenses breakdown which enables all those who donate to scrutinize where their money is actually going. You can help them further their mission to defeat Skin Cancers by clicking the button to donate below. 
 										 
 										 
 											<br />
@@ -440,7 +443,7 @@
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('skin')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -473,53 +476,35 @@
 			<br />
 			<br />
 			
-       <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+       <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>	
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+		</footer>
+		
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

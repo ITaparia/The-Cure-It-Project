@@ -39,6 +39,8 @@
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
         <script src="Chart.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
      <script type="text/javascript">window.onload = function(){
 				var ctxbladder = document.getElementById("bladderStatsPie").getContext("2d");
 				window.myPie = new Chart(ctxbladder).Pie(pieDataBladder);
@@ -70,16 +72,16 @@
 	    <div id='header_holder'>
 		
 		<div id='header'>
-		    <span id = "title_text">The Cure It Project</span>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
 		    
 		    
 		    <div id = "user_options">
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -87,7 +89,8 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    </div>
+			    
+	</div>
 			<span id = "move_all">
 				
             
@@ -160,7 +163,7 @@
                 
 						<br />
 						<br />
-                        Similar to most types of cancer, the diagnosis rate has been steadily increasing over the past few years, while fatalities decrease. As for some relevant statistics: <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-key-statistics')">90% of Bladder Cancer patients are diagnosed above ths age of 55</span>, with the average age being around 73 years old. Men are more likely to develop Bladder Cancer than women; men have a roughly <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-key-statistics')">1 in 26 chance while women have a 1 in 90</span>. 
+                        Similar to most types of cancer, the diagnosis rate has been steadily increasing over the past few years, while fatalities decrease. As for some relevant statistics: <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-key-statistics')">90% of Bladder Cancer patients are diagnosed above the age of 55</span>, with the average age being around 73 years old. Men are more likely to develop Bladder Cancer than women; men have a roughly <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-key-statistics')">1 in 26 chance while women have a 1 in 90</span>. 
 
 						<br />
 						<br />
@@ -210,9 +213,9 @@
                                             This is by far the majority of all diagnosed Bladder Cancers, amounting to <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bladder-cancer/about/types-of-bladder-cancer')">nearly 90%</span> of all cases. Cells in the lining of the bladder often come into contact with toxic chemicals in urine waste. Since some of these chemicals are carcinogens, these cells can get damaged and form into tumors.
                                             Over time, the cancer can spread into the tissue surrounding the bladder and metastasize from there. Almost all Bladder Cancers begin with transitional cell cancer, as these transitional cells are the most prone to contact with the body's waste.
                                             <br /><br />
-                                            The chances of developing transitional cell Bladder Cancer can be offset by avoiding certain risk factors. The greatest controllable risk factor is smoking. Smokers can have up to a <span class = "link" onClick ="window.open('http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2694323/')">fourfold</span> increase in the likelihood of developing Bladder Cancer. In fact, about <span class = "link" onClick ="window.open('http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2694323/')">50%</span> of Bladder Cancer in the United States is thought to be caused, in part, by cigarette smoking. The nicotine in cigarettes breaks down into compounds known as nitrosamines when burned, a substance known to be a carcinogen. Since the lining of the bladder wall replaces itself at a high rate, old age simply increases the chances of cells not reproducing properly and causing the growth of malignant tumors. People who have had cancer in the past are also at an elevated risk, as the treatment drug <span class = "link" onClick ="window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-risk-factors')">Cytoxan</span> is known to increase the risk of Bladder Cancer specifically.
+                                            The chances of developing transitional Cell Bladder Cancer can be offset by avoiding certain risk factors. The greatest controllable risk factor is smoking. Smokers can have up to a <span class = "link" onClick ="window.open('http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2694323/')">fourfold</span> increase in the likelihood of developing Bladder Cancer. In fact, about <span class = "link" onClick ="window.open('http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2694323/')">50%</span> of Bladder Cancer in the United States is thought to be caused, in part, by cigarette smoking. The nicotine in cigarettes breaks down into compounds known as nitrosamines when burned, a substance known to be a carcinogen. Since the lining of the bladder wall replaces itself at a high rate, old age simply increases the chances of cells not reproducing properly and causing the growth of malignant tumors. People who have had cancer in the past are also at an elevated risk, as the treatment drug <span class = "link" onClick ="window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-risk-factors')">Cytoxan</span> is known to increase the risk of Bladder Cancer specifically.
                                             <br /><br />
-                                            Transitional cell Bladder Cancer can be either low-grade or high-grade. Low-grade carcinomas are the most treatable, as the cancer has stayed with the transitional cells on the surface layer of the bladder only. IVI Therapy is especially good at eliminating this. But the problem becomes much more severe in high-grade transitional cell carcinomas. In this case, the cancer has spread past the surface layer of the bladder and into the fibrous muscle tissue around it. From there, the cancer can be carried away through the bloodstream to other parts of the body. <span class = "link" onClick ="window.open('http://www.cancer.gov/cancertopics/pdq/treatment/bladder/Patient/page1')">Almost every death</span> from Bladder Cancer is due to these high-grade transitional cell cancers.
+                                            Transitional Cell Bladder Cancer can be either low-grade or high-grade. Low-grade carcinomas are the most treatable, as the cancer has stayed with the transitional cells on the surface layer of the bladder only. IVI Therapy is especially good at eliminating this. But the problem becomes much more severe in high-grade transitional cell carcinomas. In this case, the cancer has spread past the surface layer of the bladder and into the fibrous muscle tissue around it. From there, the cancer can be carried away through the bloodstream to other parts of the body. <span class = "link" onClick ="window.open('http://www.cancer.gov/cancertopics/pdq/treatment/bladder/Patient/page1')">Almost every death</span> from Bladder Cancer is due to these high-grade transitional cell cancers.
                                             
                                             
                                             
@@ -222,9 +225,9 @@
 									<dt><a class="accordionTitle" href="#" style = "background-color: #F7464A">Squamous Cell</a></dt>
 									<dd class="accordionItem accordionItemCollapsed">
 										<p>
-                                            Squamous cells are specialized cells that line the vital internal organs of the body. Similarly to transitional cells, squamous cells regularly come into contact with the body's waste and are exposed to a whole host of toxins as a result. When infected, they die quickly, so they are less prone to growing out of control and becoming cancerous than transitional cells. Squamous cells are identified by their spongy nature and flat, rectangular shape. They are found in the lining of the bladder in conjunction with transitional cells, and can be infected by cancer easily as a result. Most common in parts of the world with high levels of <span class = "link" onClick = "window.open('http://www.cdc.gov/parasites/schistosomiasis/')">schistosomiasis</span>, a disease caused by worm infections, squamous cell Bladder Cancer amounts to about <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bladder-cancer/about/types-of-bladder-cancer')">5%</span> of diagnosed cases.
+                                            Squamous cells are specialized cells that line the vital internal organs of the body. Similarly to transitional cells, squamous cells regularly come into contact with the body's waste and are exposed to a whole host of toxins as a result. When infected, they die quickly, so they are less prone to growing out of control and becoming cancerous than transitional cells. Squamous cells are identified by their spongy nature and flat, rectangular shape. They are found in the lining of the bladder in conjunction with transitional cells, and can be infected by cancer easily as a result. Most common in parts of the world with high levels of <span class = "link" onClick = "window.open('http://www.cdc.gov/parasites/schistosomiasis/')">schistosomiasis</span>, a disease caused by worm infections, squamous cell Bladder Cancer  <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bladder-cancer/about/types-of-bladder-cancer')">amounts to about 5%</span> of diagnosed cases.
                                             <br /><br />
-                                            Although there is no substitute for a proerly administered medical exam, <span class = "link" onClick = "http://www.cancer.gov/cancertopics/pdq/treatment/bladder/Patient/page1')">there are telltale</span> signs of having cancer. These include bone pains, bladder distention, and foot/ankle/joint swelling, but the primary identifiers are related to problems with urination. The inability to pass urine is often indicative of the presence of a tumor. Moreover, any blood present in urine is also a cause for concern, whether or not pain is experienced. Often times the problem occurs only intermittently. Please consult your doctor if you experience any of these conditions. Make sure you consult with a physician if you are concerned about exhibiting these symptoms.		
+                                            Although there is no substitute for a properly administered medical exam, <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/pdq/treatment/bladder/Patient/page1')">there are telltale</span> signs of having cancer. These include bone pains, bladder distention, and foot/ankle/joint swelling, but the primary identifiers are related to problems with urination. The inability to pass urine is often indicative of the presence of a tumor. Moreover, any blood present in urine is also a cause for concern, whether or not pain is experienced. Often times the problem occurs only intermittently. Encountering any of these symptoms for excessive periods of time is grounds for a conversation with your doctor. 	
 											
 										
 					</p>
@@ -244,10 +247,8 @@
 					    
 						<br />
 						
-						   The remission rate for Bladder Cancer is high, and recent years have seen the Stage I and II survival rates increase. With Bladder Cancer, the primary cause of concern is its detection. Treatments become costly - mentally, physically, and financially - in Stage III and IV of Bladder Cancer, as more and more invasive procedures are required to remove cancerous tissues and administer long-lasting treatment. This chart highlights the <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-survival-rates')">5-year survival percentages</span> for the various stages of Bladder Cancer. As you can see, survival is extremely likely for Stage I, but it drops off from there. Bladder Cancer kills with a lack of information and proper testing, and you can help to stop this issue by regularly getting tested after the age of 50.
-						
-					
-						
+						   The remission rate for Bladder Cancer is high, and recent years have seen the Stage I and II survival rates increase. With Bladder Cancer, the primary cause of concern is its detection. Treatments become costly - mentally, physically, and financially - in Stage III and IV of Bladder Cancer, as more and more invasive procedures are required to remove cancerous tissues and administer long-lasting treatment. This chart highlights the <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-survival-rates')">5-year survival percentages</span> for the various stages of Bladder Cancer. As you can see, survival is extremely likely for Stage I, but it drops off from there. Bladder Cancer kills with a lack of information and proper testing, and you can mitigate this threat by getting regularly tested after the age of 50.  
+				<br />
 				
 						<br />
 						
@@ -260,9 +261,9 @@
 							</div>
 						
 						</div>
-						
+						<br />
 						<div id = "center_element" style = "color:gray; font-size:16px;">
-							5-Year Survival Percentages of Various Stages
+							Relative 5-Year Survival Percentages by Stage
 						</div>
 						
 						<br />
@@ -270,11 +271,8 @@
 							<div class = "smallest_header" style = "text-decoration:none;">What is being done?</div>
 						<br />
                            
-                            A general rule with cancer is that the earlier it is detected, the greater the chance of survival. Bladder Cancer is no exception, and medical technology has progressed to the point where diagnoses are common, but mortalities are increasingly rare. But since traditional thearapies like chemotherapy and radiotherapy, while effective, are unpleasant and potentially harmful to Bladder Cancer patients, scientists and doctors are wokring to develop viable alternative forms of treatment to kill cancerous cells.
-                            
-                     
-                            
-						
+                            A general rule with cancer is that the earlier it is detected, the greater the chance of survival. Bladder Cancer is no exception, and medical technology has progressed to the point where diagnoses are common, but mortalities are increasingly rare. But since traditional therapies like chemotherapy and radiotherapy, while effective, are unpleasant and potentially harmful to Bladder Cancer patients, scientists and doctors are hard at work developing viable alternative forms of treatment to kill cancerous cells. 
+							
 						<br />
 						<br />
 					
@@ -284,7 +282,11 @@
 									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">Treatment by Photodynamic Therapy</a></dt>
 									<dd class="accordionItem2 accordionItemCollapsed2">
 										<p>
-                                            Recent years have yielded advances in treatment of Bladder Cancer. One of the most promising is the application of photodynamic therapy. This practice involves injecting small, light-sensitive chemicals into the bloodstream of a patient. These chemicals accrue along the lining of the bladder and “stick” to cancerous cells. Then, physicians can fire high-intensity light at the PDT chemicals, causing them to morph into a new chemical that is toxic to cancer cells. This technique is effective at killing cancer cells along the lining of the bladder wall, but often times will miss deeper tumors entirely. <br /><br />A <span class = "link" onClick = "http://onlinelibrary.wiley.com/store/10.1111/j.1751-1097.2009.00585.x/asset/j.1751-1097.2009.00585.x.pdf?v=1&t=i5hfdizi&s=ef1c611599cd2c58b407ba593a47f7bf27aff9fd')">recent study conducted by the University of San Diego</span> examines how advances in photodynamic therapy have developed over the past decade. While concluding that PDT is an effective treatment that will soon be viable for mass use, it notes that the field does have a ways to go before it can be considered above more conventional treatments like chemotherapy. It cites the inability for PDT compounds to penetrate necrotic tissue (dead cells that serve as a breeding ground for disease) and the expensive nature of creating these chemicals as the two major drawbacks to this therapy. But most Bladder Cancer patients Stage I, II, and III - will not experience tissue necrosis and will not forgo PDT on that basis. Additionally, as the field continues to progress, we will see a decrease in the cost of synthesizing PDT compounds as more research is conducted and the process is more widely used.  
+                                            Recent years have yielded advances in treatment of Bladder Cancer. One of the most promising is the application of photodynamic therapy. This practice involves injecting small, light-sensitive chemicals into the bloodstream of a patient. These chemicals accrue along the lining of the bladder and “stick” to cancerous cells. Then, physicians can fire high-intensity light at the PDT chemicals, causing them to morph into a new chemical that is toxic to cancer cells. This technique is effective at killing cancer cells along the lining of the bladder wall, but often times will miss deeper tumors entirely. <br /><br />A <span class = "link" onClick = "window.open('http://onlinelibrary.wiley.com/store/10.1111/j.1751-1097.2009.00585.x/asset/j.1751-1097.2009.00585.x.pdf?v=1&t=i5hfdizi&s=ef1c611599cd2c58b407ba593a47f7bf27aff9fd')">recent study conducted by the University of San Diego</span> examines how advances in photodynamic therapy have developed over the past decade. While concluding that PDT is an effective treatment that will soon be viable for mass use, it notes that the field does have a ways to go before it can be considered above more conventional treatments like chemotherapy. It cites the inability for PDT compounds to penetrate necrotic tissue (dead cells that serve as a breeding ground for disease) and the expensive nature of creating these chemicals as the two major drawbacks to this therapy.
+										
+												<br />
+												<br />
+												Fortunately, most Bladder Cancer patients - Stages I, II, and III - will not experience tissue necrosis and will not forgo PDT on that basis. Additionally, as the field continues to progress, we will see a decrease in the cost of synthesizing PDT compounds as more research is conducted and the process is more widely used.  
                                             
                                             
                                             
@@ -303,7 +305,8 @@
 Often times, Bladder Cancers can be made much worse by a bacteria commonly present in human bodies: Bacillus Calmette-Guerin. Now, doctors are taking to giving patients dead forms of BCG using intravesical therapy and enabling them to quickly develop antibodies suited to killing BCG in their immune system. While this may not cure Bladder Cancer entirely, it can stop it from getting worse, and can often cause remission for Stage I patients. 
                                             <br />
                                             <br />
-Additionally, intravesical immunotherapy involves doctors introducing compounds called interferons to patients’ bladders. Interferons are synthesized compounds that are highly effective at stimulating the immune system at desired areas. The intravesical method enables doctors to administer interferons and stimulate the immunse system right where it is needed to kill off cancer cells and stop tumor growths. Although the success rate for more advanced cancer is relative low, this is notable for causing remission for Stage I patients.
+Additionally, intravesical immunotherapy involves doctors introducing compounds called interferons to patients’ bladders. Interferons are synthesized compounds that are highly effective at stimulating the immune system at desired areas. The intravesical method enables doctors to administer interferons and stimulate the immunse system right where it is needed to kill off cancer cells and stop tumor growths. Although the success rate for more advanced cancer is relative low, the treatment is notable for prompting remission in Stage I patients.
+
 
                                             
                                             <br />
@@ -327,7 +330,7 @@ Additionally, intravesical immunotherapy involves doctors introducing compounds 
 						<div id = "goFirst" class = "smaller_header">How to Help</div>
 						<br />
 						
-                            If left untreated or if discovered in its later stages, Bladder Cancer can be deadly. We've looked at a variety of treatments intended to revolutionize its treatment and help save more lifes. But we also need to look at the awareness of Bladder Cancer. The absolute best way of being safe from Bladder Cancer is by getting yourself tested every year past the age of 50, because left untreated, Stage III and IV are highly fatal. The following organizations help to promote awareness of this disease as well as fund and contribute to research involving highly efficicent treatment procedures.
+                            If left untreated or if discovered in its later stages, Bladder Cancer can be deadly. We've looked at a variety of treatments intended to revolutionize its treatment and help save more lifes. But we also need to look at the awareness of Bladder Cancer. The absolute best way to remain safe from Bladder Cancer is to get yourself tested every year beyond the age of 50, because if left untreated, Stage III and IV are highly fatal. The following organizations help to promote awareness of this disease as well as fund and contribute to research involving highly efficicent treatment procedures.
                             
                            
                             
@@ -348,7 +351,7 @@ Additionally, intravesical immunotherapy involves doctors introducing compounds 
                                           <span class = "link" onClick = "window.open('http://www.bcan.org/about-us/what-we-do/')">The Bladder Cancer Advocacy Network</span> uses a variety of angles to combat Bladder Cancer. It is led by a panel of urologists, oncologists, radiation oncologists and pathologists known as the Scientific Advisory Board that convenes to guide BCAN’s research efforts as knowledge of Bladder Cancer grows. These scientists and doctors are some of the leading experts in their respective fields, and you can find a complete list of the members of the SAB <span class = "link" onClick = "window.open('http://www.bcan.org/about-us/bcan-scientific-advisory-board/')">here</span> . 
                                             <br /><br />
 
-One way BCAN fights Bladder Cancer is through active medical research. It offers three <span class = "link" onClick = "window.open('http://www.bcan.org/research/young-investigator-awards/')">Young Investigator Awards</span> to graduate students conducting research on Bladder Cancer. These $100,000 research grants fund researchers who work in basic, translational, clinical, epidemiologic, bioengineering or any other scientific or research field, and are also working in a research environment capable of supporting transformational Bladder Cancer research. Additionally, BCAN offers the <span class = "link" onClick = "window.open('http://www.bcan.org/research/john-quale-travel-fellowships/')">John Quale Travel Fellowship</span>. Please see the link for more information on this. 
+One way BCAN fights Bladder Cancer is through active medical research. It offers three <span class = "link" onClick = "window.open('http://www.bcan.org/research/young-investigator-awards/')">Young Investigator Awards</span> to graduate students conducting research on Bladder Cancer. These $100,000 research grants fund researchers who work in basic, translational, clinical, epidemiologic, bioengineering or any other scientific or research field, and are also working in a research environment capable of supporting transformational Bladder Cancer research. Additionally, BCAN offers the <span class = "link" onClick = "window.open('http://www.bcan.org/research/john-quale-travel-fellowships/')">John Quale Travel Fellowship</span>.  
                                             <br /><br />
 
 Bladder Cancer thrives on misinformation and ignorance, so BCAN uses a variety of education and support communities to attack to eventually render the lack of information a non-issue. For those worried about Bladder Cancer, BCAN offers the <span class = "link" onClick = "window.open('http://www.bcan.org/learn/educational-programs/webinars/')">Patient Insight Webinar Series</span>: freely available recordings of lectures given by BCAN associates on a variety of topics surrounding Bladder Cancer. For those afflicted with this disease, BCAN offers support through the <span class = "link" onClick = "window.open('http://www.bcan.org/learn/finding-support/bcan-online-community/')">BCAN Online Support Community</span> and the <span class = "link" onClick = "window.open('http://www.bcan.org/learn/finding-support/support-groups/')">In Person Support Groups</span>.
@@ -398,7 +401,7 @@ BCC has a specific set of objectives. It seeks to assist newly diagnosed and lon
 											
 												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
 												
-												<div id = "facebook_button">Join us on Facebook</div>
+												<div id = "facebook_button" onClick = "launch_facebook('bladder')">Fight through Facebook</div>
 											
 											</div>
 											
@@ -432,53 +435,35 @@ BCC has a specific set of objectives. It seeks to assist newly diagnosed and lon
 			<br />
 			<br />
 			
-       <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+       <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<span id = "header_link">Feedback</span>	
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
+		</div>
+		</footer>
+		
 			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 		</body>
 		<script>

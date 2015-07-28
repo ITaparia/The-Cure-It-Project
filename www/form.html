@@ -40,7 +40,7 @@
 		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
 		<script src="modernizr.custom.js"></script>
         
-        <title>Feedback</title>
+        <title>Contact Us</title>
     </head>
     <body>
         	  <script type = "text/javascript" charset = "utf-8">
@@ -111,7 +111,7 @@
 
 	</style>
 	
-		<div id='header_holder'>
+		 <div id='header_holder'>
 		
 		<div id='header'>
 		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
@@ -121,9 +121,9 @@
 		    
 			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
 			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible">Stories</span>
-            <span id = "option_four" class = "flexible">FAQ</span>
-			<span id = "option_five" class = "flexible">Contact Us</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
 		    
 		    </div>
 		    
@@ -131,24 +131,23 @@
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
 		
 		</div>
-		    
-		</div>
-	
+			    
+	</div>
 		
 	
 	
 	      
 			   
-		   <span id = "cloud_header"><span style = "position:relative;top:25px;">Feedback</span></span>
+		   <span id = "cloud_header" style = "top:230px;"><span style = "position:relative;top:25px;">Contact Us</span></span>
             <br />
         
-         <span id = "cloud_header" style = "font-size:22px;font-size:1.5vw;color:gray;"><span style = "position:relative;top:15px;">Got issues? Praise? Bugs? Hate mail? You're in the right place!</span>
+         <span id = "cloud_header" style = "font-size:22px;font-size:1.5vw;color:gray;"><span style = "position:relative;top:70px;">Got stories? Praise? Bugs? Hate mail? You're in the right place!</span>
 			<br /><br />
 			
 			
 			
 			
-			<span class = "link" onClick = "window.history.back();" style = "color:gray;"> Click here to go back.</span></span>
+			<span class = "link" onClick = "window.history.back();" style = "color:gray;position:relative;top:60px;">Click here to go back.</span></span>
         
         
 			
@@ -200,6 +199,7 @@
 						<br/>
                         <br/>
 
+						
 			<span id = "form_ribbon">
 
 					<div id="form">
@@ -238,54 +238,36 @@
             
              
 		
-            <div id = "footer_section">
-				
-				
-				<span id = "header_link_section">
+           <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
 					
-                    <span id = "link_header">Discover</span>
-					
-					<br />
-                    <a href = "cancercloud.html"><span id = "header_link">Word Cloud</span></a>
-					
-					<br />
-					<span id = "header_link">Mobile Apps</span>
-					
-					<br />
-					<a href = "form.html"><span id = "header_link">Feedback</span></a>	
-					<br />
-					
-				</span>
-					
-					<br />
-					<span id = "social_media_buttons">
-						
-						<a href="http://www.facebook.com/sharer.php?u=http://www.simplesharebuttons.com" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
-						<a href="http://twitter.com/share?url=http://www.simplesharebuttons.com&text=Simple Share Buttons&hashtags=simplesharebuttons" target="_blank">
-						<img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
-					
-				
-					</span>
-					
-				<div id = "one_hundey">
-					
-				<span id = "credit_logo">
-					
-					&#169 Copyright 2015 TopBox Software. All Rights Reserved
-					
-				</span>
-				
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
 			</div>
-				<span id = "social_media_buttons">
-					
-					
-					
-				</span>
-				
-				
-				
-			</div>
-         
+		</div>
+		</footer>
+			
+		
          <a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
 	</body>
 </html>
