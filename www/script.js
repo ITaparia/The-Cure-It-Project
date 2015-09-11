@@ -244,6 +244,35 @@ var lineChartDataBone = {
 }
 
 
+
+var lineChartDataBalls = {
+			labels: ["1975", "1980", "1985", "1990", "1995"],
+    datasets: [
+        {
+            label: "Testicular Cancer Incidence Rate",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: [3.3, 4.0, 4.1, 4.6, 4.9]
+        },
+        {
+            label: "Testicular Cancer Mortality Rate",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [0.7, 0.4, 0.3, 0.2, 0.2]
+        }
+    ]
+}
+
+
+
 var pieDataThyroid = [
 				{
 					value: 80,
