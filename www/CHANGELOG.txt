@@ -1,0 +1,417 @@
+
+Changelog
+Copyright 2015 TopBox Software. All Rights Reserved
+
+12/7/2014
+-Fixed formatting for text
+-Added content for the first paragraph
+-Added links to various websites
+-Styled anchor tags
+
+12/8/2014
+-Added additional body text
+-Updated color scheme
+-Fixed bug that allowed users to select text on buttons
+-Corrected facts
+-Changed button styling
+-Removed bottom banner
+-Added copyright information
+
+12/9/2014
+-Added chart that documents death rates
+-Modified chart styling
+-Made Javascript commands external
+-Improved code efficiency/readability
+-Added button that pops up after scrolling down a little bit
+
+12/10/2014
+-Styled "scroll up" button
+-Updated middle banner picture with three ribbon image
+
+12/11/2014
+-Discussed idea of adding a donation/page redirect counter
+-Updated image slider on disease page
+-Added support for "scroll up" button on all current pages
+-Minor styling tweaks
+
+12/15/2014
+-Added graphs to Blood Cancer page
+-Reformatted content on Blood Cancer page
+-Added additional body text to Blood Cancer Page
+
+12/19/2014
+-Added slide-down menu to hide/reveal content
+-Altered colors in Blood Cancer page
+-Altered colors used in slide-down menu
+-Updated footer
+
+12/21/2014 
+-Restructured content on Blood Cancer page
+-Added support for multiple slide-down menus 
+
+12/22/2014 
+-Added support for links inside slide-down menu
+-Added third slide-down menu for Blood Cancer page
+-Added additional information in Blood Cancer page
+
+12/23/2014 
+-Added ability to send pre-written tweet with the click of a button
+-Added basic text entry system for mailing list
+-Added social media blurb
+-Added animation for diseases page
+-Altered color pallet on diseases page
+-Changed header on disease page
+
+12/24/2014
+-Added 'Back to Diseases' button at bottom of Blood Cancer page
+-Altered content on Blood Cancer page
+
+12/25/2014
+-Began Breast Cancer page
+-Altered header of Breast Cancer page
+-Altered body text of Breast Cancer page
+-Adjusted styling of header texts in an effort to combat page resizing issues
+
+12/26/2014
+-Improved spacing for leading paragraphs in specified disease pages
+-Altered content of Breast Cancer page
+-Improved organization of topics in Breast Cancer page
+-Added Recurrent Breast Cancer section
+-Grammar improvements on Blood Cancer page
+-Adjusted wording of Breast Cancer heading paragraph
+
+12/27/2014
+-Added copyrighy to Disease page
+-Altered content for Breast Cancer page
+-Updated content regarding Metastatic Breast Cancer
+-Added universal footer
+-Added social media functionality to footer
+-Updated graphs on Breast Cancer page
+-Updated styling on footer
+
+12/28/2014
+-Added hover effect on social media buttons
+-Footer is now responsively designed
+-Added information regarding HER2 proteins in Breast Cancer page
+-Added additional text when copying to clipboard
+-Added information regarding lifestyle choices to Breast Cancer page
+
+12/29/2014
+-Rewrote and restyled footer
+-Created many new bugs
+-Finalized Breast Cancer page
+-Began Brain Cancer page
+-Added new header image for Brain Cancer page
+-Repositioned scroll up anchors to avoid text weight bug
+-Began Eye Cancer page
+
+12/30/2014
+-Rewrote disease page code
+-Removed fade-in animation
+-Added Word Cloud
+-Added body content for Brain Cancers page
+
+12/31/2014
+-Happy new year m8
+-Spent 30 minutes yelling at Varun
+-Fixed word cloud scaling
+-Added additional content to body of Brain Cancer page
+-Added back button for Word Cloud
+-Added five section header
+-Updated header on all pages
+-Added 'Stories' and 'FAQ' sections to header
+
+1/1/2015
+-Bissem hasn't touched the project all year
+-Rewrote Word Cloud page for additional responsive behavior
+-Added chart for Brain Cancer page
+-Finalized Eye Cancer page
+
+1/2/2015
+-Reworded elements on index page
+-Added graph to Brain Cancer page
+-Added animation to disease page
+-Added 'Treatement by Viruses' section to Brain Cancer page
+-Improved Javascript code organization
+
+1/3/2015
+-Added 'Treatment by Lasers' section to Brain Cancer page
+-Rewrote section regarding what is being done to cure Brain Cancer
+-Added additional donation options to Breast Cancer page
+-Finalized Brain Cancer page
+-Changed transition speed on hover for the diseases page
+
+1/4/2015
+-Added donation page
+-Fixed bug regarding text formatting
+-Fixed redirect problem on donation page
+
+1/14/2015
+-Added Skin Cancer page
+-Added pie chart on Skin Cancer page
+-Added additional context for Skin Cancer page
+-Added Skin Cancer reference on disease page
+-Added information regarding Melanoma on Skin Cancer page
+
+1/15/2015
+-Updated style of disease page slide menu
+-Added link to donation page in slide menu
+-Added link to Brain Cancer page in slide menu
+-Added opacity effect to slide menu button
+
+1/17/2015
+-Added additional chart to Skin Cancer page
+-Reminded everyone every 20 minutes to finish their assignments
+-Revised Brain Cancer donation organization wording
+-Changed copyright to 2015
+-Put diseases in alphabetical order
+-Began Lung Cancer page
+
+1/18/2015
+-Bug fixes
+-Updated header
+
+1/25/2015
+-Started and completed feedback page
+-Added icons to feedback page
+-Finalized Lung Cancer page
+-Bug fixes
+
+1/26/2015
+-Search bars added for disease and charity pages
+-Bissem pls b0ss
+-Corrected information on Lung Cancer Page
+-Added additonal sources to Breast Cancer page
+
+1/28/2015
+-Bissem did stuff today! Nice meme!
+-Updated Bladder Cancer charities
+
+1/31/2015
+-Altered page titles
+-Minor formatting changes on disease pages
+-Updated Oral Cancers page
+
+2/1/2015
+-Altered Oral Cancers page content
+-Added graph to Oral Cancers page
+-Changed border styling on diseases page
+-Replaced Eye Cancer image 
+
+2/2/2015
+-Modified wording on Brain Cancer page
+-Updated Oral Cancers page
+-Completed Bladder Cancer page
+-Bissem and Ishy Boi triggered me 
+-Completed Oral Cancers Page
+-Added additional slider picture to diseases page
+
+2/4/2015
+-Rough draft of second homepage image established
+-Began Colorectal Cancers page
+-Changed Colorectal Cancer header image
+
+2/6/2015
+-Updated image on index page
+-Added fade effect to images on index page
+
+2/8/2015
+-Sort now works on the disease page
+-Updated Colorectal Cancers page
+
+2/9/2015
+-Sort now works on donation page
+-Updated sorting animation
+
+2/11/2015
+-Fixed parallax on index page
+-Fixed smooth scroll on index page
+-Index page now works on mobile 
+
+2/17/2015
+-Back from Harvard w00t w00t 
+-Altered Colorectal Cancers page
+-Added graph to Colorectal Cancers page
+
+2/18/2015
+-Altered Colorectal Cancers page
+-Changed paragraph structure on index page
+
+2/19/2015
+-Changed Breast Cancer header image
+-Altered Colorectal Cancers page
+-Finalized Colorectal Cancers page
+-Removed mailing list option
+-Began FAQ Page
+-Made header larger
+-Changed header image on index page
+-Connected FAQ button in index page to FAQ page
+
+2/20/2015
+-Altered FAQ page
+-Varun bullied me
+-Purchased Topbox logo
+-Updated page titles to reflect content
+-Made a good meme
+-Began changing headers to include a 'donate' button instead of a 'contact us' button
+
+3/23/2015
+-Started Liver Cancer page
+-Altered FAQ page
+-Added pie chart to Liver Cancer page
+
+3/24/2015
+-Altered Liver Cancer page
+
+3/25/2015
+-Finalized Liver Cancer page
+
+4/10/2015
+-Been a while since I've updated the changelog m8
+-Began Ovarian Cancer page
+-Varun lectured me about Java even though nobody asked him to
+-Java is a dying language
+-Adjusted margins in index page for better page alignment on smaller viewport sizes
+-Fixed the date on Ishan's pages because he has trouble with that for some reason
+
+4/11/2015 
+-Added graphs to Ovarian Cancer page
+-Updated body content on Ovarian Cancer page
+-Added 'Advancements in Treatment' section to Ovarian Cancer page
+-Adjusted heading size on Pancreatic Cancer page to ensure that it doesn't clip on larger viewport sizes
+-Added donation options for Ovarian Cancer page
+-Finalized Ovarian Cancer page
+-Adjusted wording in FAQ page
+
+4/24/2015 
+-Began Bone Cancer Page
+
+4/25/2015
+-Finalized Bone Cancer page
+-Version 1.0 disease pages are finalized
+-14 disease pages in all, 29 charities supported
+-Improved positioning on feedback page
+-Updated FAQ page
+
+4/26/2015
+-Added additional resources to FAQ page
+-Finalized FAQ page
+
+5/1/2015 
+-Styled footer
+-Fixed spelling of Ishan's name
+-Added mobile apps preview page
+
+5/2/2015
+-Altered styling of mobile apps preview page
+-Added footer to mobile apps page
+-Finalized mobile apps preview page
+-Altered content of footer
+-Started resources page
+-Fixed scrolling bug on FAQ page
+-Updated avaliable resources for resource page
+-Better organized resources on resource page
+
+5/3/2015 
+-Finalized resources page
+-Adjusted positioning of Bone Cancer header
+-Bug fixes. Lots of them.
+-Established contact with potential interviewees. 
+
+5/4/2015
+-Began editing disease pages
+-Edited Bone Cancer page
+
+5/6/2015
+-Finished editing Bone Cancer page
+-Edited Bladder, Blood, Brain, and Breast Cancer pages
+-Edited lots of pages. I don't feel like keeping track of which ones anymore.
+-Added an extra space on all disease pages between advancement in treatment text and the second graph.
+
+5/9/2015
+-Past few days have just been editing disease pages. On Eye Cancer now -- still going
+-Don't get mild sauce at bdubs, tastes awful
+-Fixed inaccuracies in data on Eye Cancer page
+
+5/10/2015
+-Still editing disease pages
+-Made the scale on line graphs more consistent
+
+5/19/2015
+-Haven't updated the changelog in forever kek
+-Finished editing disease pages up through Lung Cancer
+
+6/5/2015
+-School is out, surfs up!
+-Captains of PF wow
+-I've been working this whole time
+-Updating the changelog is just a chore
+-Started and finished Endometrial Cancers page
+-Edited Endometrial Cancer page
+-Added Facebook redirect feature (Non intrusive)
+
+6/8/2015
+-Finished editing through Skin Cancers
+
+6/10/2015 
+-Finished editing through Thyroid Cancers
+-Finished editing all of the disease pages except for the one that Ishan is working on
+-Arcade Fire is <i>objectively</i> better than Taylor Swift :))))
+-Updated stories description on index page
+
+6/11/2015 
+-Added Facebook integration up through Breast Cancer 
+
+6/12/2015
+-All of the disease pages now have Facebook integration
+
+6/21/2015 
+-The headers and footers are now consistent across all pages
+-Continued editing disease pages (on the last one now)
+
+6/22/2015
+-Finished editing all disease pages
+
+7/28/2015
+-Hey look I'm back
+-We realized that we don't cover Testicular Cancer
+-Started Testicular Cancer page
+-Linked portfolio websites to the project
+
+8/1/2015 
+-Finished Testicular Cancer page
+-My god this changelog is cringe
+
+8/15/2015 
+-Added Allie's contact info to resource and stories page
+
+Known Bugs:
+-Margins on disease page overlap when page is shrunk (FIXED)
+-Buttons on Blood Cancer page are not centered when using Google Chrome (FIXED)
+-Text on blood cancer header overlaps when page is resized (FIXED)
+-Cannot have two slide-down menus on one page (FIXED)
+-Cannot activate links within slide-down menu (FIXED)
+-Scroll up circle does not appear on Blood Cancer page (FIXED)
+-Footer scaling needs to be improved (FIXED)
+-Footer expands page width past 100 percent (FIXED)
+-Footer buttons are non-functional (FIXED)
+-Contact button on footer cannot be activated (FIXED)
+-Buttons in footer are inconsistantly selectable (FIXED)
+-Word Cloud will not scale (FIXED)
+-Donation page does not scale properly (FIXED)
+-Scaling on index page expands page width past 100 percent (FIXED)
+-Parallax effect is broken on mobile (FIXED)
+-Scroll up circle overlaps content when page resized (FIXED)
+-No smooth scroll on Word Cloud page (NOT AN ISSUE)
+
+Things to Complete Before Launch:
+-Must make sure all twitter links send out the correct tweet for each respective form of Cancer
+-Add links to Zach and Ishan's personal websites on FAQ page
+-Assert Arcade Fire as being better than Taylor Swift (DONE)
+-Add links to pages at the end of the index page (done)
+-Add mailing list functionality (REMOVED)
+-Add mailing list to footer (REMOVED)
+-Complete border-radius on top + final elements in disease page to finalize the effect (DONE)
+-Recognize that Dual-300 is only good for 20,000 page hits (DONE)
+-Facebook button should redirect to a relevant facebok page for that type of cancer. (DONE) 
+-Edit the last paragraph on the home page (DONE)

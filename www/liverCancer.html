@@ -1,0 +1,752 @@
+
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 2931281, 2014-11-30T14:50:45-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Dual-300 by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dual/300/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2931281
+ * 
+ * ? 2014 MyFonts Inc
+*/
+
+-->
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>  
+	 <meta charset = "utf-8" />
+	 
+        <script src = "script.js"> </script>
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	    <script type="text/javascript" src="engine1/jquery.js"></script>
+        <link rel = "stylesheet" href = "style.css" />
+		<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "fonts.css" />
+		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+        <script src="Chart.js"></script>
+        <script type="text/javascript">
+		
+		window.onload = function(){
+				var ctxLiv= document.getElementById("livStatsPie").getContext("2d");
+				window.myPie = new Chart(ctxLiv).Pie(pieDataLiv);
+                
+         var steps = 10;
+                var max = 100;
+	           var ctxBrain = document.getElementById("livStatsBar").getContext("2d");
+	           window.myBar = new Chart(ctxBrain).Bar(barChartDataLiv, {
+                   scaleOverride: true,
+                   scaleSteps: steps,
+                   barStrokeWidth : 2,
+                   scaleStepWidth: Math.ceil(max / steps),
+                   scaleStartValue: 0,
+	               responsive : true
+                   
+                   
+              
+			   });
+                   
+              
+		        
+    
+            };</script>
+        
+        <title>Liver Cancers</title>
+    </head>
+    
+     <body>
+		 
+	
+	    
+	    <div id='header_holder'>
+		
+		<div id='header'>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
+		    
+		    
+		    <div id = "user_options">
+		    
+			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
+			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
+		    
+		    </div>
+		    
+	
+            <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
+		
+		</div>
+			    
+	</div>
+			<span id = "move_all">
+				
+            
+            <div id="parallax-main">
+		    
+			    <section>
+				    <div class="title">
+						
+				    
+				    </div>
+			    </section>
+			    
+				  <section>
+				    <div class="parallax-lung">
+						<h2 id = "picture_text" class = "altText">Liver cancer mortality rates have <br />more than tripled in the past four decades</h2>
+							
+							
+							
+					
+				    </div>
+			    </section>
+			   
+			    
+			    <section>
+				    <div class="block">
+				    <p><div id = "center_element"><span class="first-character one" style = "font-size: 30px; font-size: 2.9vw;">LIVER CANCERS</span></div>
+					
+					<div id = "move_down">
+					<div id = "move_down">
+					    <!-- Body Content One -->
+						
+						<div id = "menu_box">
+							<span id = "menu_box_header">Content</span>
+							<br />
+							<br />
+							<span id = "info_box">
+								
+								Cases Per Year: 33,190
+								<br />
+								Deaths Per Year: ~23,000
+							
+							</span>
+							<br />
+							
+							<a href = "#anchor_up_first" class = "smoothScroll"> <span id = "menu_box_options">What are Liver Cancers?</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_second" class = "smoothScroll"> <span id = "menu_box_options">Advancements in Treatement</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_third" class = "smoothScroll"> <span id = "menu_box_options">How to Help</span> </a>
+							
+							
+						</div>
+						
+						<br />
+						 <p class="line-break margin-top-10"></p>
+					    <br />
+						<div id = "anchor_up_first" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">What are Liver Cancers?</div>
+						<br />
+						
+						Liver Cancers are cancers that involve the growth and spread of abnormal cells in the liver. There are several different types of Liver Cancer, all of which possess different characteristics and require a different approach in treatment. The four that we will be taking a closer look at will be Hepatocellular Carcinomas, Bile Duct Cancers, Angiosarcomas and Hemangiosarcomas.
+						
+						
+    <br />
+    <br />  
+					The liver is often noted as being <span class = "link" onClick = "window.open('http://abcnews.go.com/GMA/Books/story?id=4783391')">one of the most important organs</span> in the body. It processes substances such as food and drink into valuable energy and nutrients that the body can store for later, and is involved with removing dangerous substances from blood. Liver Cancer interrupts the normal functioning of the liver due to the growth of abnormal cells. Also worth noting is that a large portion of Liver Cancer deaths have been linked to lifestyle factors, something which means that prevention is possible many people.
+					
+
+		
+					 	<br />
+					    <br />
+						
+						Let us now take a closer look at each individual type of Liver Cancer in order to grasp an increased understanding of how they impact people everywhere. Below is a chart that details the percentage of Liver Cancer cases <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/cancer-info/cancerstats/keyfacts/liver/')">that were linked</span> to preventable lifestyle factors. As you can see, a substantial portion of Liver Cancer cases fall under this category. 
+						
+						<br />
+						<br />
+						<!--
+			
+					
+						<span class = "position_by_side" style = "position:absolute; color: #F7464A; top:29%;; left:4%; font-size:39px; font-size:3.0vw">Under Age 40</span>
+						<span class = "position_by_side" style = "position:absolute; color: #46BFBD; top:31%; left: 4%; font-size:30px;">Under Age 50</span>
+						
+				
+						<span class = "position_by_side" style = "position:absolute; color: #FDB45C; top:29%; left: 65%; font-size:30px;">Age 50 to Age 60</span>
+						<span class = "position_by_side" style = "position:absolute; color: #607D8B; top:31%; left: 65%; font-size:30px;">Ages 65 and Above</span>
+						-->
+						<div id = "center_element">
+							
+							<div style="width: 100%">
+								
+								<canvas id="livStatsPie" height="200" width="430"></canvas>
+						
+							</div>
+						
+						</div>
+						<br />
+						
+					<div id = "center_element">
+							
+						<span style = "color: #46BFBD; font-size:25px;">Linked to Lifestyle Factors</span>
+                            <br />
+						<span style = "color: #F7464A; font-size:25px;">Not Linked to Lifestyle Factors</span>
+						
+						
+							
+					</div>
+						
+						
+						<br /><br />
+						
+						
+						<div class="accordion">
+								<dl>
+									<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C;">Hepatocellular Carcinomas</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+											Despite being strangely rare in the United States, Hepatocellular Carcinomas are by far the <span class = "link" onClick = "window.open('http://www.nlm.nih.gov/medlineplus/ency/article/000280.htm')">most common form</span> of Liver Cancer. In fact, they have risen in prominence in recent years to become the third leading cause of cancer deaths worldwide, with <span class = "link" onClick = "window.open('http://emedicine.medscape.com/article/197319-overview')">well over 500,000 people affected</span>.
+										
+										<br />
+										<br />	
+											In the past, Hepatocellular Carcinomas were extremely difficult to detect, something which meant that diagnosals were often only made once the disease had reached an advanced stage. However, modern screening techniques have made it easier to recognize this disease before it becomes exceedingly dangerous. 
+											
+											<br />
+											<br />
+											The severity of this form of Liver Cancer can often be intimidating. If the tumor cannot be completely removed, it is not uncommon for the disease to prove fatal <span class = "link" onClick = "window.open('http://www.nlm.nih.gov/medlineplus/ency/article/000280.htm')">within 3 to 6 months</span>. That said, early detection and aggressive treatment can go a long way in slowing down or preventing advanced development of the disease. 		
+						</p>
+									</dd>
+									
+									<dt><a class="accordionTitle" href="#" style = "background-color: #F7464A">Bile Duct Cancers</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+											Bile Duct Cancers are a rare form of cancer that starts in the thin tubes that reach from the liver to the small intestine. It is fairly uncommon in the United States, accounting for about only <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bileductcancer/detailedguide/bile-duct-cancer-key-statistics')">2,000-3,000 of the 33,000</span> cases of Liver Cancer that occur there each year. That said, it is <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bileductcancer/detailedguide/bile-duct-cancer-key-statistics')">much more common</span> in parts of Southeast Asia due to the relative prominence of a parasitic infection that has been linked to causing Bile Duct Cancer. 
+											
+										
+											
+											
+											<br />
+											<br />
+											The disease is largely considered to be quite severe, with 5-year survival rates ranging anywhere from <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bile-duct-cancer/bile-duct-cancer-treatment/statistics-outlook-bile-duct-cancer')">50 percent to 2 percent</span> depending on when the cancer was discovered and how effective the treatment is. Also worth noting is that the risk of Bile Duct Cancer <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bileductcancer/detailedguide/bile-duct-cancer-key-statistics')">increases with age</span>, with the majority of cases occuring in people above the age of 70.
+											
+										
+	 
+					</p>
+					</dd>
+									
+										<dt><a class="accordionTitle" href="#" style = "background-color: #46BFBD">Angiosarcomas and Hemangiosarcomas</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+											Angiosarcomas and Hemangiosarcomas are both extremely rare varients of Liver Cancer. Angiosarcoma, for instance, accounts for <span class = "link" onClick = "window.open('http://www.cancercenter.com/liver-cancer/types/')">just 1 percent of all Liver Cancers</span>. That said, it can still be incredibly dangerous. Angiosarcomas are often very difficult to detect, partly because they begin in the blood vessels of the liver. This means that they are <span class = "link" onClick = "window.open('http://www.cancercenter.com/liver-cancer/types/')">usually diagnosed at an advanced stage</span>, something that can limit treatment options. 
+											
+														
+											<br />
+											<br />
+											Hemangiosarcoma is a form of cancer that can sometimes originate in the blood vessels of the liver. While it occurs most often in animals - <span class = "link" onClick = "window.open('http://www.knowcancer.com/oncology/hemangiosarcoma/')">particularly dogs</span> - the extremely aggressive nature of the disease warrants serious precautions. The symptoms of Hemangiosarcoma can often remain <span class = "link" onClick = "window.open('http://www.knowcancer.com/oncology/hemangiosarcoma/')">virtually invisible</span> until the disease is in its advanced stages, something which makes early detection very difficult to achieve. 
+										</p>
+					</dd>
+					
+								</div>
+							
+								
+					
+								
+						
+								
+						<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_second" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">Advancements in Treatment</div>
+					    
+						<br />
+						The past few decades have uncovered tremendous new advancements in medical procedures that have revolutionized the way we comprehend and approach Liver Cancer treatment. Despite this, there is still much progress to be made before this issue can be declared one of the past. We will now underscore some of the successes that have been seen in years past in an effort to promote these advancements and draw attention to the work that remains to be be done. 
+						
+						<br /><br />
+						
+						
+						<div id = "center_element">
+							
+							<div style="width: 100%">
+								
+								<canvas id="livStatsBar" height="107" width="230"></canvas>
+							
+							</div>
+						
+						</div>
+						
+						<div id = "center_element" style = "color:gray; font-size:16px;position:relative;top:8px;">
+							5-Year Survival Rates by Progression
+						</div>
+						
+						<br />
+						<br />
+							<div class = "smallest_header" style = "text-decoration:none;">What do these statistics mean?</div>
+						<br />
+						From this data, we can see that one of the most important factors in terms of ensuring with that Liver Cancer is managed before it becomes life-threatening is the early detection and removal of the disease. That said, the best form of protection is prevention, something that we fortunately have an increasing understanding of how to achieve. If we are to truly undermine the threat of this disease, advancing our understanding of what actually causes Liver Cancer is essential. 
+						<br />
+						<br />
+					
+						
+							<div class="accordion2">
+								<dl>
+									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">Advancements in Understanding</a></dt>
+									<dd class="accordionItem2 accordionItemCollapsed2">
+										<p>
+											One of the most powerful tools that has emerged in recent years to fight Liver Cancer is an increased understanding of what causes the disease in the first place. This allows doctors and researchers alike to operate under a set of guidelines that facilitate the early detection and prevention of the disease.  
+											
+                                            <br />
+                                            <br />
+											Some of the most impactful risk factors influencing Liver Cancer cases are unfortunately beyond human control. These include things like <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/liver-cancer/basics/risk-factors/con-20025222')">gender and suffering from certain blood sugar disorders</span>. 
+											<br />
+											<br />
+											However, there do exist lifestyle factors that can drastically increase an individual's chance of contracting Liver Cancer. Excessive alcohol consumption, for instance, <span class = "link" onClick = "window.open('http://www.mayoclinic.org/diseases-conditions/liver-cancer/basics/risk-factors/con-20025222')">has been linked</span> to Liver Cancer as it can cause irreversible liver damage as well as many other health problems. A similar link has been identified between obesity and Liver Cancer. It is through this understanding of the risk factors we are able to allow people to be proactive in their stand against Liver Cancer. 
+										</p>
+									</dd>
+									<dt><a href="#memes" class="accordionTitle2" style = "background-color: #F7464A;">Advancements in Surgery</a></dt>
+									<dd class="accordionItem2 accordionItemCollapsed2">
+										<p>
+											Recent discoveries have done much to allow researchers to explore new varients of traditional surgery in their efforts to boost the survival rates of Liver Cancer patients. These surgeries options to individuals who may have none, something that effectively enhancing the comfort and health of those suffering from this disease. 
+											
+											<br />
+											<br />
+											
+											One such surgery is <span class = "link" onClick = "window.open('http://www.mskcc.org/cancer-care/adult/liver/treatment')">Laparoscopic Surgery</span>, a practice in which operations are performed far from the location of the tumor through a series of relatively small incisions. This is beneficial because it involves less blood loss, less pain, and a faster recovery after the initial surgery. While it is still considered to be experimental, Laparoscopic Surgery and procedures like it serve as beacons of innovation in the field of Liver Cancer research. 						
+											
+											
+                                            <br />
+                                            <br />
+											These surgeries are supplemented by the emerging practice of adjuvant therapies - treatments given immediately after surgery - to boost survival rates for Liver Cancer patients. While the results so far have been inconclusive, many are excited about the future of these drugs. <span class = "link" onClick = "window.open('http://www.radiologyinfo.org/en/info.cfm?pg=radioembol')">Radioembolization</span>, for instance, has <span class = "link" onClick = "window.open('http://www.medicalnewstoday.com/articles/233182.php')">seen some success</span> in smaller trial groups, although the repetition of this same success in larger trials is necessary to determine it to be an effective solution. 
+										</p>
+									</dd>
+									
+								</dl>
+								
+							</div>
+							<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_third" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">How to Help</div>
+						<br />
+						
+						Liver Cancer has proven itself to be one of the most dangerous diseases currently active in our world today. Just one subset of Liver Cancer, Hepatocellular Carcinoma, has risen in prominence over the past decade to become the <span class = "link" onClick = "window.open('http://emedicine.medscape.com/article/197319-overview')">third leading cause of cancer deaths</span> worldwide. However, many organizations have made it their mission to halt the advance of this terrible disease, and have taken significant steps towards achieving this ambitious goal. All of the options below are valuable resources with which to take an active stance against Liver Cancers. 
+						<br /><br />	
+						
+						
+                            
+                            <div class="accordion3">
+								<dl>
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #FDB45C;">The Foundation for Liver Research</a></dt>
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+											<span class = "link" onClick = "window.open('http://www.liver-research.org.uk')">The Foundation for Liver Research</span> has been operating on the front lines of the fight against liver disease for over 3 decades now. They have committed themselves completely to funding ground-breaking research programs as well as providing laboratory space for the scientists who make such research possible. 
+											
+											<br />
+											<br />
+											
+											The research made possible by those who donate is <span class = "link" onClick = "window.open('http://www.liver-research.org.uk/liver-research-projects/research-projects.html')">extensive and well documented</span>. At the time of writing, they are involved in projects that involve 8 different areas of liver disease. It is through research such as this that a meaningful advance against Liver Cancer and diseases like it can be made. You can help them achieve this tremendous goal by clicking the button below to donate. 
+			
+											<br />
+											<br />
+											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('http://www.liver-research.org.uk/liver-research-donations/donation.html')">Donate</span>
+										</p>
+									</dd>
+									
+									<!-- span is put in place to avoid strange alteration on '&' symbol -->
+									
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #F7464A">The Liver Cancer Research Fund</a></dt>
+										
+								
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+											<span class = "link" onClick = "window.open('http://www.upmc.com/Services/liver-cancer/research/Pages/donate.aspx')">The Liver Cancer Research Fund</span> has spent the past few years maintaining the fight against Liver Cancer. They work with a <span class = "link" onClick = "window.open('http://www.upmc.com/Services/liver-cancer/experts/Pages/default.aspx')">best in class team of experts</span> to push the currently established limits of medical knowledge through innovative clinical research.
+												
+											
+											<br />
+											<br />
+											The fund has seen a massive boost in demand over the past few years, something that they have handled with ease. In <span class = "link" onClick = "window.open('http://www.upmc.com/Services/liver-cancer/research/Pages/donate.aspx')">2010 alone</span> they assisted over 3,000 patients through their Liver Tumor Clinic, and treated 400 patients with a Liver Cancer related operation. They are pioneering new surgery techniques that provide patients with less painful procedures and shorter recovery times.  You can help them with this honorable mission by clicking the button below to donate. 									
+											<br />
+											<br />
+											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('http://www.upmc.com/Services/liver-cancer/research/Pages/donate.aspx')">Donate</span>
+										</p>
+										</dd>
+									
+										<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #46BFBD">Fight At No Cost</a></dt>
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+											The internet has made it possible to join the fight against Liver Cancers without spending a single penny. This is the power of word of mouth, the power of sharing our thoughts and ideas to make a change. You can click on the buttons below to get started. Spread the word! 
+											
+											<div id = "button_wrapper">
+												
+												<!-- Twitter message can be changed anytime. Source for alteration @ http://www.targetinternet.com/how-to-create-pre-written-tweet-buttons-and-links/ -->
+												
+												
+												<div id = "twitter_button" onClick = "window.open('http://twitter.com/home?status=Blood%20Cancers%20will%20kill%20over%2055K%20people%20this%20year.%20Make%20a%20stand%20and%20join%20the%20fight%20against%20%23Cancer%20at%20(url)')">Tweet it Out</div>
+											
+												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
+												
+												<div id = "facebook_button" onClick = "launch_facebook('liver')">Fight through Facebook</div>
+											
+											</div>
+											
+											
+												
+											
+											
+											
+											
+										</p>
+										
+					</dd>
+					
+					
+								</div>
+								
+                            <br />
+						<p class="line-break margin-top-10"></p>
+						
+					 <br />
+					 <div id = "center_element">
+						 
+					 	<div id = "button_special" onClick = "openDisease()">Back to Diseases</div>
+				   	 </div>
+					  <br />
+					  <br /> 
+					  <br />
+					  
+				    </div>
+			    </section>
+                </div>
+							
+            </span>
+			<br />
+			<br />
+			
+      <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
+					
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
+			</div>
+		</div>
+		</footer>
+		
+			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+		</body>
+		<script>
+	(function($) {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}		
+			});
+
+			$('.scrollup').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+		})(jQuery);
+		
+	
+		
+		( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass, addClass, removeClass;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass = function( elem, c ) {
+						if ( !hasClass( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass( elem, c ) {
+					var fn = hasClass( elem, c ) ? removeClass : addClass;
+					fn( elem, c );
+				}		
+				var classie = {
+					hasClass: hasClass,
+					addClass: addClass,
+					removeClass: removeClass,
+					toggleClass: toggleClass,
+					has: hasClass,
+					add: addClass,
+					remove: removeClass,
+					toggle: toggleClass
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie );
+				} else {
+					window.classie = classie;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion = $('.accordion');
+			accordion.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie.toggle(title, 'accordionTitleActive');
+								if(classie.has(content, 'accordionItemCollapsed')) {
+									if(classie.has(content, 'animateOut')){
+										classie.remove(content, 'animateOut');
+									}
+								classie.add(content, 'animateIn');
+								}else{
+									classie.remove(content, 'animateIn');
+									classie.add(content, 'animateOut');
+								}
+							classie.toggle(content, 'accordionItemCollapsed');      
+							}
+						}
+					}			  
+				}
+			});
+			
+            
+            
+            
+            
+            ( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass2, addClass2, removeClass2;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass2 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass2 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass2 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass2 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass2 = function( elem, c ) {
+						if ( !hasClass2( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass2 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass2( elem, c ) {
+					var fn = hasClass2( elem, c ) ? removeClass2 : addClass2;
+					fn( elem, c );
+				}		
+				var classie2 = {
+					hasClass2: hasClass2,
+					addClass2: addClass2,
+					removeClass2: removeClass2,
+					toggleClass2: toggleClass2,
+					has2: hasClass2,
+					add2: addClass2,
+					remove2: removeClass2,
+					toggle2: toggleClass2
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie2 );
+				} else {
+					window.classie2 = classie2;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion2 = $('.accordion2');
+			accordion2.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle2") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie2.toggle2(title, 'accordionTitleActive2');
+								if(classie2.has2(content, 'accordionItemCollapsed2')) {
+									if(classie2.has2(content, 'animateOut2')){
+										classie2.remove2(content, 'animateOut2');
+									}
+								classie2.add2(content, 'animateIn2');
+								}else{
+									classie2.remove2(content, 'animateIn2');
+									classie2.add2(content, 'animateOut2');
+								}
+							classie2.toggle2(content, 'accordionItemCollapsed2');      
+							}
+						}
+					}			  
+				}
+			});
+			
+			
+			
+			
+			
+		
+			( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass3, addClass3, removeClass3;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass3 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass3 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass3 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass3 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass3 = function( elem, c ) {
+						if ( !hasClass3( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass3 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass3( elem, c ) {
+					var fn = hasClass3( elem, c ) ? removeClass3 : addClass3;
+					fn( elem, c );
+				}		
+				var classie3 = {
+					hasClass3: hasClass3,
+					addClass3: addClass3,
+					removeClass3: removeClass3,
+					toggleClass3: toggleClass3,
+					has3: hasClass3,
+					add3: addClass3,
+					remove3: removeClass3,
+					toggle3: toggleClass3
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie3 );
+				} else {
+					window.classie3 = classie3;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion3 = $('.accordion3');
+			accordion3.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle3") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie3.toggle3(title, 'accordionTitleActive3');
+								if(classie3.has3(content, 'accordionItemCollapsed3')) {
+									if(classie3.has3(content, 'animateOut3')){
+										classie3.remove3(content, 'animateOut3');
+									}
+								classie3.add3(content, 'animateIn3');
+								}else{
+									classie3.remove3(content, 'animateIn3');
+									classie3.add3(content, 'animateOut3');
+								}
+							classie3.toggle3(content, 'accordionItemCollapsed3');      
+							}
+						}
+					}			  
+				}
+			});
+			
+		</script>
+		</html>

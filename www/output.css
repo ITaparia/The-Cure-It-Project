@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box; }
+  *:before, *:after {
+    box-sizing: border-box; }
+
+body {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  font: 400 1em/1.5em "Source Sans Pro", sans-serif;
+  margin: 0; }
+
+a {
+  color: #ce606f; }
+
+h1,
+h2,
+h3 {
+  color: #fff;
+  font-weight: 600; }
+
+h1,
+.h1 {
+  font-size: 2.5em;
+  margin: 0 0 .2em; }
+
+h2,
+.h2 {
+  font-size: 1.5em;
+  margin: 0 0 .33em; }
+
+h3,
+.h3 {
+  font-size: 1.25em;
+  margin: 0 0 .5em; }
+
+p {
+  margin: .5em 0; }
+
+svg {
+  height: auto;
+  max-width: 100%; 
+	  fill: #196066;
+}
+
+.text-center {
+  text-align: center; }
+
+.subline {
+  color: #768191;
+  font-weight: normal; }
+
+.map_container {
+	margin-left:25%;
+  max-width: 50%;
+  position: relative;
+  padding-top: 10%;
+  width: 90%; }
+
+.map {
+  margin-top: 3em;
+  position: relative; }
+  .map-markers {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .map-marker {
+    position: absolute; }
+    .map-marker:after {
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-name: pop;
+      border-radius: 50%;
+      border: 1px solid #ce606f;
+      content: '';
+      height: 2em;
+      left: 0;
+      margin: -.5em 0 0 -.5em;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 2em; }
+    .map-marker:hover .map-marker-info {
+      display: block; }
+    .map-marker a {
+      background-color: yellow;
+      border-radius: 50%;
+      height: 1em;
+      display: block;
+      text-indent: -9999px;
+      width: 1em; }
+  .map-marker-chicago {
+    left: 65%;
+    top: 35%; }
+  .map-marker-texas {
+    left: 43%;
+    top: 76%; }
+    .map-marker-texas:after {
+      animation-delay: 3s; }
+  .map-marker-info {
+    display: none;
+    left: -952%;
+    position: absolute;
+    bottom: 33px;
+    width: 20em;
+    z-index: 999; }
+    .map-marker-info header {
+      background-color: #CECD60;
+      color: #fff;
+      padding: .5em 1em; }
+    .map-marker-info main {
+      background-color: #fff;
+      color: #7e7e7e;
+      padding: .5em 1em; }
+    .map-marker-info h2 {
+      margin-bottom: 0; }
+    .map-marker-info-inner {
+      border-radius: .5em;
+      box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.3);
+      font-size: .875em; }
+      .map-marker-info-inner:after {
+        border-left: .75em solid transparent;
+        border-right: .75em solid transparent;
+        border-top: 1em solid #fff;
+        content: '';
+        height: 0;
+        left: 50%;
+        position: absolute;
+        top: 100%;
+        transform: translateX(-50%);
+        width: 0; }
+
+.animate {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both; }
+  
+  .animate-bounce-in {
+  animation-duration: .75s;
+  -webkit-animation-duration: .75s;
+  animation-name: bounce-in;  
+  -webkit-animation-name: bounce-in;  }
+
+@keyframes bounce-in {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); } }
+	
+@-webkit-keyframes bounce-in {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1); } }	
+
+.animate-pop {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-name: pop; 
+  -webkit-animation-name: pop; 
+  }
+	
+@keyframes pop {
+  0% {
+    transform: scale(0); }
+  8% {
+    opacity: .4; }
+  10% {
+    opacity: 0;
+    transform: scale(1); } }
+	
+@-webkit-keyframes pop {
+  0% {
+    -webkit-transform: scale(0); }
+  8% {
+    opacity: .4; }
+  10% {
+    opacity: 0;
+    -webkit-transform: scale(1); } }
+
+
+/*# sourceMappingURL=output.css.map */

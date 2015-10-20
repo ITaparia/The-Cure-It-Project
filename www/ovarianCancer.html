@@ -1,0 +1,784 @@
+
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 2931281, 2014-11-30T14:50:45-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Dual-300 by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dual/300/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2931281
+ * 
+ * ? 2014 MyFonts Inc
+*/
+
+-->
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>  
+	 <meta charset = "utf-8" />
+	 
+        <script src = "script.js"> </script>
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	    <script type="text/javascript" src="engine1/jquery.js"></script>
+        <link rel = "stylesheet" href = "style.css" />
+		<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "fonts.css" />
+		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+        <script src="Chart.js"></script>
+        <script type="text/javascript">
+		
+		window.onload = function(){
+				var ctxOvar= document.getElementById("ovarStatsPie").getContext("2d");
+				window.myPie = new Chart(ctxOvar).Pie(pieDataOvar);
+                
+         var steps = 10;
+                var max = 100;
+	           var ctxBrain = document.getElementById("ovarStatsBar").getContext("2d");
+	           window.myBar = new Chart(ctxBrain).Bar(barChartDataOvar, {
+                   scaleOverride: true,
+                   scaleSteps: steps,
+                   barStrokeWidth : 2,
+                   scaleStepWidth: Math.ceil(max / steps),
+                   scaleStartValue: 0,
+	               responsive : true
+                   
+                   
+              
+			   });
+                   
+              
+		        
+    
+            };</script>
+        
+        <title>Ovarian Cancers</title>
+    </head>
+    
+     <body>
+		 
+	
+	    
+	   <div id='header_holder'>
+		
+		<div id='header'>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
+		    
+		    
+		    <div id = "user_options">
+		    
+			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
+			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
+		    
+		    </div>
+		    
+	
+            <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
+		
+		</div>
+			    
+	</div>
+			<span id = "move_all">
+				
+            
+            <div id="parallax-main">
+		    
+			    <section>
+				    <div class="title">
+						
+				    
+				    </div>
+			    </section>
+			    
+				  <section>
+				    <div class="parallax-ovar">
+						<h2 id = "picture_text" class = "altText">Ovarian Cancer is the 4th most<br /> common cause of cancer death for women.</h2>
+							
+							
+							
+					
+				    </div>
+			    </section>
+			   
+			    
+			    <section>
+				    <div class="block">
+				    <p><div id = "center_element"><span class="first-character one" style = "font-size: 30px; font-size: 2.9vw;">OVARIAN CANCERS</span></div>
+					
+					<div id = "move_down">
+					<div id = "move_down">
+					    <!-- Body Content One -->
+						
+						<div id = "menu_box">
+							<span id = "menu_box_header">Content</span>
+							<br />
+							<br />
+							<span id = "info_box">
+								
+								Cases Per Year: 21,980
+								<br />
+								Deaths Per Year: 14,270
+							
+							</span>
+							<br />
+							
+							<a href = "#anchor_up_first" class = "smoothScroll"> <span id = "menu_box_options">What are Ovarian Cancers?</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_second" class = "smoothScroll"> <span id = "menu_box_options">Advancements in Treatement</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_third" class = "smoothScroll"> <span id = "menu_box_options">How to Help</span> </a>
+							
+							
+						</div>
+						
+						<br />
+						 <p class="line-break margin-top-10"></p>
+					    <br />
+						<div id = "anchor_up_first" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">What are Ovarian Cancers?</div>
+						<br />
+						
+						Ovarian Cancer is a form of cancer that begins in the ovaries. The ovaries, found exclusively in females, are responsible for <span class = "link" onClick = "window.open('http://www.endocrineweb.com/endocrinology/overview-ovaries')">maintaining the health</span> of the reproductve system and ensuring fertility. There are several types of Ovarian Cancers that we will cover in detail. These are Common Epithelial Tumors, Germ Cell Tumors, and Stromal Tumors.
+						
+    <br />
+    <br />  
+	
+					Perhaps the defining factor that makes Ovarian Cancer so dangerous is the fact that early detection of the disease is often very difficult. In fact, <span class = "link" onClick = "window.open('https://www.ovationsforthecure.org/aware/aware_facts.php')">only about 19 percent</span> of Ovarian cancer cases are detected before the cancer has spread beyond the point of origin, something which makes these cases substantially more difficult to treat. This is caused in part because of the small size of the ovaries - each ovary is only about the size of a grape. Additionally, the <span class = "link" onClick = "window.open('http://www.sharecare.com/health/ovarian-cancer/why-ovarian-cancer-difficult-detect')">symptoms that define</span> this cancer are non-specific to the disease and can sometimes be interpreted as being something less serious. 
+		
+					 	<br />
+					    <br />
+						
+						We will now take a closer look at each specific type of Ovarian Cancer so that we may gain an increased understanding of how they impact people on an individual basis. Below is a pie graph that details the 5-year survival rate of those that suffer from Ovarian Cancer. As you can see, Ovarian Cancer is incredible aggressive, <span class = "link" onClick = "window.open('http://seer.cancer.gov/statfacts/html/ovary.html')">claiming over half</span> of all people diagnosed within this timeframe. 
+						
+						<br />
+						<br />
+						<!--
+			
+					
+						<span class = "position_by_side" style = "position:absolute; color: #F7464A; top:29%;; left:4%; font-size:39px; font-size:3.0vw">Under Age 40</span>
+						<span class = "position_by_side" style = "position:absolute; color: #46BFBD; top:31%; left: 4%; font-size:30px;">Under Age 50</span>
+						
+				
+						<span class = "position_by_side" style = "position:absolute; color: #FDB45C; top:29%; left: 65%; font-size:30px;">Age 50 to Age 60</span>
+						<span class = "position_by_side" style = "position:absolute; color: #607D8B; top:31%; left: 65%; font-size:30px;">Ages 65 and Above</span>
+						-->
+						<div id = "center_element">
+							
+							<div style="width: 100%">
+								
+								<canvas id="ovarStatsPie" height="200" width="430"></canvas>
+						
+							</div>
+						
+						</div>
+						<br />
+						
+					<div id = "center_element">
+							
+						<span style = "color: #46BFBD; font-size:25px;">Those who Survived Five Years</span>
+                            <br />
+						<span style = "color: #F7464A; font-size:25px;">Those who did not Survive Five Years</span>
+						
+						
+							
+					</div>
+						
+						
+						<br /><br />
+						
+						
+						<div class="accordion">
+								<dl>
+									<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C;">Common Epithelial Tumors (CETs)</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+											Common Epithelial Tumors (sometimes called CETs) are the most frequently observed form of Ovarian Cancers, making up <span class = "link" onClick = "window.open('http://www.healthcommunities.com/ovarian-cancer/types.shtml')">around 90 percent</span> of all diagnosed cases. There exists several other ways to classify diseases of this nature, the <span class = "link" onClick = "window.open('http://atlasgeneticsoncology.org/Tumors/OvaryEpithTumID5230.html')">most common of which</span> are through the distinction of Serous and Endometrioid tumors.
+										
+										<br />
+										<br />	
+											Serous tumors are the most common of all Epithelial tumors, making up <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/ovarian-cancer/about/types-of-ovarian-cancer')">about 2/3</span> of all cases diagnosed. New research has indicated that this cancer <span class = "link" onClick = "window.open('http://scienceblog.cancerresearchuk.org/2011/03/14/ovarian-cancer-treatment-a-bright-future/')">may not even start in the ovaries</span>, instead originating in the cells of a nearby tube. It is discoveries such as this that allow scientists to better understand the disease, and thus treat it more effectively. 
+											
+								
+											
+											<br />
+											<br />
+											
+											Endometrioid tumors are the next most common subset of Epithelial tumors. Recent research has indicated that when factors such as age and stage of the disease are taken into consideration, <span class = "link" onClick = "window.open('http://www.ncbi.nlm.nih.gov/pubmed/19227770')">5-year survival rates are comparable</span> to those found in Serous cancer cases. Thus, the major differences between these two diseases can be found by examining each on a <span class = "link" onClick = "window.open('http://www.ncbi.nlm.nih.gov/pubmed/19967725')">molecular level</span>. As with all forms of Ovarian Cancer, scientists agree that more research is necessary to meaningfully advance the way we treat Endometrioid Epithelial Cancer patients. 
+											
+						</p>
+									</dd>
+									
+									<dt><a class="accordionTitle" href="#" style = "background-color: #F7464A">Germ Cell Tumors</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+											Germ Cell Tumors are relatively rare within the context of Ovarian Cancer, accounting for <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/ovariancancer/detailedguide/ovarian-cancer-treating-germ-cell-tumors')">roughly 2 percent</span> of all newly diagnosed cases. They <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/pdq/treatment/ovarian-germ-cell/Patient/page1')">almost always occur</span> in younger women, and can affect those who are still teenagers. 
+											
+											<br />
+											<br />
+											Germ Cell Tumors are usually <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/pdq/treatment/ovarian-germ-cell/Patient/page1')">relatively easy to handle</span> if they are found early and given proper treatment. Unfortunately, the vauge nature of the symptoms makes such a task difficult to say the least. There are <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/pdq/treatment/ovarian-germ-cell/Patient/page1')">usually no symptoms</span> in the early stages of the disease, and those that do emerge are things often associated with less severe conditons. Some of these symptoms include the mildly swelling of the abdomen or unusual bleeding. 
+											
+										
+	 
+					</p>
+					</dd>
+									
+										<dt><a class="accordionTitle" href="#" style = "background-color: #46BFBD">Stromal Tumors</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+											Stromal Tumors are an especially rare type of Ovarian Cancer. They develop from the cell tissue that is typically responsible for producing female hormones. One of the largest issues with Stromal Tumor treatment is the <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/ovariancancer/detailedguide/ovarian-cancer-treating-stromal-tumors')">issue of recurrence</span>, as Stromal Tumors have been known to come back years after substantial remission has occured. This means that patients can rarely consider themselves 'cured', as the threat of the cancer coming back is a persistent one.
+											
+													
+											<br />
+											<br />
+											That said, the actual severity of Stromal Tumors is typically fairly mild when compared with other forms of Ovarian Cancer. For instance, the tumors are almost always slow growing, which provides doctors and patients with ample time to generate an effective treatment program. For this reason and the fact that the tumors are typically limited to one or both Ovaries, and is thus unlikely to spread beyond the point of origin, Stromal Tumors are sometimes considered to be <span class = "link" onClick = "window.open('http://www.ovarian.org/types_and_stages.php')">a low-grade cancer</span>. This means that survival and recovery outlooks are positive for patients of this distinction. 
+											
+					
+										</p>
+					</dd>
+					
+								</div>
+							
+								
+					
+								
+						
+								
+						<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_second" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">Advancements in Treatment</div>
+					    
+						<br />
+						Years gone by have revolutionized the way that we approach Ovarian Cancer treatment. In spite of this, there is still much progress still to be made before the threat of Ovarian Cancer stops persisting in people's lives. We will now highlight some of the successes that have been seen in the past few decades in an effort to promote these accomplishments and draw attention to the work that still remains to be done. 
+						
+						
+						<br />
+						<br />
+						
+						<div id = "center_element">
+							
+							<div style="width: 100%">
+								
+								<canvas id="ovarStatsBar" height="107" width="230"></canvas>
+							
+							</div>
+						
+						</div>
+						
+						<div id = "center_element" style = "color:gray; font-size:16px;position:relative;top:8px;">
+							5-Year Survival Rates by Stage
+						</div>
+						
+						<br />
+						<br />
+							<div class = "smallest_header" style = "text-decoration:none;">What do these statistics mean?</div>
+						<br />
+						From this data, we can see that the most important factor in terms of ensuring that Ovarian Cancer is dealt with before it becomes deadly is the early detection of the disease. Unfortunately, Ovarian Cancer is very subtle in the way it first affects people, sometimes presenting no visible symptoms in its earliest stages. In fact, <span class = "link" onClick = "window.open('https://www.ovationsforthecure.org/aware/aware_facts.php')">only about 19 percent</span> of Ovarian Cancer cases are detected before they begin spreading throughout the body. If we are to truly undermine the threat of this disease, advancing our understanding of how to detect Ovarian Cancer is essential. 
+						<br />
+						<br />
+					
+						
+							<div class="accordion2">
+								<dl>
+									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">Advancements in Understanding</a></dt>
+									<dd class="accordionItem2 accordionItemCollapsed2">
+										<p>
+											Because Ovarian Cancer is so difficult to detect, grasping an increased understanding of what causes the disease the first place is all but a necessity. This allows scientists and doctors alike to develop a new standard under which to operate when approaching Ovarian Cancer treatment.
+											
+
+											
+											
+											
+											
+                                            <br />
+                                            <br />
+											Recent research has revealed the effect that <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/causes-prevention/genetics/brca-fact-sheet')">certain gene mutations</span> have on the risk of developing Ovarian Cancer, and such information is being used to <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/ovariancancer/detailedguide/ovarian-cancer-new-research')">develop mathematical models</span> to estimate how much a particular women would benefit from undergoing surgery to prevent Ovarian Cancer. This affords women the ability to make proactive choices that lead to a reduction in their personal risk for contracting Ovarian Cancer. 
+											
+											<br />
+											<br />
+											Progress has also been made on the front of furthering out understanding of Ovarian Cancer's risk factors. One such factor is the failure to employ oral contraceptives. In fact, women who used oral contraceptives for 5 years or more have historically seen a <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/ovariancancer/detailedguide/ovarian-cancer-prevention')">50 percent reduction</span> in the probability of contracting Ovarian Cancer. It is through the promotion of discoveries such as this that people everywhere can grasp a complete understanding of how to prevent Ovarian Cancer in the first place, something which will do much to reduce its influence overall. 
+										</p>
+									</dd>
+									<dt><a href="#memes" class="accordionTitle2" style = "background-color: #F7464A;">Advancements in Drug Development</a></dt>
+									<dd class="accordionItem2 accordionItemCollapsed2">
+										<p>
+											Recent research has done much to provide new options to doctors and patients alike through the development of life-saving drugs. Because Ovarian Cancer is so difficult to detect at an early stage, many scientists have directed their efforts instead to dealing with Ovarian Cancer in its more advanced stages. This allows the sickest of the sick to be met with new treatments that provide them with hope when previously there was none.
+											
+											<br />
+											<br />
+											
+											One such treatment comes in the form of a <span class = "link" onClick = "window.open('http://www.dailymail.co.uk/health/article-96824/New-drug-treatment-beating-ovarian-cancer.html')">particularly intensive chemotherapy</span>. It has been a revolutionary force where it was applied, with a whopping 65 percent increase in success rate among patients whose first attempt at chemotherapy failed. This is especially important because the women involved in the experiment were very limited in their options, meaning that the treatment was instrumental in opening the door to a healthier, happier life. 
+											
+											<br />
+											<br />
+											
+											Also suprising was the relative <span class = "link" onClick = "window.open('http://www.dailymail.co.uk/health/article-96824/New-drug-treatment-beating-ovarian-cancer.html')">lack of side effects</span> that the women who participated in the experiment faced. This, combined with the fact that the drugs applied are readily avaliable from most major medical facilities across the globe, means that the treatment could prove to be effective in shaping the standards that currently define Ovarian Cancer treatment. 
+											
+											<br />
+											<br />
+											
+											
+											While such research is still in its infancy and thus required further refinement before it can be applied on a larger scale, it still serves as a beacon of hope in many ways, providing good news on a front where such successes is rare. As <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/science/research/who-and-what-we-fund/browse-by-location/london/the-francis-crick-institute/paul-nurse-422')">Sir Paul Nurse</span>, director general of the Imperial Cancer Research Fund put it, "We've been waiting for good news on ovarian cancer for some time, so the results of this study are very encouraging".
+										
+											
+											<br />
+											<br />
+											
+											
+										</p>
+									</dd>
+									
+								</dl>
+								
+							</div>
+							<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_third" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">How to Help</div>
+						<br />
+						
+						Ovarian Cancer has proven itself to be one of the most subtly dangerous diseases currently in existance. In fact, Ovarian Cancer is the <span class = "link" onClick = "window.open('http://www.ovariancancersymptomawareness.org/get-the-facts/')">4th most common cause</span> of cancer death for women in the United States. With knowledge centering around the disease so low, new research to improve our understanding of how to detect and sufficiently treat the disease is vital to ensure that the loss of life is mitigated. All of the options below are valuable resources with which to promote the work of those taking an active stance against Ovarian Cancer. 
+						
+
+						<br /><br />	
+						
+						
+                            
+                            <div class="accordion3">
+								<dl>
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #FDB45C;">The Ovarian Cancer Research Fund</a></dt>
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+											The <span class = "link" onClick = "window.open('http://www.ocrf.org')">Ovarian Cancer Research Fund</span> has made it its mission to fight Ovarian Cancer on both preventative and reactionary fronts. They have completely committed themselves over the years to driving innovative research programs that enable scientists to be more proactive in their battle against Ovarian Cancers. 
+											
+						
+											<br />
+											<br />
+											
+											They specialize in <span class = "link" onClick = "window.open('http://www.ocrf.org/ovarian-cancer-research/what-we-fund')">three different kinds</span> of research studies. These are the areas of basic science, translational research, and clinical research. Their varied approach to study enables the fund to approach a wide range of problems, both at the individual level and on the larger scale of general scientific advancement. 
+										
+			
+											<br />
+											<br />
+											
+											The Ovarian Cancer Research Fund <span class = "link" onClick = "window.open('http://www.ocrf.org/ovarian-cancer-research/results')">has been very progressive</span> in the allocation of funds, awarding 237 grants totaling over 65 million dollars that have changed the way researchers approach Ovarian Cancer treatment. The research projects that they fund have gone on to be published in some of the most prestigious medical journals on the planet, including the New England Journal of Science and the Clinical Cancer Research Journal. You can help them fund the next generation of Ovarian Cancer research by clicking the button below to donate. 
+											
+											<br />
+											<br />
+											
+											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('https://www.kintera.org/AutoGen/Simple/Donor.asp?ievent=475938&en=4nLxHFMfG3LGKPOiE2LDKLOsFhLKKSMuFfIKKYOALrE')">Donate</span>
+										</p>
+									</dd>
+									
+									<!-- span is put in place to avoid strange alteration on '&' symbol -->
+									
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #F7464A">The National Ovarian Cancer Coalition</a></dt>
+										
+								
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+											Since its founding in 1995, the <span class = "link" onClick = "window.open('http://www.ovarian.org')">National Ovarian Cancer Coalition</span> has tirelessly pursued a means to bring an end to suffering at the hands of Ovarian Cancer. They feature a best in class <span class = "link" onClick = "window.open('http://www.ovarian.org/leadership_team.php')">leadership team</span> that has been instrumental in guiding the foundation to be the beacon of innovation that it is today. 				
+											<br />
+											<br />
+											The Coalition has promoted and funded a <span class = "link" onClick = "window.open('http://www.ovarian.org/programs.php')">great number of programs</span>, all of which have advanced the fight against Ovarian Cancer. These programs are diverse in their application, covering everything from the promotion of knowledge regarding risk factors to securing lab time for researchers across the globe.
+											<br />
+											<br />
+											All of this has been maintained while ensuring a <span class = "link" onClick = "window.open('http://www.ovarian.org/financials.php')">high degree of financial transparency</span>, something which ensures that all who donate to the Coalition can rest assured that their money is being spent responsibly. You can join them in their fight by clicking the button below to donate. 
+																				
+											<br />
+											<br />
+											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('https://secure.2dialog.com/ovarian/main.php/micro_sites/showpage/id/99')">Donate</span>
+										</p>
+										</dd>
+									
+										<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #46BFBD">Fight At No Cost</a></dt>
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+											The internet has made it possible to join the fight against Ovarian Cancers without spending a single penny. This is the power of word of mouth, the power of sharing our thoughts and ideas to make a change. You can click on the buttons below to get started. Spread the word! 
+											
+											<div id = "button_wrapper">
+												
+												<!-- Twitter message can be changed anytime. Source for alteration @ http://www.targetinternet.com/how-to-create-pre-written-tweet-buttons-and-links/ -->
+												
+												
+												<div id = "twitter_button" onClick = "window.open('http://twitter.com/home?status=Blood%20Cancers%20will%20kill%20over%2055K%20people%20this%20year.%20Make%20a%20stand%20and%20join%20the%20fight%20against%20%23Cancer%20at%20(url)')">Tweet it Out</div>
+											
+												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
+												
+												<div id = "facebook_button" onClick = "launch_facebook('ovar')">Fight through Facebook</div>
+											
+											</div>
+											
+											
+												
+											
+											
+											
+											
+										</p>
+										
+					</dd>
+					
+					
+								</div>
+								
+                            <br />
+						<p class="line-break margin-top-10"></p>
+						
+					 <br />
+					 <div id = "center_element">
+						 
+					 	<div id = "button_special" onClick = "openDisease()">Back to Diseases</div>
+				   	 </div>
+					  <br />
+					  <br /> 
+					  <br />
+					  
+				    </div>
+			    </section>
+                </div>
+							
+            </span>
+			<br />
+			<br />
+			
+       <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
+					
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
+			</div>
+		</div>
+		</footer>
+		
+			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+		</body>
+		<script>
+	(function($) {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}		
+			});
+
+			$('.scrollup').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+		})(jQuery);
+		
+	
+		
+		( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass, addClass, removeClass;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass = function( elem, c ) {
+						if ( !hasClass( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass( elem, c ) {
+					var fn = hasClass( elem, c ) ? removeClass : addClass;
+					fn( elem, c );
+				}		
+				var classie = {
+					hasClass: hasClass,
+					addClass: addClass,
+					removeClass: removeClass,
+					toggleClass: toggleClass,
+					has: hasClass,
+					add: addClass,
+					remove: removeClass,
+					toggle: toggleClass
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie );
+				} else {
+					window.classie = classie;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion = $('.accordion');
+			accordion.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie.toggle(title, 'accordionTitleActive');
+								if(classie.has(content, 'accordionItemCollapsed')) {
+									if(classie.has(content, 'animateOut')){
+										classie.remove(content, 'animateOut');
+									}
+								classie.add(content, 'animateIn');
+								}else{
+									classie.remove(content, 'animateIn');
+									classie.add(content, 'animateOut');
+								}
+							classie.toggle(content, 'accordionItemCollapsed');      
+							}
+						}
+					}			  
+				}
+			});
+			
+            
+            
+            
+            
+            ( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass2, addClass2, removeClass2;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass2 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass2 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass2 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass2 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass2 = function( elem, c ) {
+						if ( !hasClass2( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass2 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass2( elem, c ) {
+					var fn = hasClass2( elem, c ) ? removeClass2 : addClass2;
+					fn( elem, c );
+				}		
+				var classie2 = {
+					hasClass2: hasClass2,
+					addClass2: addClass2,
+					removeClass2: removeClass2,
+					toggleClass2: toggleClass2,
+					has2: hasClass2,
+					add2: addClass2,
+					remove2: removeClass2,
+					toggle2: toggleClass2
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie2 );
+				} else {
+					window.classie2 = classie2;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion2 = $('.accordion2');
+			accordion2.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle2") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie2.toggle2(title, 'accordionTitleActive2');
+								if(classie2.has2(content, 'accordionItemCollapsed2')) {
+									if(classie2.has2(content, 'animateOut2')){
+										classie2.remove2(content, 'animateOut2');
+									}
+								classie2.add2(content, 'animateIn2');
+								}else{
+									classie2.remove2(content, 'animateIn2');
+									classie2.add2(content, 'animateOut2');
+								}
+							classie2.toggle2(content, 'accordionItemCollapsed2');      
+							}
+						}
+					}			  
+				}
+			});
+			
+			
+			
+			
+			
+		
+			( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass3, addClass3, removeClass3;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass3 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass3 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass3 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass3 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass3 = function( elem, c ) {
+						if ( !hasClass3( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass3 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass3( elem, c ) {
+					var fn = hasClass3( elem, c ) ? removeClass3 : addClass3;
+					fn( elem, c );
+				}		
+				var classie3 = {
+					hasClass3: hasClass3,
+					addClass3: addClass3,
+					removeClass3: removeClass3,
+					toggleClass3: toggleClass3,
+					has3: hasClass3,
+					add3: addClass3,
+					remove3: removeClass3,
+					toggle3: toggleClass3
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie3 );
+				} else {
+					window.classie3 = classie3;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion3 = $('.accordion3');
+			accordion3.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle3") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie3.toggle3(title, 'accordionTitleActive3');
+								if(classie3.has3(content, 'accordionItemCollapsed3')) {
+									if(classie3.has3(content, 'animateOut3')){
+										classie3.remove3(content, 'animateOut3');
+									}
+								classie3.add3(content, 'animateIn3');
+								}else{
+									classie3.remove3(content, 'animateIn3');
+									classie3.add3(content, 'animateOut3');
+								}
+							classie3.toggle3(content, 'accordionItemCollapsed3');      
+							}
+						}
+					}			  
+				}
+			});
+			
+		</script>
+		</html>

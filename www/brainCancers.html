@@ -1,0 +1,809 @@
+
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 2931281, 2014-11-30T14:50:45-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Dual-300 by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dual/300/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2931281
+ * 
+ * ? 2014 MyFonts Inc
+*/
+
+-->
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>  
+	 <meta charset = "utf-8" />
+        <script src = "script.js"> </script>
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	    <script type="text/javascript" src="engine1/jquery.js"></script>
+        <link rel = "stylesheet" href = "style.css" />
+		<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "fonts.css" />
+		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="smoothscroll.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+        <script src="Chart.js"></script>
+        <script type="text/javascript">window.onload = function(){
+				var ctxbrain = document.getElementById("brainStatsPie").getContext("2d");
+				window.myPie = new Chart(ctxbrain).Pie(pieDataBrain);
+                
+                var steps = 10;
+                var max = 100;
+	           var ctxBrain = document.getElementById("brainStatsBar").getContext("2d");
+	           window.myBar = new Chart(ctxBrain).Bar(barChartDataBrain, {
+                   scaleOverride: true,
+                   scaleSteps: steps,
+                   barStrokeWidth : 2,
+                   scaleStepWidth: Math.ceil(max / steps),
+                   scaleStartValue: 0,
+	               responsive : true
+                   
+                   
+              
+		          });
+    
+            };</script>
+        
+        <title>Brain Cancers</title>
+    </head>
+    
+     <body>
+		 
+	
+	    
+	     <div id='header_holder'>
+		
+		<div id='header'>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
+		    
+		    
+		    <div id = "user_options">
+		    
+			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
+			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
+		    
+		    </div>
+		    
+	
+            <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
+		
+		</div>
+			    
+	</div><span id = "move_all">
+				
+            
+            <div id="parallax-main">
+		    
+			    <section>
+				    <div class="title">
+				    <!--<h3>Lets add content</h3>
+				    <h1>To make this look cool</h1>-->
+				    
+				    </div>
+			    </section>
+			    
+				  <section>
+				    <div class="parallax-brain">
+						<h2 id = "picture_text" class = "altText">Brain Cancer kills more children<br /> than any other form of cancer </h2>
+							
+							
+							
+					
+				    </div>
+			    </section>
+			   
+			    
+			    <section>
+				    <div class="block">
+				    <p><div id = "center_element"><span class="first-character one">BRAIN CANCERS</span></div>
+					
+					<div id = "move_down">
+					<div id = "move_down">
+					    <!-- Body Content One -->
+						
+						<div id = "menu_box">
+							<span id = "menu_box_header">Content</span>
+							<br />
+							<br />
+							<span id = "info_box">
+								
+								Cases Per Year: 23,380
+								<br />
+								Deaths Per Year: 14,320
+							
+							</span>
+							<br />
+							
+							<a href = "#anchor_up_first" class = "smoothScroll"> <span id = "menu_box_options">What are Brain Cancers?</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_second" class = "smoothScroll"> <span id = "menu_box_options">Advancements in Treatement</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_third" class = "smoothScroll"> <span id = "menu_box_options">How to Help</span> </a>
+							
+							
+						</div>
+						
+						<br />
+						 <p class="line-break margin-top-10"></p>
+					    <br />
+						<div id = "anchor_up_first" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">What are Brain Cancers?</div>
+						
+						
+						
+						
+					    
+					    
+					 	
+					    <br />
+                        Brain Cancer is a disease in which a group of cancerous cells begin developing in a person's brain tissue. This can have massive implications on the functioning of typical brain operations such as muscle control, sensation, and memory development. All Brain Cancers fall into two primary categories: Primary and Secondary. However, there do exist other classifications of this deadly disease, such as Meningiomas and Glioblastomas. All of these terms are covered in greater detail down below.
+                        
+						<br />
+						<br />
+                        The impacts of Brain Cancer are everywhere. <span class = "link" onClick = "window.open('http://www.abta.org/about-us/news/brain-tumor-statistics/')">Nearly 700,000 people</span> in the United States are currently living with Brain Cancer, with over <span class = "link" onClick = "window.open('http://www.abta.org/about-us/news/brain-tumor-statistics/')"> 191 cases being discovered</span> each and every day worldwide. While the threat of Brain Cancer can impact anyone, it is statistically more common in younger children and older adults. In fact, Brain Cancer accounts for <span class = "link" onClick = "window.open('http://health.usnews.com/health-conditions/cancer/brain-tumor/overview')">25 percent of all cancers</span> seen in children. The side effects of Brain Cancer can <span class = "link" onClick = "window.open('http://www.nytimes.com/health/guides/disease/brain-tumor-adults/prognosis.html')">persist throughout the remainder of a victim's life</span>, thus necessitating further research to eliminate this unecessary threat. 
+                        
+                
+						<br />
+						<br />
+                        Let us now delve into the specifics of each varient of Brain Cancer in an effort to better understand their significance. Below is a chart that details the estimated survival rates for those diagnosed with Brain Cancer. As you can see, the issue is quite severe, with just over 40 percent of patients surviving the first five years after diagnosal. In fact, the majority of people <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/cancer-info/cancerstats/types/brain/survival/brain-and-central-nervous-system-cancer-survival-statistics')">do not survive even a single year</span> after being diagnosed. 
+
+						<br />
+						<br />
+						<!--
+			
+					
+						<span class = "position_by_side" style = "position:absolute; color: #F7464A; top:29%;; left:4%; font-size:39px; font-size:3.0vw">Under Age 40</span>
+						<span class = "position_by_side" style = "position:absolute; color: #46BFBD; top:31%; left: 4%; font-size:30px;">Under Age 50</span>
+						
+				
+						<span class = "position_by_side" style = "position:absolute; color: #FDB45C; top:29%; left: 65%; font-size:30px;">Age 50 to Age 60</span>
+						<span class = "position_by_side" style = "position:absolute; color: #607D8B; top:31%; left: 65%; font-size:30px;">Ages 65 and Above</span>
+						-->
+						<div id = "center_element">
+							
+							<div style="width: 100%">
+								
+								<canvas id="brainStatsPie" height="200" width="430"></canvas>
+							
+							</div>
+						
+						</div>
+						<br />
+						
+						<div id = "center_element">
+							
+						<span style = "color: #F7464A; font-size:25px;">Those who do not live five years</span>
+                            <br />
+						<span style = "color: #46BFBD; font-size:25px;">Those who do live five years or more</span>
+						
+						
+							
+						</div>
+						
+						
+						<br /><br />
+						
+						
+						<div class="accordion">
+								<dl>
+									<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C;">Primary/Secondary</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+                                            Evaluating whether a Brain Cancer is Primary or Secondary is an essential step in terms of developing an effective treatment plan. A Primary Brain Cancer is one that has started either in the brain or in related structures. A Secondary Brain Cancer is one that began in another part of the body, but spread to the brain after a period of development. 
+											<br />
+											<br />
+                                            Only about <span class = "link" onClick = "window.open('http://health.usnews.com/health-conditions/cancer/brain-tumor/overview')">20 percent of Brain Cancers are primary</span>. This means that while primary brain tumors only account for around 2 percent of all cancer cases in adults, the reach of Brain Cancer indirectly harms thousands more through secondary brain tumors. 
+                                            
+                                            
+                                           
+											<br />
+											<br />
+                                            
+                                            It is also worth noting that while the causes of Primary Brain Cancer remain <span class = "link" onClick = "window.open('http://www.nlm.nih.gov/medlineplus/ency/article/007222.htm')">largely unknown</span>, it has been theorized that some inherited conditions could increase the risk of this form of cancer. More research is needed in order to develop both our understanding of what causes Brain Cancer and the steps that we can take to avoid it.
+											
+											
+						
+						</p>
+									</dd>
+									
+									<dt><a class="accordionTitle" href="#" style = "background-color: #F7464A">Meningiomas</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+                                            Meningiomas are, simply put, tumors that arise from the coverings  of the brain and spinal cord. They typically are found on the outer curve and top of the brain. Meningiomas are fairly common, accounting for <span class = "link" onClick = "window.open('http://www.abta.org/brain-tumor-information/types-of-tumors/meningioma.html')">nearly a third</span> of all Primary Brain Cancers. 
+                                            
+                                            <br />
+                                            <br />
+                                            
+                                            In order to truly grasp what it is like to live with a Meningioma, one must first consider the symptoms that those suffering from it sometimes experience. While the symptoms vary in relation to the position and size of the tumor in the brain, <span class = "link" onClick = "window.open('http://www.webmd.com/brain/meningioma-causes-symptoms-treatment')">some common ones</span> include headaches, weakness, and personality changes. 
+                                            
+                                            
+                                      
+											<br />
+											<br />
+											
+										One major issue with the discovery of Meningiomas is the degree to which they can remain dormant for long periods of time, growing silently until they become too large to stop. While they grow relatively slowly, they often reach fairly large sizes before altering the typical functioning of the brain, something which makes early treatment of Meningiomas a challenge. 
+											
+										
+											
+	 
+					</p>
+					</dd>
+									
+										<dt><a class="accordionTitle" href="#" style = "background-color: #46BFBD">Glioblastomas</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+                                            Glioblastomas are cancerous tumors made up from the supportive tissue of the brain. They are highly dangerous due to their rapid rate of reproduction and their tendancy to invade other portions of the brain before action can be taken. In fact, around <span class = "link" onClick = "window.open('http://www.irsa.org/glioblastoma.html')">13,000 people die</span> of these brain tumors each and every year in the United States alone. 
+                                            
+                        
+									
+										<br />
+										<br />
+										
+										The symptoms of Glioblastomas may on the surface seem fairly similar to those of Meningiomas. They include: memory loss, nausea, headaches, and alterations in personality. However, because the cancerous cells come from normal brain cells, it is easy for them to invade healthy brain tissue. This accelerates the timetable of the cancer, making it easier to discover while also making it more dangerous to contract. 
+
+                                            
+                                            <br />
+                                            <br />
+                                            Over 90 percent of Glioblastomas fall within the category of Primary Brain Cancers. These form very quickly and are very agressive, leading to symptoms that at times can seem crippling. This combined with the fairly common nature of this type of Brain Cancer may explain why the majority of people who contract Primary Brain Cancer <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/cancer-info/cancerstats/types/brain/survival/brain-and-central-nervous-system-cancer-survival-statistics')">do not even survive their first year</span> of being sick. 
+                                            
+										</p>
+					</dd>
+					
+								</div>
+							
+								
+					
+								
+						
+								
+						<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_second" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">Advancements in Treatment</div>
+					    
+						<br />
+						
+						   While recent years have seen phenomenal technological advancements that have proven to be very effective in terms of saving lives, Brain Cancer remains a tremendous issue that demands public attention. As can be seen below, the prognosis held after contracting Brain Cancer is certainly nowhere near acceptable levels. It is for this reason that we will highlight some advancements that are being made in this field in the hope that it will increase the exposure levels of those trying to make a positive change and save lives. 
+					
+						
+				
+						<br />
+						<br />
+						
+						<div id = "center_element">
+							
+							<div style="width: 100%">
+								
+								<canvas id="brainStatsBar" height="107" width="230"></canvas>
+							
+							</div>
+						
+						</div>
+						
+						<div id = "center_element" style = "color:gray; font-size:16px;">
+							Survival Percentages of Trial Groups
+						</div>
+						
+						<br />
+						<br />
+							<div class = "smallest_header" style = "text-decoration:none;">What is being done?</div>
+						<br />
+                        Before we delve into the specifics of what is being done, it is important to first realize that the <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/brain-tumour/about/brain-tumour-risks-and-causes')">cause of Brain Cancer is currently unknown</span>. That being said, progress has been made in terms of identifying several risk factors which may increase the likelyhood of a particular individual contracting this terrible disease. As the gears of technological advancement continue to turn, it is hoped that further research will not only clarify the origins of Brain Cancer, but also reveal steps that we can take to combat it. 
+                            
+                     
+                            
+						
+						<br />
+						<br />
+					
+						
+							<div class="accordion2">
+								<dl>
+									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">Treatment by Viruses</a></dt>
+									<dd class="accordionItem2 accordionItemCollapsed2">
+										<p>
+                                            The use of antiviral drugs has been a treatment method that has bore some success in recent years. For instance, a <span class = "link" onClick = "window.open('http://www.nejm.org/doi/full/10.1056/NEJMc1302145')">2006 clinical trial</span> conducted by <span class = "link" onClick = "window.open('http://www.zoominfo.com/p/Cecilia-Söderberg-Nauclér/1527581115')">Dr. Cecilia Soderberg-Naucler</span> made use of Valcyte - an antiviral drug usually used to treat viruses in AIDS patients - to combat some of the more aggressive forms of Brain Cancer. 
+                                            
+                                            <br />
+                                            <br />
+                                            
+                                            The results were shocking, with 70 percent more patients surviving past the two year mark. In fact, the average survival rate for patients recieving this antiviral treatment was three years higher than those only exposed to traditional treatement measures. After recieving this innovative treatment, one of the patients went so far as to remark, "I know I am alive today because of <span class = "link" onClick = "window.open('http://www.swedish.org/physicians/charles-cobbs')">Dr. Cobbs</span>."
+                                            
+                                            <br />
+                                            <br />
+                                            While the results in this trial are not reason enough to entirely alter current treatment plans, their encouraging findings suggest that the general trends that dictate Brain Cancer research are positive on balance. As <span class = "link" onClick = "window.open('http://doctors.dana-farber.org/directory/profile.asp?pict_id=0500757')">Dr. David Reardon</span>, director of neuro-oncology at the Dana-Farber Cancer Institute puts it, "[This is] very exciting data."
+                                
+										</p>
+									</dd>
+									<dt><a href="#memes" class="accordionTitle2" style = "background-color: #F7464A;">Treatment by Lasers</a></dt>
+									<dd class="accordionItem2 accordionItemCollapsed2">
+										<p>
+                                            One of the most valuable ways to approach an issue as large as Brain Cancer is to experiement with what may seem like crazy ideas. That's exactly what <span class = "link" onClick = "window.open('http://uhealthsystem.com/doctors/profile/133093')">Dr. Ricardo Komotar</span>, chair of the <span class = "link" onClick = "window.open('http://www.flneurosurg.org')">Florida Neurosurgical Society</span> did with his <span class = "link" onClick = "window.open('http://www.medtronic.com/for-healthcare-professionals/products-therapies/neurological/laser-ablation/visualase/')">Visualase Thermal Therapy System</span>, a laser based therapy designed to treat advanced forms of Brain Cancer with minimal side effects. 
+                                            
+                                            <br />
+                                            <br />
+                                            
+                                            While current applications of the treatment have been limited, the leap in technology is impressive. It utilizes a 3-millimeter laser probe to seek out and essentially cook the cancerous tumor from the inside out without harming healthy brain tissue. The technology as it currently exists is meant for those with Brain Cancers that have advanced to the stage of being considered inoperable or beyond the control of traditional treatments. 
+                                            
+                                            <br />
+                                            <br />
+                                            
+                                            It is technology such as this that must be explored further in order to advance the fight against Brain Cancers. As  <span class = "link" onClick = "window.open('http://uhealthsystem.com/doctors/profile/133093')">Komotar</span> himself puts it, "This game-changing technology provides hope for brain cancer patients who otherwise have no treatment options". 
+                                            
+                                       
+                                         
+									
+										</p>
+									</dd>
+									
+								</dl>
+								
+							</div>
+							<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_third" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">How to Help</div>
+						<br />
+						
+                            Brain Cancer has proven itself to be one of the most frightening diseases currently in the world today. While new research has done much to inspire feelings of hope, the battle ahead is long and cannot be won without increased exposure in the issue. In order to strike the issue at its core and prevent this terrible illness from taking more innocent lives, a change must be made. All of the options outlined below are great ways for anyone to serve as the catalyst that will bring about this change. 
+                            
+                           
+                            
+                            
+                            <!--
+						Fortunately, Breast Cancer awareness has gone up tremendously in recent years. Symbols such as the <span class = "link" onClick = "window.open('http://wallpaper-download.net/wallpapers/abstract-wallpapers-pink-ribbon-wallpaper-37290.jpg')">pink ribbon</span> have done much to divert public attention and support to Breast Cancer research. While progress has certainly been made, additional research is required to ensure that this issue plauges people no longer. All of the options outlined below are teriffic resources for those looking to make a positive change for those suffering from Breast Cancer. 
+						
+-->
+						<br /><br />	
+						
+						
+                            
+                            <div class="accordion3">
+								<dl>
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #FDB45C;">The American Brain Tumor Association</a></dt>
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+                                            Founded over 40 years ago, The <span class = "link" onClick = "window.open('http://www.abta.org')">American Brain Tumor Association</span> was the first nonprofit organization in the world to set its sights solely on eliminating the risk of Brain Tumors. Every dollar donated to them is used to not only pursue breakthroughs in Brain Cancer diagnosis, but also to support the needs of both patients and those that look after them. 
+                                            
+                                           
+											<br />
+											<br />
+                                            Their intellectual credibility is protected by a <span class = "link" onClick = "window.open('http://www.abta.org/about-us/scientific-advisory-council/index.jsp?physpage=2')">scientific advisory council</span> that consists of over 30 top researchers well-versed in the topic of Brain Cancers. Beyond advising the American Brain Tumor Association on the scientific trends worth noting, the council also makes funding recommendations to make sure that every dollar donated has the opportunity to contribute to the saving of innocent life. 
+											<br />
+											<br />
+											
+                                            The importance of their life-saving research simply cannot be overstated. A donation directed towards this organization is a donation to turn the tables on cancer, and to better the odds of the hundreds of thousands of people that must battle this terrible illness each and every day. You can assist them in their fight by clicking on the button below to donate. 
+                                            
+                                           
+											
+											<br />
+											<br />
+											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('https://secure2.convio.net/abta/site/Donation2;jsessionid=9DC62F7205DEAD22C1E17DE9966EEBA7.app272b?df_id=1500&1500.donation=form1')">Donate</span>
+											
+											
+											
+											
+											
+										</p>
+									</dd>
+									
+									<!-- span is put in place to avoid strange alteration on '&' symbol -->
+									
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #F7464A">The National Brain Tumor Society</a></dt>
+										
+								
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+                                            
+                                            The <span class = "link" onClick = "window.open('http://braintumor.org')">National Brain Tumor Society</span> has been searching tirelessly for potential breakthroughs in Brain Cancer research for well over 30 years now. Their goal is simple: to provide hope for those currently afflicted with a form of Brain Cancer while also funding boundry-pushing research to ensure that this issue becomes one of the past. 
+                                            
+                                            <br />
+                                            <br />
+                                            
+                                            As it stands, the National Brain Tumor Society has awarded more than <span class = "link" onClick = "window.open('http://braintumor.org/advance-research/funded-research-and-accomplishments/')">31 million dollars across 244 top research and care grants</span>. This tremendous achievement is one that has not one that has not only saved lives in the past, but has also put in place valuable care systems that will continue to protect and improve the quality of life well into the future.  Beyond directly funding individual research grants, they have also made a point to collaborate with several of the top authorities in Brain Cancer research in an effort to make the most out of every dollar donated to them. 
+                                            
+                                            
+                                         <br />
+                                         <br />
+                                            
+                                            All of this has been accomplished while maintaining financial transparency. In compliance with this fact, their <span class = "link" onClick = "window.open('http://braintumor.org/assets/docs/about-us/financials/13fyfinal-financial-statements-050814.pdf')">financial records</span> are on display for the public to scrutinize in great detail. Simply put, their interests are aligned with those who suffer from Brain Cancers, and as such they seek to take every step possible to end this terrible disease. You can assist them in this battle by clicking the button below to donate. 
+										
+											
+											<br />
+											<br />
+											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('https://secure2.convio.net/bts/site/Donation2?df_id=3940&3940.donation=form1#menu')">Donate</span>
+											
+										</p>
+										</dd>
+									
+										<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #46BFBD">Fight At No Cost</a></dt>
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+											With recent advancements in online communications, it is now possible to join the fight against Brain Cancers without spending a single penny. This is the power of word of mouth, the power of sharing our thoughts and ideas to make a change. You can click on the buttons below to get started. Spread the word! 
+											
+											<div id = "button_wrapper">
+												
+												<!-- Twitter message can be changed anytime. Source for alteration @ http://www.targetinternet.com/how-to-create-pre-written-tweet-buttons-and-links/ -->
+												
+												
+												<div id = "twitter_button" onClick = "window.open('http://twitter.com/home?status=Blood%20Cancers%20will%20kill%20over%2055K%20people%20this%20year.%20Make%20a%20stand%20and%20join%20the%20fight%20against%20%23Cancer%20at%20(url)')">Tweet it Out</div>
+											
+												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
+												
+												<div id = "facebook_button" onClick = "launch_facebook('brain')">Fight through Facebook</div>
+											
+											</div>
+											
+											
+											
+											
+										</p>
+										
+					</dd>
+					
+					
+								</div>
+								
+                            <br />
+						<p class="line-break margin-top-10"></p>
+						
+					 <br />
+					 <div id = "center_element">
+						 
+					 	<div id = "button_special" onClick = "openDisease()">Back to Diseases</div>
+				   	 </div>
+					  <br />
+					  <br /> 
+					  <br />
+					  
+				    </div>
+			    </section>
+                </div>
+							
+            
+			</span>
+			<br />
+			<br />
+			
+       <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
+					
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
+			</div>
+		</div>
+		</footer>
+		
+			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+		</body>
+		<script>
+	(function($) {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}		
+			});
+
+			$('.scrollup').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+		})(jQuery);
+		
+	
+		
+		( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass, addClass, removeClass;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass = function( elem, c ) {
+						if ( !hasClass( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass( elem, c ) {
+					var fn = hasClass( elem, c ) ? removeClass : addClass;
+					fn( elem, c );
+				}		
+				var classie = {
+					hasClass: hasClass,
+					addClass: addClass,
+					removeClass: removeClass,
+					toggleClass: toggleClass,
+					has: hasClass,
+					add: addClass,
+					remove: removeClass,
+					toggle: toggleClass
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie );
+				} else {
+					window.classie = classie;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion = $('.accordion');
+			accordion.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie.toggle(title, 'accordionTitleActive');
+								if(classie.has(content, 'accordionItemCollapsed')) {
+									if(classie.has(content, 'animateOut')){
+										classie.remove(content, 'animateOut');
+									}
+								classie.add(content, 'animateIn');
+								}else{
+									classie.remove(content, 'animateIn');
+									classie.add(content, 'animateOut');
+								}
+							classie.toggle(content, 'accordionItemCollapsed');      
+							}
+						}
+					}			  
+				}
+			});
+			
+            
+            
+            
+            
+            ( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass2, addClass2, removeClass2;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass2 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass2 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass2 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass2 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass2 = function( elem, c ) {
+						if ( !hasClass2( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass2 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass2( elem, c ) {
+					var fn = hasClass2( elem, c ) ? removeClass2 : addClass2;
+					fn( elem, c );
+				}		
+				var classie2 = {
+					hasClass2: hasClass2,
+					addClass2: addClass2,
+					removeClass2: removeClass2,
+					toggleClass2: toggleClass2,
+					has2: hasClass2,
+					add2: addClass2,
+					remove2: removeClass2,
+					toggle2: toggleClass2
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie2 );
+				} else {
+					window.classie2 = classie2;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion2 = $('.accordion2');
+			accordion2.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle2") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie2.toggle2(title, 'accordionTitleActive2');
+								if(classie2.has2(content, 'accordionItemCollapsed2')) {
+									if(classie2.has2(content, 'animateOut2')){
+										classie2.remove2(content, 'animateOut2');
+									}
+								classie2.add2(content, 'animateIn2');
+								}else{
+									classie2.remove2(content, 'animateIn2');
+									classie2.add2(content, 'animateOut2');
+								}
+							classie2.toggle2(content, 'accordionItemCollapsed2');      
+							}
+						}
+					}			  
+				}
+			});
+			
+			
+			
+			
+			
+		
+			( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass3, addClass3, removeClass3;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass3 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass3 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass3 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass3 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass3 = function( elem, c ) {
+						if ( !hasClass3( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass3 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass3( elem, c ) {
+					var fn = hasClass3( elem, c ) ? removeClass3 : addClass3;
+					fn( elem, c );
+				}		
+				var classie3 = {
+					hasClass3: hasClass3,
+					addClass3: addClass3,
+					removeClass3: removeClass3,
+					toggleClass3: toggleClass3,
+					has3: hasClass3,
+					add3: addClass3,
+					remove3: removeClass3,
+					toggle3: toggleClass3
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie3 );
+				} else {
+					window.classie3 = classie3;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion3 = $('.accordion3');
+			accordion3.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle3") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie3.toggle3(title, 'accordionTitleActive3');
+								if(classie3.has3(content, 'accordionItemCollapsed3')) {
+									if(classie3.has3(content, 'animateOut3')){
+										classie3.remove3(content, 'animateOut3');
+									}
+								classie3.add3(content, 'animateIn3');
+								}else{
+									classie3.remove3(content, 'animateIn3');
+									classie3.add3(content, 'animateOut3');
+								}
+							classie3.toggle3(content, 'accordionItemCollapsed3');      
+							}
+						}
+					}			  
+				}
+			});
+			
+		</script>
+		</html>

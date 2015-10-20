@@ -1,0 +1,690 @@
+
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 2931281, 2014-11-30T14:50:45-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Dual-300 by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dual/300/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2931281
+ * 
+ * ? 2014 MyFonts Inc
+*/
+
+-->
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+		 <meta charset = "utf-8" />
+        <script src = "script.js"> </script>
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	    <script type="text/javascript" src="engine1/jquery.js"></script>
+        <link rel = "stylesheet" href = "style.css" />
+		<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "fonts.css" />
+		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="smoothscroll.js"></script>
+        <script src="Chart.js"></script>
+        <link rel = "stylesheet" type="text/css" href="animate.css" />
+        
+		<style>
+		ul{list-style-type: none;}
+		</style>
+		
+        <title>Diseases</title>
+    </head>
+    
+     <body>
+		  <script type = "text/javascript" charset = "utf-8">
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+
+	$('.scrollup').click(function () {
+		$("html, body").animate({
+			scrollTop: 0
+		}, 600);
+		return false;
+	});
+	</script>
+	
+	    
+	   <div id='header_holder'>
+		
+		<div id='header'>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
+		    
+		    
+		    <div id = "user_options">
+		    
+			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
+			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
+		    
+		    </div>
+		    
+	
+            <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
+		
+		</div>
+			    
+		    </div>
+			<br /><br /><br /><br /><br />
+         
+         <span id = "move_all">
+			 
+            <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+	
+	<script type = "text/javascript">
+	
+	$(document).ready(function() {
+
+			var jobCount = $('#disease_holder .in').length;
+			$('.list-count').text(jobCount + ' items');
+    
+  
+			$("#search-text").keyup(function () {
+
+				var searchTerm = $("#search-text").val();
+				var listItem = $('#disease_holder').children('li');
+				var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
+    
+    
+				$.extend($.expr[':'], {
+					'containsi': function(elem, i, match, array) {
+						return (elem.textContent || elem.innerText || '').toLowerCase()
+						.indexOf((match[3] || "").toLowerCase()) >= 0;
+					}
+				});
+    
+    
+				$("#disease_holder li").not(":containsi('" + searchSplit + "')").each(function(e)   {
+					$(this).addClass('hiding out').removeClass('in');
+					setTimeout(function() {
+						$('.out').addClass('hidden');
+					}, 400);
+				});
+    
+				$("#disease_holder li:containsi('" + searchSplit + "')").each(function(e) {
+					$(this).removeClass('hidden out').addClass('in');
+					setTimeout(function() {
+						$('.in').removeClass('hiding');
+					}, 1);
+				});
+    
+  
+				var jobCount = $('#disease_holder .in').length;
+				$('.list-count').text(jobCount + ' items');
+    
+				if(jobCount == '0') {
+					$('#disease_holder').addClass('empty');
+				}
+				else {
+					$('#disease_holder').removeClass('empty');
+				}
+			});
+		});
+	
+	</script>
+	
+	
+	
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 15000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 850,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    $Scale: false,                                  //Scales bullets navigator or not while slider scale
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+		
+		window.onload = function () {
+    document.getElementById('navigation').className += ' hover';
+};
+    </script>
+            
+         <div id="slider1_container" style="position: relative; margin: 0;
+        top:-6px; left: 0px; width: 1300px; height: 290px; overflow: hidden;">
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+        </div>
+        <!-- Slides Container -->
+        <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px;
+            height: 500px; overflow: hidden;" id = "cursor">
+            <div>
+                <img u="image" src="penny.jpg"/>
+				
+              <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+						
+						
+						<div id = "centered_heading">Let's saves lives, one penny at a time</div>
+						
+					
+						
+						<div id = "relative_button" onClick = "window.location = 'donate.html'" >Click here to donate</div>
+						
+					</div>
+					
+            </div>
+            <div>
+                <img u="image" src="brainCancer.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+						
+						<div>
+							
+                <div>
+				
+						<div id = "centered_heading" style = "font-size:38px;left:185px;">Most Brain Cancer patients survive less than a year</div>
+						
+					
+						
+						<div id = "relative_button" onClick = "window.location = 'brainCancers.html'" style = "width:355px;background-color:white;color:black;left:425px;" >Click here to learn more</div>
+						
+						
+                </div>
+				
+				
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+						
+						
+							<span id = "clickable_area" onClick = "window.location = 'bloodCancers.html';">
+							
+							<div id = "heading">Blood Cancer takes over 55,000 lives away each year.</div>
+							
+							<div id = "heading" style = "font-size:30px; top:160px;">Click here to help</div>
+							
+						</span>
+                       
+                </div>
+            </div>
+						
+						
+						
+						
+						
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                </div>
+            </div>
+            <div>
+                <img u="image" src="lungs.jpg" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+						
+						
+						<div id = "centered_heading" style = "font-size:45px; left: 182px;">Lung Cancer is the deadliest form of cancer</div>
+						
+					
+						
+						<div id = "relative_button" onClick = "window.location = 'lungCancer.html'" style = "width:355px;left:435px;" >Click here to learn more</div>
+						
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                </div>
+            </div>
+        </div>
+                
+        <!-- Bullet Navigator Skin Begin -->
+        <style>
+            /* jssor slider bullet navigator skin 21 css */
+            /*
+            .jssorb21 div           (normal)
+            .jssorb21 div:hover     (normal mouseover)
+            .jssorb21 .av           (active)
+            .jssorb21 .av:hover     (active mouseover)
+            .jssorb21 .dn           (mousedown)
+            */
+            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
+            {
+                background: url(img/b21.png) no-repeat;
+                overflow:hidden;
+                cursor: pointer;
+            }
+            .jssorb21 div { background-position: -5px -5px; }
+            .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            .jssorb21 .av { background-position: -65px -5px; }
+            .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+        </div>
+        <!-- Bullet Navigator Skin End -->
+
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+            /* jssor slider arrow navigator skin 21 css */
+            /*
+            .jssora21l              (normal)
+            .jssora21r              (normal)
+            .jssora21l:hover        (normal mouseover)
+            .jssora21r:hover        (normal mouseover)
+            .jssora21ldn            (mousedown)
+            .jssora21rdn            (mousedown)
+            */
+            .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(img/a21.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21ldn { background-position: -243px -33px; }
+            .jssora21rdn { background-position: -303px -33px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">bootstrap carousel</a>
+    </div>
+    <!-- Jssor Slider End -->
+	<div id = "move_up">
+		
+            <div id="parallax-main">
+		    
+			    <section>
+				    <div class="block">
+				    <p><div id = "center_element"><span class="first-character one">DISEASES</span></div>
+					
+					<div id = "move_down">
+						
+						
+						<div id = "center_element" style = "font-size:20px;">Search for Diseases: <input onClick = "cleanForm()" maxlength = "60" id="search-text" class = "text_input" type = "text" name = "email_enter" placeholder = "Enter disease here..." style = "border:black 1px solid;"/> <span id = "relative_container"> </span>
+							
+                        
+                        <div id = "disease_holder" class="animated zoomIn">
+                            
+                            <!--
+                            NOTE: AFTER ADDING FINAL DISEASE, REMEMBER TO DO BORDER-BOTTOM-LEFT AND BORDER-BOTTOM-RIGHT RADIUS TO COMPLETE THE EFFECT 
+                            -->
+							
+							 
+							  
+							
+								<br />
+								<br />
+								
+								
+								
+                            
+							 <li class="in"><div style="display:none">Bladder Cancer</div>
+				<a href = "bladderCancer.html" style = "color:black;">
+					<div id = "disease_selection" style = "border-top-left-radius:5px;border-top-right-radius:5px;">
+						<span id = "element_one">Bladder Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 15,580</span>                  
+					</div>
+				</a>
+			</li>
+							
+			<li class="in"><div style="display:none">Blood Cancer</div>
+				<a href = "bloodCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Blood Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 55,350</span>
+                               
+					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Bone Cancer</div>
+				<a href = "boneCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Bone Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 1,490</span>
+                               
+					</div>
+				</a>
+			</li>
+								
+			<li class="in"><div style="display:none">Brain Cancer</div>
+				<a href = "brainCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Brain Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 14,320</span>
+                               
+					</div>
+				</a>
+			</li>
+                                
+			<li class="in"><div style="display:none">Breast Cancer</div>
+				<a href = "breastCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Breast Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: ~40,000</span> 
+					</div>
+				</a>
+			</li>
+							
+			<li class="in"><div style="display:none">Colorectal Cancer</div>							
+				<a href = "colorectalCancers.html" style = "color:black;">
+					<div id = "disease_selection" >
+						<span id = "element_one">Colorectal Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 50,310</span>    
+					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Endometrial Cancer</div>
+				<a href = "endometrialCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Endometrial Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 10,170</span>  
+					 </div>
+				</a>
+			</li>
+							
+			<li class="in"><div style="display:none">Eye Cancer</div>
+				<a href = "eyeCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Eye Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 270</span>  
+					 </div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Liver Cancers</div>
+				<a href = "liverCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+                                <span id = "element_one">Liver Cancers</span>
+                                <br />
+                                <span style = "font-size:22px;">Deaths Per Year: ~23,000</span>         
+					</div>
+				</a>
+			</li>
+							
+			<li class="in"><div style="display:none">Lung Cancers</div>
+				<a href = "lungCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+                                <span id = "element_one">Lung Cancers</span>
+                                <br />
+                                <span style = "font-size:22px;">Deaths Per Year: 159,260</span>         
+					</div>
+				</a>
+			</li>
+				
+		<li class="in"><div style="display:none">Lymphatic Cancers</div>
+				<a href = "lymphoma.html" style = "color:black;">
+					<div id = "disease_selection">
+                                <span id = "element_one">Lymphatic Cancers</span>
+                                <br />
+                                <span style = "font-size:22px;">Deaths Per Year: ~20,940</span>         
+					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Oral Cancers</div>
+				<a href = "oralCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Oral Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 13,500</span>        
+					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Ovarian Cancers</div>
+				<a href = "ovarianCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Ovarian Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 14,270</span>        
+					</div>
+				</a>
+			</li>
+			
+			<li class="in"><div style="display:none">Pancreatic Cancer</div>
+				<a href = "panc.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Pancreatic Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 40,560</span>        
+					</div>
+				</a>
+			</li>
+                            
+			<li class="in"><div style="display:none">Skin Cancers</div>
+				<a href = "skinCancers.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Skin Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: ~16,500</span>
+					</div>
+				</a>
+			</li>
+                            
+			<li class="in"><div style="display:none">Testicular Cancers</div>
+				<a href = "testicularCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Testicular Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: ~380</span>
+					</div>
+				</a>
+			</li>
+                            
+			<li class="in"><div style="display:none">Thyroid Cancers</div>
+				<a href = "thyroidCancer.html" style = "color:black;">
+					<div id = "disease_selection">
+						<span id = "element_one">Thyroid Cancers</span>
+						<br />
+						<span style = "font-size:22px;">Deaths Per Year: 1,890</span>
+					</div>
+				</a>
+			</li>
+						           
+			<!-- General list of all avaliable methods of donation --> 
+			<div style="display:none">Donate</div>
+				<a href = "donate.html" style = "color:black;">
+					<div id = "disease_selection" style = "border-bottom-left-radius:5px;border-bottom-right-radius:5px; border-bottom: 0px solid black;">
+						<span id = "element_one">Donate</span>
+						<br />
+						<span style = "font-size:22px;">Change a Life</span>
+					</div>
+				</a>
+				
+				
+                        
+                        
+                        
+					    <!-- Body Content One -->
+					    
+       <!--
+						<ul id="navigation" class="navigation">
+ 
+						  <a href="bloodCancers.html">	<li id = "element" class="n1"><span id = "element_one">Blood Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 55,350</span></li></a>
+							<a href = "breastCancer.html"> <li id = "element" class="n2"><span id = "element_one">Breast Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: ~40,000</span></li></a>
+							
+							<a href = "brainCancers.html"> <li id = "element" class="n3"><span id = "element_one">Brain Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 14,320</span></li></a>
+						<a href = "eyeCancers.html"> <li id = "element" class="n4"><span id = "element_one">Eye Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 9,710</span></li></a>
+							<li id = "elemen5t" class="n5" onmouseover = "changeColor()"><a href="#">item #5</a></li>
+							
+						</ul>
+-->
+					    
+					    
+
+					    
+						
+					 
+						
+					
+		</div>
+			
+			
+					 <br />
+					 <br />
+			    </section>
+                            </div>
+						</span>
+					
+					<footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
+					
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
+			</div>
+		</div>
+		</footer>
+	</span>
+				
+				
+				
+			</div>
+			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+            </body>
+			</html>
+            
+            

@@ -1,0 +1,754 @@
+
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 2931281, 2014-11-30T14:50:45-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Dual-300 by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dual/300/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2931281
+ * 
+ * ? 2014 MyFonts Inc
+*/
+
+-->
+
+
+<!DOCTYPE HTML>
+
+<html>
+    <head>  
+	 <meta charset = "utf-8" />
+        <script src = "script.js"> </script>
+		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	    <script type="text/javascript" src="engine1/jquery.js"></script>
+        <link rel = "stylesheet" href = "style.css" />
+		<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "fonts.css" />
+		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="smoothscroll.js"></script>
+        <script src="Chart.js"></script>
+		<script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+     <script type="text/javascript">window.onload = function(){
+				var ctxbladder = document.getElementById("bladderStatsPie").getContext("2d");
+				window.myPie = new Chart(ctxbladder).Pie(pieDataBladder);
+                
+                var steps = 10;
+                var max = 100;
+	           var ctxBladder = document.getElementById("bladderStatsBar").getContext("2d");
+	           window.myBar = new Chart(ctxBladder).Bar(barChartDataBladder, {
+                   scaleOverride: true,
+                   scaleSteps: steps,
+                   barStrokeWidth : 2,
+                   scaleStepWidth: Math.ceil(max / steps),
+                   scaleStartValue: 0,
+	               responsive : true
+                   
+                   
+              
+		          });
+    
+				  };</script>
+        
+        <title>Bladder Cancers</title>
+    </head>
+    
+     <body>
+		 
+	
+	    
+	    <div id='header_holder'>
+		
+		<div id='header'>
+		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
+		    
+		    
+		    <div id = "user_options">
+		    
+			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
+			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
+			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
+		    
+		    </div>
+		    
+	
+            <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
+		
+		</div>
+			    
+	</div>
+			<span id = "move_all">
+				
+            
+            <div id="parallax-main">
+		    
+			    <section>
+				    <div class="title">
+				    <!--<h3>Lets add content</h3>
+				    <h1>To make this look cool</h1>-->
+				    
+				    </div>
+			    </section>
+			    
+				  <section>
+				    <div class="parallax-bladder">
+						<h2 id = "picture_text" class = "altText">Over 28 people are diagnosed with Bladder<br />Cancer every day in the UK alone</h2>
+							
+							
+							
+					
+				    </div>
+			    </section>
+			   
+			    
+			    <section>
+				    <div class="block">
+				    <p><div id = "center_element"><span class="first-character one" style = "font-size: 40px;
+    font-size: 3.2vw;
+	">BLADDER CANCERS</span></div>
+					
+					<div id = "move_down">
+					<div id = "move_down">
+					    <!-- Body Content One -->
+						
+						<div id = "menu_box">
+							<span id = "menu_box_header">Content</span>
+							<br />
+							<br />
+							<span id = "info_box">
+								
+								Cases Per Year: 74,690
+								<br />
+								Deaths Per Year: 15,580
+							
+							</span>
+							<br />
+							
+							<a href = "#anchor_up_first" class = "smoothScroll"> <span id = "menu_box_options">What is Bladder Cancer?</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_second" class = "smoothScroll"> <span id = "menu_box_options">Advancements in Treatement</span> </a>
+							<br/><br /><br />
+							<a href = "#anchor_up_third" class = "smoothScroll"> <span id = "menu_box_options">How to Help</span> </a>
+							
+							
+						</div>
+						
+						<br />
+						 <p class="line-break margin-top-10"></p>
+					    <br />
+						<div id = "anchor_up_first" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">What is Bladder Cancer?</div>
+					 	
+					    <br />
+                        Bladder Cancer is one of the most common types of urinary cancers. In 2014, there were <span class = "link" onClick = "window.open('http://seer.cancer.gov/statfacts/html/urinb.html')">approximately 75,000 diagnoses</span> of Bladder Cancer. There were <span class = "link" onClick = "window.open('http://seer.cancer.gov/statfacts/html/urinb.html')">16,000 deaths</span>, amounting to <span class = "link" onClick = "window.open('http://seer.cancer.gov/statfacts/html/urinb.html')">around 3%</span> of all cancer related fatalities in that year. Unfortunately, the number of diagnoses has increased by nearly a quarter over the last decade. This is largely due to the increase in the quality of medical equipment used to perform biopsies and find cancer in the first place, as well as environmental carcinogens. 
+                        
+						<br />
+						<br />
+                       Bladder Cancer is <span class = "link" onClick = "window.open('http://seer.cancer.gov/statfacts/html/urinb.html')">three to four times more common </span>in men than women and is most common in middle and old age. Thankfully, Bladder Cancer typically responds well to treatment, so early diagnoses usually result in remission. That being said, failure to discover this disease in a timely manner can be dangerous, and Stage III and IV Bladder Cancer is often terminal.
+                        
+                
+						<br />
+						<br />
+                        Similar to most types of cancer, the diagnosis rate has been steadily increasing over the past few years, while fatalities decrease. As for some relevant statistics: <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-key-statistics')">90% of Bladder Cancer patients are diagnosed above the age of 55</span>, with the average age being around 73 years old. Men are more likely to develop Bladder Cancer than women; men have a roughly <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-key-statistics')">1 in 26 chance while women have a 1 in 90</span>. 
+
+						<br />
+						<br />
+                        It's important to remember that the earlier any form of cancer is detected, the easier it is to completely get rid of it, and Bladder Cancer is no exception. The following chart illustrates the occurance of Bladder Cancer in each respective gender. As you can see, it is far more common in males. 
+                        <br />
+						<!--
+			
+					
+						<span class = "position_by_side" style = "position:absolute; color: #F7464A; top:29%;; left:4%; font-size:39px; font-size:3.0vw">Under Age 40</span>
+						<span class = "position_by_side" style = "position:absolute; color: #46BFBD; top:31%; left: 4%; font-size:30px;">Under Age 50</span>
+						
+				
+						<span class = "position_by_side" style = "position:absolute; color: #FDB45C; top:29%; left: 65%; font-size:30px;">Age 50 to Age 60</span>
+						<span class = "position_by_side" style = "position:absolute; color: #607D8B; top:31%; left: 65%; font-size:30px;">Ages 65 and Above</span>
+						-->
+						<div id = "center_element">
+							
+							<div style="width: 100%">
+								
+								<canvas id="bladderStatsPie" height="200" width="430"></canvas>
+							
+							</div>
+						
+						</div>
+						<br />
+						
+						<div id = "center_element">
+							
+						<span style = "color: #F7464A; font-size:25px;">Males</span>
+                        
+						<span style = "color: #46BFBD; font-size:25px;">Females</span>
+					
+						
+						
+							
+						</div>
+						
+						
+						<br /><br />
+						
+						
+						<div class="accordion">
+								<dl>
+									<dt><a class="accordionTitle" href="#" style = "background-color: #FDB45C;">Transitional Cell</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+                                            This is by far the majority of all diagnosed Bladder Cancers, amounting to <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bladder-cancer/about/types-of-bladder-cancer')">nearly 90%</span> of all cases. Cells in the lining of the bladder often come into contact with toxic chemicals in urine waste. Since some of these chemicals are carcinogens, these cells can get damaged and form into tumors.
+                                            Over time, the cancer can spread into the tissue surrounding the bladder and metastasize from there. Almost all Bladder Cancers begin with transitional cell cancer, as these transitional cells are the most prone to contact with the body's waste.
+                                            <br /><br />
+                                            The chances of developing transitional Cell Bladder Cancer can be offset by avoiding certain risk factors. The greatest controllable risk factor is smoking. Smokers can have up to a <span class = "link" onClick ="window.open('http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2694323/')">fourfold</span> increase in the likelihood of developing Bladder Cancer. In fact, about <span class = "link" onClick ="window.open('http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2694323/')">50%</span> of Bladder Cancer in the United States is thought to be caused, in part, by cigarette smoking. The nicotine in cigarettes breaks down into compounds known as nitrosamines when burned, a substance known to be a carcinogen. Since the lining of the bladder wall replaces itself at a high rate, old age simply increases the chances of cells not reproducing properly and causing the growth of malignant tumors. People who have had cancer in the past are also at an elevated risk, as the treatment drug <span class = "link" onClick ="window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-risk-factors')">Cytoxan</span> is known to increase the risk of Bladder Cancer specifically.
+                                            <br /><br />
+                                            Transitional Cell Bladder Cancer can be either low-grade or high-grade. Low-grade carcinomas are the most treatable, as the cancer has stayed with the transitional cells on the surface layer of the bladder only. IVI Therapy is especially good at eliminating this. But the problem becomes much more severe in high-grade transitional cell carcinomas. In this case, the cancer has spread past the surface layer of the bladder and into the fibrous muscle tissue around it. From there, the cancer can be carried away through the bloodstream to other parts of the body. <span class = "link" onClick ="window.open('http://www.cancer.gov/cancertopics/pdq/treatment/bladder/Patient/page1')">Almost every death</span> from Bladder Cancer is due to these high-grade transitional cell cancers.
+                                            
+                                            
+                                            
+						</p>
+									</dd>
+									
+									<dt><a class="accordionTitle" href="#" style = "background-color: #F7464A">Squamous Cell</a></dt>
+									<dd class="accordionItem accordionItemCollapsed">
+										<p>
+                                            Squamous cells are specialized cells that line the vital internal organs of the body. Similarly to transitional cells, squamous cells regularly come into contact with the body's waste and are exposed to a whole host of toxins as a result. When infected, they die quickly, so they are less prone to growing out of control and becoming cancerous than transitional cells. Squamous cells are identified by their spongy nature and flat, rectangular shape. They are found in the lining of the bladder in conjunction with transitional cells, and can be infected by cancer easily as a result. Most common in parts of the world with high levels of <span class = "link" onClick = "window.open('http://www.cdc.gov/parasites/schistosomiasis/')">schistosomiasis</span>, a disease caused by worm infections, squamous cell Bladder Cancer  <span class = "link" onClick = "window.open('http://www.cancerresearchuk.org/about-cancer/type/bladder-cancer/about/types-of-bladder-cancer')">amounts to about 5%</span> of diagnosed cases.
+                                            <br /><br />
+                                            Although there is no substitute for a properly administered medical exam, <span class = "link" onClick = "window.open('http://www.cancer.gov/cancertopics/pdq/treatment/bladder/Patient/page1')">there are telltale</span> signs of having cancer. These include bone pains, bladder distention, and foot/ankle/joint swelling, but the primary identifiers are related to problems with urination. The inability to pass urine is often indicative of the presence of a tumor. Moreover, any blood present in urine is also a cause for concern, whether or not pain is experienced. Often times the problem occurs only intermittently. Encountering any of these symptoms for excessive periods of time is grounds for a conversation with your doctor. 	
+											
+										
+					</p>
+					</dd>
+									
+										
+					</dd>
+					
+								</div>
+							
+						<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_second" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">Advancements in Treatment</div>
+					    
+						<br />
+						
+						   The remission rate for Bladder Cancer is high, and recent years have seen the Stage I and II survival rates increase. With Bladder Cancer, the primary cause of concern is its detection. Treatments become costly - mentally, physically, and financially - in Stage III and IV of Bladder Cancer, as more and more invasive procedures are required to remove cancerous tissues and administer long-lasting treatment. This chart highlights the <span class = "link" onClick = "window.open('http://www.cancer.org/cancer/bladdercancer/detailedguide/bladder-cancer-survival-rates')">5-year survival percentages</span> for the various stages of Bladder Cancer. As you can see, survival is extremely likely for Stage I, but it drops off from there. Bladder Cancer kills with a lack of information and proper testing, and you can mitigate this threat by getting regularly tested after the age of 50.  
+				<br />
+				
+						<br />
+						
+						<div id = "center_element">
+							
+							<div style="width: 100%">
+								
+								<canvas id="bladderStatsBar" height="107" width="230"></canvas>
+							
+							</div>
+						
+						</div>
+						<br />
+						<div id = "center_element" style = "color:gray; font-size:16px;">
+							Relative 5-Year Survival Percentages by Stage
+						</div>
+						
+						<br />
+						<br />
+							<div class = "smallest_header" style = "text-decoration:none;">What is being done?</div>
+						<br />
+                           
+                            A general rule with cancer is that the earlier it is detected, the greater the chance of survival. Bladder Cancer is no exception, and medical technology has progressed to the point where diagnoses are common, but mortalities are increasingly rare. But since traditional therapies like chemotherapy and radiotherapy, while effective, are unpleasant and potentially harmful to Bladder Cancer patients, scientists and doctors are hard at work developing viable alternative forms of treatment to kill cancerous cells. 
+							
+						<br />
+						<br />
+					
+						
+							<div class="accordion2">
+								<dl>
+									<dt><a class="accordionTitle2" href="#memes" style = "background-color: #FDB45C;">Treatment by Photodynamic Therapy</a></dt>
+									<dd class="accordionItem2 accordionItemCollapsed2">
+										<p>
+                                            Recent years have yielded advances in treatment of Bladder Cancer. One of the most promising is the application of photodynamic therapy. This practice involves injecting small, light-sensitive chemicals into the bloodstream of a patient. These chemicals accrue along the lining of the bladder and “stick” to cancerous cells. Then, physicians can fire high-intensity light at the PDT chemicals, causing them to morph into a new chemical that is toxic to cancer cells. This technique is effective at killing cancer cells along the lining of the bladder wall, but often times will miss deeper tumors entirely. <br /><br />A <span class = "link" onClick = "window.open('http://onlinelibrary.wiley.com/store/10.1111/j.1751-1097.2009.00585.x/asset/j.1751-1097.2009.00585.x.pdf?v=1&t=i5hfdizi&s=ef1c611599cd2c58b407ba593a47f7bf27aff9fd')">recent study conducted by the University of San Diego</span> examines how advances in photodynamic therapy have developed over the past decade. While concluding that PDT is an effective treatment that will soon be viable for mass use, it notes that the field does have a ways to go before it can be considered above more conventional treatments like chemotherapy. It cites the inability for PDT compounds to penetrate necrotic tissue (dead cells that serve as a breeding ground for disease) and the expensive nature of creating these chemicals as the two major drawbacks to this therapy.
+										
+												<br />
+												<br />
+												Fortunately, most Bladder Cancer patients - Stages I, II, and III - will not experience tissue necrosis and will not forgo PDT on that basis. Additionally, as the field continues to progress, we will see a decrease in the cost of synthesizing PDT compounds as more research is conducted and the process is more widely used.  
+                                            
+                                            
+                                            
+                                            <br />
+                                            <br />
+                                        
+                                
+										</p>
+									</dd>
+									<dt><a href="#memes" class="accordionTitle2" style = "background-color: #F7464A;">Treatment by Intravesical Immunotherapy</a></dt>
+									<dd class="accordionItem2 accordionItemCollapsed2">
+										<p>
+                                            Intravesical immunotherapy is a promising new style of Bladder Cancer treatment. Doctors administer drugs to a patient’s bladder by directly introducing them via a catheter instead of giving the patient a pill or an injection. This method can be used to deliver chemotherapy drugs, but is more commonly used for delivering immunotherapy drugs. 
+                                            <br />
+                                            <br />
+Often times, Bladder Cancers can be made much worse by a bacteria commonly present in human bodies: Bacillus Calmette-Guerin. Now, doctors are taking to giving patients dead forms of BCG using intravesical therapy and enabling them to quickly develop antibodies suited to killing BCG in their immune system. While this may not cure Bladder Cancer entirely, it can stop it from getting worse, and can often cause remission for Stage I patients. 
+                                            <br />
+                                            <br />
+Additionally, intravesical immunotherapy involves doctors introducing compounds called interferons to patients’ bladders. Interferons are synthesized compounds that are highly effective at stimulating the immune system at desired areas. The intravesical method enables doctors to administer interferons and stimulate the immunse system right where it is needed to kill off cancer cells and stop tumor growths. Although the success rate for more advanced cancer is relative low, the treatment is notable for prompting remission in Stage I patients.
+
+
+                                            
+                                            <br />
+                                            <br />
+                                            
+                                            
+                                       
+                                         
+									
+										</p>
+									</dd>
+									
+								</dl>
+								
+							</div>
+							<br />
+						<p class="line-break margin-top-10"></p>
+						<br />
+						
+						<div id = "anchor_up_third" class = "move_focus_up"> </div>
+						<div id = "goFirst" class = "smaller_header">How to Help</div>
+						<br />
+						
+                            If left untreated or if discovered in its later stages, Bladder Cancer can be deadly. We've looked at a variety of treatments intended to revolutionize its treatment and help save more lifes. But we also need to look at the awareness of Bladder Cancer. The absolute best way to remain safe from Bladder Cancer is to get yourself tested every year beyond the age of 50, because if left untreated, Stage III and IV are highly fatal. The following organizations help to promote awareness of this disease as well as fund and contribute to research involving highly efficicent treatment procedures.
+                            
+                           
+                            
+                            
+                            <!--
+						Fortunately, Breast Cancer awareness has gone up tremendously in recent years. Symbols such as the <span class = "link" onClick = "window.open('http://wallpaper-download.net/wallpapers/abstract-wallpapers-pink-ribbon-wallpaper-37290.jpg')">pink ribbon</span> have done much to divert public attention and support to Breast Cancer research. While progress has certainly been made, additional research is required to ensure that this issue plauges people no longer. All of the options outlined below are teriffic resources for those looking to make a positive change for those suffering from Breast Cancer. 
+						
+-->
+						<br /><br />	
+						
+						
+                            
+                            <div class="accordion3">
+								<dl>
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #FDB45C;">The Bladder Cancer Advocacy Network</a></dt>
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+                                          <span class = "link" onClick = "window.open('http://www.bcan.org/about-us/what-we-do/')">The Bladder Cancer Advocacy Network</span> uses a variety of angles to combat Bladder Cancer. It is led by a panel of urologists, oncologists, radiation oncologists and pathologists known as the Scientific Advisory Board that convenes to guide BCAN’s research efforts as knowledge of Bladder Cancer grows. These scientists and doctors are some of the leading experts in their respective fields, and you can find a complete list of the members of the SAB <span class = "link" onClick = "window.open('http://www.bcan.org/about-us/bcan-scientific-advisory-board/')">here</span> . 
+                                            <br /><br />
+
+One way BCAN fights Bladder Cancer is through active medical research. It offers three <span class = "link" onClick = "window.open('http://www.bcan.org/research/young-investigator-awards/')">Young Investigator Awards</span> to graduate students conducting research on Bladder Cancer. These $100,000 research grants fund researchers who work in basic, translational, clinical, epidemiologic, bioengineering or any other scientific or research field, and are also working in a research environment capable of supporting transformational Bladder Cancer research. Additionally, BCAN offers the <span class = "link" onClick = "window.open('http://www.bcan.org/research/john-quale-travel-fellowships/')">John Quale Travel Fellowship</span>.  
+                                            <br /><br />
+
+Bladder Cancer thrives on misinformation and ignorance, so BCAN uses a variety of education and support communities to attack to eventually render the lack of information a non-issue. For those worried about Bladder Cancer, BCAN offers the <span class = "link" onClick = "window.open('http://www.bcan.org/learn/educational-programs/webinars/')">Patient Insight Webinar Series</span>: freely available recordings of lectures given by BCAN associates on a variety of topics surrounding Bladder Cancer. For those afflicted with this disease, BCAN offers support through the <span class = "link" onClick = "window.open('http://www.bcan.org/learn/finding-support/bcan-online-community/')">BCAN Online Support Community</span> and the <span class = "link" onClick = "window.open('http://www.bcan.org/learn/finding-support/support-groups/')">In Person Support Groups</span>.
+
+                                            
+                                           
+											
+											<br />
+											<br />
+											<span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('https://49906.thankyou4caring.org/donatenow')">Donate</span>
+											
+											
+											
+											
+											
+										</p>
+									</dd>
+									
+									<!-- span is put in place to avoid strange alteration on '&' symbol -->
+									
+									<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #F7464A">Bladder Cancer Canada</a></dt>
+										
+								
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+                                            
+                                            <span class = "link" onClick = "window.open('https://www.bladdercancercanada.org/en/about/')">Bladder Cancer Canada</span> is a non-profit advocacy organization committed to fighting Bladder Cancer. Although based in Canada, it operates worldwide. Founded by Bladder Cancer survivors (or “thrivers” as they call themselves!), BCC is a <span class = "link" onClick = "window.open('https://bladdercancercanada.org/en/bcc-financial-statements')">transparent</span> organization that focuses on patient interaction. Its <span class = "link" onClick = "window.open('https://www.bladdercancercanada.org/en/about/people/cat/board-of-directors')">Board of Directors</span> works closely with a series of scientists comprising the <span class = "link" onClick = "window.open('https://www.bladdercancercanada.org/en/about/people/cat/medical-advisory-board')">Medical Advisory Board</span> and <span class = "link" onClick = "window.open('https://www.bladdercancercanada.org/en/about/people/cat/medical-research-board')">Medical Research Board</span>. 
+                                            <br /><br />
+
+BCC has a specific set of objectives. It seeks to assist newly diagnosed and long term Bladder Cancer survivors by providing a central contact information service, one-on-one support, information meetings, educational materials, and references to medical support facilities and websites. Additionally, it interfaces with other research organizations in the medical community to conduct clinical trials and organize focus groups.
+<br />
+<br />
+
+                                            <span id = "hidden_button" style = "font-size:22px;" onClick = "window.open('https://www.bladdercancercanada.org/en/donate/')">Donate</span>
+									
+										<dt><a class="accordionTitle3" href="#b0ss" style = "background-color: #46BFBD">Fight At No Cost</a></dt>
+									<dd class="accordionItem3 accordionItemCollapsed3">
+										<p>
+											The online age has developed easy and free communication between millions of people on the planet. You can aid the fight against Bladder Cancer without having to open your wallet at all! Getting others informed is one of the single best contributors to detection and survivability. This is the power of word of mouth, the power of sharing our thoughts and ideas to make a change. You can click on the buttons below to get started. Spread the word! 
+											
+											<div id = "button_wrapper">
+												
+												<!-- Twitter message can be changed anytime. Source for alteration @ http://www.targetinternet.com/how-to-create-pre-written-tweet-buttons-and-links/ -->
+												
+												
+												<div id = "twitter_button" onClick = "window.open('http://twitter.com/home?status=Blood%20Cancers%20will%20kill%20over%2055K%20people%20this%20year.%20Make%20a%20stand%20and%20join%20the%20fight%20against%20%23Cancer%20at%20(url)')">Tweet it Out</div>
+											
+												<!-- Facebook doesn't allow pre-written messages, so a link to our page is the next best thing. -->
+												
+												<div id = "facebook_button" onClick = "launch_facebook('bladder')">Fight through Facebook</div>
+											
+											</div>
+											
+											
+											
+											
+										</p>
+										
+					</dd>
+					
+					
+								</div>
+								
+                            <br />
+						<p class="line-break margin-top-10"></p>
+						
+					 <br />
+					 <div id = "center_element">
+						 
+					 	<div id = "button_special" onClick = "openDisease()">Back to Diseases</div>
+				   	 </div>
+					  <br />
+					  <br /> 
+					  <br />
+					  
+				    </div>
+			    </section>
+                </div>
+							
+            </span>
+			<br />
+			<br />
+			
+       <footer>
+		<div id="footer_section">
+			<span id="footer_content">
+				<div class="footer_header">Discover More</div>
+					
+				<div class="footer_text">
+					<p>Click on the links to further explore the fight against cancer.</p>
+					<p></p>
+				</div>
+			</span>
+			<span id = "footer_links">
+				<ul class="footer_sources">
+					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+					<li><a href="form.html" id="list_style">Contact Us</a></li>
+				</ul>
+			</span>
+			<span id='ishan_is_a_faggot'>
+				<p id = "list_style_second" onClick = "openResources()">Resources</p>
+				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
+			</span>
+			
+			<div id="copywrite_bar">
+				<span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
+			</div>
+		</div>
+		</footer>
+		
+			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+		</body>
+		<script>
+	(function($) {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}		
+			});
+
+			$('.scrollup').click(function () {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 600);
+				return false;
+			});
+		})(jQuery);
+		
+	
+		
+		( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass, addClass, removeClass;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass = function( elem, c ) {
+						if ( !hasClass( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass( elem, c ) {
+					var fn = hasClass( elem, c ) ? removeClass : addClass;
+					fn( elem, c );
+				}		
+				var classie = {
+					hasClass: hasClass,
+					addClass: addClass,
+					removeClass: removeClass,
+					toggleClass: toggleClass,
+					has: hasClass,
+					add: addClass,
+					remove: removeClass,
+					toggle: toggleClass
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie );
+				} else {
+					window.classie = classie;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion = $('.accordion');
+			accordion.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie.toggle(title, 'accordionTitleActive');
+								if(classie.has(content, 'accordionItemCollapsed')) {
+									if(classie.has(content, 'animateOut')){
+										classie.remove(content, 'animateOut');
+									}
+								classie.add(content, 'animateIn');
+								}else{
+									classie.remove(content, 'animateIn');
+									classie.add(content, 'animateOut');
+								}
+							classie.toggle(content, 'accordionItemCollapsed');      
+							}
+						}
+					}			  
+				}
+			});
+			
+            
+            
+            
+            
+            ( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass2, addClass2, removeClass2;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass2 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass2 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass2 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass2 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass2 = function( elem, c ) {
+						if ( !hasClass2( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass2 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass2( elem, c ) {
+					var fn = hasClass2( elem, c ) ? removeClass2 : addClass2;
+					fn( elem, c );
+				}		
+				var classie2 = {
+					hasClass2: hasClass2,
+					addClass2: addClass2,
+					removeClass2: removeClass2,
+					toggleClass2: toggleClass2,
+					has2: hasClass2,
+					add2: addClass2,
+					remove2: removeClass2,
+					toggle2: toggleClass2
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie2 );
+				} else {
+					window.classie2 = classie2;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion2 = $('.accordion2');
+			accordion2.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle2") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie2.toggle2(title, 'accordionTitleActive2');
+								if(classie2.has2(content, 'accordionItemCollapsed2')) {
+									if(classie2.has2(content, 'animateOut2')){
+										classie2.remove2(content, 'animateOut2');
+									}
+								classie2.add2(content, 'animateIn2');
+								}else{
+									classie2.remove2(content, 'animateIn2');
+									classie2.add2(content, 'animateOut2');
+								}
+							classie2.toggle2(content, 'accordionItemCollapsed2');      
+							}
+						}
+					}			  
+				}
+			});
+			
+			
+			
+			
+			
+		
+			( function( window ) {
+				'use strict';
+				function classReg( className ) {
+					return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+				}
+
+				var hasClass3, addClass3, removeClass3;
+
+				if ( 'classList' in document.documentElement ) {
+					hasClass3 = function( elem, c ) {
+					return elem.classList.contains( c );
+					};
+					
+					addClass3 = function( elem, c ) {
+						elem.classList.add( c );
+					};
+					removeClass3 = function( elem, c ) {
+						elem.classList.remove( c );
+					};
+				}
+				else {
+					hasClass3 = function( elem, c ) {
+						return classReg( c ).test( elem.className );
+					};
+					addClass3 = function( elem, c ) {
+						if ( !hasClass3( elem, c ) ) {
+							elem.className = elem.className + ' ' + c;
+						}
+					};
+					removeClass3 = function( elem, c ) {
+						elem.className = elem.className.replace( classReg( c ), ' ' );
+					};
+				}
+
+				function toggleClass3( elem, c ) {
+					var fn = hasClass3( elem, c ) ? removeClass3 : addClass3;
+					fn( elem, c );
+				}		
+				var classie3 = {
+					hasClass3: hasClass3,
+					addClass3: addClass3,
+					removeClass3: removeClass3,
+					toggleClass3: toggleClass3,
+					has3: hasClass3,
+					add3: addClass3,
+					remove3: removeClass3,
+					toggle3: toggleClass3
+				};
+				if ( typeof define === 'function' && define.amd ) {
+					define( classie3 );
+				} else {
+					window.classie3 = classie3;
+				}
+			})( window );
+			var $ = function(selector){
+				return document.querySelector(selector);
+			}
+			var accordion3 = $('.accordion3');
+			accordion3.addEventListener("click",function(e) {
+				e.stopPropagation();
+				e.preventDefault();
+				if(e.target && e.target.nodeName == "A") {
+					var classes = e.target.className.split(" ");
+					if(classes) {
+						for(var x = 0; x < classes.length; x++) {
+							if(classes[x] == "accordionTitle3") {
+								var title = e.target;
+								var content = e.target.parentNode.nextElementSibling;
+								classie3.toggle3(title, 'accordionTitleActive3');
+								if(classie3.has3(content, 'accordionItemCollapsed3')) {
+									if(classie3.has3(content, 'animateOut3')){
+										classie3.remove3(content, 'animateOut3');
+									}
+								classie3.add3(content, 'animateIn3');
+								}else{
+									classie3.remove3(content, 'animateIn3');
+									classie3.add3(content, 'animateOut3');
+								}
+							classie3.toggle3(content, 'accordionItemCollapsed3');      
+							}
+						}
+					}			  
+				}
+			});
+			
+		</script>
+		</html>
