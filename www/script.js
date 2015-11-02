@@ -843,7 +843,7 @@ function cleanForm()
 function addLink() {
     //Get the selected text and append the extra info
     var selection = window.getSelection(),
-        pagelink = '<br /> --- <br /> Read more at: ' + "www.oursideurl.com",
+        pagelink = '<br /> --- <br /> Read more at: ' + "http://thecureitproject.com/",
         copytext = selection + pagelink,
         newdiv = document.createElement('div');
 
@@ -869,6 +869,29 @@ function launch_facebook(value)
 	var num = Math.floor((Math.random() * 3) + 1);
 	swal({   title: "Explore Further?",   text: "Clicking this button will take you to a random Facebook page that is related to the disease!",   type: "warning",   showCancelButton: true,  allowOutsideClick:true,  confirmButtonColor: "#81C784",   confirmButtonText: "Explore",   closeOnConfirm: false }, function(){  open_facebook(value, num); swal("Awesome!", "You have been redirected!", "success")});
 		
+}
+
+function init_rand(value)
+{
+	var num = Math.floor((Math.random() * 3) + 1);
+	var x = value;
+	if(num == 1)
+	{
+		x = "bladder";
+	}
+	
+	if(num == 2)
+	{
+		x = "endo";
+	}
+	
+	if(value == 3)
+	{
+		x = "lung";
+	}
+	
+	swal({   title: "Explore Further?",   text: "Clicking this button will take you to a random Facebook page that is related cancer!",   type: "warning",   showCancelButton: true,  allowOutsideClick:true,  confirmButtonColor: "#81C784",   confirmButtonText: "Explore",   closeOnConfirm: false }, function(){  open_facebook(x, num); swal("Awesome!", "You have been redirected!", "success")});
+	
 }
 
 function open_facebook(value, rand_roll)

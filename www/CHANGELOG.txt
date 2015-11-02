@@ -385,6 +385,22 @@ Copyright 2015 TopBox Software. All Rights Reserved
 8/15/2015 
 -Added Allie's contact info to resource and stories page
 
+10/20/2015
+-Most of the work on the project has come in the form of bug fixes
+-I'm also working on the mobile application a lot
+-Added a new type of link (blue) to highlight more important information
+-Updated FAQ to reflect the new type of link
+-Added an example of the new link to the FAQ page
+-Fixed button styling/spacing on index and FAQ pages
+-Website doesn't suck on Firefox now
+
+10/21/2015 
+-Fixed transitions on Firefox 
+
+10/23/2015 
+-Twitter links now prefill tweets specific to the disease page that they are located on
+-Updated search bar styling
+
 Known Bugs:
 -Margins on disease page overlap when page is shrunk (FIXED)
 -Buttons on Blood Cancer page are not centered when using Google Chrome (FIXED)
@@ -405,8 +421,8 @@ Known Bugs:
 -No smooth scroll on Word Cloud page (NOT AN ISSUE)
 
 Things to Complete Before Launch:
--Must make sure all twitter links send out the correct tweet for each respective form of Cancer
--Add links to Zach and Ishan's personal websites on FAQ page
+-Must make sure all twitter links send out the correct tweet for each respective form of Cancer (DONE)
+-Add links to Zach and Ishan's personal websites on FAQ page (DONE)
 -Assert Arcade Fire as being better than Taylor Swift (DONE)
 -Add links to pages at the end of the index page (done)
 -Add mailing list functionality (REMOVED)

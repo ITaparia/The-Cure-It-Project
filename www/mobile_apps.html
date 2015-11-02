@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+<link rel="shortcut icon" href="app_icon.ico">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,6 +10,8 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel = "stylesheet" href = "style.css">
+    <script src="dist/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
   	
 	<title>The Cure It Project - Mobile</title>
@@ -54,8 +57,8 @@
 				<br />
 				<br />
 				<span id = "button_wrapper">
-					<div id = "apple_button">App Store</div>
-					<div id = "android_button">Google Play Store</div>
+					<div id = "apple_button" onClick = "swal('Check back later!', 'The mobile version is coming soon!', 'error')">App Store</div>
+					<div id = "android_button" onClick = "swal('Check back later!', 'The mobile version is coming soon!', 'error')">Google Play Store</div>
 				</span>
 		</div>
 	</section>
