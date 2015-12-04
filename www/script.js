@@ -827,7 +827,7 @@ function openDonate()
 
 function openStories()
 {
-	window.location = "stories_page.html";
+	window.location = "donate.html";
 }
 
 //--------------------------------End Page References--------------------------------\\

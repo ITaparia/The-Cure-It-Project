@@ -1,0 +1,920 @@
+ 
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 2931281, 2014-11-30T14:50:45-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Dual-300 by CDType
+ * URL: http://www.myfonts.com/fonts/cdtype/dual/300/
+ * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
+ * Licensed pageviews: 20,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2931281
+ *
+ * ? 2014 MyFonts Inc
+*/
+ 
+-->
+ 
+ 
+<!DOCTYPE HTML>
+ 
+<html>
+    <head>
+                 <meta charset = "utf-8" />
+        <script src = "script.js"> </script>
+                <link rel="shortcut icon" href="app_icon.ico">
+                <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+            <script type="text/javascript" src="engine1/jquery.js"></script>
+        <link rel = "stylesheet" href = "style.css" />
+                <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+        <link rel = "stylesheet" href = "fonts.css" />
+                <script rel = "text/javascript" src="jquery-1.11.1.js"></script>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="smoothscroll.js"></script>
+        <script src="Chart.js"></script>
+        <link rel = "stylesheet" type="text/css" href="animate.css" />
+       
+       
+               
+              <link href="css/bootstrap.css" rel="stylesheet" />
+              <link href="css/rotating-card.css" rel="stylesheet" />
+              <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        
+                <script type = "text/javascript">
+       
+        $(document).ready(function() {
+ 
+                        var jobCount = $('#disease_holder .in').length;
+                        $('.list-count').text(jobCount + ' items');
+   
+ 
+                        $("#search-text").keyup(function () {
+ 
+                                var searchTerm = $("#search-text").val();
+                                var listItem = $('#disease_holder').children('li');
+                                var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
+   
+   
+                                $.extend($.expr[':'], {
+                                        'containsi': function(elem, i, match, array) {
+                                                return (elem.textContent || elem.innerText || '').toLowerCase()
+                                                .indexOf((match[3] || "").toLowerCase()) >= 0;
+                                        }
+                                });
+   
+   
+                                $("#disease_holder li").not(":containsi('" + searchSplit + "')").each(function(e)   {
+                                        $(this).addClass('hiding out').removeClass('in');
+                                        setTimeout(function() {
+                                                $('.out').addClass('hidden');
+                                        }, 500);
+                                });
+   
+                                $("#disease_holder li:containsi('" + searchSplit + "')").each(function(e) {
+                                        $(this).removeClass('hidden out').addClass('in');
+                                        setTimeout(function() {
+                                                $('.in').removeClass('hiding');
+                                        }, 1);
+                                });
+   
+ 
+                                var jobCount = $('#disease_holder .in').length;
+                                $('.list-count').text(jobCount + ' items');
+   
+                                if(jobCount == '0') {
+                                        $('#disease_holder').addClass('empty');
+                                }
+                                else {
+                                        $('#disease_holder').removeClass('empty');
+                                }
+                        });
+                });
+       
+        </script>
+       
+               
+        <style type = "text/css">
+        @media (max-width: @screen-xs) {
+    #element_one{font-size: 10px;}
+}
+ 
+@media (max-width: @screen-sm) {
+    #element_one{font-size: 14px;}
+}
+        </style>
+        <title>Charities</title>
+    </head>
+   
+     <body>
+                  <script type = "text/javascript" charset = "utf-8">
+        $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                        $('.scrollup').fadeIn();
+                } else {
+                        $('.scrollup').fadeOut();
+                }
+        });
+ 
+        $('.scrollup').click(function () {
+                $("html, body").animate({
+                        scrollTop: 0
+                }, 600);
+                return false;
+        });
+        </script>
+       
+           
+            <div id='header_holder'>
+               
+                <div id='header'>
+                    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
+                   
+                   
+                    <div id = "user_options">
+                   
+                        <span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
+                        <span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
+                        <span id = "option_three" class = "flexible" onClick = "openStories()">Charities</span>
+            <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
+                        <span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
+                   
+                    </div>
+                   
+       
+            <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
+               
+                </div>
+                           
+        </div><br /><br /><br /><br /><br />
+         
+         <span id = "move_all">
+                         
+            <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+ 
+        <div id = "move_up">
+               
+            <div id="parallax-main">
+                   
+                            <section>
+                                    <div class="block">
+                                    <p><div id = "center_element"><span class="first-character one">CHARITIES</span></div>
+                       
+                        <span id = "cloud_header" style = "font-size:25px;color:gray;positon:relative;top:20px;">Choose a charity below to donate to.</span>
+                                               
+                                               
+                       <br />
+                       
+                                        <div id = "move_down">
+                                               
+                                                        <div id = "center_element" style = "font-size:20px;"> <span id = "relative_container"> </span>
+                       
+                        <div id = "disease_holder" class="animated zoomIn">
+                           
+                            <!--
+                            NOTE: AFTER ADDING FINAL DISEASE, REMEMBER TO DO BORDER-BOTTOM-LEFT AND BORDER-BOTTOM-RIGHT RADIUS TO COMPLETE THE EFFECT
+                            -->
+                                                       
+                                                               
+                                                 
+                            
+            <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="Colorectal.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Fight Colorectal Cancer</h3>
+                                <br />
+                                <p class="profession">Type: Colorectal Cancer</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (703) 548-1225</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('http://fightcolorectalcancer.org/do-something/change-policy/ ')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/FightCRC " class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                 <a target = "_blank" href="https://twitter.com/FightCRC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                            
+Fight Colorectal Cancer
+                                <br />
+                                <br />
+                                <p>Fight Colorectal Cancer has been on the front lines of the fight against Colorectal Cancers for years now. They have dedicated themselves to promoting the development of new treatments as well as making sure the public is well educated on the causes of Colorectal Cancers, something that has done much to inspire hope in those who suffer from it. They fight against Colorectal Cancers in five main ways: advocacy, awareness generation, providing patients with resources, funding research, and philanthropy. </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+                            
+                                             
+          <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="ColorectalCancer2.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The NCCRA</h3>
+                                <br />
+                                <p class="profession">Type: Colorectal Cancer</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (828) 238-8602</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('http://eifoundation.org/content/donate-nccra/ ')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/NC-Cardiopulmonary-Rehabilitation-Association-107936149268790/ "  class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                            The NCCRA
+                                <br />
+                                <br />
+                                <p>The NCCRA (National Colorectal Cancer Alliance) has made it their mission to eradicate the threat of Colorectal Cancers for everyone. They attempt to do this by promoting and raising funding for medical screenings, scientific tests, and treatments. They hope that their efforts will one day prove successful enough to yield a cure, and have selflessly pursued this goal since their founding in 2000. </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+
+                            
+                             <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="endo.png">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Foundation For Women’s Cancer</h3>
+                                <br />
+                                <p class="profession">Type: Endometrial Cancers/General Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (312) 578-1439</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('http://www.foundationforwomenscancer.org/ways-to-give/ ')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/foundationforwomenscancer/ " class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a target = "_blank" href="https://twitter.com/GYNCancer " class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                The Foundation For Women’s Cancer
+                                <br />
+                                <br />
+                                <p>The Foundation for Women's Cancer is an organization that has been tirelessly working to combat cancer in females since its inception in 1991. They attempt to reach this goal on three different fronts: raising public awareness, providing education, and supporting research for top institutions around the world. 
+ </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+            
+                              
+            <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="endometrialCancer2.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Mary Kay Foundation</h3>
+                                <br />
+                                <p class="profession">Type: Endometrial Cancers/General Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (877) 652-2737</h5>
+                               
+                                <div id = "my_button" onClick = "window.open('https://secure3.convio.net/tmkf/site/Donation2;jsessionid=00000000.app303b?idb=1651560265&DONATION_LEVEL_ID_SELECTED=1&df_id=1320&1320.donation=form1&NONCE_TOKEN=EAC07AC423ECD3268D071B43EF3CF250&idb=0'
+)">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/TheMaryKayFoundation " class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a target = "_blank" href="https://twitter.com/marykaycares  " class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                               
+                               
+                               
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                           The Mary Kay Foundation
+                                <br />
+                                <br />
+                                <p>The Mary Kay Foundation is an organization founded in memoriam of Mary Kay, a cancer patient who died Thanksgiving day 2001, and her dream to further cancer research to the benefit of patients all around the world. This foundation is not specific to Endometrial Cancers, instead seeking to confront all cancers that afflict women.   </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                           
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+ 
+ 
+                            
+            <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="eyeCancer2.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Eye Cancer Foundation</h3>
+                                <br />
+                                <p class="profession">Type: Eye Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (212) 832-8170</h5>
+                               
+                                <div id = "my_button" onClick = "window.open('https://www.eyecancer.com/donate')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/groups/ECNPatients" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                               
+                               
+                               
+                               
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                            The Eye Cancer Foundation
+                                <br />
+                                <br />
+                                <p>Established in 1989 as The Eyecare Foundation, The Eye Cancer Foundation has long since been a valuable resource for Eye Cancer patients and their families. Their mission is two-fold: to directly assist the research of new diagnostic treatments for Eye Cancer and to provide much needed patient support services.  </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                           
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="eyecancer.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Eye Tumor Research Foundation</h3>
+                                <br />
+                                <p class="profession">Type: Eye Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                               
+                               
+                               
+                               
+                                <div id = "my_button" onClick = "window.open('http://www.etrf.org/donate.html')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/eyetumor" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                               
+                                <a target = "_blank" href="https://twitter.com/eye_tumor" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                               
+                                <a target = "_blank" href="http://www.etrf.org/contact.html" class="twitter"><i class="fa fa-envelope-o fa-fw text-muted"></i></a>
+                               
+                               
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                            The Eye Tumor Research Foundation
+                                <br />
+                                <br />
+                                <p>The Eye Tumor Research Foundation is an organization that has selflessly dedicated itself to the research of Eye Cancers in order to win the fight for life and sight. The ultimate goal of the foundation is to make current treatment programs for patients more comfortable and effective through the means of further developing current methods of diagnosis and treatment. All contributions made to the foundation are spent in adherence to one fundamental goal: providing meaningful support to those who are actively involved in the research of Eye Cancers.   </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                           
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="liverCancer2.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Foundation For Liver Research</h3>
+                                <br />
+                                <p class="profession">Type: Liver Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United Kingdom</h5>
+                               
+                               
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (020) 7255-9830</h5>
+                               
+                                <div id = "my_button" onClick = "window.open('http://www.liver-research.org.uk/liver-research-donations/donation.html ')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/F4LiverResearch " class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                               
+                               
+                               
+           
+                               
+                               
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                            The Foundation For Liver Research
+                                <br />
+                                <br />
+                                <p>The Foundation for Liver Research has been operating on the front lines of the fight against liver disease for over 3 decades now. They have committed themselves completely to funding ground-breaking research programs as well as providing laboratory space for the scientists who make such research possible. The research made possible by those who donate is extensive and well documented. At the time of writing, they are involved in projects that involve 8 different areas of liver disease.
+</p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                           
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="liverCancer3.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Liver Cancer Research Fund</h3>
+                                <br />
+                                <p class="profession">Type: Liver Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                               
+                               
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> +44-20-73434200</h5>
+                               
+                                <div id = "my_button" onClick = "window.open('http://www.upmc.com/Services/liver-cancer/research/Pages/donate.aspx ')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/upmc?ref=nf" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                               
+                               
+                              <a target = "_blank" href="https://twitter.com/UPMCnews" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>  
+           
+                               
+                               
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                            The Liver Cancer Research Fund
+                                <br />
+                                <br />
+                                <p>The Liver Cancer Research Fund has spent the past few years maintaining the fight against Liver Cancer. They work with a best in class team of experts to push the currently established limits of medical knowledge through innovative clinical research.
+ 
+</p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                           
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+            
+            
+ 
+<div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="lung.png">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Lung Cancer Foundation of America</h3>
+                                <br />
+                                <p class="profession">Type: Lung Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                               
+                               
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i>323-741-4713</h5>
+                               
+                                <div id = "my_button" onClick = "window.open('http://www.lcfamerica.org/donate-to-lung-cancer-research.html#sthash.feneA4oz.dpbs')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/lungcancerfoundation/?fref=ts" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                               
+                               
+                              <a target = "_blank" href="https://twitter.com/lcfamerica" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>  
+           
+                               
+                               
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                            Lung Cancer Foundation of America
+                                <br />
+                                <br />
+                                <p>The Lung Cancer Foundation of America is an organization based in the United States that has set their sights on one tremendous goal: establishing groundbreaking results in the field of Lung Cancer treatment. They hope that their work will one day improve the lives of the hundreds of thousands of Lung Cancer patients on both national and global levels.
+ 
+ 
+</p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                           
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="lungCancer2.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Smokefree.gov</h3>
+                                <br />
+                                <p class="profession">Type: Lung Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                               
+                               
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i>1-877-44U-QUIT</h5>
+                               
+                                <div id = "my_button" onClick = "window.open('http://smokefree.gov/')">Visit</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/SmokefreeUS" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                               
+                               
+                              <a target = "_blank" href="https://twitter.com/SmokefreeUs" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>  
+           
+                               
+                               
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                            Smokefree.gov
+                                <br />
+                                <br />
+                                <p>SmokeFree.gov is a little bit different from the other organizations that we've promoted in that it doesn't actually cater to the treatment of Lung Cancer specifically. Rather, it attempts to undermine the #1 cause of Lung Cancer: smoking. Smoking is easily the most dangerous and most prevalent cause of Lung Cancers, increasing the risk of contracting the disease by a factor of 15 to 30 in some cases. While smoking, the body inhales 7000 different chemicals, 70 of which have been directly linked to cancer in humans.
+ 
+ 
+ 
+</p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                           
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+               
+ 
+   <div id = "listView" onClick = "window.location = 'donationList.html'">Go to List View</div>
+ 
+ 
+ 
+                            
+                      <div class = "pageButton" onClick = "window.location = 'donate.html'">1</div>
+                        <div id = "priority" class = "pageButton" onClick = "window.location = 'donate2.html'">2</div>
+                        <div  class = "pageButton" onclick= "window.location = 'donate3.html'">3</div>
+           <div class = "pageButton" onclick= "window.location = 'donate4.html'">4</div>
+                        <br />
+                                                       
+                       
+                       
+                                            <!-- Body Content One -->
+                                           
+       <!--
+                                                <ul id="navigation" class="navigation">
+ 
+                                                  <a href="bloodCancers.html">  <li id = "element" class="n1"><span id = "element_one">Blood Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 55,350</span></li></a>
+                                                        <a href = "breastCancer.html"> <li id = "element" class="n2"><span id = "element_one">Breast Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: ~40,000</span></li></a>
+                                                       
+                                                        <a href = "brainCancers.html"> <li id = "element" class="n3"><span id = "element_one">Brain Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 14,320</span></li></a>
+                                                <a href = "eyeCancers.html"> <li id = "element" class="n4"><span id = "element_one">Eye Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 9,710</span></li></a>
+                                                        <li id = "elemen5t" class="n5" onmouseover = "changeColor()"><a href="#">item #5</a></li>
+                                                       
+                                                </ul>
+-->
+                                           
+                                           
+                                            <br />
+                                            <br />
+                                           
+                                               
+                                         
+                                               
+                                       
+                </div>
+                       
+                       
+                                         
+                            </section>
+                            </div>
+                                                </span>
+                                               
+                                        <footer>
+                <div id="footer_section">
+                        <span id="footer_content">
+                                <div class="footer_header">Discover More</div>
+                                       
+                                <div class="footer_text">
+                                        <p>Click on the links to further explore the fight against cancer.</p>
+                                        <p></p>
+                                </div>
+                        </span>
+                        <span id = "footer_links">
+                                <ul class="footer_sources">
+                                        <li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
+                                        <li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
+                                        <li><a href="form.html" id="list_style">Contact Us</a></li>
+                                    <li><a target = "_blank" href="https://twitter.com/CureItProject" class="twitter"><i class="fa fa-twitter fa-fw"></i></a><a target = "_blank" href="https://www.facebook.com/thecureitproject" class="facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                </ul>
+                        </span>
+                        <span id='footer'>
+                                <p id = "list_style_second" onClick = "openResources()">Resources</p>
+                                <p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
+                                <p id = "list_style_second" onClick = "openDonate()">Donate</p>
+                        </span>
+                       
+                        <div id="copywrite_bar">
+                                <span id ="copywrite">&copy 2015 Topbox Software | ALL RIGHTS RESERVED </span>
+                        </div>
+                </div>
+        </footer>
+                               
+                        <a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+                                <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+        
+    });
+    
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46172202-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+            </body>
+                        </html>

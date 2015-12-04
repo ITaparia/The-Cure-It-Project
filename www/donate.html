@@ -1,537 +1,786 @@
-
+ 
 <!--
 /**
  * @license
  * MyFonts Webfont Build ID 2931281, 2014-11-30T14:50:45-0500
- * 
+ *
  * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
+ * Agreement(s) entered into by the website owner. All other parties are
  * explicitly restricted from using the Licensed Webfonts(s).
- * 
+ *
  * You may obtain a valid license at the URLs below.
- * 
+ *
  * Webfont: Dual-300 by CDType
  * URL: http://www.myfonts.com/fonts/cdtype/dual/300/
  * Copyright: Copyright (c) 2014 by Charles Daoud. All rights reserved.
  * Licensed pageviews: 20,000
- * 
- * 
+ *
+ *
  * License: http://www.myfonts.com/viewlicense?type=web&buildid=2931281
- * 
+ *
  * ? 2014 MyFonts Inc
 */
-
+ 
 -->
-
-
+ 
+ 
 <!DOCTYPE HTML>
-
+ 
 <html>
     <head>
-		 <meta charset = "utf-8" />
+                 <meta charset = "utf-8" />
         <script src = "script.js"> </script>
-		<link rel="shortcut icon" href="app_icon.ico">
-		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
-	    <script type="text/javascript" src="engine1/jquery.js"></script>
+                <link rel="shortcut icon" href="app_icon.ico">
+                <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+            <script type="text/javascript" src="engine1/jquery.js"></script>
         <link rel = "stylesheet" href = "style.css" />
-		<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+                <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
         <link rel = "stylesheet" href = "fonts.css" />
-		<script rel = "text/javascript" src="jquery-1.11.1.js"></script>
+                <script rel = "text/javascript" src="jquery-1.11.1.js"></script>
         <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
         <script type="text/javascript" src="smoothscroll.js"></script>
         <script src="Chart.js"></script>
         <link rel = "stylesheet" type="text/css" href="animate.css" />
-		
-		<script type = "text/javascript">
-	
-	$(document).ready(function() {
-
-			var jobCount = $('#disease_holder .in').length;
-			$('.list-count').text(jobCount + ' items');
-    
-  
-			$("#search-text").keyup(function () {
-
-				var searchTerm = $("#search-text").val();
-				var listItem = $('#disease_holder').children('li');
-				var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
-    
-    
-				$.extend($.expr[':'], {
-					'containsi': function(elem, i, match, array) {
-						return (elem.textContent || elem.innerText || '').toLowerCase()
-						.indexOf((match[3] || "").toLowerCase()) >= 0;
-					}
-				});
-    
-    
-				$("#disease_holder li").not(":containsi('" + searchSplit + "')").each(function(e)   {
-					$(this).addClass('hiding out').removeClass('in');
-					setTimeout(function() {
-						$('.out').addClass('hidden');
-					}, 500);
-				});
-    
-				$("#disease_holder li:containsi('" + searchSplit + "')").each(function(e) {
-					$(this).removeClass('hidden out').addClass('in');
-					setTimeout(function() {
-						$('.in').removeClass('hiding');
-					}, 1);
-				});
-    
-  
-				var jobCount = $('#disease_holder .in').length;
-				$('.list-count').text(jobCount + ' items');
-    
-				if(jobCount == '0') {
-					$('#disease_holder').addClass('empty');
-				}
-				else {
-					$('#disease_holder').removeClass('empty');
-				}
-			});
-		});
-	
-	</script>
-	
-		
+       
+       
+               
+              <link href="css/bootstrap.css" rel="stylesheet" />
+              <link href="css/rotating-card.css" rel="stylesheet" />
+              <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        
+                <script type = "text/javascript">
+       
+        $(document).ready(function() {
+ 
+                        var jobCount = $('#disease_holder .in').length;
+                        $('.list-count').text(jobCount + ' items');
+   
+ 
+                        $("#search-text").keyup(function () {
+ 
+                                var searchTerm = $("#search-text").val();
+                                var listItem = $('#disease_holder').children('li');
+                                var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
+   
+   
+                                $.extend($.expr[':'], {
+                                        'containsi': function(elem, i, match, array) {
+                                                return (elem.textContent || elem.innerText || '').toLowerCase()
+                                                .indexOf((match[3] || "").toLowerCase()) >= 0;
+                                        }
+                                });
+   
+   
+                                $("#disease_holder li").not(":containsi('" + searchSplit + "')").each(function(e)   {
+                                        $(this).addClass('hiding out').removeClass('in');
+                                        setTimeout(function() {
+                                                $('.out').addClass('hidden');
+                                        }, 500);
+                                });
+   
+                                $("#disease_holder li:containsi('" + searchSplit + "')").each(function(e) {
+                                        $(this).removeClass('hidden out').addClass('in');
+                                        setTimeout(function() {
+                                                $('.in').removeClass('hiding');
+                                        }, 1);
+                                });
+   
+ 
+                                var jobCount = $('#disease_holder .in').length;
+                                $('.list-count').text(jobCount + ' items');
+   
+                                if(jobCount == '0') {
+                                        $('#disease_holder').addClass('empty');
+                                }
+                                else {
+                                        $('#disease_holder').removeClass('empty');
+                                }
+                        });
+                });
+       
+        </script>
+       
+               
         <style type = "text/css">
         @media (max-width: @screen-xs) {
     #element_one{font-size: 10px;}
 }
-
+ 
 @media (max-width: @screen-sm) {
     #element_one{font-size: 14px;}
 }
         </style>
-        <title>Donate</title>
+        <title>Charities</title>
     </head>
-    
+   
      <body>
-		  <script type = "text/javascript" charset = "utf-8">
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
-			$('.scrollup').fadeIn();
-		} else {
-			$('.scrollup').fadeOut();
-		}
-	});
-
-	$('.scrollup').click(function () {
-		$("html, body").animate({
-			scrollTop: 0
-		}, 600);
-		return false;
-	});
-	</script>
-	
-	    
-	    <div id='header_holder'>
-		
-		<div id='header'>
-		    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
-		    
-		    
-		    <div id = "user_options">
-		    
-			<span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
-			<span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
-			<span id = "option_three" class = "flexible" onClick = "openStories()">Stories</span>
+                  <script type = "text/javascript" charset = "utf-8">
+        $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                        $('.scrollup').fadeIn();
+                } else {
+                        $('.scrollup').fadeOut();
+                }
+        });
+ 
+        $('.scrollup').click(function () {
+                $("html, body").animate({
+                        scrollTop: 0
+                }, 600);
+                return false;
+        });
+        </script>
+       
+           
+            <div id='header_holder'>
+               
+                <div id='header'>
+                    <span id = "title_text"><span class = "title_hover_element" onClick = "openHome()">The Cure It Project</span></span>
+                   
+                   
+                    <div id = "user_options">
+                   
+                        <span id = "option_one" class = "flexible" onClick = "openHome()">Home</span>
+                        <span id = "option_two" class = "flexible" onClick = "openDisease()">Diseases</span>
+                        <span id = "option_three" class = "flexible" onClick = "openStories()">Charities</span>
             <span id = "option_four" class = "flexible" onClick = "openFAQ()">FAQ</span>
-			<span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
-		    
-		    </div>
-		    
-	
+                        <span id = "option_five" class = "flexible" onClick = "openResources()">Resources</span>
+                   
+                    </div>
+                   
+       
             <div id='blue'></div><div id='pink'></div><div id='green'></div><div id='orange'></div><div id='red'></div><div id='yellow'></div><div id = "color"></div>
-		
-		</div>
-			    
-	</div><br /><br /><br /><br /><br />
+               
+                </div>
+                           
+        </div><br /><br /><br /><br /><br />
          
          <span id = "move_all">
-			 
+                         
             <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
-
-	<div id = "move_up">
-		
-            <div id="parallax-main">
-		    
-			    <section>
-				    <div class="block">
-				    <p><div id = "center_element"><span class="first-character one">DONATE</span></div>
-                        
-                        <span id = "cloud_header" style = "font-size:25px;color:gray;positon:relative;top:20px;">Choose a charity below to donate to.</span>
-						
-						
-                       <br />
-                        
-					<div id = "move_down">
-						
-							<div id = "center_element" style = "font-size:20px;">Search for Charities: <input onClick = "cleanForm()" maxlength = "60" id="search-text" class = "text_input" type = "text" name = "email_enter" placeholder = "Enter disease/charity here..." style = "border:black 1px solid;"/> <span id = "relative_container"> </span>
-                        
-                        <div id = "disease_holder" class="animated zoomIn">
-                            
-                            <!--
-                            NOTE: AFTER ADDING FINAL DISEASE, REMEMBER TO DO BORDER-BOTTOM-LEFT AND BORDER-BOTTOM-RIGHT RADIUS TO COMPLETE THE EFFECT 
-                            -->
-							
-								<br />
-								<br />
-								
-								<li class="in"> <a target="_blank" href = "https://49906.thankyou4caring.org/donatenow" style = "color:black;"><div id = "disease_selection" style = " border-top-left-radius:5px;border-top-right-radius:5px;">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Bladder Cancer Advocacy Network</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Bladder Cancers</span>
-                               
-							</div></a></li>
-							
-							 <li class="in"><a target="_blank" href = "https://www.bladdercancercanada.org/en/donate/" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Bladder Cancer Canada</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Bladder Cancers</span>
-                               
-							</div></a></li>
-								
-                            
-                          <li class="in">  <a target="_blank" href = "https://donate.lls.org/lls/donate" style = "color:black;"><div id = "disease_selection" style = " border-top-left-radius:5px;border-top-right-radius:5px;">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Leukemia and Lymphoma Society</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Blood Cancers</span>
-                               
-                                </div></a></li>
-                                
-                            
-                            <li class="in"> <a target="_blank" href = "https://leukaemialymphomaresearch.org.uk/civicrm/contribute/transact?reset=1&id=5" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Leukaemia & Lymphoma Research</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Blood Cancers</span>
-                               
-                                 </div></a></li>
-								 
-								  <li class="in"> <a target="_blank" href = "http://www.bonecancerresearch.org.uk/f_donate.php" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Bone Cancer Research Trust</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Bone Cancers</span>
-                               
-							</div></a></li>
-							
-							 <li class="in"> <a target="_blank" href = "https://secure.squarespace.com/commerce/donate?donatePageId=52b79f65e4b0ee585a53a209" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Sunbeam Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Bone Cancers</span>
-                               
-							</div></a></li>
-								 
-								   <!-- General list of all avaliable methods of donation --> 
-                             <li class="in"><a target="_blank" href = "https://secure2.convio.net/abta/site/Donation2;jsessionid=9DC62F7205DEAD22C1E17DE9966EEBA7.app272b?df_id=1500&1500.donation=form1" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The American Brain Tumor Association</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Brain Cancers</span>
-                                 
-                                 
-                               
-                                 </div></a></li>
-                            
-                            <li class="in">  <a target="_blank" href = "https://secure2.convio.net/bts/site/Donation2?df_id=3940&3940.donation=form1#menu" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The National Brain Tumor Society</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Brain Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-                            
-                            <li class="in"> <a target="_blank" href = "https://www.nationalbreastcancer.org/breast-cancer-donations" style = "color:black;"><div id = "disease_selection" >
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The National Breast Cancer Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Breast Cancers</span>
-                               
-                                 </div></a></li>
-                            
-                            <li class="in"> <a target="_blank" href = "https://give.bcrfcure.org/checkout/donation?eid=31404&_ga=1.239062789.448629387.1419877632" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Breast Cancer Research Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Breast Cancers</span>
-                                 
-                                 
-                               
-                                 </div></a></li>
-								 
-								   <li class="in"> <a target="_blank" href = "https://give.fightcrc.org/checkout/donation?eid=26925" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Fight Colorectal Cancer</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Colorectal Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							  <li class="in"> <a target="_blank" href = "http://www.eifoundation.org/content/donate-nccra" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The NCCRA</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Colorectal Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-                            
-							<li class="in">  <a target="_blank" href = "https://donatenow.networkforgood.org/FoundationForWomensCancer" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Foundation for Women's Cancer</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Endometrial Cancers/General Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							<li class="in">  <a target="_blank" href = "https://secure3.convio.net/tmkf/site/Donation2;jsessionid=2C47305C279E144F55E17AE2AAA303B9.app303b?idb=360068408&DONATION_LEVEL_ID_SELECTED=1&df_id=1320&1320.donation=form1&idb=0" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Mary Kay Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Endometrial Cancers/General Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-								 
-                            
-								      <li class="in">  <a target="_blank" href = "http://www.etrf.org/donate.html" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Eye Tumor Research Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Eye Cancers</span>
-                                 
-                                 
-                               
-                                 </div></a></li>
-                            
-                             <li class="in"> <a target="_blank" href = "https://www.eyecancer.com/donate" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Eye Cancer Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Eye Cancers</span>
-								
-								
-								      <li class="in">  <a target="_blank" href = "http://www.liver-research.org.uk/liver-research-donations/donation.html" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Foundation for Liver Research</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Liver Cancers</span>
-                                 
-                                 
-                               
-                                 </div></a></li>
-                            
-                             <li class="in"> <a target="_blank" href = "http://www.upmc.com/Services/liver-cancer/research/Pages/donate.aspx" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Liver Cancer Research Fund</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Liver Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							<li class="in">  <a target="_blank" href = "https://www.thedatabank.com/dpg/508/spdf.asp?formid=donates" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">A Breath of Hope Lung Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Lung Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							 <li class="in"> <a target="_blank" href = "https://app.etapestry.com/hosted/LungCancerFoundationofAmer/OnlineDonation.html" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Lung Cancer Foundation of America</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Lung Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							 <li class="in"><a target="_blank" href = "http://smokefree.gov/ready-to-quit" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">SmokeFree.gov</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Lung Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							
-							 <li class="in"><a target="_blank" href = "https://community.lymphoma.org" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Lymphoma Research Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Lymphatic Cancers/Blood Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							
-							 <li class="in"><a target="_blank" href = "https://www.givedirect.org/give/givefrm.asp?CID=10146" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Lymphoma Foundation of America</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Lymphatic Cancers/Blood Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							 <li class="in"><a target="_blank" href = "https://donate.oralcancer.org/index.cfm?fuseaction=donate.general" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Oral Cancer Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Oral Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							<li class="in"> <a target="_blank" href = "http://www.mouthcancerfoundation.org/get-involved/donate-mouth-cancer-foundation" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Mouth Cancer Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Oral Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							<li class="in"> <a target="_blank" href = "https://www.kintera.org/AutoGen/Simple/Donor.asp?ievent=475938&en=4nLxHFMfG3LGKPOiE2LDKLOsFhLKKSMuFfIKKYOALrE" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Ovarian Cancer Research Fund</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Ovarian Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							<li class="in"> <a target="_blank" href = "https://secure.2dialog.com/ovarian/main.php/micro_sites/showpage/id/99" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The National Ovarian Cancer Coalition</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Ovarian Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							<li class="in"> <a target="_blank" href = "https://www.lustgarten.org/donate" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Lustgarten Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Pancreatic Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							<li class="in"> <a target="_blank" href = "https://www.pancan.org/donate-now/" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Pancreatic Cancer Action Network</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Pancreatic Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							
-							
-							
-							     <li class="in"><a target="_blank" href = "https://interland3.donorperfect.net/weblink/weblink.aspx?name=skincancer&id=16" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Skin Cancer Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Skin Cancers</span>
-                                 
-                                 
-                               
-                                 </div></a></li>
-                            
-                            <li class="in">  <a target="_blank" href = "http://www.americanskin.org/donate/" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The American Skin Association</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Skin Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-                                 
-                                 <li class="in">  <a target="_blank" href = "http://www.testicularcancersociety.org/donate.html" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">The Testicular Cancer Society</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Testicular Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-                                 
-                                 <li class="in">  <a target="_blank" href = "http://www.testicularcancerawarenessfoundation.org/donation-opportunities" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Testicular Cancer Awareness Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Testicular Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							 <li class="in">  <a target="_blank" href = "https://tcsa.memberclicks.net/index.php?option=com_mc&view=formlogin&form=84782&return=L2luZGV4LnBocD9vcHRpb249Y29tX21jJnZpZXc9bWMmbWNpZD1mb3JtXzg0NzgyP3NlcnZJZD0zMzU5Jm9wdGlvbj1jb21fbWMmdmlldz1tYyZtY2lkPWZvcm1fODQ3ODI=" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Thyroid Cancer Survivors' Association</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Thyroid Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-							
-							 <li class="in">  <a target="_blank" href = "http://www.lightoflifefoundation.org/Ways-to-Help/Donate" style = "color:black;"><div id = "disease_selection">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Light of Life Foundation</span>
-                                <br />
-                                <span style = "font-size:22px;">Type: Thyroid Cancers</span>
-                                 
-                                 
-                               
-							</div></a></li>
-                   		
-                              <a href = "diseases.html" style = "color:black;"><div id = "disease_selection" style = "border-bottom-left-radius:5px;border-bottom-right-radius:5px; border-bottom: 0px solid black;">
-                                <span id = "element_one" style = "width:100%;font-size:25px;font-size:1.8vw;white-space:nowrap;">Diseases</span>
-                                <br />
-                                <span style = "font-size:22px;">Learn about the Problem</span>
-                                 
-                                 
-                               
-                                 </div></a>
-								 
-                        </div>
-                        <br />
-							
-                        
-                        
-					    <!-- Body Content One -->
-					    
-       <!--
-						<ul id="navigation" class="navigation">
  
-						  <a href="bloodCancers.html">	<li id = "element" class="n1"><span id = "element_one">Blood Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 55,350</span></li></a>
-							<a href = "breastCancer.html"> <li id = "element" class="n2"><span id = "element_one">Breast Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: ~40,000</span></li></a>
-							
-							<a href = "brainCancers.html"> <li id = "element" class="n3"><span id = "element_one">Brain Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 14,320</span></li></a>
-						<a href = "eyeCancers.html"> <li id = "element" class="n4"><span id = "element_one">Eye Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 9,710</span></li></a>
-							<li id = "elemen5t" class="n5" onmouseover = "changeColor()"><a href="#">item #5</a></li>
-							
-						</ul>
--->
-					    
-					    
-					    <br />
-					    <br />
-					    
-						
-					 
-						
-					
-		</div>
-			
-			
-					 
-			    </section>
+        <div id = "move_up">
+               
+            <div id="parallax-main">
+                   
+                            <section>
+                                    <div class="block">
+                                    <p><div id = "center_element"><span class="first-character one">CHARITIES</span></div>
+                       
+                        <span id = "cloud_header" style = "font-size:25px;color:gray;positon:relative;top:20px;">Choose a charity below to donate to.</span>
+                                               
+                                               
+                       <br />
+                       
+                                        <div id = "move_down">
+                                               
+                                                        <div id = "center_element" style = "font-size:20px;"> <span id = "relative_container"> </span>
+                       
+                        <div id = "disease_holder" class="animated zoomIn">
+                           
+                            <!--
+                            NOTE: AFTER ADDING FINAL DISEASE, REMEMBER TO DO BORDER-BOTTOM-LEFT AND BORDER-BOTTOM-RIGHT RADIUS TO COMPLETE THE EFFECT
+                            -->
+                                                       
+                                                              
+                                                         
+                                                               
+                                                 
+                            
+            <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="bladder.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Bladder Cancer Advocacy Network</h3>
+                                <br />
+                                <p class="profession">Type: Bladder Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (301) 215-9099</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('https://49906.thankyou4caring.org/donatenow')">Donate</div>
                             </div>
-						</span>
-						
-					<footer>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="http://www.facebook.com/BladderCancer/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a target = "_blank" href="https://twitter.com/B_C_A_N" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                Bladder Cancer Advocacy Network
+                                <br />
+                                <br />
+                                <p>Each year, BCAN provides thousands of patients and the medical community with the educational resources and support services they need to navigate their bladder cancer journey. </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+                            
+                                             
+           <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="bladderCancer2.png">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Bladder Cancer Canada</h3>
+                                <br />
+                                <p class="profession">Type: Bladder Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> Canada</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (866) 674-8889</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('https://www.canadahelps.org/dn/4073')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/BladderCancerCanada" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a target = "_blank" href="https://twitter.com/BladderCancerCA" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                Bladder Cancer Canada
+                                <br />
+                                <br />
+                                <p>Bladder Cancer Canada is a non-profit advocacy organization committed to assist newly diagnosed and long term Bladder Cancer survivors by providing a central contact information service, one-on-one support, information meetings, educational materials, and references to medical support facilities and websites. 
+ </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+                            
+                             <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="leukemia.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Leukemia and Lymphoma Society</h3>
+                                <br />
+                                <p class="profession">Type: Blood Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (914) 949-5213</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('https://donate.lls.org/lls/donate')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/LLSforacure/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a target = "_blank" href="https://twitter.com/LLSusa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                                The Leukemia and Lymphoma Society
+                                <br />
+                                <br />
+                                <p>The Leukemia and Lymphoma Society is a blood cancer research charity that aims to cure blood cancers, improve the quality of life for patients and families, and to promote general knowledge of these diseases. 
+ </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+                            
+                            
+                              <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="bloodCancer2.png">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Leukaemia & Lymphoma Research</h3>
+                                <br />
+                                <p class="profession">Type: Blood Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United Kingdom</h5>
+                                
+                                
+                                <div id = "my_button" onClick = "window.open('https://bloodwise.org.uk/civicrm/contribute/transact?reset=1&id=5')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/bloodwise.uk " class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a target = "_blank" href="https://twitter.com/beatbloodcancer" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                               Leukaemia & Lymphoma Research
+                                <br />
+                                <br />
+                                <p>Leukaemia & Lymphoma Research is the largest UK blood cancer charity dedicated to the elimination of Blood Cancers. Their goal: to minimize the deaths resulting from these impactful diseases as well as creating prevention.
+ </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+                            
+                             <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="bone.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Bone Cancer Research Trust</h3>
+                                <br />
+                                <p class="profession">Type: Bone Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                
+                                
+                                <div id = "my_button" onClick = "window.open('http://www.bonecancerresearch.org.uk/f_donate.php')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/Bone.Cancer.Research.Trust/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                <a target = "_blank" href="https://twitter.com/BCRT " class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                              The Bone Cancer Research Trust
+                                <br />
+                                <br />
+                                <p>The Bone Cancer Research Trust has been dedicated to stopping the spread of Bone Cancer by raising awareness about the disease, enhance general knowledge, and to provide support for patients that already have it. 
+ </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+                            
+                            
+                         
+            
+                            <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="BoneCancer 2.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Sunbeam Foundation</h3>
+                                <br />
+                                <p class="profession">Type: Bone Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (212) 555-0123</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('https://secure.squarespace.com/commerce/donate?donatePageId=52b79f65e4b0ee585a53a209 ')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/SunbeamFoundation " class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                            The Sunbeam Foundation
+                                <br />
+                                <br />
+                                <p>The Sunbeam Foundation is an organization founded by Brad Wolfe in an effort to help his friend and others fight against bone cancers. The organization researches and has volunteer help to further understanding of the diseases.
+ </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+            
+                <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="brainCancer.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">American Brain Tumor Association</h3>
+                                <br />
+                                <p class="profession">Type: Brain Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (773) 577-8750</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('https://secure2.convio.net/abta/site/Donation2;jsessionid=9DC62F7205DEAD22C1E17DE9966EEBA7.app272b?df_id=1500&1500.donation=form1 ')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="http://www.facebook.com/theABTA" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                 <a target = "_blank" href="http://twitter.com/theabta " class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                            American Brain Tumor Association
+                                <br />
+                                <br />
+                                <p>The American Brain Tumor Association was the first nonprofit organization in the world to set its sights solely on eliminating the risk of Brain Tumors. It also aims to help patients with cancers and aid research. </p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+            
+               <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="brainCancer2.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The National Brain Tumor Society</h3>
+                                <br />
+                                <p class="profession">Type: Brain Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i>(617) 924 9997</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('https://secure2.convio.net/bts/site/Donation2;jsessionid=BF9D85597E62BDFB53E2FAAD0CB9E4C3.app212a?df_id=3940&3940.donation=form1 ')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/braintumors" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                 <a target = "_blank" href="https://twitter.com/NBTStweets " class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                            The National Brain Tumor Society
+                                <br />
+                                <br />
+                                <p>The National Brain Tumor Society aims to further develop and aid the system by which Cancer is treated. With it’s intense research and key positions in drug development, this organization is committed to furthering the knowledge of and improving the lives of the brain tumor community.</p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+            
+            <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="breastCancer.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The National Breast Cancer Foundation</h3>
+                                <br />
+                                <p class="profession">Type: Breast Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i> (972) 248-9200</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('https://www.nationalbreastcancer.org/breast-cancer-donations')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/nationalbreastcancer" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                            The National Breast Cancer Fondation
+                                <br />
+                                <br />
+                                <p>Founded over 23 years ago by Breast Cancer survivor Janell Hail, The National Breast Cancer Foundation goes beyond research by raising awareness, promoting early detection, and educating others about breast cancer.</p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+            
+            <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src= "breastcancer2.jpg">
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="CIP_Logo.png"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">The Breast Cancer Research Foundation</h3>
+                                <br />
+                                <p class="profession">Type: Breast Cancers</p>
+                                <h5><i class="fa fa-map-marker fa-fw text-muted"></i> United States</h5>
+                                <h5><i class="fa fa-envelope-o fa-fw text-muted"></i>(646) 497-2600</h5>
+                                
+                                <div id = "my_button" onClick = "window.open('https://give.bcrfcure.org/checkout/donation?eid=31404&_ga=1.22913139.994999435.1448736552')">Donate</div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" onclick="rotateCard(this)">
+                                    <i class="fa fa-mail-forward"></i><span style = "position:relative;left:3px;">Learn More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <div class="social-links text-center">
+                                <a target = "_blank" href="https://www.facebook.com/TheBreastCancerResearchFoundation " class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+
+                            </div>
+                            <hr />
+                        </div> 
+                        <div class="content">
+                            <div class="main">
+                           The Breast Cancer Research Foundation
+                                <br />
+                                <br />
+                                <p>In their 21 years of operation, The Breast Cancer Research Foundation has raised over half a billion dollars, with the vast majority of funds furthering the advancement of medical research and Breast Cancer awareness.</p>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            
+                            <div class="social-links text-center">
+                                <button class="btn btn-simple text-center" rel="tooltip" title="Flip Card" onclick="rotateCard(this)" id="back_button">
+                                    <span style = "position:relative;top:15px;"><i class="fa fa-reply text-center" ></i> Back</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div>
+            
+                            <div id = "listView" onClick = "window.location = 'donationList.html'">Go to List View</div>
+                            
+                        <div id = "priority" class = "pageButton" onClick = "window.location = 'donate.html'">1</div>
+                        <div class = "pageButton" onClick = "window.location = 'donate2.html'">2</div>
+                        <div class = "pageButton" onclick= "window.location = 'donate3.html'">3</div>
+                         <div class = "pageButton" onclick= "window.location = 'donate4.html'">4</div>   
+           
+                        <br />
+                                                       
+                       
+                       
+                                            <!-- Body Content One -->
+                                           
+       <!--
+                                                <ul id="navigation" class="navigation">
+ 
+                                                  <a href="bloodCancers.html">  <li id = "element" class="n1"><span id = "element_one">Blood Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 55,350</span></li></a>
+                                                        <a href = "breastCancer.html"> <li id = "element" class="n2"><span id = "element_one">Breast Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: ~40,000</span></li></a>
+                                                       
+                                                        <a href = "brainCancers.html"> <li id = "element" class="n3"><span id = "element_one">Brain Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 14,320</span></li></a>
+                                                <a href = "eyeCancers.html"> <li id = "element" class="n4"><span id = "element_one">Eye Cancers</span><br /><span style = "font-size:22px;">Deaths Per Year: 9,710</span></li></a>
+                                                        <li id = "elemen5t" class="n5" onmouseover = "changeColor()"><a href="#">item #5</a></li>
+                                                       
+                                                </ul>
+-->
+                                           
+                                           
+                                            <br />
+                                            <br />
+                                           
+                                               
+                                         
+                                               
+                                       
+                </div>
+                       
+                       
+                                         
+                            </section>
+                            </div>
+                                                </span>
+                                               
+                                        <footer>
 		<div id="footer_section">
 			<span id="footer_content">
 				<div class="footer_header">Discover More</div>
@@ -546,9 +795,10 @@
 					<li><a href="mobile_apps.html" id="list_style">Mobile App</a></li>
 					<li><a href="cancercloud.html" id="list_style">Word Cloud</a></li>
 					<li><a href="form.html" id="list_style">Contact Us</a></li>
+                    <li><a target = "_blank" href="https://twitter.com/CureItProject" class="twitter"><i class="fa fa-twitter fa-fw"></i></a><a target = "_blank" href="https://www.facebook.com/thecureitproject" class="facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
 				</ul>
 			</span>
-			<span id='ishan_is_a_faggot'>
+			<span id='footer'>
 				<p id = "list_style_second" onClick = "openResources()">Resources</p>
 				<p id = "list_style_second" onClick = "openFAQ()">FAQ</p>
 				<p id = "list_style_second" onClick = "openDonate()">Donate</p>
@@ -559,9 +809,38 @@
 			</div>
 		</div>
 	</footer>
-				
-			<a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+         
+                               
+                        <a href="#header_holder" class="scrollup smoothScroll"><i class="fa fa-arrow-circle-o-up"></i></a>
+                                <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
+        
+    });
+    
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46172202-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
             </body>
-			</html>
-            
-            
+                        </html>
